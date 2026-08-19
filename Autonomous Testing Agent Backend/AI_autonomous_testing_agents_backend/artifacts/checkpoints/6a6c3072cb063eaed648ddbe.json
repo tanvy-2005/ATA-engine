@@ -1,0 +1,442 @@
+{
+  "execution_id": "6a6c3072cb063eaed648ddbe",
+  "project_name": "acme web",
+  "target_url": "https://acmeweb.com",
+  "status": "Cancelled",
+  "current_agent": "Executor",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator",
+    "Executor"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Success",
+      "execution_time": 131.46,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "acme web",
+      "description": "Autonomous smoke and assertion validations suite",
+      "target_url": "https://acmeweb.com"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Autonomous smoke and assertion validations suite for acme web",
+        "key_components": [
+          "Login",
+          "Dashboard",
+          "Products"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [
+          "Customers",
+          "Admins"
+        ],
+        "expected_user_journey": [
+          "Login, View Products, Add to Cart, Checkout"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify homepage loads correctly",
+          "Verify login functionality"
+        ],
+        "regression_tests": [
+          "Verify product listing",
+          "Verify cart functionality"
+        ],
+        "boundary_tests": [
+          "Test max/min product quantity",
+          "Test max/min character length for username"
+        ],
+        "negative_tests": [
+          "Test invalid login credentials",
+          "Test empty cart"
+        ],
+        "accessibility_tests": [
+          "Audit homepage for accessibility",
+          "Audit product listing for accessibility"
+        ],
+        "integration_tests": [
+          "Verify payment gateway integration"
+        ],
+        "system_tests": [
+          "Verify system performance under load"
+        ],
+        "ui_tests": [
+          "Verify consistent branding across pages"
+        ],
+        "functional_tests": [
+          "Verify product search functionality",
+          "Verify order history"
+        ],
+        "exploratory_tests": [
+          "Explore product filtering options",
+          "Explore checkout process"
+        ],
+        "compatibility_tests": [
+          "Verify compatibility with Chrome, Firefox, Safari"
+        ],
+        "security_tests": [
+          "Verify HTTPS encryption",
+          "Verify secure password storage"
+        ],
+        "performance_test_suggestions": [
+          "Monitor page load times",
+          "Monitor database query performance"
+        ],
+        "api_test_suggestions": [
+          "Verify API endpoints for product data",
+          "Verify API endpoints for order data"
+        ]
+      },
+      "priority_areas": [
+        "Login functionality",
+        "Payment gateway integration"
+      ],
+      "business_workflow": [
+        "Customer places order",
+        "Admin processes order"
+      ],
+      "user_workflow": [
+        "Customer views products, adds to cart, checks out",
+        "Admin views orders, processes payments"
+      ],
+      "module_dependency_graph": {},
+      "detected_modules": [],
+      "critical_user_journeys": [
+        "Customer places order",
+        "Admin processes order"
+      ],
+      "high_risk_areas": [
+        "Payment gateway integration",
+        "Secure password storage"
+      ],
+      "security_sensitive_areas": [
+        "Payment gateway integration",
+        "Secure password storage"
+      ],
+      "functional_requirements": [
+        "Product search functionality",
+        "Order history"
+      ],
+      "non_functional_requirements": [
+        "Page load times",
+        "Database query performance"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "Valid product names",
+          "Valid email addresses"
+        ],
+        "invalid_data": [
+          "Empty product names",
+          "Invalid email addresses"
+        ],
+        "boundary_data": [
+          "Max/min product quantity",
+          "Max/min character length for username"
+        ],
+        "special_characters": [
+          "Product names with special characters",
+          "Email addresses with special characters"
+        ],
+        "duplicate_data": [
+          "Duplicate product names",
+          "Duplicate email addresses"
+        ],
+        "empty_data": [
+          "Empty product names",
+          "Empty email addresses"
+        ],
+        "large_data": [
+          "Large product names",
+          "Large email addresses"
+        ]
+      },
+      "assertions": [
+        "Page Loaded",
+        "Button Clickable",
+        "Validation message displayed"
+      ],
+      "explorer_instructions": [
+        "Scan for UI elements, API endpoints, and database tables"
+      ],
+      "generator_instructions": [
+        "Cover edge cases for product search, checkout, and payment gateway"
+      ],
+      "validator_instructions": [
+        "Verify page load times, database query performance, and secure password storage"
+      ],
+      "bug_analyzer_instructions": [
+        "Capture console traces and network issues for payment gateway integration"
+      ],
+      "reporter_instructions": [
+        "Collect execution metrics for smoke tests, regression tests, and performance tests"
+      ]
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "Access Denied",
+        "url": "https://acmeweb.com",
+        "page_load_time": 3.49,
+        "status_code": 200
+      },
+      "dom_structure": [],
+      "interactive_elements": {
+        "buttons": [],
+        "inputs": [],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785474488/agent_screenshots/explorer_page.png",
+      "accessibility": [],
+      "network_info": {
+        "api_calls": []
+      },
+      "console_errors": [
+        "[ERROR] Failed to load resource: the server responded with a status of 403 ()"
+      ],
+      "cookies_storage": {
+        "cookies": [],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "test_data": {
+        "credentials": {
+          "usernames": [
+            "standard_user"
+          ],
+          "password": "secret_sauce"
+        }
+      },
+      "actions_possible": [],
+      "page_state_snapshot": {
+        "url": "https://acmeweb.com",
+        "dom": "<html><head>\n<title>Access Denied</title>\n</head><body>\n<h1>Access Denied</h1>\n \nYou don't have permission to access \"http://forsale.godaddy.com/forsale/acmeweb.com?\" on this server.<p>\nReference #18.cd055a68.1785474485.1b539626\n</p><p>https://errors.edgesuite.net/18.cd055a68.1785474485.1b539626</p>\n\n\n</body></html>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785474488/agent_screenshots/explorer_page.png",
+        "elements": {
+          "buttons": [],
+          "inputs": [],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-07-31T10:38:08.981231"
+      },
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "Access Denied",
+        "url": "https://acmeweb.com",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 0,
+        "high_priority": 0,
+        "medium_priority": 0,
+        "low_priority": 0
+      },
+      "test_cases": [
+        {
+          "id": "TC001",
+          "title": "Page Title Validation",
+          "category": "Functional / Positive",
+          "priority": "Low",
+          "severity": "Minor",
+          "description": "Verify the page title is correct.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_title",
+              "selector": "",
+              "locator_type": "",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Access Denied",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Access Denied'.",
+          "estimated_execution_time": "1 sec"
+        },
+        {
+          "id": "TC002",
+          "title": "Page URL Validation",
+          "category": "Functional / Positive",
+          "priority": "Low",
+          "severity": "Minor",
+          "description": "Verify the page URL is correct.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_url",
+              "selector": "",
+              "locator_type": "",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://acmeweb.com",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page URL should be 'https://acmeweb.com'.",
+          "estimated_execution_time": "1 sec"
+        },
+        {
+          "id": "TC003",
+          "title": "Page Load Performance",
+          "category": "Performance",
+          "priority": "Low",
+          "severity": "Minor",
+          "description": "Measure the page load time.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "navigate",
+              "selector": "",
+              "locator_type": "",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "performance",
+              "expected": "less than 5 seconds",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page should load within 5 seconds.",
+          "estimated_execution_time": "5 sec"
+        }
+      ]
+    },
+    "executor_output": {
+      "execution_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Page Title Validation",
+          "outcome": "Success",
+          "duration": 0.11,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "The page title should be 'Access Denied'."
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Page URL Validation",
+          "outcome": "Success",
+          "duration": 0.1,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "The page URL should be 'https://acmeweb.com'."
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Page Load Performance",
+          "outcome": "Success",
+          "duration": 0.11,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "The page should load within 5 seconds."
+        }
+      ]
+    }
+  },
+  "logs": [
+    "[2026-07-31T05:19:47.007338+00:00] Initializing new execution pipeline...",
+    "[2026-07-31T05:19:47.034026+00:00] Agent 'Planner' execution started",
+    "[2026-07-31T05:19:47.034026+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-31T05:19:47.034026+00:00] PlannerAgent already completed for this run. Reusing cached output.",
+    "[2026-07-31T05:19:47.035016+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-07-31T05:19:47.035016+00:00] Agent 'Planner' completed successfully in 0.0s",
+    "[2026-07-31T05:19:47.066811+00:00] Agent 'Explorer' execution started",
+    "[2026-07-31T05:19:47.066811+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-31T05:19:47.066811+00:00] ExplorerAgent already completed for this run. Reusing cached output.",
+    "[2026-07-31T05:19:47.066811+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-07-31T05:19:47.066811+00:00] Agent 'Explorer' completed successfully in 0.0s",
+    "[2026-07-31T05:19:47.086461+00:00] Agent 'Generator' execution started",
+    "[2026-07-31T05:19:47.086461+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-31T05:19:47.086461+00:00] GeneratorAgent already completed for this run. Reusing cached test cases.",
+    "[2026-07-31T05:19:47.088526+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-07-31T05:19:47.088526+00:00] Agent 'Generator' completed successfully in 0.0s",
+    "[2026-07-31T05:19:47.104612+00:00] Agent 'Executor' execution started",
+    "[2026-07-31T05:19:47.104612+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-31T05:19:47.104612+00:00] ExecutorAgent starting. Running 3 test cases.",
+    "[2026-07-31T05:19:47.104612+00:00] Executing Test Case TC001: Page Title Validation",
+    "[2026-07-31T05:20:33.592971+00:00] Running TC TC001 Step 1: get_title on ",
+    "[2026-07-31T05:20:33.708326+00:00] Test Case TC001 finished. Duration: 0.11s. Outcome: Success",
+    "[2026-07-31T05:20:33.708326+00:00] Executing Test Case TC002: Page URL Validation",
+    "[2026-07-31T05:21:15.925134+00:00] Running TC TC002 Step 1: get_url on ",
+    "[2026-07-31T05:21:16.038507+00:00] Test Case TC002 finished. Duration: 0.1s. Outcome: Success",
+    "[2026-07-31T05:21:16.038507+00:00] Executing Test Case TC003: Page Load Performance",
+    "[2026-07-31T05:21:58.459687+00:00] Running TC TC003 Step 1: navigate on ",
+    "[2026-07-31T05:21:58.569761+00:00] Test Case TC003 finished. Duration: 0.11s. Outcome: Success",
+    "[2026-07-31T05:21:58.569761+00:00] Pipeline progress updated: 65%",
+    "[2026-07-31T05:21:58.569761+00:00] Agent 'Executor' status updated to Success (Retries: 0, Time: 131.46s)",
+    "[2026-07-31T05:21:58.569761+00:00] Agent 'Executor' completed successfully in 131.46s",
+    "[2026-07-31T05:21:58.571775+00:00] Pipeline execution cancelled by user request."
+  ],
+  "execution_time": 0.0,
+  "progress": 65
+}

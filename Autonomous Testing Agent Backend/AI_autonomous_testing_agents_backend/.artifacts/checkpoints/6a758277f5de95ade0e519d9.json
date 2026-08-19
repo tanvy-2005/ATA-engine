@@ -1,0 +1,3542 @@
+{
+  "execution_id": "6a758277f5de95ade0e519d9",
+  "project_name": "karmanisht",
+  "target_url": "https://karmanisht.com",
+  "status": "Completed",
+  "current_agent": "Reporter",
+  "current_stage": "completed",
+  "pages_discovered": 5,
+  "pages_total": null,
+  "tests_generated": 6,
+  "tests_executed": 6,
+  "tests_total": 6,
+  "current_action": "Reporter generated final QA audit report.",
+  "started_at": "2026-08-07T07:00:07.728238+00:00",
+  "last_updated_at": "2026-08-07T07:06:14.384287+00:00",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator",
+    "Executor",
+    "Validator",
+    "BugAnalyzer",
+    "Reporter"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 86.2,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 28.09,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 28.92,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Success",
+      "execution_time": 0.04,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Validator": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "BugAnalyzer": {
+      "status": "Success",
+      "execution_time": 128.92,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Reporter": {
+      "status": "Success",
+      "execution_time": 92.76,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "karmanisht",
+      "description": "Autonomous testing run",
+      "target_url": "https://karmanisht.com"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "An analysis of karmanisht.com is required to determine the application's core functionality, as the provided description is limited to 'Autonomous testing run'.",
+        "key_components": [
+          "UNKNOWN"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [
+          "UNKNOWN"
+        ],
+        "expected_user_journey": [
+          "UNKNOWN"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify website accessibility (HTTP 200)",
+          "Verify main landing page load",
+          "Verify navigation menu functionality"
+        ],
+        "regression_tests": [
+          "UNKNOWN"
+        ],
+        "boundary_tests": [
+          "UNKNOWN"
+        ],
+        "negative_tests": [
+          "UNKNOWN"
+        ],
+        "accessibility_tests": [
+          "WCAG 2.1 compliance audit",
+          "Screen reader compatibility",
+          "Color contrast ratios"
+        ],
+        "integration_tests": [
+          "UNKNOWN"
+        ],
+        "system_tests": [
+          "End-to-end workflow validation"
+        ],
+        "ui_tests": [
+          "Responsive design check (Mobile/Tablet/Desktop)",
+          "Visual consistency of typography and colors"
+        ],
+        "functional_tests": [
+          "UNKNOWN"
+        ],
+        "exploratory_tests": [
+          "Unstructured navigation to discover broken links or unexpected UI states"
+        ],
+        "compatibility_tests": [
+          "Chrome, Firefox, Safari, Edge"
+        ],
+        "security_tests": [
+          "SSL/TLS certificate validation",
+          "Basic header security checks"
+        ],
+        "performance_test_suggestions": [
+          "Lighthouse performance score",
+          "First Contentful Paint (FCP) timing"
+        ],
+        "api_test_suggestions": [
+          "UNKNOWN"
+        ]
+      },
+      "priority_areas": [
+        "Website availability",
+        "Core navigation"
+      ],
+      "business_workflow": [
+        "UNKNOWN"
+      ],
+      "user_workflow": [
+        "UNKNOWN"
+      ],
+      "module_dependency_graph": {
+        "UNKNOWN": []
+      },
+      "detected_modules": [],
+      "critical_user_journeys": [
+        "UNKNOWN"
+      ],
+      "high_risk_areas": [
+        "UNKNOWN"
+      ],
+      "security_sensitive_areas": [
+        "UNKNOWN"
+      ],
+      "functional_requirements": [
+        "UNKNOWN"
+      ],
+      "non_functional_requirements": [
+        "UNKNOWN"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "UNKNOWN"
+        ],
+        "invalid_data": [
+          "UNKNOWN"
+        ],
+        "boundary_data": [
+          "UNKNOWN"
+        ],
+        "special_characters": [
+          "UNKNOWN"
+        ],
+        "duplicate_data": [
+          "UNKNOWN"
+        ],
+        "empty_data": [
+          "UNKNOWN"
+        ],
+        "large_data": [
+          "UNKNOWN"
+        ]
+      },
+      "assertions": [
+        "Page Load Success",
+        "Element Visibility",
+        "Correct URL redirection",
+        "No Console Errors"
+      ],
+      "explorer_instructions": [
+        "Scan for all interactive elements (buttons, links, forms)",
+        "Identify all navigation paths",
+        "Map out all visible modules and sub-pages"
+      ],
+      "generator_instructions": [
+        "Generate edge cases based on discovered form inputs",
+        "Prioritize testing of high-risk modules identified during exploration"
+      ],
+      "validator_instructions": [
+        "Verify that all critical user journeys complete without error",
+        "Ensure UI elements match design intent"
+      ],
+      "bug_analyzer_instructions": [
+        "Capture browser console logs",
+        "Capture network request/response payloads",
+        "Capture visual screenshots on failure"
+      ],
+      "reporter_instructions": [
+        "Collect pass/fail rates",
+        "Summarize execution time",
+        "List all identified defects with severity"
+      ]
+    },
+    "explorer_summary": {
+      "summary": "Karmanisht appears to be a website with a high density of interactive elements, featuring 49 buttons, 9 inputs, and 34 links, suggesting a complex user interface or a highly interactive application.",
+      "detected_technologies": [],
+      "navigation_analysis": {
+        "navigation_flow": "The page offers extensive navigation options through 34 links and a high volume of interactive buttons, indicating multiple paths for user engagement and data entry via 2 forms."
+      }
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "Karmanisht",
+        "url": "https://karmanisht.com",
+        "page_load_time": 0.975,
+        "status_code": 200
+      },
+      "dom_structure": [
+        {
+          "element": "sticky",
+          "children": [
+            "rounded-full",
+            "flex",
+            "inline-block",
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "mx-auto",
+          "children": [
+            "rounded-full",
+            "flex",
+            "inline-block",
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "rounded-full",
+          "children": [
+            "rounded-full",
+            "flex",
+            "inline-block",
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "flex"
+          ]
+        },
+        {
+          "element": "hidden",
+          "children": [
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "rounded-full",
+            "inline-block"
+          ]
+        },
+        {
+          "element": "hidden",
+          "children": [
+            "inline-block"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "rounded-full"
+          ]
+        },
+        {
+          "element": "fixed",
+          "children": [
+            "flex",
+            "block",
+            "font-dm-sans",
+            "rounded-lg"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "flex",
+            "block",
+            "font-dm-sans",
+            "rounded-lg"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "flex",
+            "rounded-lg"
+          ]
+        },
+        {
+          "element": "mt-8",
+          "children": [
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "pb-8",
+          "children": [
+            "block"
+          ]
+        },
+        {
+          "element": "mx-auto",
+          "children": [
+            "w-full",
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "mt-10",
+          "children": [
+            "w-full",
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "mx-auto",
+          "children": [
+            "mt-28"
+          ]
+        },
+        {
+          "element": "grid",
+          "children": [
+            "mt-28"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "mt-28"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "mt-28"
+          ]
+        },
+        {
+          "element": "mx-auto",
+          "children": [
+            "flex",
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "grid",
+          "children": [
+            "flex",
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "lg:col-span-5",
+          "children": [
+            "flex"
+          ]
+        },
+        {
+          "element": "grid",
+          "children": [
+            "font-dm-sans"
+          ]
+        },
+        {
+          "element": "fixed",
+          "children": [
+            "flex",
+            "flex-1",
+            "relative",
+            "w-9"
+          ]
+        },
+        {
+          "element": "fixed",
+          "children": [
+            "flex",
+            "flex-1",
+            "w-9"
+          ]
+        },
+        {
+          "element": "bg-white",
+          "children": [
+            "flex"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "flex"
+          ]
+        },
+        {
+          "element": "p-3",
+          "children": [
+            "flex-1",
+            "w-9"
+          ]
+        }
+      ],
+      "interactive_elements": {
+        "buttons": [
+          {
+            "type": "button",
+            "text": "",
+            "id": "",
+            "class": "rounded-full p-2 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 focus:outline-none transition-colors",
+            "selector": "button.rounded-full.p-2.text-zinc-600.hover:bg-zinc-100.hover:text-zinc-900.focus:outline-none.transition-colors",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "",
+            "id": "",
+            "class": "rounded-lg p-2 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-950 transition-colors",
+            "selector": "button.rounded-lg.p-2.text-zinc-500.hover:bg-zinc-100.hover:text-zinc-950.transition-colors",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Download App",
+            "id": "",
+            "class": "font-dm-sans w-full flex items-center justify-center gap-2 rounded-[20px] bg-zinc-950 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-zinc-800 hover:shadow-xl active:scale-95",
+            "selector": "button:has-text('Download App')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Learn More",
+            "id": "",
+            "class": "font-dm-sans w-full rounded-[20px] border border-zinc-900 bg-white/0 px-8 py-4 text-base font-semibold text-zinc-950 transition-all hover:border-zinc-950 hover:bg-white/40 active:scale-95 text-center",
+            "selector": "button:has-text('Learn More')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Download App",
+            "id": "",
+            "class": "font-dm-sans flex items-center justify-center gap-2.5 rounded-[20px] bg-zinc-950 px-6 py-3.5 text-xs sm:text-sm font-bold text-white shadow-md border-2 border-zinc-950 hover:bg-zinc-800 hover:shadow-lg active:scale-95 transition-all",
+            "selector": "button:has-text('Download App')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Find a professional",
+            "id": "",
+            "class": "mt-28 sm:mt-48 relative z-10 inline-flex w-fit items-center gap-2 rounded-[12px] bg-[#F5A623] px-6 sm:px-8 py-3 sm:py-4 text-sm font-bold text-zinc-950 transition-all hover:bg-orange-400 active:scale-95 shadow-lg",
+            "selector": "button:has-text('Find a professional')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Register as provider",
+            "id": "",
+            "class": "mt-28 sm:mt-48 relative z-10 inline-flex w-fit items-center gap-2 rounded-[12px] bg-zinc-950 px-6 sm:px-8 py-3 sm:py-4 text-sm font-bold text-white transition-all hover:bg-zinc-800 active:scale-95 shadow-lg",
+            "selector": "button:has-text('Register as provider')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "",
+            "id": "",
+            "class": "relative flex items-center justify-center w-14 h-14 rounded-full bg-zinc-950 hover:bg-[#EF7603] shadow-xl shadow-zinc-950/20 text-white cursor-pointer transition-all duration-300 ease-out active:scale-95 border border-zinc-800 hover:border-[#ff8d21] hover:-translate-y-1",
+            "selector": "button.relative.flex.items-center.justify-center.w-14.h-14.rounded-full.bg-zinc-950.hover:bg-[#EF7603].shadow-xl.shadow-zinc-950/20.text-white.cursor-pointer.transition-all.duration-300.ease-out.active:scale-95.border.border-zinc-800.hover:border-[#ff8d21].hover:-translate-y-1",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "New Chat",
+            "id": "",
+            "class": "flex items-center gap-1 px-3 py-1.5 bg-zinc-950 hover:bg-zinc-800 text-white rounded-full text-[11px] font-semibold transition-all cursor-pointer active:scale-95 shadow-sm border border-zinc-950",
+            "selector": "button:has-text('New Chat')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "",
+            "id": "",
+            "class": "w-9 h-9 rounded-full bg-[#EF7603] hover:bg-[#d66a03] text-white flex items-center justify-center shrink-0 cursor-pointer disabled:bg-zinc-100 disabled:text-zinc-300 disabled:cursor-not-allowed transition-all duration-300 active:scale-95 border border-zinc-200/20 shadow-sm shadow-orange-500/10",
+            "selector": "button.w-9.h-9.rounded-full.bg-[#EF7603].hover:bg-[#d66a03].text-white.flex.items-center.justify-center.shrink-0.cursor-pointer.disabled:bg-zinc-100.disabled:text-zinc-300.disabled:cursor-not-allowed.transition-all.duration-300.active:scale-95.border.border-zinc-200/20.shadow-sm.shadow-orange-500/10",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": false,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "For Customers",
+            "id": "",
+            "class": "rounded-xl px-6 py-2.5 text-sm font-bold transition-all bg-zinc-950 text-white shadow-sm",
+            "selector": "button:has-text('For Customers')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "For Providers",
+            "id": "",
+            "class": "rounded-xl px-6 py-2.5 text-sm font-bold transition-all text-zinc-500 hover:text-zinc-900",
+            "selector": "button:has-text('For Providers')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "How does the pricing and booking fee work?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('How does the pricing and booking fee work?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Can I contact the professional directly after booking?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('Can I contact the professional directly after booking?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Do providers pay any commission on earnings?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('Do providers pay any commission on earnings?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "How is this different from Urban Company or Sulekha?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('How is this different from Urban Company or Sulekha?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "How do I know providers are genuine and safe?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('How do I know providers are genuine and safe?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "In which cities is Karmanisht available?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('In which cities is Karmanisht available?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "How do providers improve their ranking?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('How do providers improve their ranking?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "",
+            "id": "",
+            "class": "flex items-center justify-between gap-1.5 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full sm:w-[150px] rounded-[14px] border border-zinc-200 bg-white pl-9 pr-6 py-6 text-sm font-semibold text-zinc-700 focus:outline-none focus:ring-4 focus:ring-zinc-200 shadow-sm transition-all",
+            "selector": "button.flex.items-center.justify-between.gap-1.5.whitespace-nowrap.outline-none.select-none.focus-visible:border-ring.focus-visible:ring-3.focus-visible:ring-ring/50.disabled:cursor-not-allowed.disabled:opacity-50.aria-invalid:border-destructive.aria-invalid:ring-3.aria-invalid:ring-destructive/20.data-placeholder:text-muted-foreground.data-[size=default]:h-8.data-[size=sm]:h-7.data-[size=sm]:rounded-[min(var(--radius-md),10px)].*:data-[slot=select-value]:line-clamp-1.*:data-[slot=select-value]:flex.*:data-[slot=select-value]:items-center.*:data-[slot=select-value]:gap-1.5.dark:bg-input/30.dark:hover:bg-input/50.dark:aria-invalid:border-destructive/50.dark:aria-invalid:ring-destructive/40.[&_svg]:pointer-events-none.[&_svg]:shrink-0.[&_svg:not([class*='size-'])]:size-4.w-full.sm:w-[150px].rounded-[14px].border.border-zinc-200.bg-white.pl-9.pr-6.py-6.text-sm.font-semibold.text-zinc-700.focus:outline-none.focus:ring-4.focus:ring-zinc-200.shadow-sm.transition-all",
+            "xpath": "//button",
+            "role": "combobox",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "All Services",
+            "id": "",
+            "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-zinc-950 text-white border-zinc-950 shadow-md shadow-zinc-900/20 col-span-2 sm:col-span-1",
+            "selector": "button:has-text('All Services')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Emergency",
+            "id": "",
+            "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50",
+            "selector": "button:has-text('Emergency')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Home Repair",
+            "id": "",
+            "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50",
+            "selector": "button:has-text('Home Repair')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Tech & Appliance",
+            "id": "",
+            "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50",
+            "selector": "button:has-text('Tech & Appliance')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Premium",
+            "id": "",
+            "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50",
+            "selector": "button:has-text('Premium')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Providers Details",
+            "id": "",
+            "class": "flex items-center gap-1.5 rounded-xl px-4 py-2.5 text-xs font-bold transition-all active:scale-95 bg-zinc-950 text-white hover:bg-zinc-800",
+            "selector": "button:has-text('Providers Details')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Select skill",
+            "id": "",
+            "class": "flex items-center justify-between gap-1.5 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full rounded-[12px] border border-zinc-200 focus:ring-zinc-200 bg-white px-3 py-3 text-sm focus:outline-none focus:ring-4 transition-all",
+            "selector": "button:has-text('Select skill')",
+            "xpath": "//button",
+            "role": "combobox",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Select city",
+            "id": "",
+            "class": "flex items-center justify-between gap-1.5 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full rounded-[12px] border border-zinc-200 focus:ring-zinc-200 bg-white px-3 py-3 text-sm focus:outline-none focus:ring-4 transition-all",
+            "selector": "button:has-text('Select city')",
+            "xpath": "//button",
+            "role": "combobox",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Years of work",
+            "id": "",
+            "class": "flex items-center justify-between gap-1.5 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full rounded-[12px] border border-zinc-200 focus:ring-zinc-200 bg-white px-3 py-3 text-sm focus:outline-none focus:ring-4 transition-all",
+            "selector": "button:has-text('Years of work')",
+            "xpath": "//button",
+            "role": "combobox",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Submit Application",
+            "id": "",
+            "class": "w-full flex items-center justify-center gap-2 rounded-[16px] bg-zinc-950 py-4 text-sm font-semibold text-white shadow-lg transition-all hover:bg-zinc-800 active:scale-[0.98] disabled:bg-zinc-700 disabled:scale-100 disabled:cursor-not-allowed mt-4",
+            "selector": "button:has-text('Submit Application')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "View Direct Inquiries",
+            "id": "",
+            "class": "mt-8 w-full rounded-xl bg-orange-500 py-2.5 text-center text-xs font-bold text-white hover:bg-orange-600 transition-colors shadow-lg active:scale-95",
+            "selector": "button:has-text('View Direct Inquiries')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Apply Free",
+            "id": "",
+            "class": "w-full rounded-xl border border-zinc-200 py-3 text-xs font-bold text-zinc-700 hover:border-zinc-900 transition-colors",
+            "selector": "button:has-text('Apply Free')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Upgrade to Premium",
+            "id": "",
+            "class": "w-full rounded-xl bg-zinc-950 py-3 text-xs font-bold text-white hover:bg-zinc-800 transition-colors",
+            "selector": "button:has-text('Upgrade to Premium')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Contact Sales",
+            "id": "",
+            "class": "w-full rounded-xl border border-zinc-200 py-3 text-xs font-bold text-zinc-700 hover:border-zinc-900 transition-colors",
+            "selector": "button:has-text('Contact Sales')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "How does Karmanisht make money if you charge 0% commission?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('How does Karmanisht make money if you charge 0% commission?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "How does the direct booking model benefit me as a provider?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('How does the direct booking model benefit me as a provider?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "What documents do I need to register as a service partner?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('What documents do I need to register as a service partner?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "When and how do I receive my work payments?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('When and how do I receive my work payments?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "How does my ranking work? How do I appear higher in search?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('How does my ranking work? How do I appear higher in search?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Is there a paid premium plan for providers?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('Is there a paid premium plan for providers?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Can I choose my own working hours?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('Can I choose my own working hours?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Download Partner App",
+            "id": "",
+            "class": "w-full sm:w-auto px-8 py-4 bg-zinc-900 border border-zinc-800 text-white font-bold rounded-2xl flex items-center justify-center gap-2 hover:border-zinc-700 hover:bg-zinc-850 transition-all shadow-lg active:scale-95 text-sm",
+            "selector": "button:has-text('Download Partner App')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Raipur",
+            "id": "",
+            "class": "flex items-center justify-between gap-1.5 py-2 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full sm:w-[150px] !h-12 rounded-xl border border-zinc-200 bg-white pl-9 pr-6 text-xs font-semibold text-zinc-700 focus:ring-4 focus:ring-zinc-200 cursor-pointer transition-all relative",
+            "selector": "button:has-text('Raipur')",
+            "xpath": "//button",
+            "role": "combobox",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Check Now",
+            "id": "",
+            "class": "bg-zinc-950 hover:bg-zinc-800 text-white rounded-xl px-6 py-3.5 text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 shrink-0",
+            "selector": "button:has-text('Check Now')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Submit Expansion Request",
+            "id": "",
+            "class": "w-full rounded-xl bg-zinc-950 hover:bg-zinc-800 text-white font-bold py-3 text-xs flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-md mt-4",
+            "selector": "button:has-text('Submit Expansion Request')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Can a provider operate in multiple cities?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('Can a provider operate in multiple cities?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "How does GPS radius-based matching work?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('How does GPS radius-based matching work?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "What if my area is not covered yet?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('What if my area is not covered yet?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Are base prices and platform fees different per city?",
+            "id": "",
+            "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+            "selector": "button:has-text('Are base prices and platform fees different per city?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          }
+        ],
+        "inputs": [
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "Ask KarmaNisht Assistant...",
+            "required": false,
+            "selector": "input[placeholder='Ask KarmaNisht Assistant...']",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "Search electrician, plumber, AC...",
+            "required": false,
+            "selector": "input[placeholder='Search electrician, plumber, AC...']",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "e.g. Ramesh Kumar Verma",
+            "required": false,
+            "selector": "#name",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "tel",
+            "name": "phone",
+            "placeholder": "10-digit mobile number",
+            "required": false,
+            "selector": "#phone",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "e.g. Shankar Nagar, Sector 10, Padmanabhpur...",
+            "required": false,
+            "selector": "input[placeholder='e.g. Shankar Nagar, Sector 10, Padmanabhpur...']",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "e.g. Shubham",
+            "required": true,
+            "selector": "input[placeholder='e.g. Shubham']",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "tel",
+            "name": "",
+            "placeholder": "10-digit mobile number",
+            "required": true,
+            "selector": "input[placeholder='10-digit mobile number']",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "e.g. Korba",
+            "required": true,
+            "selector": "input[placeholder='e.g. Korba']",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "e.g. Transport Nagar",
+            "required": true,
+            "selector": "input[placeholder='e.g. Transport Nagar']",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          }
+        ],
+        "dropdowns": [
+          {
+            "type": "select",
+            "id": "",
+            "name": "",
+            "selector": "select",
+            "options": [],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "type": "select",
+            "id": "",
+            "name": "",
+            "selector": "select",
+            "options": [
+              "Electrician",
+              "Plumber",
+              "AC Technician",
+              "Carpenter",
+              "Painter",
+              "Appliance Repair",
+              "RO / Purifier",
+              "Computer / IT",
+              "Steel Fabricator",
+              "Mason / Civil",
+              "Gas / LPG",
+              "Waterproofing",
+              "Interior Designer",
+              "Smart Home Installer",
+              "Solar Installer"
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "type": "select",
+            "id": "",
+            "name": "",
+            "selector": "select",
+            "options": [
+              "Raipur",
+              "Bhilai",
+              "Durg",
+              "Bilaspur"
+            ],
+            "visible": true,
+            "enabled": true
+          },
+          {
+            "type": "select",
+            "id": "",
+            "name": "",
+            "selector": "select",
+            "options": [
+              "Under 1 Year",
+              "1 to 3 Years",
+              "3 to 5 Years",
+              "5+ Years of Experience"
+            ],
+            "visible": true,
+            "enabled": true
+          }
+        ],
+        "checkboxes_radios": [
+          {
+            "type": "checkbox",
+            "id": "",
+            "label": "consent",
+            "checked": false,
+            "visible": true,
+            "enabled": true
+          }
+        ]
+      },
+      "links": [
+        {
+          "text": "Karmanisht",
+          "url": "/",
+          "selector": "a:has-text('Karmanisht')"
+        },
+        {
+          "text": "How it works",
+          "url": "/works",
+          "selector": "a:has-text('How it works')"
+        },
+        {
+          "text": "Services",
+          "url": "/services",
+          "selector": "a:has-text('Services')"
+        },
+        {
+          "text": "For providers",
+          "url": "/providers",
+          "selector": "a:has-text('For providers')"
+        },
+        {
+          "text": "Cities",
+          "url": "/cities",
+          "selector": "a:has-text('Cities')"
+        },
+        {
+          "text": "Download App",
+          "url": "/download-app",
+          "selector": "a:has-text('Download App')"
+        },
+        {
+          "text": "Karmanisht",
+          "url": "/",
+          "selector": "a:has-text('Karmanisht')"
+        },
+        {
+          "text": "How it works",
+          "url": "/works",
+          "selector": "a:has-text('How it works')"
+        },
+        {
+          "text": "Services",
+          "url": "/services",
+          "selector": "a:has-text('Services')"
+        },
+        {
+          "text": "For providers",
+          "url": "/providers",
+          "selector": "a:has-text('For providers')"
+        },
+        {
+          "text": "Cities",
+          "url": "/cities",
+          "selector": "a:has-text('Cities')"
+        },
+        {
+          "text": "Download App",
+          "url": "/download-app",
+          "selector": "a:has-text('Download App')"
+        },
+        {
+          "text": "Download App",
+          "url": "/download-app",
+          "selector": "a:has-text('Download App')"
+        },
+        {
+          "text": "Learn More",
+          "url": "/works",
+          "selector": "a:has-text('Learn More')"
+        },
+        {
+          "text": "link",
+          "url": "/",
+          "selector": "a"
+        },
+        {
+          "text": "Download App",
+          "url": "/download-app",
+          "selector": "a:has-text('Download App')"
+        },
+        {
+          "text": "Karmanisht",
+          "url": "/",
+          "selector": "a:has-text('Karmanisht')"
+        },
+        {
+          "text": "How it works",
+          "url": "/works",
+          "selector": "a:has-text('How it works')"
+        },
+        {
+          "text": "Services",
+          "url": "/services",
+          "selector": "a:has-text('Services')"
+        },
+        {
+          "text": "Providers",
+          "url": "/providers",
+          "selector": "a:has-text('Providers')"
+        },
+        {
+          "text": "Download app",
+          "url": "/download-app",
+          "selector": "a:has-text('Download app')"
+        },
+        {
+          "text": "Register",
+          "url": "/providers",
+          "selector": "a:has-text('Register')"
+        },
+        {
+          "text": "Verification",
+          "url": "/verification",
+          "selector": "a:has-text('Verification')"
+        },
+        {
+          "text": "Coverage areas",
+          "url": "/cities",
+          "selector": "a:has-text('Coverage areas')"
+        },
+        {
+          "text": "Support",
+          "url": "/support",
+          "selector": "a:has-text('Support')"
+        },
+        {
+          "text": "About",
+          "url": "/about",
+          "selector": "a:has-text('About')"
+        },
+        {
+          "text": "Privacy policy",
+          "url": "/privacy",
+          "selector": "a:has-text('Privacy policy')"
+        },
+        {
+          "text": "Terms of use",
+          "url": "/terms",
+          "selector": "a:has-text('Terms of use')"
+        },
+        {
+          "text": "Cancellation & Refunds",
+          "url": "/refund",
+          "selector": "a:has-text('Cancellation & Refunds')"
+        },
+        {
+          "text": "Account deletion",
+          "url": "/delete-account",
+          "selector": "a:has-text('Account deletion')"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact",
+          "selector": "a:has-text('Contact')"
+        },
+        {
+          "text": "Browse Services",
+          "url": "/services",
+          "selector": "a:has-text('Browse Services')"
+        },
+        {
+          "text": "Join as Provider",
+          "url": "/providers",
+          "selector": "a:has-text('Join as Provider')"
+        },
+        {
+          "text": "Join as a Provider",
+          "url": "/providers",
+          "selector": "a:has-text('Join as a Provider')"
+        }
+      ],
+      "forms": [
+        {
+          "form_name": "unnamed_form",
+          "method": "GET",
+          "fields": [],
+          "submit": "submit"
+        },
+        {
+          "form_name": "unnamed_form",
+          "method": "GET",
+          "fields": [
+            "name",
+            "phone",
+            "consent"
+          ],
+          "submit": "submit"
+        }
+      ],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1786086102/agent_screenshots/explorer_page_20260807_123139_toe824zn.png",
+      "accessibility": [
+        {
+          "role": "a",
+          "aria_label": "Karmanisht",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "How it works",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Services",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "For providers",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Cities",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Download App",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Toggle menu",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Karmanisht",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Close menu",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "How it works",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Services",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "For providers",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Cities",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Download App",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Download App",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Download App",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Learn More",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Learn More",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Hand and Mobile Mockup",
+          "alt": "Hand and Mobile Mockup"
+        },
+        {
+          "role": "a",
+          "aria_label": "Download App",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Download App",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Find a professional",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Service Professional",
+          "alt": "Service Professional"
+        },
+        {
+          "role": "button",
+          "aria_label": "Register as provider",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Consumer App",
+          "alt": "Consumer App"
+        },
+        {
+          "role": "a",
+          "aria_label": "Karmanisht",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "How it works",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Services",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Providers",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Download app",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Register",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Verification",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Coverage areas",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Support",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "About",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Privacy policy",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Terms of use",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Cancellation & Refunds",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Account deletion",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Contact",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Open support chat",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "KarmaNisht Logo",
+          "alt": "KarmaNisht Logo"
+        },
+        {
+          "role": "img",
+          "aria_label": "KarmaNisht Logo",
+          "alt": "KarmaNisht Logo"
+        },
+        {
+          "role": "button",
+          "aria_label": "New Chat",
+          "alt": null
+        },
+        {
+          "role": "text",
+          "aria_label": "Ask KarmaNisht Assistant...",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "For Customers",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "For Providers",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Electrician",
+          "alt": "Electrician"
+        },
+        {
+          "role": "img",
+          "aria_label": "Plumber",
+          "alt": "Plumber"
+        },
+        {
+          "role": "img",
+          "aria_label": "AC Repair",
+          "alt": "AC Repair"
+        },
+        {
+          "role": "img",
+          "aria_label": "Appliance Repair",
+          "alt": "Appliance Repair"
+        },
+        {
+          "role": "img",
+          "aria_label": "Interior Design",
+          "alt": "Interior Design"
+        },
+        {
+          "role": "img",
+          "aria_label": "Solar Installer",
+          "alt": "Solar Installer"
+        },
+        {
+          "role": "button",
+          "aria_label": "How does the pricing and booking fee work?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Can I contact the professional directly after booking?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Do providers pay any commission on earnings?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "How is this different from Urban Company or Sulekha?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "How do I know providers are genuine and safe?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "In which cities is Karmanisht available?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "How do providers improve their ranking?",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Browse Services",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Join as Provider",
+          "alt": null
+        },
+        {
+          "role": "text",
+          "aria_label": "Search electrician, plumber, AC...",
+          "alt": null
+        },
+        {
+          "role": "combobox",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "select",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "All Services",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Emergency",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Home Repair",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Tech & Appliance",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Premium",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Providers Details",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "AC Technician",
+          "alt": "AC Technician"
+        },
+        {
+          "role": "img",
+          "aria_label": "Carpenter",
+          "alt": "Carpenter"
+        },
+        {
+          "role": "img",
+          "aria_label": "Painter",
+          "alt": "Painter"
+        },
+        {
+          "role": "img",
+          "aria_label": "RO / Water Purifier",
+          "alt": "RO / Water Purifier"
+        },
+        {
+          "role": "img",
+          "aria_label": "Computer / IT",
+          "alt": "Computer / IT"
+        },
+        {
+          "role": "img",
+          "aria_label": "Gas / LPG Technician",
+          "alt": "Gas / LPG Technician"
+        },
+        {
+          "role": "img",
+          "aria_label": "Waterproofing",
+          "alt": "Waterproofing"
+        },
+        {
+          "role": "img",
+          "aria_label": "Interior Designer",
+          "alt": "Interior Designer"
+        },
+        {
+          "role": "a",
+          "aria_label": "Join as a Provider",
+          "alt": null
+        },
+        {
+          "role": "text",
+          "aria_label": "e.g. Ramesh Kumar Verma",
+          "alt": null
+        },
+        {
+          "role": "tel",
+          "aria_label": "10-digit mobile number",
+          "alt": null
+        },
+        {
+          "role": "combobox",
+          "aria_label": "Select skill",
+          "alt": null
+        },
+        {
+          "role": "select",
+          "aria_label": "ElectricianPlumberAC TechnicianCarpenterPainterAppliance RepairRO / PurifierComputer / ITSteel FabricatorMason / CivilGas / LPGWaterproofingInterior DesignerSmart Home InstallerSolar Installer",
+          "alt": null
+        },
+        {
+          "role": "combobox",
+          "aria_label": "Select city",
+          "alt": null
+        },
+        {
+          "role": "select",
+          "aria_label": "RaipurBhilaiDurgBilaspur",
+          "alt": null
+        },
+        {
+          "role": "combobox",
+          "aria_label": "Years of work",
+          "alt": null
+        },
+        {
+          "role": "select",
+          "aria_label": "Under 1 Year1 to 3 Years3 to 5 Years5+ Years of Experience",
+          "alt": null
+        },
+        {
+          "role": "checkbox",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Submit Application",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "View Direct Inquiries",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Apply Free",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Upgrade to Premium",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Contact Sales",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "How does Karmanisht make money if you charge 0% commission?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "How does the direct booking model benefit me as a provider?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "What documents do I need to register as a service partner?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "When and how do I receive my work payments?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "How does my ranking work? How do I appear higher in search?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Is there a paid premium plan for providers?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Can I choose my own working hours?",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Apply Online",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Download Partner App",
+          "alt": null
+        },
+        {
+          "role": "combobox",
+          "aria_label": "Raipur",
+          "alt": null
+        },
+        {
+          "role": "text",
+          "aria_label": "e.g. Shankar Nagar, Sector 10, Padmanabhpur...",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Check Now",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Plumbing",
+          "alt": "Plumbing"
+        },
+        {
+          "role": "img",
+          "aria_label": "Painting",
+          "alt": "Painting"
+        },
+        {
+          "role": "img",
+          "aria_label": "AC Installation",
+          "alt": "AC Installation"
+        },
+        {
+          "role": "text",
+          "aria_label": "e.g. Shubham",
+          "alt": null
+        },
+        {
+          "role": "text",
+          "aria_label": "e.g. Korba",
+          "alt": null
+        },
+        {
+          "role": "text",
+          "aria_label": "e.g. Transport Nagar",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Submit Expansion Request",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Can a provider operate in multiple cities?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "How does GPS radius-based matching work?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "What if my area is not covered yet?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Are base prices and platform fees different per city?",
+          "alt": null
+        }
+      ],
+      "network_info": {
+        "api_calls": []
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "actions_possible": [
+        {
+          "action": "type",
+          "target": ""
+        },
+        {
+          "action": "click",
+          "target": "button.rounded-full.p-2.text-zinc-600.hover:bg-zinc-100.hover:text-zinc-900.focus:outline-none.transition-colors"
+        },
+        {
+          "action": "click",
+          "target": "button.rounded-lg.p-2.text-zinc-500.hover:bg-zinc-100.hover:text-zinc-950.transition-colors"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Download App')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Learn More')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Download App')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Find a professional')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Register as provider')"
+        },
+        {
+          "action": "click",
+          "target": "button.relative.flex.items-center.justify-center.w-14.h-14.rounded-full.bg-zinc-950.hover:bg-[#EF7603].shadow-xl.shadow-zinc-950/20.text-white.cursor-pointer.transition-all.duration-300.ease-out.active:scale-95.border.border-zinc-800.hover:border-[#ff8d21].hover:-translate-y-1"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('New Chat')"
+        },
+        {
+          "action": "click",
+          "target": "button.w-9.h-9.rounded-full.bg-[#EF7603].hover:bg-[#d66a03].text-white.flex.items-center.justify-center.shrink-0.cursor-pointer.disabled:bg-zinc-100.disabled:text-zinc-300.disabled:cursor-not-allowed.transition-all.duration-300.active:scale-95.border.border-zinc-200/20.shadow-sm.shadow-orange-500/10"
+        }
+      ],
+      "page_state_snapshot": {
+        "url": "https://karmanisht.com",
+        "dom": "<a role=\"\">Karmanisht</a>\n<a role=\"\">How it works</a>\n<a role=\"\">Services</a>\n<a role=\"\">For providers</a>\n<a role=\"\">Cities</a>\n<a role=\"\">Download App</a>\n<button role=\"\"></button>\n<a role=\"\">Karmanisht</a>\n<button role=\"\"></button>\n<a role=\"\">How it works</a>\n<a role=\"\">Services</a>\n<a role=\"\">For providers</a>\n<a role=\"\">Cities</a>\n<a role=\"\">Download App</a>\n<a role=\"\">Download App</a>\n<button role=\"\">Download App</button>\n<a role=\"\">Learn More</a>\n<button role=\"\">Learn More</button>\n<a role=\"\"></a>\n<a role=\"\">Download App</a>\n<button role=\"\">Download App</button>\n<button role=\"\">Find a professional</button>\n<button role=\"\">Register as provider</button>\n<a role=\"\">Karmanisht</a>\n<a role=\"\">How it works</a>\n<a role=\"\">Services</a>\n<a role=\"\">Providers</a>\n<a role=\"\">Download app</a>\n<a role=\"\">Register</a>\n<a role=\"\">Verification</a>\n<a role=\"\">Coverage areas</a>\n<a role=\"\">Support</a>\n<a role=\"\">About</a>\n<a role=\"\">Privacy policy</a>\n<a role=\"\">Terms of use</a>\n<a role=\"\">Cancellation & Refunds</a>\n<a role=\"\">Account deletion</a>\n<a role=\"\">Contact</a>\n<button role=\"\"></button>\n<button role=\"\"></button>\n<input role=\"\"></input>\n<button role=\"\"></button>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1786086102/agent_screenshots/explorer_page_20260807_123139_toe824zn.png",
+        "elements": {
+          "buttons": [
+            {
+              "type": "button",
+              "text": "",
+              "id": "",
+              "class": "rounded-full p-2 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 focus:outline-none transition-colors",
+              "selector": "button.rounded-full.p-2.text-zinc-600.hover:bg-zinc-100.hover:text-zinc-900.focus:outline-none.transition-colors",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "",
+              "id": "",
+              "class": "rounded-lg p-2 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-950 transition-colors",
+              "selector": "button.rounded-lg.p-2.text-zinc-500.hover:bg-zinc-100.hover:text-zinc-950.transition-colors",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Download App",
+              "id": "",
+              "class": "font-dm-sans w-full flex items-center justify-center gap-2 rounded-[20px] bg-zinc-950 px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-zinc-800 hover:shadow-xl active:scale-95",
+              "selector": "button:has-text('Download App')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Learn More",
+              "id": "",
+              "class": "font-dm-sans w-full rounded-[20px] border border-zinc-900 bg-white/0 px-8 py-4 text-base font-semibold text-zinc-950 transition-all hover:border-zinc-950 hover:bg-white/40 active:scale-95 text-center",
+              "selector": "button:has-text('Learn More')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Download App",
+              "id": "",
+              "class": "font-dm-sans flex items-center justify-center gap-2.5 rounded-[20px] bg-zinc-950 px-6 py-3.5 text-xs sm:text-sm font-bold text-white shadow-md border-2 border-zinc-950 hover:bg-zinc-800 hover:shadow-lg active:scale-95 transition-all",
+              "selector": "button:has-text('Download App')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Find a professional",
+              "id": "",
+              "class": "mt-28 sm:mt-48 relative z-10 inline-flex w-fit items-center gap-2 rounded-[12px] bg-[#F5A623] px-6 sm:px-8 py-3 sm:py-4 text-sm font-bold text-zinc-950 transition-all hover:bg-orange-400 active:scale-95 shadow-lg",
+              "selector": "button:has-text('Find a professional')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Register as provider",
+              "id": "",
+              "class": "mt-28 sm:mt-48 relative z-10 inline-flex w-fit items-center gap-2 rounded-[12px] bg-zinc-950 px-6 sm:px-8 py-3 sm:py-4 text-sm font-bold text-white transition-all hover:bg-zinc-800 active:scale-95 shadow-lg",
+              "selector": "button:has-text('Register as provider')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "",
+              "id": "",
+              "class": "relative flex items-center justify-center w-14 h-14 rounded-full bg-zinc-950 hover:bg-[#EF7603] shadow-xl shadow-zinc-950/20 text-white cursor-pointer transition-all duration-300 ease-out active:scale-95 border border-zinc-800 hover:border-[#ff8d21] hover:-translate-y-1",
+              "selector": "button.relative.flex.items-center.justify-center.w-14.h-14.rounded-full.bg-zinc-950.hover:bg-[#EF7603].shadow-xl.shadow-zinc-950/20.text-white.cursor-pointer.transition-all.duration-300.ease-out.active:scale-95.border.border-zinc-800.hover:border-[#ff8d21].hover:-translate-y-1",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "New Chat",
+              "id": "",
+              "class": "flex items-center gap-1 px-3 py-1.5 bg-zinc-950 hover:bg-zinc-800 text-white rounded-full text-[11px] font-semibold transition-all cursor-pointer active:scale-95 shadow-sm border border-zinc-950",
+              "selector": "button:has-text('New Chat')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "",
+              "id": "",
+              "class": "w-9 h-9 rounded-full bg-[#EF7603] hover:bg-[#d66a03] text-white flex items-center justify-center shrink-0 cursor-pointer disabled:bg-zinc-100 disabled:text-zinc-300 disabled:cursor-not-allowed transition-all duration-300 active:scale-95 border border-zinc-200/20 shadow-sm shadow-orange-500/10",
+              "selector": "button.w-9.h-9.rounded-full.bg-[#EF7603].hover:bg-[#d66a03].text-white.flex.items-center.justify-center.shrink-0.cursor-pointer.disabled:bg-zinc-100.disabled:text-zinc-300.disabled:cursor-not-allowed.transition-all.duration-300.active:scale-95.border.border-zinc-200/20.shadow-sm.shadow-orange-500/10",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": false,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "For Customers",
+              "id": "",
+              "class": "rounded-xl px-6 py-2.5 text-sm font-bold transition-all bg-zinc-950 text-white shadow-sm",
+              "selector": "button:has-text('For Customers')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "For Providers",
+              "id": "",
+              "class": "rounded-xl px-6 py-2.5 text-sm font-bold transition-all text-zinc-500 hover:text-zinc-900",
+              "selector": "button:has-text('For Providers')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "How does the pricing and booking fee work?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('How does the pricing and booking fee work?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Can I contact the professional directly after booking?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('Can I contact the professional directly after booking?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Do providers pay any commission on earnings?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('Do providers pay any commission on earnings?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "How is this different from Urban Company or Sulekha?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('How is this different from Urban Company or Sulekha?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "How do I know providers are genuine and safe?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('How do I know providers are genuine and safe?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "In which cities is Karmanisht available?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('In which cities is Karmanisht available?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "How do providers improve their ranking?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('How do providers improve their ranking?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "",
+              "id": "",
+              "class": "flex items-center justify-between gap-1.5 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full sm:w-[150px] rounded-[14px] border border-zinc-200 bg-white pl-9 pr-6 py-6 text-sm font-semibold text-zinc-700 focus:outline-none focus:ring-4 focus:ring-zinc-200 shadow-sm transition-all",
+              "selector": "button.flex.items-center.justify-between.gap-1.5.whitespace-nowrap.outline-none.select-none.focus-visible:border-ring.focus-visible:ring-3.focus-visible:ring-ring/50.disabled:cursor-not-allowed.disabled:opacity-50.aria-invalid:border-destructive.aria-invalid:ring-3.aria-invalid:ring-destructive/20.data-placeholder:text-muted-foreground.data-[size=default]:h-8.data-[size=sm]:h-7.data-[size=sm]:rounded-[min(var(--radius-md),10px)].*:data-[slot=select-value]:line-clamp-1.*:data-[slot=select-value]:flex.*:data-[slot=select-value]:items-center.*:data-[slot=select-value]:gap-1.5.dark:bg-input/30.dark:hover:bg-input/50.dark:aria-invalid:border-destructive/50.dark:aria-invalid:ring-destructive/40.[&_svg]:pointer-events-none.[&_svg]:shrink-0.[&_svg:not([class*='size-'])]:size-4.w-full.sm:w-[150px].rounded-[14px].border.border-zinc-200.bg-white.pl-9.pr-6.py-6.text-sm.font-semibold.text-zinc-700.focus:outline-none.focus:ring-4.focus:ring-zinc-200.shadow-sm.transition-all",
+              "xpath": "//button",
+              "role": "combobox",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "All Services",
+              "id": "",
+              "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-zinc-950 text-white border-zinc-950 shadow-md shadow-zinc-900/20 col-span-2 sm:col-span-1",
+              "selector": "button:has-text('All Services')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Emergency",
+              "id": "",
+              "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50",
+              "selector": "button:has-text('Emergency')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Home Repair",
+              "id": "",
+              "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50",
+              "selector": "button:has-text('Home Repair')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Tech & Appliance",
+              "id": "",
+              "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50",
+              "selector": "button:has-text('Tech & Appliance')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Premium",
+              "id": "",
+              "class": "relative flex items-center justify-center sm:justify-start gap-2.5 px-4 py-3 sm:py-2 rounded-xl sm:rounded-full text-xs font-bold transition-all duration-300 border bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50",
+              "selector": "button:has-text('Premium')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Providers Details",
+              "id": "",
+              "class": "flex items-center gap-1.5 rounded-xl px-4 py-2.5 text-xs font-bold transition-all active:scale-95 bg-zinc-950 text-white hover:bg-zinc-800",
+              "selector": "button:has-text('Providers Details')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Select skill",
+              "id": "",
+              "class": "flex items-center justify-between gap-1.5 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full rounded-[12px] border border-zinc-200 focus:ring-zinc-200 bg-white px-3 py-3 text-sm focus:outline-none focus:ring-4 transition-all",
+              "selector": "button:has-text('Select skill')",
+              "xpath": "//button",
+              "role": "combobox",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Select city",
+              "id": "",
+              "class": "flex items-center justify-between gap-1.5 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full rounded-[12px] border border-zinc-200 focus:ring-zinc-200 bg-white px-3 py-3 text-sm focus:outline-none focus:ring-4 transition-all",
+              "selector": "button:has-text('Select city')",
+              "xpath": "//button",
+              "role": "combobox",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Years of work",
+              "id": "",
+              "class": "flex items-center justify-between gap-1.5 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full rounded-[12px] border border-zinc-200 focus:ring-zinc-200 bg-white px-3 py-3 text-sm focus:outline-none focus:ring-4 transition-all",
+              "selector": "button:has-text('Years of work')",
+              "xpath": "//button",
+              "role": "combobox",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Submit Application",
+              "id": "",
+              "class": "w-full flex items-center justify-center gap-2 rounded-[16px] bg-zinc-950 py-4 text-sm font-semibold text-white shadow-lg transition-all hover:bg-zinc-800 active:scale-[0.98] disabled:bg-zinc-700 disabled:scale-100 disabled:cursor-not-allowed mt-4",
+              "selector": "button:has-text('Submit Application')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "View Direct Inquiries",
+              "id": "",
+              "class": "mt-8 w-full rounded-xl bg-orange-500 py-2.5 text-center text-xs font-bold text-white hover:bg-orange-600 transition-colors shadow-lg active:scale-95",
+              "selector": "button:has-text('View Direct Inquiries')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Apply Free",
+              "id": "",
+              "class": "w-full rounded-xl border border-zinc-200 py-3 text-xs font-bold text-zinc-700 hover:border-zinc-900 transition-colors",
+              "selector": "button:has-text('Apply Free')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Upgrade to Premium",
+              "id": "",
+              "class": "w-full rounded-xl bg-zinc-950 py-3 text-xs font-bold text-white hover:bg-zinc-800 transition-colors",
+              "selector": "button:has-text('Upgrade to Premium')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Contact Sales",
+              "id": "",
+              "class": "w-full rounded-xl border border-zinc-200 py-3 text-xs font-bold text-zinc-700 hover:border-zinc-900 transition-colors",
+              "selector": "button:has-text('Contact Sales')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "How does Karmanisht make money if you charge 0% commission?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('How does Karmanisht make money if you charge 0% commission?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "How does the direct booking model benefit me as a provider?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('How does the direct booking model benefit me as a provider?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "What documents do I need to register as a service partner?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('What documents do I need to register as a service partner?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "When and how do I receive my work payments?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('When and how do I receive my work payments?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "How does my ranking work? How do I appear higher in search?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('How does my ranking work? How do I appear higher in search?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Is there a paid premium plan for providers?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('Is there a paid premium plan for providers?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Can I choose my own working hours?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('Can I choose my own working hours?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Download Partner App",
+              "id": "",
+              "class": "w-full sm:w-auto px-8 py-4 bg-zinc-900 border border-zinc-800 text-white font-bold rounded-2xl flex items-center justify-center gap-2 hover:border-zinc-700 hover:bg-zinc-850 transition-all shadow-lg active:scale-95 text-sm",
+              "selector": "button:has-text('Download Partner App')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Raipur",
+              "id": "",
+              "class": "flex items-center justify-between gap-1.5 py-2 whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-placeholder:text-muted-foreground data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-1.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 w-full sm:w-[150px] !h-12 rounded-xl border border-zinc-200 bg-white pl-9 pr-6 text-xs font-semibold text-zinc-700 focus:ring-4 focus:ring-zinc-200 cursor-pointer transition-all relative",
+              "selector": "button:has-text('Raipur')",
+              "xpath": "//button",
+              "role": "combobox",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Check Now",
+              "id": "",
+              "class": "bg-zinc-950 hover:bg-zinc-800 text-white rounded-xl px-6 py-3.5 text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 shrink-0",
+              "selector": "button:has-text('Check Now')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Submit Expansion Request",
+              "id": "",
+              "class": "w-full rounded-xl bg-zinc-950 hover:bg-zinc-800 text-white font-bold py-3 text-xs flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-md mt-4",
+              "selector": "button:has-text('Submit Expansion Request')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Can a provider operate in multiple cities?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('Can a provider operate in multiple cities?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "How does GPS radius-based matching work?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('How does GPS radius-based matching work?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "What if my area is not covered yet?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('What if my area is not covered yet?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Are base prices and platform fees different per city?",
+              "id": "",
+              "class": "w-full flex items-center justify-between p-5 text-left text-zinc-900 font-bold hover:bg-zinc-50 transition-colors",
+              "selector": "button:has-text('Are base prices and platform fees different per city?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            }
+          ],
+          "inputs": [
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "Ask KarmaNisht Assistant...",
+              "required": false,
+              "selector": "input[placeholder='Ask KarmaNisht Assistant...']",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "Search electrician, plumber, AC...",
+              "required": false,
+              "selector": "input[placeholder='Search electrician, plumber, AC...']",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "text",
+              "name": "name",
+              "placeholder": "e.g. Ramesh Kumar Verma",
+              "required": false,
+              "selector": "#name",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "tel",
+              "name": "phone",
+              "placeholder": "10-digit mobile number",
+              "required": false,
+              "selector": "#phone",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "e.g. Shankar Nagar, Sector 10, Padmanabhpur...",
+              "required": false,
+              "selector": "input[placeholder='e.g. Shankar Nagar, Sector 10, Padmanabhpur...']",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "e.g. Shubham",
+              "required": true,
+              "selector": "input[placeholder='e.g. Shubham']",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "tel",
+              "name": "",
+              "placeholder": "10-digit mobile number",
+              "required": true,
+              "selector": "input[placeholder='10-digit mobile number']",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "e.g. Korba",
+              "required": true,
+              "selector": "input[placeholder='e.g. Korba']",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "e.g. Transport Nagar",
+              "required": true,
+              "selector": "input[placeholder='e.g. Transport Nagar']",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            }
+          ],
+          "dropdowns": [
+            {
+              "type": "select",
+              "id": "",
+              "name": "",
+              "selector": "select",
+              "options": [],
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "type": "select",
+              "id": "",
+              "name": "",
+              "selector": "select",
+              "options": [
+                "Electrician",
+                "Plumber",
+                "AC Technician",
+                "Carpenter",
+                "Painter",
+                "Appliance Repair",
+                "RO / Purifier",
+                "Computer / IT",
+                "Steel Fabricator",
+                "Mason / Civil",
+                "Gas / LPG",
+                "Waterproofing",
+                "Interior Designer",
+                "Smart Home Installer",
+                "Solar Installer"
+              ],
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "type": "select",
+              "id": "",
+              "name": "",
+              "selector": "select",
+              "options": [
+                "Raipur",
+                "Bhilai",
+                "Durg",
+                "Bilaspur"
+              ],
+              "visible": true,
+              "enabled": true
+            },
+            {
+              "type": "select",
+              "id": "",
+              "name": "",
+              "selector": "select",
+              "options": [
+                "Under 1 Year",
+                "1 to 3 Years",
+                "3 to 5 Years",
+                "5+ Years of Experience"
+              ],
+              "visible": true,
+              "enabled": true
+            }
+          ],
+          "checkboxes_radios": [
+            {
+              "type": "checkbox",
+              "id": "",
+              "label": "consent",
+              "checked": false,
+              "visible": true,
+              "enabled": true
+            }
+          ]
+        },
+        "time": "2026-08-07T12:31:42.984807"
+      },
+      "visited_routes": [
+        "https://karmanisht.com",
+        "https://karmanisht.com/works",
+        "https://karmanisht.com/services",
+        "https://karmanisht.com/providers",
+        "https://karmanisht.com/cities"
+      ],
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "Karmanisht",
+        "url": "https://karmanisht.com",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 42,
+        "high_priority": 15,
+        "medium_priority": 20,
+        "low_priority": 7
+      },
+      "test_cases": [
+        {
+          "id": "TC001",
+          "title": "Verify navigation to Home page",
+          "category": "Navigation",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify clicking on Karmanisht logo navigates to home page",
+          "preconditions": [
+            "User is on any page"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Karmanisht')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://karmanisht.com",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is navigated to home page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC002",
+          "title": "Verify navigation to How it works page",
+          "category": "Navigation",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify clicking on How it works link navigates to correct page",
+          "preconditions": [
+            "User is on home page"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('How it works')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://karmanisht.com/works",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is navigated to How it works page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC003",
+          "title": "Verify navigation to Services page",
+          "category": "Navigation",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify clicking on Services link navigates to correct page",
+          "preconditions": [
+            "User is on home page"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Services')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://karmanisht.com/services",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is navigated to Services page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC004",
+          "title": "Verify navigation to Providers page",
+          "category": "Navigation",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify clicking on For providers link navigates to correct page",
+          "preconditions": [
+            "User is on home page"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('For providers')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://karmanisht.com/providers",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is navigated to Providers page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC005",
+          "title": "Verify navigation to Cities page",
+          "category": "Navigation",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify clicking on Cities link navigates to correct page",
+          "preconditions": [
+            "User is on home page"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Cities')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://karmanisht.com/cities",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is navigated to Cities page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC006",
+          "title": "Verify Download App button functionality",
+          "category": "Functional",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify clicking on Download App button navigates to correct page",
+          "preconditions": [
+            "User is on home page"
+          ],
+          "test_data": {},
+          "steps": [],
+          "assertions": [],
+          "expected_result": null,
+          "estimated_execution_time": null
+        }
+      ]
+    },
+    "executor_output": {
+      "execution_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify navigation to Home page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.01,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to home page"
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify navigation to How it works page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.02,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to How it works page"
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify navigation to Services page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.02,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to Services page"
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify navigation to Providers page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.02,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to Providers page"
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Verify navigation to Cities page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.04,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to Cities page"
+        },
+        {
+          "test_case_id": "TC006",
+          "title": "Verify Download App button functionality",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.04,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": null
+        }
+      ]
+    },
+    "validator_output": {
+      "validation_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify navigation to Home page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify navigation to How it works page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify navigation to Services page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify navigation to Providers page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Verify navigation to Cities page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC006",
+          "title": "Verify Download App button functionality",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        }
+      ]
+    },
+    "bug_analyzer_output": {
+      "bug_analyses": [
+        {
+          "test_case_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "The test failed during the navigation step to the Home page, but no error logs, console errors, or network failures were captured to indicate the specific cause.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Indeterminate due to lack of diagnostic data (empty console and network logs); likely a timeout or a silent failure in the navigation logic.",
+          "suggested_fix": "Enable detailed logging, capture screenshots on failure, and implement explicit waits for the Home page element to ensure the navigation completed successfully.",
+          "confidence_score": 0.3,
+          "test_id": "TC001"
+        },
+        {
+          "test_case_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Navigation to the \"How it works\" page fails; the click action does not trigger the expected route change, causing the test to fail at an unknown step.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The click handler for the navigation link is missing or incorrectly bound, or the route configuration for the \"How it works\" page is not defined in the router, preventing navigation from occurring.",
+          "suggested_fix": "Verify that the navigation element has a valid click handler and that the route for the \"How it works\" page is correctly defined in the router configuration. Add or correct the event binding and route path, then re-run the test.",
+          "confidence_score": 0.85,
+          "test_id": "TC002"
+        },
+        {
+          "test_case_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "Navigation to the Services page fails at an unknown step, indicating that the navigation action is not being triggered or the target route is missing.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The navigation handler for the Services link is either not bound to the click event or the route definition for the Services page is absent/misconfigured in the routing module.",
+          "suggested_fix": "Verify that the Services link has an onClick/onPress handler that calls the navigation function, and ensure that the Services route is correctly defined in the router configuration. Add missing route or correct the handler if it is missing.",
+          "confidence_score": 0.85,
+          "test_id": "TC003"
+        },
+        {
+          "test_case_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "Navigation to the Providers page fails with no error logs, indicating that the click action or routing logic is not triggering the expected page transition.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The navigation link/button for the Providers page is either missing, disabled, or its click handler is not correctly wired to the routing mechanism, causing the navigation to not occur.",
+          "suggested_fix": "Verify that the Providers link/button exists in the DOM, ensure it has an enabled state, and confirm that its click event is correctly bound to the routing function (e.g., using React Router's Link or history.push). If using a framework, check that the route path is defined and that any guard conditions are satisfied.",
+          "confidence_score": 0.7,
+          "test_id": "TC004"
+        },
+        {
+          "test_case_id": "TC005",
+          "bug_type": "Functional",
+          "issue": "The test failed during the navigation step to the Cities page without providing a specific error message or console log, indicating a potential silent failure or timeout.",
+          "severity": "Medium",
+          "priority": "Medium",
+          "root_cause": "Insufficient observability; the test failed at an 'unknown' step with no logs or screenshots, suggesting a possible unhandled exception or a timeout during page transition.",
+          "suggested_fix": "Implement explicit waits for the Cities page element to be visible and ensure error handling captures console logs and screenshots upon failure to facilitate debugging.",
+          "confidence_score": 0.4,
+          "test_id": "TC005"
+        },
+        {
+          "test_case_id": "TC006",
+          "bug_type": "Functional",
+          "issue": "The 'Download App' button functionality failed during testing, preventing the expected download action from executing.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The failure at an unknown step suggests a potential issue with the button's event handler, download URL configuration, or integration logic.",
+          "suggested_fix": "Investigate the button's click event handler, verify the download URL validity, and ensure proper integration between the UI and backend download service.",
+          "confidence_score": 0.85,
+          "test_id": "TC006"
+        }
+      ]
+    },
+    "reporter_output": {
+      "summary": "The testing session focused on core navigation and website availability for Karmanisht. All executed test cases failed, indicating a critical failure in the application's navigation system and interactive elements.",
+      "execution_statistics": {
+        "total_tests": 6,
+        "passed": 0,
+        "failed": 6,
+        "skipped": 0,
+        "success_rate": 0.0,
+        "failure_rate": 100.0
+      },
+      "bug_summary": [
+        {
+          "test_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "The test failed during the navigation step to the Home page, but no error logs, console errors, or network failures were captured to indicate the specific cause.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Indeterminate due to lack of diagnostic data (empty console and network logs); likely a timeout or a silent failure in the navigation logic.",
+          "suggested_fix": "Enable detailed logging, capture screenshots on failure, and implement explicit waits for the Home page element to ensure the navigation completed successfully."
+        },
+        {
+          "test_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Navigation to the \"How it works\" page fails; the click action does not trigger the expected route change, causing the test to fail at an unknown step.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The click handler for the navigation link is missing or incorrectly bound, or the route configuration for the \"How it works\" page is not defined in the router, preventing navigation from occurring.",
+          "suggested_fix": "Verify that the navigation element has a valid click handler and that the route for the \"How it works\" page is correctly defined in the router configuration. Add or correct the event binding and route path, then re-run the test."
+        },
+        {
+          "test_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "Navigation to the Services page fails at an unknown step, indicating that the navigation action is not being triggered or the target route is missing.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The navigation handler for the Services link is either not bound to the click event or the route definition for the Services page is absent/misconfigured in the routing module.",
+          "suggested_fix": "Verify that the Services link has an onClick/onPress handler that calls the navigation function, and ensure that the Services route is correctly defined in the router configuration. Add missing route or correct the handler if it is missing."
+        },
+        {
+          "test_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "Navigation to the Providers page fails with no error logs, indicating that the click action or routing logic is not triggering the expected page transition.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The navigation link/button for the Providers page is either missing, disabled, or its click handler is not correctly wired to the routing mechanism, causing the navigation to not occur.",
+          "suggested_fix": "Verify that the Providers link/button exists in the DOM, ensure it has an enabled state, and confirm that its click event is correctly bound to the routing function (e.g., using React Router's Link or history.push). If using a framework, check that the route path is defined and that any guard conditions are satisfied."
+        },
+        {
+          "test_id": "TC005",
+          "bug_type": "Functional",
+          "issue": "The test failed during the navigation step to the Cities page without providing a specific error message or console log, indicating a potential silent failure or timeout.",
+          "severity": "Medium",
+          "priority": "Medium",
+          "root_cause": "Insufficient observability; the test failed at an 'unknown' step with no logs or screenshots, suggesting a possible unhandled exception or a timeout during page transition.",
+          "suggested_fix": "Implement explicit waits for the Cities page element to be visible and ensure error handling captures console logs and screenshots upon failure to facilitate debugging."
+        },
+        {
+          "test_id": "TC006",
+          "bug_type": "Functional",
+          "issue": "The 'Download App' button functionality failed during testing, preventing the expected download action from executing.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The failure at an unknown step suggests a potential issue with the button's event handler, download URL configuration, or integration logic.",
+          "suggested_fix": "Investigate the button's click event handler, verify the download URL validity, and ensure proper integration between the UI and backend download service."
+        }
+      ],
+      "severity_distribution": {
+        "critical": 0,
+        "high": 5,
+        "medium": 1,
+        "low": 0
+      },
+      "failed_test_cases": [
+        {
+          "test_id": "TC001",
+          "title": "Verify navigation to Home page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC002",
+          "title": "Verify navigation to How it works page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC003",
+          "title": "Verify navigation to Services page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC004",
+          "title": "Verify navigation to Providers page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC005",
+          "title": "Verify navigation to Cities page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC006",
+          "title": "Verify Download App button functionality",
+          "reason": "FAILED: Failed at step unknown: "
+        }
+      ],
+      "top_issues": [],
+      "recommendations": [],
+      "overall_assessment": "Execution completed with identified defects.",
+      "overall_status": "FAIL",
+      "total_pages_tested": 34,
+      "passed_count": 0,
+      "failed_count": 6,
+      "bugs_found": 6
+    }
+  },
+  "logs": [
+    "[2026-08-07T07:00:07.728238+00:00] Initializing new execution pipeline...",
+    "[2026-08-07T07:00:09.035369+00:00] Agent 'Planner' execution started",
+    "[2026-08-07T07:00:09.035369+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T07:00:09.047510+00:00] Analyzing project requirements and target structure...",
+    "[2026-08-07T07:01:35.220162+00:00] Agent 'Planner' executed model 'openrouter/free' (openrouter). Latency: 85.93s, Tokens (In/Out): 1056/1017",
+    "[2026-08-07T07:01:35.240120+00:00] Planner Agent completed strategy generation.",
+    "[2026-08-07T07:01:35.240120+00:00] Pipeline progress updated: 10%",
+    "[2026-08-07T07:01:35.240120+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 86.2s)",
+    "[2026-08-07T07:01:35.240120+00:00] Agent 'Planner' completed successfully in 86.2s",
+    "[2026-08-07T07:01:35.244155+00:00] Agent 'Explorer' execution started",
+    "[2026-08-07T07:01:35.246168+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T07:01:35.250586+00:00] Launching browser and navigating to target URL...",
+    "[2026-08-07T07:01:36.568460+00:00] Extracting DOM, forms, and interactive element maps...",
+    "[2026-08-07T07:01:37.115561+00:00] Deep analyzing route: https://karmanisht.com/works",
+    "[2026-08-07T07:01:37.609562+00:00] Deep analyzing route: https://karmanisht.com/services",
+    "[2026-08-07T07:01:38.055597+00:00] Deep analyzing route: https://karmanisht.com/providers",
+    "[2026-08-07T07:01:38.582575+00:00] Deep analyzing route: https://karmanisht.com/cities",
+    "[2026-08-07T07:02:03.315861+00:00] Agent 'Explorer' executed model 'openrouter/free' (openrouter). Latency: 20.3s, Tokens (In/Out): 156/108",
+    "[2026-08-07T07:02:03.336862+00:00] Pipeline progress updated: 25%",
+    "[2026-08-07T07:02:03.336862+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 28.09s)",
+    "[2026-08-07T07:02:03.336862+00:00] Agent 'Explorer' completed successfully in 28.09s",
+    "[2026-08-07T07:02:03.393058+00:00] Agent 'Generator' execution started",
+    "[2026-08-07T07:02:03.393058+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T07:02:03.393058+00:00] Synthesizing test cases (smoke, edge, boundary)...",
+    "[2026-08-07T07:02:32.309229+00:00] Agent 'Generator' executed model 'deepseek/deepseek-chat' (openrouter). Latency: 28.88s, Tokens (In/Out): 9725/1200",
+    "[2026-08-07T07:02:32.311251+00:00] Generated 6 executable test cases.",
+    "[2026-08-07T07:02:32.311251+00:00] Pipeline progress updated: 45%",
+    "[2026-08-07T07:02:32.311251+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 28.92s)",
+    "[2026-08-07T07:02:32.311251+00:00] Agent 'Generator' completed successfully in 28.92s",
+    "[2026-08-07T07:02:32.377690+00:00] Agent 'Executor' execution started",
+    "[2026-08-07T07:02:32.377690+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T07:02:32.377690+00:00] ExecutorAgent starting. Running 6 test cases with 4 parallel workers.",
+    "[2026-08-07T07:02:32.377690+00:00] Executing TC001: Verify navigation to Home page...",
+    "[2026-08-07T07:02:32.377690+00:00] Executing TC002: Verify navigation to How it works page...",
+    "[2026-08-07T07:02:32.377690+00:00] Executing TC003: Verify navigation to Services page...",
+    "[2026-08-07T07:02:32.377690+00:00] Executing TC004: Verify navigation to Providers page...",
+    "[2026-08-07T07:02:32.377690+00:00] Executing TC005: Verify navigation to Cities page...",
+    "[2026-08-07T07:02:32.377690+00:00] Executing TC006: Verify Download App button functionality...",
+    "[2026-08-07T07:02:32.418442+00:00] Test Case TC001 finished. Duration: 0.01s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T07:02:32.418442+00:00] Test Case TC002 finished. Duration: 0.02s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T07:02:32.418442+00:00] Test Case TC003 finished. Duration: 0.02s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T07:02:32.418442+00:00] Test Case TC004 finished. Duration: 0.02s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T07:02:32.418442+00:00] Test Case TC005 finished. Duration: 0.04s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T07:02:32.418442+00:00] Test Case TC006 finished. Duration: 0.04s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T07:02:32.418442+00:00] Pipeline progress updated: 65%",
+    "[2026-08-07T07:02:32.418442+00:00] [WARN] Executor detected high failures: 6/6 test cases failed (100% failure rate). Proceeding to Validator and BugAnalyzer for deep root-cause analysis.",
+    "[2026-08-07T07:02:32.420460+00:00] Agent 'Executor' status updated to Success (Retries: 0, Time: 0.04s)",
+    "[2026-08-07T07:02:32.420460+00:00] Agent 'Executor' completed successfully in 0.04s",
+    "[2026-08-07T07:02:32.508353+00:00] Agent 'Validator' execution started",
+    "[2026-08-07T07:02:32.508353+00:00] Agent 'Validator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T07:02:32.508353+00:00] ValidatorAgent starting. Validating 6 test executions.",
+    "[2026-08-07T07:02:32.511678+00:00] Validator LLM enrichment failed for batch 1 ('model_name'). Using deterministic results.",
+    "[2026-08-07T07:02:32.512988+00:00] Pipeline progress updated: 80%",
+    "[2026-08-07T07:02:32.512988+00:00] Agent 'Validator' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T07:02:32.512988+00:00] Agent 'Validator' completed successfully in 0.0s",
+    "[2026-08-07T07:02:32.573138+00:00] Agent 'BugAnalyzer' execution started",
+    "[2026-08-07T07:02:32.573138+00:00] Agent 'BugAnalyzer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T07:02:32.573138+00:00] BugAnalyzerAgent starting. Analyzing failures...",
+    "[2026-08-07T07:02:32.573138+00:00] Analyzing failure for Test Case TC001",
+    "[2026-08-07T07:03:05.376713+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 32.77s, Tokens (In/Out): 390/173",
+    "[2026-08-07T07:03:05.376713+00:00] Analyzing failure for Test Case TC002",
+    "[2026-08-07T07:03:37.429299+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 32.01s, Tokens (In/Out): 367/256",
+    "[2026-08-07T07:03:37.435485+00:00] Analyzing failure for Test Case TC003",
+    "[2026-08-07T07:03:48.076358+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 10.55s, Tokens (In/Out): 365/237",
+    "[2026-08-07T07:03:48.076358+00:00] Analyzing failure for Test Case TC004",
+    "[2026-08-07T07:04:00.404311+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 12.27s, Tokens (In/Out): 365/310",
+    "[2026-08-07T07:04:00.406300+00:00] Analyzing failure for Test Case TC005",
+    "[2026-08-07T07:04:10.317897+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 9.87s, Tokens (In/Out): 390/176",
+    "[2026-08-07T07:04:10.319915+00:00] Analyzing failure for Test Case TC006",
+    "[2026-08-07T07:04:41.486391+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 31.12s, Tokens (In/Out): 322/428",
+    "[2026-08-07T07:04:41.492563+00:00] Pipeline progress updated: 90%",
+    "[2026-08-07T07:04:41.492563+00:00] Agent 'BugAnalyzer' status updated to Success (Retries: 0, Time: 128.92s)",
+    "[2026-08-07T07:04:41.492563+00:00] Agent 'BugAnalyzer' completed successfully in 128.92s",
+    "[2026-08-07T07:04:41.576522+00:00] Agent 'Reporter' execution started",
+    "[2026-08-07T07:04:41.576522+00:00] Agent 'Reporter' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T07:04:41.576522+00:00] Compiling final QA audit report...",
+    "[2026-08-07T07:06:14.329180+00:00] Agent 'Reporter' executed model 'openrouter/free' (openrouter). Latency: 92.72s, Tokens (In/Out): 1716/1200",
+    "[2026-08-07T07:06:14.334037+00:00] Pipeline progress updated: 100%",
+    "[2026-08-07T07:06:14.334037+00:00] Agent 'Reporter' status updated to Success (Retries: 0, Time: 92.76s)",
+    "[2026-08-07T07:06:14.334037+00:00] Agent 'Reporter' completed successfully in 92.76s",
+    "[2026-08-07T07:06:14.384287+00:00] Orchestration pipeline execution finished in 365.34s"
+  ],
+  "execution_time": 365.34,
+  "progress": 100
+}

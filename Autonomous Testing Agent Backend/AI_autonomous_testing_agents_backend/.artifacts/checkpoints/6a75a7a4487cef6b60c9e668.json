@@ -1,0 +1,1479 @@
+{
+  "execution_id": "6a75a7a4487cef6b60c9e668",
+  "project_name": "PROJECT OS",
+  "target_url": "https://hindustaan-os-five.vercel.app/login",
+  "status": "Completed",
+  "current_agent": "Reporter",
+  "current_stage": "completed",
+  "pages_discovered": 1,
+  "pages_total": null,
+  "tests_generated": 4,
+  "tests_executed": 4,
+  "tests_total": 4,
+  "current_action": "Reporter generated final QA audit report.",
+  "started_at": "2026-08-07T09:38:44.435886+00:00",
+  "last_updated_at": "2026-08-07T09:43:05.729361+00:00",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator",
+    "Executor",
+    "Memory",
+    "Validator",
+    "BugAnalyzer",
+    "Reporter"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 44.57,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 29.04,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 55.35,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Success",
+      "execution_time": 0.07,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Memory": {
+      "status": "Success",
+      "execution_time": 22.63,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Validator": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "BugAnalyzer": {
+      "status": "Success",
+      "execution_time": 87.57,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Reporter": {
+      "status": "Success",
+      "execution_time": 21.87,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "PROJECT OS",
+      "description": "Autonomous testing run",
+      "target_url": "https://hindustaan-os-five.vercel.app/login"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Automated fallback analysis for target workspace.",
+        "key_components": [
+          "authentication",
+          "navigation_bar",
+          "form_inputs",
+          "api_routes"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [],
+        "expected_user_journey": []
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify homepage navigation",
+          "Check main CTA buttons"
+        ],
+        "regression_tests": [
+          "Validate form submission workflows",
+          "Check route redirects"
+        ],
+        "boundary_tests": [
+          "Test empty input fields",
+          "Test maximum string length bounds"
+        ],
+        "negative_tests": [
+          "Test invalid form entries",
+          "Check 404 page handling"
+        ],
+        "accessibility_tests": [
+          "Verify ARIA roles",
+          "Check contrast & focus management"
+        ],
+        "integration_tests": [],
+        "system_tests": [],
+        "ui_tests": [],
+        "functional_tests": [],
+        "exploratory_tests": [],
+        "compatibility_tests": [],
+        "security_tests": [],
+        "performance_test_suggestions": [],
+        "api_test_suggestions": []
+      },
+      "priority_areas": [
+        "navigation",
+        "forms",
+        "routing"
+      ],
+      "business_workflow": [],
+      "user_workflow": [],
+      "module_dependency_graph": {},
+      "detected_modules": [],
+      "critical_user_journeys": [],
+      "high_risk_areas": [],
+      "security_sensitive_areas": [],
+      "functional_requirements": [],
+      "non_functional_requirements": [],
+      "test_data_requirements": null,
+      "assertions": [],
+      "explorer_instructions": [],
+      "generator_instructions": [],
+      "validator_instructions": [],
+      "bug_analyzer_instructions": [],
+      "reporter_instructions": []
+    },
+    "explorer_summary": {
+      "summary": "Page 'Project OS' at https://hindustaan-os-five.vercel.app/login explored successfully.",
+      "detected_technologies": [],
+      "navigation_analysis": {
+        "navigation_flow": "Direct single-page navigation."
+      }
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "Project OS",
+        "url": "https://hindustaan-os-five.vercel.app/login",
+        "page_load_time": 4.487,
+        "status_code": 200
+      },
+      "dom_structure": [
+        {
+          "element": "root",
+          "children": [
+            "group",
+            "text-[13px]",
+            "text-[11px]",
+            "flex-1",
+            "absolute",
+            "text-[10px]",
+            "password",
+            "email-address"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "group",
+            "text-[13px]",
+            "text-[11px]",
+            "flex-1",
+            "absolute",
+            "text-[10px]",
+            "password",
+            "email-address"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "group",
+            "text-[13px]",
+            "text-[11px]",
+            "flex-1",
+            "absolute",
+            "text-[10px]",
+            "password",
+            "email-address"
+          ]
+        },
+        {
+          "element": "flex-1",
+          "children": [
+            "group",
+            "text-[13px]",
+            "text-[11px]",
+            "flex-1",
+            "absolute",
+            "text-[10px]",
+            "password",
+            "email-address"
+          ]
+        },
+        {
+          "element": "w-full",
+          "children": [
+            "group",
+            "text-[13px]",
+            "text-[11px]",
+            "flex-1",
+            "absolute",
+            "text-[10px]",
+            "password",
+            "email-address"
+          ]
+        },
+        {
+          "element": "rounded-3xl",
+          "children": [
+            "group",
+            "text-[13px]",
+            "text-[11px]",
+            "flex-1",
+            "absolute",
+            "text-[10px]",
+            "password",
+            "email-address"
+          ]
+        },
+        {
+          "element": "space-y-4",
+          "children": [
+            "group",
+            "text-[13px]",
+            "text-[11px]",
+            "flex-1",
+            "absolute",
+            "text-[10px]",
+            "password",
+            "email-address"
+          ]
+        },
+        {
+          "element": "space-y-3",
+          "children": [
+            "absolute",
+            "email-address",
+            "password"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "email-address"
+          ]
+        },
+        {
+          "element": "transition-all",
+          "children": [
+            "absolute",
+            "password"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "absolute",
+            "password"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "text-[10px]"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "flex-1"
+          ]
+        },
+        {
+          "element": "text-center",
+          "children": [
+            "text-[13px]"
+          ]
+        },
+        {
+          "element": "text-center",
+          "children": [
+            "text-[11px]"
+          ]
+        }
+      ],
+      "interactive_elements": {
+        "buttons": [
+          {
+            "type": "button",
+            "text": "",
+            "id": "",
+            "class": "absolute top-6 right-6 p-2.5 rounded-full bg-white/50 dark:bg-slate-800/50 backdrop-blur-md border border-slate-200 dark:border-slate-700/50 text-slate-600 dark:text-slate-300 hover:scale-110 hover:bg-white dark:hover:bg-slate-800 transition-all duration-300 z-50 shadow-sm",
+            "selector": "button.absolute.top-6.right-6.p-2.5.rounded-full.bg-white/50.dark:bg-slate-800/50.backdrop-blur-md.border.border-slate-200.dark:border-slate-700/50.text-slate-600.dark:text-slate-300.hover:scale-110.hover:bg-white.dark:hover:bg-slate-800.transition-all.duration-300.z-50.shadow-sm",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "",
+            "id": "",
+            "class": "absolute inset-y-0 right-0 flex items-center pr-3 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-400 cursor-pointer z-20",
+            "selector": "button.absolute.inset-y-0.right-0.flex.items-center.pr-3.text-slate-400.dark:text-slate-500.hover:text-slate-600.dark:hover:text-slate-400.cursor-pointer.z-20",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Forgot Password?",
+            "id": "",
+            "class": "text-[10px] sm:text-[11px] font-bold text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors uppercase tracking-wider",
+            "selector": "button:has-text('Forgot Password?')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Magic Link",
+            "id": "",
+            "class": "text-[10px] sm:text-[11px] font-bold text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors uppercase tracking-wider",
+            "selector": "button:has-text('Magic Link')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Manager Access",
+            "id": "",
+            "class": "flex-1 py-1.5 lg:py-1 text-[11px] font-bold rounded-lg transition-all bg-white dark:bg-slate-700 text-orange-600 dark:text-orange-400 shadow-sm",
+            "selector": "button:has-text('Manager Access')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Employee Access",
+            "id": "",
+            "class": "flex-1 py-1.5 lg:py-1 text-[11px] font-bold rounded-lg transition-all text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300",
+            "selector": "button:has-text('Employee Access')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Secure Log In",
+            "id": "",
+            "class": "group relative flex w-full justify-center items-center space-x-2 rounded-xl bg-linear-to-r from-orange-500 to-green-600 px-4 py-2.5 lg:py-2 text-sm font-bold text-white shadow-md shadow-orange-500/20 hover:from-orange-600 hover:to-green-700 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-orange-500/30 disabled:opacity-70 disabled:hover:scale-100 transition-all duration-200 ease-out",
+            "selector": "button:has-text('Secure Log In')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Create Account",
+            "id": "",
+            "class": "text-[13px] font-extrabold text-orange-600 hover:text-orange-700 hover:underline transition-all ml-1",
+            "selector": "button:has-text('Create Account')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Administrator Access",
+            "id": "",
+            "class": "text-[11px] font-bold text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300 transition-all underline decoration-slate-300 dark:decoration-slate-700 underline-offset-4",
+            "selector": "button:has-text('Administrator Access')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          }
+        ],
+        "inputs": [
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "name@hindustaan.in",
+            "required": true,
+            "selector": "#email-address",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "password",
+            "name": "password",
+            "placeholder": "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022",
+            "required": true,
+            "selector": "#password",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          }
+        ],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [],
+      "forms": [
+        {
+          "form_name": "unnamed_form",
+          "method": "GET",
+          "fields": [
+            "email",
+            "password"
+          ],
+          "submit": "submit"
+        }
+      ],
+      "validation_rules": [
+        {
+          "field": "email",
+          "rules": [
+            "required"
+          ]
+        },
+        {
+          "field": "password",
+          "rules": [
+            "required"
+          ]
+        }
+      ],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1786095576/agent_screenshots/explorer_page_20260807_150933_gnxx3kpx.png",
+      "accessibility": [
+        {
+          "role": "button",
+          "aria_label": "Toggle Dark Mode",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Project OS Logo",
+          "alt": "Project OS Logo"
+        },
+        {
+          "role": "email",
+          "aria_label": "name@hindustaan.in",
+          "alt": null
+        },
+        {
+          "role": "password",
+          "aria_label": "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Forgot Password?",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Magic Link",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Manager Access",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Employee Access",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Secure Log In",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Create Account",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Administrator Access",
+          "alt": null
+        }
+      ],
+      "network_info": {
+        "api_calls": [
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+            "method": "GET"
+          }
+        ]
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [
+          {
+            "name": "_ga",
+            "value": "GA1.1.1834143339.1786094393",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1820654397.755979,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "__Secure-YNID",
+            "value": "20.YT=hzrXLm6F81I53P-HMOuu-DrNz-8tkuHHoMAfQ_-IhvcD9ap_T1tnJ-q20x_3l1NSgWFPrWN1PtG2bFtC0PXln8EYEp27qFAtD6cehYulCpQ_7kISldcnLL1FWXkF6nRbN4fnLwz9PSfBAql3TD--x-3M_N3rmJEhI65KPC4wrT5FIF0rbOB9dU-OqasW0-tqEWO3BFifkWxsr9Rtne-LDxkh6n7kWlI0frWmPBIPcoFuCdjH6J9Q2_-VWrDmzQ7w3Y3VP5CG9CE5AU7G5RIpdGp4VoT7eUJgUatT-RTP1zUv-x9L8_CUikBtqf9uOL-Uqx2baG22nwCkHF91tDQQSg",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": 1801646394.252699,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "YSC",
+            "value": "075k8AOl9Sc",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "__Secure-ROLLOUT_TOKEN",
+            "value": "CLyugMPamtKewwEQwv64j5iOlgMYwv64j5iOlgM%3D",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": 1801646394.254258,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "VISITOR_INFO1_LIVE",
+            "value": "tMDWzSnI3Ok",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": 1801646394.254384,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "VISITOR_PRIVACY_METADATA",
+            "value": "CgJJThIEGgAgSw%3D%3D",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": 1801646394.254448,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "CLID",
+            "value": "94854377cce944c4be3f4f998f5332c1.20260807.20270807",
+            "domain": "www.clarity.ms",
+            "path": "/",
+            "expires": 1817630395.862467,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "_clck",
+            "value": "gs7k2k%5E2%5Eg8e%5E0%5E2410",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1817630396,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "SM",
+            "value": "T",
+            "domain": ".c.clarity.ms",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "MUID",
+            "value": "16B53CE662B469350A362B4866B46722",
+            "domain": ".clarity.ms",
+            "path": "/",
+            "expires": 1819790396.79872,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "twk_idm_key",
+            "value": "WNbdM4l05jblY9H8UmZHV",
+            "domain": "shadcnspace.com",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "_clsk",
+            "value": "6kqi8w%5E1786094398826%5E1%5E1%5Ea.clarity.ms%2Fcollect",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1786180798,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "TawkConnectionTime",
+            "value": "0",
+            "domain": "shadcnspace.com",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "twk_uuid_6976fd14c6f35c198037ac25",
+            "value": "%7B%22uuid%22%3A%221.Ws78bPRLL1V7bvoKmDzVb12SdP6CM9rDe78pqkOJICurrv5lzAEFTRxjnBnYgD7n1yeLeCFSrIuhTdhRzUHYMxmCzJUC5kNoRdovgs4X9Lt6SnQ37X7o6e3Gg%22%2C%22version%22%3A3%2C%22domain%22%3A%22shadcnspace.com%22%2C%22ts%22%3A1786094398981%7D",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1801646398,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "_ga_H9WJ8Y3F4W",
+            "value": "GS2.1.s1786094392$o1$g1$t1786095573$j60$l0$h0",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1820655573.142884,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          }
+        ],
+        "local_storage": {
+          "setItem": null,
+          "hindustaan_users": "[{\"id\":\"MGR001\",\"name\":\"Aakash Gupta\",\"email\":\"manager1@hindustaan.in\",\"password\":\"Manager@123\",\"role\":\"manager\",\"designation\":\"Product Manager\",\"department\":\"Engineering\",\"dateJoined\":\"2026-08-07T09:39:33.621Z\",\"isActive\":true,\"reportingManager\":\"None\"},{\"id\":\"EMP001\",\"name\":\"Tanvy Pandey\",\"email\":\"employee1@hindustaan.in\",\"password\":\"Employee@123\",\"role\":\"employee\",\"designation\":\"Frontend Developer\",\"department\":\"Engineering\",\"dateJoined\":\"2026-08-07T09:39:33.621Z\",\"isActive\":true,\"reportingManager\":\"Aakash Gupta\"},{\"id\":\"EMP002\",\"name\":\"Amanda Smith\",\"email\":\"amanda@hindustaan.in\",\"password\":\"Employee@123\",\"role\":\"employee\",\"designation\":\"Frontend Lead\",\"department\":\"Engineering\",\"dateJoined\":\"2026-08-07T09:39:33.621Z\",\"isActive\":true,\"reportingManager\":\"Aakash Gupta\"},{\"id\":\"EMP003\",\"name\":\"Rahul Sharma\",\"email\":\"rahul@hindustaan.in\",\"password\":\"Employee@123\",\"role\":\"employee\",\"designation\":\"Backend Developer\",\"department\":\"Engineering\",\"dateJoined\":\"2026-08-07T09:39:33.621Z\",\"isActive\":true,\"reportingManager\":\"Aakash Gupta\"},{\"id\":\"EMP004\",\"name\":\"Priya Patel\",\"email\":\"priya@hindustaan.in\",\"password\":\"Employee@123\",\"role\":\"employee\",\"designation\":\"Technical Writer\",\"department\":\"Product\",\"dateJoined\":\"2026-08-07T09:39:33.621Z\",\"isActive\":true,\"reportingManager\":\"Aakash Gupta\"}]",
+          "themeMode": "dark",
+          "compactMode": "false",
+          "accentColor": "default"
+        },
+        "session_storage": {}
+      },
+      "actions_possible": [
+        {
+          "action": "type",
+          "target": "email"
+        },
+        {
+          "action": "type",
+          "target": "password"
+        },
+        {
+          "action": "click",
+          "target": "button.absolute.top-6.right-6.p-2.5.rounded-full.bg-white/50.dark:bg-slate-800/50.backdrop-blur-md.border.border-slate-200.dark:border-slate-700/50.text-slate-600.dark:text-slate-300.hover:scale-110.hover:bg-white.dark:hover:bg-slate-800.transition-all.duration-300.z-50.shadow-sm"
+        },
+        {
+          "action": "click",
+          "target": "button.absolute.inset-y-0.right-0.flex.items-center.pr-3.text-slate-400.dark:text-slate-500.hover:text-slate-600.dark:hover:text-slate-400.cursor-pointer.z-20"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Forgot Password?')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Magic Link')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Manager Access')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Employee Access')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Secure Log In')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Create Account')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Administrator Access')"
+        }
+      ],
+      "page_state_snapshot": {
+        "url": "https://hindustaan-os-five.vercel.app/login",
+        "dom": "<button role=\"\"></button>\n<input role=\"\"></input>\n<input role=\"\"></input>\n<button role=\"\"></button>\n<button role=\"\">FORGOT PASSWORD?</button>\n<button role=\"\">MAGIC LINK</button>\n<button role=\"\">Manager Access</button>\n<button role=\"\">Employee Access</button>\n<button role=\"\">Secure Log In</button>\n<button role=\"\">Create Account</button>\n<button role=\"\">Administrator Access</button>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1786095576/agent_screenshots/explorer_page_20260807_150933_gnxx3kpx.png",
+        "elements": {
+          "buttons": [
+            {
+              "type": "button",
+              "text": "",
+              "id": "",
+              "class": "absolute top-6 right-6 p-2.5 rounded-full bg-white/50 dark:bg-slate-800/50 backdrop-blur-md border border-slate-200 dark:border-slate-700/50 text-slate-600 dark:text-slate-300 hover:scale-110 hover:bg-white dark:hover:bg-slate-800 transition-all duration-300 z-50 shadow-sm",
+              "selector": "button.absolute.top-6.right-6.p-2.5.rounded-full.bg-white/50.dark:bg-slate-800/50.backdrop-blur-md.border.border-slate-200.dark:border-slate-700/50.text-slate-600.dark:text-slate-300.hover:scale-110.hover:bg-white.dark:hover:bg-slate-800.transition-all.duration-300.z-50.shadow-sm",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "",
+              "id": "",
+              "class": "absolute inset-y-0 right-0 flex items-center pr-3 text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-400 cursor-pointer z-20",
+              "selector": "button.absolute.inset-y-0.right-0.flex.items-center.pr-3.text-slate-400.dark:text-slate-500.hover:text-slate-600.dark:hover:text-slate-400.cursor-pointer.z-20",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Forgot Password?",
+              "id": "",
+              "class": "text-[10px] sm:text-[11px] font-bold text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors uppercase tracking-wider",
+              "selector": "button:has-text('Forgot Password?')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Magic Link",
+              "id": "",
+              "class": "text-[10px] sm:text-[11px] font-bold text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors uppercase tracking-wider",
+              "selector": "button:has-text('Magic Link')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Manager Access",
+              "id": "",
+              "class": "flex-1 py-1.5 lg:py-1 text-[11px] font-bold rounded-lg transition-all bg-white dark:bg-slate-700 text-orange-600 dark:text-orange-400 shadow-sm",
+              "selector": "button:has-text('Manager Access')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Employee Access",
+              "id": "",
+              "class": "flex-1 py-1.5 lg:py-1 text-[11px] font-bold rounded-lg transition-all text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300",
+              "selector": "button:has-text('Employee Access')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Secure Log In",
+              "id": "",
+              "class": "group relative flex w-full justify-center items-center space-x-2 rounded-xl bg-linear-to-r from-orange-500 to-green-600 px-4 py-2.5 lg:py-2 text-sm font-bold text-white shadow-md shadow-orange-500/20 hover:from-orange-600 hover:to-green-700 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-orange-500/30 disabled:opacity-70 disabled:hover:scale-100 transition-all duration-200 ease-out",
+              "selector": "button:has-text('Secure Log In')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Create Account",
+              "id": "",
+              "class": "text-[13px] font-extrabold text-orange-600 hover:text-orange-700 hover:underline transition-all ml-1",
+              "selector": "button:has-text('Create Account')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Administrator Access",
+              "id": "",
+              "class": "text-[11px] font-bold text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300 transition-all underline decoration-slate-300 dark:decoration-slate-700 underline-offset-4",
+              "selector": "button:has-text('Administrator Access')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            }
+          ],
+          "inputs": [
+            {
+              "type": "email",
+              "name": "email",
+              "placeholder": "name@hindustaan.in",
+              "required": true,
+              "selector": "#email-address",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "password",
+              "name": "password",
+              "placeholder": "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022",
+              "required": true,
+              "selector": "#password",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            }
+          ],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-08-07T15:09:36.293352"
+      },
+      "visited_routes": [
+        "https://hindustaan-os-five.vercel.app/login"
+      ],
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "Project OS",
+        "url": "https://hindustaan-os-five.vercel.app/login",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 15,
+        "high_priority": 5,
+        "medium_priority": 7,
+        "low_priority": 3
+      },
+      "test_cases": [
+        {
+          "id": "TC001",
+          "title": "Verify Login Form Submission with Valid Credentials",
+          "category": "Smoke Testing",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify that the login form submits successfully with valid credentials",
+          "preconditions": [
+            "User is on the login page"
+          ],
+          "test_data": {
+            "email": "test@hindustaan.in",
+            "password": "validpassword"
+          },
+          "steps": [
+            {
+              "step": 1,
+              "action": "type",
+              "selector": "#email-address",
+              "locator_type": "css",
+              "value": "test@hindustaan.in"
+            },
+            {
+              "step": 2,
+              "action": "type",
+              "selector": "#password",
+              "locator_type": "css",
+              "value": "validpassword"
+            },
+            {
+              "step": 3,
+              "action": "click",
+              "selector": "button:has-text('Secure Log In')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_contains",
+              "expected": "dashboard",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is redirected to the dashboard page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC002",
+          "title": "Verify Login Form Submission with Empty Email",
+          "category": "Negative Testing",
+          "priority": "High",
+          "severity": "Major",
+          "description": "Verify that the login form displays an error when email is empty",
+          "preconditions": [
+            "User is on the login page"
+          ],
+          "test_data": {
+            "email": "",
+            "password": "validpassword"
+          },
+          "steps": [
+            {
+              "step": 1,
+              "action": "type",
+              "selector": "#email-address",
+              "locator_type": "css",
+              "value": ""
+            },
+            {
+              "step": 2,
+              "action": "type",
+              "selector": "#password",
+              "locator_type": "css",
+              "value": "validpassword"
+            },
+            {
+              "step": 3,
+              "action": "click",
+              "selector": "button:has-text('Secure Log In')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "text_contains",
+              "expected": "Email is required",
+              "selector": "#email-address"
+            }
+          ],
+          "expected_result": "Error message 'Email is required' is displayed",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC003",
+          "title": "Verify Login Form Submission with Empty Password",
+          "category": "Negative Testing",
+          "priority": "High",
+          "severity": "Major",
+          "description": "Verify that the login form displays an error when password is empty",
+          "preconditions": [
+            "User is on the login page"
+          ],
+          "test_data": {
+            "email": "test@hindustaan.in",
+            "password": ""
+          },
+          "steps": [
+            {
+              "step": 1,
+              "action": "type",
+              "selector": "#email-address",
+              "locator_type": "css",
+              "value": "test@hindustaan.in"
+            },
+            {
+              "step": 2,
+              "action": "type",
+              "selector": "#password",
+              "locator_type": "css",
+              "value": ""
+            },
+            {
+              "step": 3,
+              "action": "click",
+              "selector": "button:has-text('Secure Log In')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "text_contains",
+              "expected": "Password is required",
+              "selector": "#password"
+            }
+          ],
+          "expected_result": "Error message 'Password is required' is displayed",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC004",
+          "title": "Verify Login Form Submission with Invalid Email Format",
+          "category": "Boundary & Format Checks",
+          "priority": "Medium",
+          "severity": "Normal",
+          "description": "Verify that the login form displays an error when email format is invalid",
+          "preconditions": [
+            "User is on the login page"
+          ],
+          "test_data": {
+            "email": "invalidemail",
+            "password": "validpassword"
+          },
+          "steps": [
+            {
+              "step": 1,
+              "action": "type",
+              "selector": "#email-address",
+              "locator_type": "css",
+              "value": "invalidemail"
+            }
+          ],
+          "assertions": [],
+          "expected_result": null,
+          "estimated_execution_time": null
+        }
+      ]
+    },
+    "executor_output": {
+      "execution_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify Login Form Submission with Valid Credentials",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.06,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is redirected to the dashboard page"
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify Login Form Submission with Empty Email",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.06,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "Error message 'Email is required' is displayed"
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify Login Form Submission with Empty Password",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.06,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "Error message 'Password is required' is displayed"
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify Login Form Submission with Invalid Email Format",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.06,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": null
+        }
+      ]
+    },
+    "memory_output": {
+      "compressed_context": "Fallback execution compression.",
+      "execution_log_summary": "Failed to run summarization LLM step.",
+      "key_highlights": [
+        "Execution logs completed."
+      ],
+      "suggested_focus_areas": [
+        "Manual regression testing recommended."
+      ]
+    },
+    "validator_output": {
+      "validation_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify Login Form Submission with Valid Credentials",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify Login Form Submission with Empty Email",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify Login Form Submission with Empty Password",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify Login Form Submission with Invalid Email Format",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        }
+      ]
+    },
+    "bug_analyzer_output": {
+      "bug_analyses": [
+        {
+          "test_case_id": "TC001",
+          "test_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "Test case TC001 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC002",
+          "test_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Test case TC002 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC003",
+          "test_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "Test case TC003 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC004",
+          "test_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "Test case TC004 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        }
+      ]
+    },
+    "reporter_output": {
+      "summary": "Autonomous QA audit completed for PROJECT OS. Executed 4 test cases (0 passed, 4 failed).",
+      "execution_statistics": {
+        "total_tests": 4,
+        "passed": 0,
+        "failed": 4,
+        "skipped": 0,
+        "success_rate": 0.0,
+        "failure_rate": 100.0
+      },
+      "bug_summary": [
+        {
+          "test_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "Test case TC001 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Test case TC002 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "Test case TC003 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "Test case TC004 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        }
+      ],
+      "severity_distribution": {
+        "critical": 0,
+        "high": 4,
+        "medium": 0,
+        "low": 0
+      },
+      "failed_test_cases": [
+        {
+          "test_id": "TC001",
+          "title": "Verify Login Form Submission with Valid Credentials",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC002",
+          "title": "Verify Login Form Submission with Empty Email",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC003",
+          "title": "Verify Login Form Submission with Empty Password",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC004",
+          "title": "Verify Login Form Submission with Invalid Email Format",
+          "reason": "FAILED: Failed at step unknown: "
+        }
+      ],
+      "top_issues": [
+        "[High] Test case TC001 failed: Failed at step unknown: ",
+        "[High] Test case TC002 failed: Failed at step unknown: ",
+        "[High] Test case TC003 failed: Failed at step unknown: ",
+        "[High] Test case TC004 failed: Failed at step unknown: "
+      ],
+      "recommendations": [
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior."
+      ],
+      "overall_assessment": "Action Required",
+      "overall_status": "FAIL",
+      "total_pages_tested": 1,
+      "passed_count": 0,
+      "failed_count": 0,
+      "bugs_found": 0
+    }
+  },
+  "logs": [
+    "[2026-08-07T09:38:44.435886+00:00] Initializing new execution pipeline...",
+    "[2026-08-07T09:38:44.490716+00:00] Agent 'Planner' execution started",
+    "[2026-08-07T09:38:44.491710+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:38:44.510641+00:00] Analyzing project requirements and target structure...",
+    "[2026-08-07T09:39:29.061132+00:00] Planner Agent used fallback strategy.",
+    "[2026-08-07T09:39:29.061132+00:00] Pipeline progress updated: 10%",
+    "[2026-08-07T09:39:29.061132+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 44.57s)",
+    "[2026-08-07T09:39:29.061132+00:00] Agent 'Planner' completed successfully in 44.57s",
+    "[2026-08-07T09:39:29.066053+00:00] Agent 'Explorer' execution started",
+    "[2026-08-07T09:39:29.066053+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:39:29.066053+00:00] Launching browser and navigating to target URL...",
+    "[2026-08-07T09:39:33.716335+00:00] Extracting DOM, forms, and interactive element maps...",
+    "[2026-08-07T09:39:58.100069+00:00] Pipeline progress updated: 25%",
+    "[2026-08-07T09:39:58.100069+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 29.04s)",
+    "[2026-08-07T09:39:58.100069+00:00] Agent 'Explorer' completed successfully in 29.04s",
+    "[2026-08-07T09:39:58.123368+00:00] Agent 'Generator' execution started",
+    "[2026-08-07T09:39:58.123368+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:39:58.125382+00:00] Synthesizing test cases (smoke, edge, boundary)...",
+    "[2026-08-07T09:40:53.471277+00:00] Agent 'Generator' executed model 'deepseek/deepseek-chat' (openrouter). Latency: 55.32s, Tokens (In/Out): 3156/1200",
+    "[2026-08-07T09:40:53.472260+00:00] Generated 4 executable test cases.",
+    "[2026-08-07T09:40:53.472260+00:00] Pipeline progress updated: 45%",
+    "[2026-08-07T09:40:53.472260+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 55.35s)",
+    "[2026-08-07T09:40:53.472260+00:00] Agent 'Generator' completed successfully in 55.35s",
+    "[2026-08-07T09:40:53.500836+00:00] Agent 'Executor' execution started",
+    "[2026-08-07T09:40:53.500836+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:40:53.500836+00:00] ExecutorAgent starting. Running 4 test cases with 4 parallel workers.",
+    "[2026-08-07T09:40:53.501860+00:00] Executing TC001: Verify Login Form Submission with Valid Credentials...",
+    "[2026-08-07T09:40:53.501860+00:00] Executing TC002: Verify Login Form Submission with Empty Email...",
+    "[2026-08-07T09:40:53.503602+00:00] Executing TC003: Verify Login Form Submission with Empty Password...",
+    "[2026-08-07T09:40:53.503602+00:00] Executing TC004: Verify Login Form Submission with Invalid Email Format...",
+    "[2026-08-07T09:40:53.563202+00:00] Test Case TC001 finished. Duration: 0.06s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T09:40:53.563202+00:00] Test Case TC002 finished. Duration: 0.06s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T09:40:53.563202+00:00] Test Case TC003 finished. Duration: 0.06s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T09:40:53.563202+00:00] Test Case TC004 finished. Duration: 0.06s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T09:40:53.563202+00:00] Pipeline progress updated: 65%",
+    "[2026-08-07T09:40:53.563202+00:00] [WARN] Executor detected high failures: 4/4 test cases failed (100% failure rate). Proceeding to Validator and BugAnalyzer for deep root-cause analysis.",
+    "[2026-08-07T09:40:53.570105+00:00] Agent 'Executor' status updated to Success (Retries: 0, Time: 0.07s)",
+    "[2026-08-07T09:40:53.570105+00:00] Agent 'Executor' completed successfully in 0.07s",
+    "[2026-08-07T09:40:53.592984+00:00] Agent 'Memory' execution started",
+    "[2026-08-07T09:40:53.592984+00:00] Agent 'Memory' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:40:53.592984+00:00] MemoryAgent starting. Compressing execution logs & structuring context...",
+    "[2026-08-07T09:41:16.220393+00:00] Pipeline progress updated: 70%",
+    "[2026-08-07T09:41:16.220393+00:00] Agent 'Memory' status updated to Success (Retries: 0, Time: 22.63s)",
+    "[2026-08-07T09:41:16.220393+00:00] Agent 'Memory' completed successfully in 22.63s",
+    "[2026-08-07T09:41:16.222386+00:00] Agent 'Validator' execution started",
+    "[2026-08-07T09:41:16.222386+00:00] Agent 'Validator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:41:16.222386+00:00] ValidatorAgent starting. Validating 4 test executions.",
+    "[2026-08-07T09:41:16.239600+00:00] Validator LLM enrichment failed for batch 1 ('model_name'). Using deterministic results.",
+    "[2026-08-07T09:41:16.239600+00:00] Pipeline progress updated: 80%",
+    "[2026-08-07T09:41:16.239600+00:00] Agent 'Validator' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:41:16.239600+00:00] Agent 'Validator' completed successfully in 0.0s",
+    "[2026-08-07T09:41:16.259639+00:00] Agent 'BugAnalyzer' execution started",
+    "[2026-08-07T09:41:16.259639+00:00] Agent 'BugAnalyzer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:41:16.259639+00:00] BugAnalyzerAgent starting. Analyzing failures...",
+    "[2026-08-07T09:41:16.259639+00:00] Analyzing failure for Test Case TC001",
+    "[2026-08-07T09:41:38.907982+00:00] Bug analysis LLM call failed for TC001: cannot access local variable 'response' where it is not associated with a value. Using fallback.",
+    "[2026-08-07T09:41:38.907982+00:00] Analyzing failure for Test Case TC002",
+    "[2026-08-07T09:42:00.608307+00:00] Bug analysis LLM call failed for TC002: cannot access local variable 'response' where it is not associated with a value. Using fallback.",
+    "[2026-08-07T09:42:00.608307+00:00] Analyzing failure for Test Case TC003",
+    "[2026-08-07T09:42:22.184646+00:00] Bug analysis LLM call failed for TC003: cannot access local variable 'response' where it is not associated with a value. Using fallback.",
+    "[2026-08-07T09:42:22.184646+00:00] Analyzing failure for Test Case TC004",
+    "[2026-08-07T09:42:43.835520+00:00] Bug analysis LLM call failed for TC004: cannot access local variable 'response' where it is not associated with a value. Using fallback.",
+    "[2026-08-07T09:42:43.835520+00:00] Pipeline progress updated: 90%",
+    "[2026-08-07T09:42:43.835520+00:00] Agent 'BugAnalyzer' status updated to Success (Retries: 0, Time: 87.57s)",
+    "[2026-08-07T09:42:43.835520+00:00] Agent 'BugAnalyzer' completed successfully in 87.57s",
+    "[2026-08-07T09:42:43.860095+00:00] Agent 'Reporter' execution started",
+    "[2026-08-07T09:42:43.860095+00:00] Agent 'Reporter' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:42:43.860095+00:00] Compiling final QA audit report...",
+    "[2026-08-07T09:43:05.723703+00:00] Pipeline progress updated: 100%",
+    "[2026-08-07T09:43:05.723703+00:00] Agent 'Reporter' status updated to Success (Retries: 0, Time: 21.87s)",
+    "[2026-08-07T09:43:05.723703+00:00] Agent 'Reporter' completed successfully in 21.87s",
+    "[2026-08-07T09:43:05.729361+00:00] Orchestration pipeline execution finished in 261.25s"
+  ],
+  "execution_time": 261.25,
+  "progress": 100
+}

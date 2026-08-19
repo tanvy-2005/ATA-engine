@@ -1,0 +1,4334 @@
+{
+  "execution_id": "6a75ab59d4e13e50b07a31de",
+  "project_name": "duolingo app",
+  "target_url": "https://duolingo.com",
+  "status": "Completed",
+  "current_agent": "Reporter",
+  "current_stage": "completed",
+  "pages_discovered": 5,
+  "pages_total": null,
+  "tests_generated": 5,
+  "tests_executed": 5,
+  "tests_total": 5,
+  "current_action": "Reporter generated final QA audit report.",
+  "started_at": "2026-08-07T09:54:33.645537+00:00",
+  "last_updated_at": "2026-08-07T09:59:32.837880+00:00",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator",
+    "Executor",
+    "Memory",
+    "Validator",
+    "BugAnalyzer",
+    "Reporter"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 49.14,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 56.12,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 39.82,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Success",
+      "execution_time": 0.03,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Memory": {
+      "status": "Success",
+      "execution_time": 21.71,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Validator": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "BugAnalyzer": {
+      "status": "Success",
+      "execution_time": 108.56,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Reporter": {
+      "status": "Success",
+      "execution_time": 21.8,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "duolingo app",
+      "description": "Autonomous testing run",
+      "target_url": "https://duolingo.com"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Automated fallback analysis for target workspace.",
+        "key_components": [
+          "authentication",
+          "navigation_bar",
+          "form_inputs",
+          "api_routes"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [],
+        "expected_user_journey": []
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify homepage navigation",
+          "Check main CTA buttons"
+        ],
+        "regression_tests": [
+          "Validate form submission workflows",
+          "Check route redirects"
+        ],
+        "boundary_tests": [
+          "Test empty input fields",
+          "Test maximum string length bounds"
+        ],
+        "negative_tests": [
+          "Test invalid form entries",
+          "Check 404 page handling"
+        ],
+        "accessibility_tests": [
+          "Verify ARIA roles",
+          "Check contrast & focus management"
+        ],
+        "integration_tests": [],
+        "system_tests": [],
+        "ui_tests": [],
+        "functional_tests": [],
+        "exploratory_tests": [],
+        "compatibility_tests": [],
+        "security_tests": [],
+        "performance_test_suggestions": [],
+        "api_test_suggestions": []
+      },
+      "priority_areas": [
+        "navigation",
+        "forms",
+        "routing"
+      ],
+      "business_workflow": [],
+      "user_workflow": [],
+      "module_dependency_graph": {},
+      "detected_modules": [],
+      "critical_user_journeys": [],
+      "high_risk_areas": [],
+      "security_sensitive_areas": [],
+      "functional_requirements": [],
+      "non_functional_requirements": [],
+      "test_data_requirements": null,
+      "assertions": [],
+      "explorer_instructions": [],
+      "generator_instructions": [],
+      "validator_instructions": [],
+      "bug_analyzer_instructions": [],
+      "reporter_instructions": []
+    },
+    "explorer_summary": {
+      "summary": "Page 'Duolingo - The world\u2019s most popular way to learn' at https://duolingo.com explored successfully.",
+      "detected_technologies": [],
+      "navigation_analysis": {
+        "navigation_flow": "Direct single-page navigation."
+      }
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "Duolingo - The world\u2019s most popular way to learn",
+        "url": "https://duolingo.com",
+        "page_load_time": 11.327,
+        "status_code": 200
+      },
+      "dom_structure": [
+        {
+          "element": "root",
+          "children": [
+            "_1nZQi",
+            "_2V6ug",
+            "_1rcV8",
+            "FXHbm",
+            "_1gEmM",
+            "_1F7oE"
+          ]
+        },
+        {
+          "element": "qO_UG",
+          "children": [
+            "_1nZQi",
+            "_2V6ug",
+            "_1rcV8",
+            "FXHbm",
+            "_1gEmM",
+            "_1F7oE"
+          ]
+        },
+        {
+          "element": "_39290",
+          "children": [
+            "_1nZQi",
+            "_1gEmM",
+            "_2V6ug",
+            "_1rcV8"
+          ]
+        },
+        {
+          "element": "_3L2FE",
+          "children": [
+            "_1gEmM"
+          ]
+        },
+        {
+          "element": "lZqWH",
+          "children": [
+            "_1gEmM"
+          ]
+        },
+        {
+          "element": "tFegI",
+          "children": [
+            "_1gEmM"
+          ]
+        },
+        {
+          "element": "_15kfC",
+          "children": [
+            "_2V6ug",
+            "_1rcV8"
+          ]
+        },
+        {
+          "element": "_28m3G",
+          "children": [
+            "_2V6ug",
+            "_1rcV8"
+          ]
+        },
+        {
+          "element": "_1-0oK",
+          "children": [
+            "_2V6ug",
+            "_1rcV8"
+          ]
+        },
+        {
+          "element": "_3XjUp",
+          "children": [
+            "_1nZQi"
+          ]
+        },
+        {
+          "element": "zU2RQ",
+          "children": [
+            "_1nZQi"
+          ]
+        },
+        {
+          "element": "I36m9",
+          "children": [
+            "_1nZQi"
+          ]
+        },
+        {
+          "element": "_2huhH",
+          "children": [
+            "_1F7oE",
+            "_2V6ug"
+          ]
+        },
+        {
+          "element": "_2Yq-n",
+          "children": [
+            "_1F7oE"
+          ]
+        },
+        {
+          "element": "_3pwPw",
+          "children": [
+            "_2V6ug"
+          ]
+        },
+        {
+          "element": "_16Yyp",
+          "children": [
+            "_2V6ug"
+          ]
+        },
+        {
+          "element": "_1CMLi",
+          "children": [
+            "_2V6ug"
+          ]
+        },
+        {
+          "element": "_35MAo",
+          "children": [
+            "_1rcV8"
+          ]
+        },
+        {
+          "element": "A6fCq",
+          "children": [
+            "_1rcV8"
+          ]
+        },
+        {
+          "element": "_2Yq-n",
+          "children": [
+            "_2V6ug"
+          ]
+        },
+        {
+          "element": "_1fSpL",
+          "children": [
+            "_1rcV8"
+          ]
+        },
+        {
+          "element": "_3qFL2",
+          "children": [
+            "_1rcV8"
+          ]
+        },
+        {
+          "element": "-Dahb",
+          "children": [
+            "FXHbm"
+          ]
+        }
+      ],
+      "interactive_elements": {
+        "buttons": [
+          {
+            "type": "button",
+            "text": "Site language: English",
+            "id": "",
+            "class": "_1gEmM _7jW2t _2cPiq _3IYFo _2Rt1l",
+            "selector": "button:has-text('Site language: English')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "I ALREADY HAVE AN ACCOUNT",
+            "id": "",
+            "class": "_2V6ug _1ursp _7jW2t -TeUZ _2Ccfj",
+            "selector": "button:has-text('I ALREADY HAVE AN ACCOUNT')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Try 1 week free",
+            "id": "",
+            "class": "_1rcV8 _1VYyp _1ursp _7jW2t _1aASh _19taU",
+            "selector": "button:has-text('Try 1 week free')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Spanish42M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Spanish42M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "French22.8M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('French22.8M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Chess",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Chess')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "English20.8M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('English20.8M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Japanese18.3M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Japanese18.3M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "German15.9M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('German15.9M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Math",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Math')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Hindi13.9M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Hindi13.9M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Korean12.5M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Korean12.5M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Italian10.5M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Italian10.5M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Chinese (Simplified)9.27M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Chinese (Simplified)9.27M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Russian7.82M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Russian7.82M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Arabic6.66M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Arabic6.66M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Portuguese4.61M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Portuguese4.61M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Turkish3.98M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Turkish3.98M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Dutch2.71M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Dutch2.71M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Greek2.56M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Greek2.56M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Polish2.12M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Polish2.12M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Swedish1.92M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Swedish1.92M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Vietnamese1.85M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Vietnamese1.85M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Latin1.8M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Latin1.8M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Norwegian (Bokm\u00e5l)1.56M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Norwegian (Bokm\u00e5l)1.56M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Irish1.52M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Irish1.52M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Hebrew1.29M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Hebrew1.29M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Indonesian1.21M learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Indonesian1.21M learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "High Valyrian954K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('High Valyrian954K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Ukrainian936K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Ukrainian936K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Finnish934K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Finnish934K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Danish917K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Danish917K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Romanian879K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Romanian879K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Czech772K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Czech772K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Hawaiian729K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Hawaiian729K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Zulu722K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Zulu722K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Swahili672K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Swahili672K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Welsh607K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Welsh607K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Hungarian578K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Hungarian578K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Scottish Gaelic541K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Scottish Gaelic541K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Haitian Creole448K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Haitian Creole448K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Esperanto306K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Esperanto306K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Klingon292K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Klingon292K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Navajo282K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Navajo282K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Yiddish282K learners",
+            "id": "",
+            "class": "_1dr5q qcdrk _1IKTB",
+            "selector": "button:has-text('Yiddish282K learners')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Get started",
+            "id": "",
+            "class": "_1rcV8 _1VYyp _1ursp _7jW2t _2skPy _3u1lX",
+            "selector": "button:has-text('Get started')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Get started",
+            "id": "",
+            "class": "_1rcV8 _1VYyp _1ursp _7jW2t _3Wy9F _3u1lX",
+            "selector": "button:has-text('Get started')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "I ALREADY HAVE AN ACCOUNT",
+            "id": "",
+            "class": "_2paU5 rdtAy _2V6ug _1ursp _7jW2t gtm-attribution-link _2FRwj _1fX9y",
+            "selector": "button:has-text('I ALREADY HAVE AN ACCOUNT')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Site language: English",
+            "id": "",
+            "class": "_1gEmM _7jW2t DWV0g _3IYFo _2Rt1l",
+            "selector": "button:has-text('Site language: English')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "I ALREADY HAVE AN ACCOUNT",
+            "id": "",
+            "class": "_2paU5 rdtAy _2V6ug _1ursp _7jW2t gtm-attribution-link _239NE _1_q8f _2Ccfj",
+            "selector": "button:has-text('I ALREADY HAVE AN ACCOUNT')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          }
+        ],
+        "inputs": [],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [
+        {
+          "text": "link",
+          "url": "/",
+          "selector": "a"
+        },
+        {
+          "text": "Get started",
+          "url": "/register",
+          "selector": "a:has-text('Get started')"
+        },
+        {
+          "text": "English",
+          "url": "/course/en/en/Learn-English",
+          "selector": "a:has-text('English')"
+        },
+        {
+          "text": "Chess",
+          "url": "/chess",
+          "selector": "a:has-text('Chess')"
+        },
+        {
+          "text": "Math",
+          "url": "/math",
+          "selector": "a:has-text('Math')"
+        },
+        {
+          "text": "Spanish",
+          "url": "/course/es/en/Learn-Spanish",
+          "selector": "a:has-text('Spanish')"
+        },
+        {
+          "text": "French",
+          "url": "/course/fr/en/Learn-French",
+          "selector": "a:has-text('French')"
+        },
+        {
+          "text": "German",
+          "url": "/course/de/en/Learn-German",
+          "selector": "a:has-text('German')"
+        },
+        {
+          "text": "Italian",
+          "url": "/course/it/en/Learn-Italian",
+          "selector": "a:has-text('Italian')"
+        },
+        {
+          "text": "Portuguese",
+          "url": "/course/pt/en/Learn-Portuguese",
+          "selector": "a:has-text('Portuguese')"
+        },
+        {
+          "text": "Dutch",
+          "url": "/course/nl-NL/en/Learn-Dutch",
+          "selector": "a:has-text('Dutch')"
+        },
+        {
+          "text": "Japanese",
+          "url": "/course/ja/en/Learn-Japanese",
+          "selector": "a:has-text('Japanese')"
+        },
+        {
+          "text": "Arabic",
+          "url": "/course/ar/en/Learn-Arabic",
+          "selector": "a:has-text('Arabic')"
+        },
+        {
+          "text": "Czech",
+          "url": "/course/cs/en/Learn-Czech",
+          "selector": "a:has-text('Czech')"
+        },
+        {
+          "text": "Welsh",
+          "url": "/course/cy/en/Learn-Welsh",
+          "selector": "a:has-text('Welsh')"
+        },
+        {
+          "text": "Danish",
+          "url": "/course/da/en/Learn-Danish",
+          "selector": "a:has-text('Danish')"
+        },
+        {
+          "text": "Greek",
+          "url": "/course/el/en/Learn-Greek",
+          "selector": "a:has-text('Greek')"
+        },
+        {
+          "text": "Esperanto",
+          "url": "/course/eo/en/Learn-Esperanto",
+          "selector": "a:has-text('Esperanto')"
+        },
+        {
+          "text": "Finnish",
+          "url": "/course/fi/en/Learn-Finnish",
+          "selector": "a:has-text('Finnish')"
+        },
+        {
+          "text": "Irish",
+          "url": "/course/ga/en/Learn-Irish",
+          "selector": "a:has-text('Irish')"
+        },
+        {
+          "text": "Scottish Gaelic",
+          "url": "/course/gd/en/Learn-Scottish%20Gaelic",
+          "selector": "a:has-text('Scottish Gaelic')"
+        },
+        {
+          "text": "Hebrew",
+          "url": "/course/he/en/Learn-Hebrew",
+          "selector": "a:has-text('Hebrew')"
+        },
+        {
+          "text": "Hindi",
+          "url": "/course/hi/en/Learn-Hindi",
+          "selector": "a:has-text('Hindi')"
+        },
+        {
+          "text": "Haitian Creole",
+          "url": "/course/ht/en/Learn-Haitian%20Creole",
+          "selector": "a:has-text('Haitian Creole')"
+        },
+        {
+          "text": "Hungarian",
+          "url": "/course/hu/en/Learn-Hungarian",
+          "selector": "a:has-text('Hungarian')"
+        },
+        {
+          "text": "High Valyrian",
+          "url": "/course/hv/en/Learn-High%20Valyrian",
+          "selector": "a:has-text('High Valyrian')"
+        },
+        {
+          "text": "Hawaiian",
+          "url": "/course/hw/en/Learn-Hawaiian",
+          "selector": "a:has-text('Hawaiian')"
+        },
+        {
+          "text": "Indonesian",
+          "url": "/course/id/en/Learn-Indonesian",
+          "selector": "a:has-text('Indonesian')"
+        },
+        {
+          "text": "Korean",
+          "url": "/course/ko/en/Learn-Korean",
+          "selector": "a:has-text('Korean')"
+        },
+        {
+          "text": "Latin",
+          "url": "/course/la/en/Learn-Latin",
+          "selector": "a:has-text('Latin')"
+        },
+        {
+          "text": "Norwegian (Bokm\u00e5l)",
+          "url": "/course/no-BO/en/Learn-Norwegian%20Bokm%C3%A5l",
+          "selector": "a:has-text('Norwegian (Bokm\u00e5l)')"
+        },
+        {
+          "text": "Navajo",
+          "url": "/course/nv/en/Learn-Navajo",
+          "selector": "a:has-text('Navajo')"
+        },
+        {
+          "text": "Polish",
+          "url": "/course/pl/en/Learn-Polish",
+          "selector": "a:has-text('Polish')"
+        },
+        {
+          "text": "Romanian",
+          "url": "/course/ro/en/Learn-Romanian",
+          "selector": "a:has-text('Romanian')"
+        },
+        {
+          "text": "Russian",
+          "url": "/course/ru/en/Learn-Russian",
+          "selector": "a:has-text('Russian')"
+        },
+        {
+          "text": "Swedish",
+          "url": "/course/sv/en/Learn-Swedish",
+          "selector": "a:has-text('Swedish')"
+        },
+        {
+          "text": "Swahili",
+          "url": "/course/sw/en/Learn-Swahili",
+          "selector": "a:has-text('Swahili')"
+        },
+        {
+          "text": "Klingon",
+          "url": "/course/tlh/en/Learn-Klingon",
+          "selector": "a:has-text('Klingon')"
+        },
+        {
+          "text": "Turkish",
+          "url": "/course/tr/en/Learn-Turkish",
+          "selector": "a:has-text('Turkish')"
+        },
+        {
+          "text": "Ukrainian",
+          "url": "/course/uk/en/Learn-Ukrainian",
+          "selector": "a:has-text('Ukrainian')"
+        },
+        {
+          "text": "Vietnamese",
+          "url": "/course/vi/en/Learn-Vietnamese",
+          "selector": "a:has-text('Vietnamese')"
+        },
+        {
+          "text": "Yiddish",
+          "url": "/course/yi/en/Learn-Yiddish",
+          "selector": "a:has-text('Yiddish')"
+        },
+        {
+          "text": "Chinese (Simplified)",
+          "url": "/course/zh/en/Learn-Chinese%20Simplified",
+          "selector": "a:has-text('Chinese (Simplified)')"
+        },
+        {
+          "text": "Zulu",
+          "url": "/course/zu/en/Learn-Zulu",
+          "selector": "a:has-text('Zulu')"
+        },
+        {
+          "text": "research shows that it works",
+          "url": "/efficacy",
+          "selector": "a:has-text('research shows that it works')"
+        },
+        {
+          "text": "badge-app-storeDownload on theApp Store",
+          "url": "//itunes.apple.com/app/duolingo-learn-spanish-french/id570060128?mt=8",
+          "selector": "a:has-text('badge-app-storeDownload on theApp Store')"
+        },
+        {
+          "text": "badge-app-storeGet it onGoogle Play",
+          "url": "//play.google.com/store/apps/details?hl=en&id=com.duolingo&referrer=utm_source%3Dduolingo.com%26utm_medium%3Dduolingo_web%26utm_content%3Ddownload_button%26utm_campaign%3Dsplash",
+          "selector": "a:has-text('badge-app-storeGet it onGoogle Play')"
+        },
+        {
+          "text": "Certify your English",
+          "url": "https://englishtest.duolingo.com/en",
+          "selector": "a:has-text('Certify your English')"
+        },
+        {
+          "text": "Get started",
+          "url": "/register",
+          "selector": "a:has-text('Get started')"
+        },
+        {
+          "text": "Courses",
+          "url": "/courses",
+          "selector": "a:has-text('Courses')"
+        },
+        {
+          "text": "Mission",
+          "url": "https://about.duolingo.com",
+          "selector": "a:has-text('Mission')"
+        },
+        {
+          "text": "Approach",
+          "url": "https://about.duolingo.com",
+          "selector": "a:has-text('Approach')"
+        },
+        {
+          "text": "Efficacy",
+          "url": "/efficacy",
+          "selector": "a:has-text('Efficacy')"
+        },
+        {
+          "text": "Duolingo Handbook",
+          "url": "https://duolingo.com/handbook",
+          "selector": "a:has-text('Duolingo Handbook')"
+        },
+        {
+          "text": "Research",
+          "url": "https://research.duolingo.com",
+          "selector": "a:has-text('Research')"
+        },
+        {
+          "text": "Careers",
+          "url": "https://careers.duolingo.com/#careers",
+          "selector": "a:has-text('Careers')"
+        },
+        {
+          "text": "Brand guidelines",
+          "url": "https://design.duolingo.com",
+          "selector": "a:has-text('Brand guidelines')"
+        },
+        {
+          "text": "Store",
+          "url": "https://store.duolingo.com/",
+          "selector": "a:has-text('Store')"
+        },
+        {
+          "text": "Press",
+          "url": "https://press.duolingo.com",
+          "selector": "a:has-text('Press')"
+        },
+        {
+          "text": "Investors",
+          "url": "https://investors.duolingo.com",
+          "selector": "a:has-text('Investors')"
+        },
+        {
+          "text": "Contact us",
+          "url": "https://about.duolingo.com#contact",
+          "selector": "a:has-text('Contact us')"
+        },
+        {
+          "text": "Duolingo",
+          "url": "/",
+          "selector": "a:has-text('Duolingo')"
+        },
+        {
+          "text": "Duolingo for Schools",
+          "url": "https://schools.duolingo.com",
+          "selector": "a:has-text('Duolingo for Schools')"
+        },
+        {
+          "text": "Duolingo English Test",
+          "url": "https://englishtest.duolingo.com/en",
+          "selector": "a:has-text('Duolingo English Test')"
+        },
+        {
+          "text": "Podcast",
+          "url": "https://podcast.duolingo.com",
+          "selector": "a:has-text('Podcast')"
+        },
+        {
+          "text": "Duolingo for Business",
+          "url": "/business",
+          "selector": "a:has-text('Duolingo for Business')"
+        },
+        {
+          "text": "Super Duolingo",
+          "url": "/super",
+          "selector": "a:has-text('Super Duolingo')"
+        },
+        {
+          "text": "Gift Super Duolingo",
+          "url": "/gift",
+          "selector": "a:has-text('Gift Super Duolingo')"
+        },
+        {
+          "text": "Duolingo Max",
+          "url": "https://blog.duolingo.com/duolingo-max/",
+          "selector": "a:has-text('Duolingo Max')"
+        },
+        {
+          "text": "Duolingo for Android",
+          "url": "//play.google.com/store/apps/details?hl=en&id=com.duolingo&referrer=utm_source%3Dduolingo.com%26utm_medium%3Dduolingo_web%26utm_content%3Ddownload_button%26utm_campaign%3Dsite_map",
+          "selector": "a:has-text('Duolingo for Android')"
+        },
+        {
+          "text": "Duolingo for iOS",
+          "url": "//itunes.apple.com/app/duolingo-learn-spanish-french/id570060128?mt=8",
+          "selector": "a:has-text('Duolingo for iOS')"
+        },
+        {
+          "text": "Duolingo FAQs",
+          "url": "/help",
+          "selector": "a:has-text('Duolingo FAQs')"
+        },
+        {
+          "text": "Schools FAQs",
+          "url": "https://duolingoschools.zendesk.com/hc/en-us",
+          "selector": "a:has-text('Schools FAQs')"
+        },
+        {
+          "text": "Duolingo English Test FAQs",
+          "url": "https://englishtest.duolingo.com/faq",
+          "selector": "a:has-text('Duolingo English Test FAQs')"
+        },
+        {
+          "text": "Status",
+          "url": "https://status.duolingo.com/",
+          "selector": "a:has-text('Status')"
+        },
+        {
+          "text": "Community guidelines",
+          "url": "/guidelines",
+          "selector": "a:has-text('Community guidelines')"
+        },
+        {
+          "text": "Terms",
+          "url": "/terms",
+          "selector": "a:has-text('Terms')"
+        },
+        {
+          "text": "Privacy",
+          "url": "/privacy",
+          "selector": "a:has-text('Privacy')"
+        },
+        {
+          "text": "Do Not Sell or Share My Personal Information",
+          "url": "https://about.duolingo.com?dnsspi#dnsspi",
+          "selector": "a:has-text('Do Not Sell or Share My Personal Information')"
+        },
+        {
+          "text": "Blog",
+          "url": "https://blog.duolingo.com",
+          "selector": "a:has-text('Blog')"
+        },
+        {
+          "text": "Instagram",
+          "url": "https://www.instagram.com/duolingo",
+          "selector": "a:has-text('Instagram')"
+        },
+        {
+          "text": "TikTok",
+          "url": "https://www.tiktok.com/@duolingo",
+          "selector": "a:has-text('TikTok')"
+        },
+        {
+          "text": "Twitter",
+          "url": "https://twitter.com/duolingo",
+          "selector": "a:has-text('Twitter')"
+        },
+        {
+          "text": "YouTube",
+          "url": "https://www.youtube.com/user/duolingo",
+          "selector": "a:has-text('YouTube')"
+        },
+        {
+          "text": "LinkedIn",
+          "url": "https://www.linkedin.com/company/duolingo",
+          "selector": "a:has-text('LinkedIn')"
+        },
+        {
+          "text": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+          "url": "//ar.duolingo.com",
+          "selector": "a:has-text('\u0627\u0644\u0639\u0631\u0628\u064a\u0629')"
+        },
+        {
+          "text": "\u09ac\u09be\u0982\u09b2\u09be",
+          "url": "//bn.duolingo.com",
+          "selector": "a:has-text('\u09ac\u09be\u0982\u09b2\u09be')"
+        },
+        {
+          "text": "\u010ce\u0161tina",
+          "url": "//cs.duolingo.com",
+          "selector": "a:has-text('\u010ce\u0161tina')"
+        },
+        {
+          "text": "Deutsch",
+          "url": "//de.duolingo.com",
+          "selector": "a:has-text('Deutsch')"
+        },
+        {
+          "text": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
+          "url": "//el.duolingo.com",
+          "selector": "a:has-text('\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac')"
+        },
+        {
+          "text": "English",
+          "url": "//en.duolingo.com",
+          "selector": "a:has-text('English')"
+        },
+        {
+          "text": "Espa\u00f1ol",
+          "url": "//es.duolingo.com",
+          "selector": "a:has-text('Espa\u00f1ol')"
+        },
+        {
+          "text": "Fran\u00e7ais",
+          "url": "//fr.duolingo.com",
+          "selector": "a:has-text('Fran\u00e7ais')"
+        },
+        {
+          "text": "\u0939\u093f\u0902\u0926\u0940",
+          "url": "//hi.duolingo.com",
+          "selector": "a:has-text('\u0939\u093f\u0902\u0926\u0940')"
+        },
+        {
+          "text": "Magyar",
+          "url": "//hu.duolingo.com",
+          "selector": "a:has-text('Magyar')"
+        },
+        {
+          "text": "Bahasa Indonesia",
+          "url": "//id.duolingo.com",
+          "selector": "a:has-text('Bahasa Indonesia')"
+        },
+        {
+          "text": "Italiano",
+          "url": "//it.duolingo.com",
+          "selector": "a:has-text('Italiano')"
+        },
+        {
+          "text": "\u65e5\u672c\u8a9e",
+          "url": "//ja.duolingo.com",
+          "selector": "a:has-text('\u65e5\u672c\u8a9e')"
+        },
+        {
+          "text": "\ud55c\uad6d\uc5b4",
+          "url": "//ko.duolingo.com",
+          "selector": "a:has-text('\ud55c\uad6d\uc5b4')"
+        },
+        {
+          "text": "Nederlands",
+          "url": "//dn.duolingo.com",
+          "selector": "a:has-text('Nederlands')"
+        },
+        {
+          "text": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+          "url": "//pa.duolingo.com",
+          "selector": "a:has-text('\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40')"
+        },
+        {
+          "text": "Polski",
+          "url": "//pl.duolingo.com",
+          "selector": "a:has-text('Polski')"
+        },
+        {
+          "text": "Portugu\u00eas",
+          "url": "//pt.duolingo.com",
+          "selector": "a:has-text('Portugu\u00eas')"
+        },
+        {
+          "text": "Rom\u00e2n\u0103",
+          "url": "//ro.duolingo.com",
+          "selector": "a:has-text('Rom\u00e2n\u0103')"
+        },
+        {
+          "text": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
+          "url": "//ru.duolingo.com",
+          "selector": "a:has-text('\u0420\u0443\u0441\u0441\u043a\u0438\u0439')"
+        },
+        {
+          "text": "svenska",
+          "url": "//sv.duolingo.com",
+          "selector": "a:has-text('svenska')"
+        },
+        {
+          "text": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd",
+          "url": "//ta.duolingo.com",
+          "selector": "a:has-text('\u0ba4\u0bae\u0bbf\u0bb4\u0bcd')"
+        },
+        {
+          "text": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41",
+          "url": "//te.duolingo.com",
+          "selector": "a:has-text('\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41')"
+        },
+        {
+          "text": "\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22",
+          "url": "//th.duolingo.com",
+          "selector": "a:has-text('\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22')"
+        },
+        {
+          "text": "Tagalog",
+          "url": "//tl.duolingo.com",
+          "selector": "a:has-text('Tagalog')"
+        },
+        {
+          "text": "T\u00fcrk\u00e7e",
+          "url": "//tr.duolingo.com",
+          "selector": "a:has-text('T\u00fcrk\u00e7e')"
+        },
+        {
+          "text": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u043e\u044e",
+          "url": "//uk.duolingo.com",
+          "selector": "a:has-text('\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u043e\u044e')"
+        },
+        {
+          "text": "\u0627\u064f\u0631\u062f\u064f\u0648",
+          "url": "//ur.duolingo.com",
+          "selector": "a:has-text('\u0627\u064f\u0631\u062f\u064f\u0648')"
+        },
+        {
+          "text": "Ti\u1ebfng Vi\u1ec7t",
+          "url": "//vi.duolingo.com",
+          "selector": "a:has-text('Ti\u1ebfng Vi\u1ec7t')"
+        },
+        {
+          "text": "\u4e2d\u6587",
+          "url": "//zs.duolingo.com",
+          "selector": "a:has-text('\u4e2d\u6587')"
+        },
+        {
+          "text": "Start playing",
+          "url": "/register/CHESS_CH",
+          "selector": "a:has-text('Start playing')"
+        },
+        {
+          "text": "About",
+          "url": "https://about.duolingo.com",
+          "selector": "a:has-text('About')"
+        },
+        {
+          "text": "Careers",
+          "url": "https://careers.duolingo.com",
+          "selector": "a:has-text('Careers')"
+        },
+        {
+          "text": "Apps",
+          "url": "/mobile",
+          "selector": "a:has-text('Apps')"
+        },
+        {
+          "text": "INVESTORS",
+          "url": "https://investors.duolingo.com",
+          "selector": "a:has-text('INVESTORS')"
+        },
+        {
+          "text": "Help",
+          "url": "/help",
+          "selector": "a:has-text('Help')"
+        },
+        {
+          "text": "GET STARTED",
+          "url": "/register/MATH_BT",
+          "selector": "a:has-text('GET STARTED')"
+        }
+      ],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1786096558/agent_screenshots/explorer_page_20260807_152554_orhspphw.png",
+      "accessibility": [
+        {
+          "role": "a",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Duolingo",
+          "alt": "Duolingo"
+        },
+        {
+          "role": "button",
+          "aria_label": "Site language: English",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Get started",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "I ALREADY HAVE AN ACCOUNT",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "English",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Chess",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Math",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Spanish",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "French",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "German",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Italian",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Portuguese",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Dutch",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Japanese",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Arabic",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Czech",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Welsh",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Danish",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Greek",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Esperanto",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Finnish",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Irish",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Scottish Gaelic",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Hebrew",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Hindi",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Haitian Creole",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Hungarian",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "High Valyrian",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Hawaiian",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Indonesian",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Korean",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Latin",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Norwegian (Bokm\u00e5l)",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Navajo",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Polish",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Romanian",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Russian",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Swedish",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Swahili",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Klingon",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Turkish",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Ukrainian",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Vietnamese",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Yiddish",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Chinese (Simplified)",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Zulu",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "research shows that it works",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "badge-app-storeDownload on theApp Store",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "badge-app-storeGet it onGoogle Play",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Super Duolingo",
+          "alt": "Super Duolingo"
+        },
+        {
+          "role": "button",
+          "aria_label": "Try 1 week free",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Certify your English",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Get started",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Courses",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Mission",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Approach",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Efficacy",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo Handbook",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Research",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Careers",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Brand guidelines",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Store",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Press",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Investors",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Contact us",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo for Schools",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo English Test",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Podcast",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo for Business",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Super Duolingo",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Gift Super Duolingo",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo Max",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo for Android",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo for iOS",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo FAQs",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Schools FAQs",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Duolingo English Test FAQs",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Status",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Community guidelines",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Terms",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Privacy",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Do Not Sell or Share My Personal Information",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Blog",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Instagram",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "TikTok",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Twitter",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "YouTube",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "LinkedIn",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u09ac\u09be\u0982\u09b2\u09be",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u010ce\u0161tina",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Deutsch",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "English",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Espa\u00f1ol",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Fran\u00e7ais",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0939\u093f\u0902\u0926\u0940",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Magyar",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Bahasa Indonesia",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Italiano",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u65e5\u672c\u8a9e",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\ud55c\uad6d\uc5b4",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Nederlands",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Polski",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Portugu\u00eas",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Rom\u00e2n\u0103",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "svenska",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Tagalog",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "T\u00fcrk\u00e7e",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u043e\u044e",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u0627\u064f\u0631\u062f\u064f\u0648",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Ti\u1ebfng Vi\u1ec7t",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "\u4e2d\u6587",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Spanish42M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "French22.8M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Chess",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "English20.8M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Japanese18.3M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "German15.9M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Math",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Hindi13.9M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Korean12.5M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Italian10.5M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Chinese (Simplified)9.27M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Russian7.82M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Arabic6.66M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Portuguese4.61M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Turkish3.98M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Dutch2.71M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Greek2.56M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Polish2.12M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Swedish1.92M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Vietnamese1.85M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Latin1.8M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Norwegian (Bokm\u00e5l)1.56M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Irish1.52M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Hebrew1.29M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Indonesian1.21M learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "High Valyrian954K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Ukrainian936K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Finnish934K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Danish917K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Romanian879K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Czech772K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Hawaiian729K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Zulu722K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Swahili672K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Welsh607K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Hungarian578K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Scottish Gaelic541K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Haitian Creole448K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Esperanto306K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Klingon292K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Navajo282K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Yiddish282K learners",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Get started",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Start playing",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Path of bite-sized chess lessons for beginners on Duolingo",
+          "alt": "Path of bite-sized chess lessons for beginners on Duolingo"
+        },
+        {
+          "role": "img",
+          "aria_label": "Chess puzzle teaching how to capture undefended pieces",
+          "alt": "Chess puzzle teaching how to capture undefended pieces"
+        },
+        {
+          "role": "img",
+          "aria_label": "Oscar, Duolingo\u2019s chess bot with Elo that adapts to your skill level",
+          "alt": "Oscar, Duolingo\u2019s chess bot with Elo that adapts to your skill level"
+        },
+        {
+          "role": "img",
+          "aria_label": "Player-vs-player match with other Duolingo chess learners",
+          "alt": "Player-vs-player match with other Duolingo chess learners"
+        },
+        {
+          "role": "a",
+          "aria_label": "About",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Apps",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "INVESTORS",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Help",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "GET STARTED",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "A Duolingo Math interactive app screen offering step by step guided math help on exponent rules, showing how to simplify expressions like x\u2074 \u00d7 x\u207b\u2077 and combine exponents.",
+          "alt": "A Duolingo Math interactive app screen offering step by step guided math help on exponent rules, showing how to simplify expressions like x\u2074 \u00d7 x\u207b\u2077 and combine exponents."
+        },
+        {
+          "role": "img",
+          "aria_label": "A Duolingo Math interactive app screen providing math help with a visual fractions problem, where a student calculates how much pizza is left after eating 2/3.",
+          "alt": "A Duolingo Math interactive app screen providing math help with a visual fractions problem, where a student calculates how much pizza is left after eating 2/3."
+        },
+        {
+          "role": "img",
+          "aria_label": "A Duolingo Math interactive app screen showing an algebra equation, with a math tutor offering step-by-step guidance to distribute terms and simplify expressions.",
+          "alt": "A Duolingo Math interactive app screen showing an algebra equation, with a math tutor offering step-by-step guidance to distribute terms and simplify expressions."
+        },
+        {
+          "role": "img",
+          "aria_label": "Arithmetic",
+          "alt": "Arithmetic"
+        },
+        {
+          "role": "img",
+          "aria_label": "Geometry",
+          "alt": "Geometry"
+        },
+        {
+          "role": "img",
+          "aria_label": "Pre-Algebra",
+          "alt": "Pre-Algebra"
+        },
+        {
+          "role": "img",
+          "aria_label": "Algebra I",
+          "alt": "Algebra I"
+        },
+        {
+          "role": "img",
+          "aria_label": "Algebra II",
+          "alt": "Algebra II"
+        },
+        {
+          "role": "img",
+          "aria_label": "Statistics",
+          "alt": "Statistics"
+        },
+        {
+          "role": "img",
+          "aria_label": "Calculus",
+          "alt": "Calculus"
+        },
+        {
+          "role": "img",
+          "aria_label": "Linear Algebra",
+          "alt": "Linear Algebra"
+        }
+      ],
+      "network_info": {
+        "api_calls": [
+          {
+            "url": "https://www.duolingo.com/api/1/courses/list?_=1786096532088",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.duolingo.com/api/1/courses/list?_=1786096536546",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.googleadservices.com/pagead/conversion/397119219/?random=1786096540458&cv=11&fst=1786096540458&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118131809~118395333~118897920~118897930~119337770~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2F&rcb=8&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Duolingo%20-%20The%20world%E2%80%99s%20most%20popular%20way%20to%20learn&bttype=purchase&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=1~0~0~0&category=acrcp_v1_512&ept=5",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.com/pagead/1p-user-list/728842606/?random=1786096539943&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~118131809~118395334~118897920~118897930~119527019~119791749~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2F&rcb=9&frm=0&tiba=Duolingo%20-%20The%20world%E2%80%99s%20most%20popular%20way%20to%20learn&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgQ2KobLaLcxxserBlRoNv3IG3x4uFdM1YQzV7BC07-du2NCakAjLk7NE9n_ZDeiklqabWAQrsled_WdUtNquGCofoXAc2omfe6LIcrfleyvbLizJWxctghe5HkkFoS4g6l_KOomNEtg_aEKJIFAreVGg2rHoBNBkwbgip0-S1KQpcRwhsmyTvOp3H-spplbGhufKfbGEiHVOGdpH6hOShqAU688yJK97saLqPMSlaeUTlrDxebg2s5uAxUAqfMwDgkRgZB8x611cRQBXDzMHx35hMz5YIsKhQTFrujEhd-tWRHgIe7Ax6A&random=2136539923&rmt_tld=0&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.co.in/pagead/1p-user-list/728842606/?random=1786096539943&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~118131809~118395334~118897920~118897930~119527019~119791749~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2F&rcb=9&frm=0&tiba=Duolingo%20-%20The%20world%E2%80%99s%20most%20popular%20way%20to%20learn&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgQ2KobLaLcxxserBlRoNv3IG3x4uFdM1YQzV7BC07-du2NCakAjLk7NE9n_ZDeiklqabWAQrsled_WdUtNquGCofoXAc2omfe6LIcrfleyvbLizJWxctghe5HkkFoS4g6l_KOomNEtg_aEKJIFAreVGg2rHoBNBkwbgip0-S1KQpcRwhsmyTvOp3H-spplbGhufKfbGEiHVOGdpH6hOShqAU688yJK97saLqPMSlaeUTlrDxebg2s5uAxUAqfMwDgkRgZB8x611cRQBXDzMHx35hMz5YIsKhQTFrujEhd-tWRHgIe7Ax6A&random=2136539923&rmt_tld=1&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096536060&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=2&_s=2&tag_exp=115938466~115938468~118897920~118897930~119527020~119896803~120385422&sid=1786096539&sct=1&seg=0&dl=https%3A%2F%2Fwww.duolingo.com%2F&dt=Duolingo%20-%20The%20world%E2%80%99s%20most%20popular%20way%20to%20learn&en=user_engagement&_et=1310&tfd=6223",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096536060&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=3&_s=2&tag_exp=115938466~115938468~118897920~118897930~119527020~119896803~120385422&sid=1786096539&sct=1&seg=0&dl=https%3A%2F%2Fwww.duolingo.com%2F&dt=Duolingo%20-%20The%20world%E2%80%99s%20most%20popular%20way%20to%20learn&en=user_engagement&_et=1310&tfd=6223",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.duolingo.com/api/1/courses/list?_=1786096541604",
+            "method": "GET"
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/728842606/?random=1786096542170&cv=11&fst=1786096542170&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118131809~118395335~118897920~118897930~119337769~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fregister&rcb=14&frm=0&tiba=Learning%20Goal%20-%20Duolingo&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.com/rmkt/collect/728842606/?random=1786096542170&cv=11&fst=1786096542170&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118131809~118395335~118897920~118897930~119337769~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fregister&rcb=14&frm=0&tiba=Learning%20Goal%20-%20Duolingo&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.googleadservices.com/pagead/conversion/397119219/?random=1786096542808&cv=11&fst=1786096542808&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fregister&rcb=17&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Learning%20Goal%20-%20Duolingo&bttype=purchase&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=2~0~0~1&category=acrcp_v1_512&ept=5",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.com/pagead/1p-user-list/728842606/?random=1786096542170&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118131809~118395335~118897920~118897930~119337769~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fregister&rcb=14&frm=0&tiba=Learning%20Goal%20-%20Duolingo&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgYws7jRL84_nIqjXADLYbJIHyTNDrUrpi6sDx4piZV_7Ob9IFPvLLJJ1K_zZAaT6A7TVqMbdXXtpKOnPZt8bgLuwvLo4arYNnHbV8RGzTcE6s5wIBbMD7WsljiPeK2jMtV9S8jmKizlwsNR_DjkonBAcCZIj4Y3qiySiHaGGaePikSvlVgT3vA9FEVdLWqKUkPU7-eN8IJ4Sh9izwUJRiBY5Og0JrNIlrimmSg-kahpQCvfdo0-j5VlifHWKBZ7dY8tW2St9ERycq3YxCCE_gQ0OT9U6CaEnNqVHe93O4THmWolmKSZTGh1NeXhrd6ZX0BrRenil&random=1100880628&rmt_tld=0&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.co.in/pagead/1p-user-list/728842606/?random=1786096542170&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118131809~118395335~118897920~118897930~119337769~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fregister&rcb=14&frm=0&tiba=Learning%20Goal%20-%20Duolingo&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgYws7jRL84_nIqjXADLYbJIHyTNDrUrpi6sDx4piZV_7Ob9IFPvLLJJ1K_zZAaT6A7TVqMbdXXtpKOnPZt8bgLuwvLo4arYNnHbV8RGzTcE6s5wIBbMD7WsljiPeK2jMtV9S8jmKizlwsNR_DjkonBAcCZIj4Y3qiySiHaGGaePikSvlVgT3vA9FEVdLWqKUkPU7-eN8IJ4Sh9izwUJRiBY5Og0JrNIlrimmSg-kahpQCvfdo0-j5VlifHWKBZ7dY8tW2St9ERycq3YxCCE_gQ0OT9U6CaEnNqVHe93O4THmWolmKSZTGh1NeXhrd6ZX0BrRenil&random=1100880628&rmt_tld=1&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/397119219/?random=271494851&cv=11&fst=1786096542808&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fregister&rcb=17&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Learning%20Goal%20-%20Duolingo&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=2~0~0~1&category=acrcp_v1_512&ept=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgjJ47ECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAgjN4bECShR0cmlnZ2VyPWV2ZW50LXNvdXJjZVoDCgEBYgMKAQM&cerd=Cgzr370tpqe-Lf-vvi0&eitems=ChAI8ITW0wYQ67K2qamGhdMYEh0AOvrz8_yA3ZwpYhlm6OI2XuCvqM7w9hbfqsUJuA&fsk=ChEI8ITW0wYQiuue8aibnYG0ARIsALH-Z8vDxjgLx8kJ0nfIQIB42C-dEwmVPgUXcIL4EsWzhsYSiT01MuN2hWsaAm-E&pscrd=IhMIttSfkKCOlgMVDF8qCR1MHTdVOhlodHRwczovL3d3dy5kdW9saW5nby5jb20vQldDaEFJOElUVzB3WVEtTGJ1dzRpWnJxdy1FaTBBZVhoUFlSQzcyRkVCenRxTWV4aTRRNUN4bWN2RG55UXhRczJSN0VaWkFVd0Fyd3QteC1YTGFINlNGaEV6DAgJYggIABAAGAAgAA",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.google.com/pagead/1p-conversion/397119219/?random=271494851&cv=11&fst=1786096542808&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fregister&rcb=17&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Learning%20Goal%20-%20Duolingo&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=2~0~0~1&category=acrcp_v1_512&ept=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgjJ47ECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAgjN4bECShR0cmlnZ2VyPWV2ZW50LXNvdXJjZVoDCgEBYgMKAQM&cerd=Cgzr370tpqe-Lf-vvi0&fsk=ChEI8ITW0wYQiuue8aibnYG0ARIsALH-Z8vDxjgLx8kJ0nfIQIB42C-dEwmVPgUXcIL4EsWzhsYSiT01MuN2hWsaAm-E&pscrd=IhMIttSfkKCOlgMVDF8qCR1MHTdVOhlodHRwczovL3d3dy5kdW9saW5nby5jb20vQldDaEFJOElUVzB3WVEtTGJ1dzRpWnJxdy1FaTBBZVhoUFlSQzcyRkVCenRxTWV4aTRRNUN4bWN2RG55UXhRczJSN0VaWkFVd0Fyd3QteC1YTGFINlNGaEV6DAgJYggIABAAGAAgAA&is_vtc=1&cid=CAQS-gEAEQoqgc2Zp40d_m9fYo0GFqMXoTXVFf8It4dX3kEQ9NUXlpKKpzMtS7mCQsCUFRlAVzrby2Cf61Rcew8c8d1if_uNRSeHC6kJ79s_EVInQPtMafZQMByB3c_deHNQ9U9qQGeqi59HKcZet6muclYprNpqXs9YTBpkvTI4SwTFZ58qYxmwYIuair7zPnqxoppfsm_HdbyVUeHM0CFjBP0MS6ctxDa1oUaCo_MHPhSaKVz__hLtaNFeZBUqYAAYOFHJwj_JC3Wk4_P58DyoMcHM15Y6XLCT23Zwf65scoTleqJZkMu6jWh_GqfVrUeesK0AivY5fClLBfN-&eitems=ChAI8ITW0wYQ67K2qamGhdMYEh0AOvrz87pl2zOwZsr7foc-ewt7zSEzmMGHUdN6Bg&random=510210866",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.co.in/pagead/1p-conversion/397119219/?random=271494851&cv=11&fst=1786096542808&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fregister&rcb=17&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Learning%20Goal%20-%20Duolingo&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=2~0~0~1&category=acrcp_v1_512&ept=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgjJ47ECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAgjN4bECShR0cmlnZ2VyPWV2ZW50LXNvdXJjZVoDCgEBYgMKAQM&cerd=Cgzr370tpqe-Lf-vvi0&fsk=ChEI8ITW0wYQiuue8aibnYG0ARIsALH-Z8vDxjgLx8kJ0nfIQIB42C-dEwmVPgUXcIL4EsWzhsYSiT01MuN2hWsaAm-E&is_vtc=1&cid=CAQS-gEAEQoqgc2Zp40d_m9fYo0GFqMXoTXVFf8It4dX3kEQ9NUXlpKKpzMtS7mCQsCUFRlAVzrby2Cf61Rcew8c8d1if_uNRSeHC6kJ79s_EVInQPtMafZQMByB3c_deHNQ9U9qQGeqi59HKcZet6muclYprNpqXs9YTBpkvTI4SwTFZ58qYxmwYIuair7zPnqxoppfsm_HdbyVUeHM0CFjBP0MS6ctxDa1oUaCo_MHPhSaKVz__hLtaNFeZBUqYAAYOFHJwj_JC3Wk4_P58DyoMcHM15Y6XLCT23Zwf65scoTleqJZkMu6jWh_GqfVrUeesK0AivY5fClLBfN-&eitems=ChAI8ITW0wYQ67K2qamGhdMYEh0AOvrz87pl2zOwZsr7foc-ewt7zSEzmMGHUdN6Bg&random=510210866&ipr=y&pscrd=IhMIttSfkKCOlgMVDF8qCR1MHTdVOhlodHRwczovL3d3dy5kdW9saW5nby5jb20vQldDaEFJOElUVzB3WVEtTGJ1dzRpWnJxdy1FaTBBZVhoUFlSQzcyRkVCenRxTWV4aTRRNUN4bWN2RG55UXhRczJSN0VaWkFVd0Fyd3QteC1YTGFINlNGaEV6DAgJYggIABAAGAAgAIIBBXABiAEB",
+            "method": "GET"
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930z8811879556za20gzb811879556zd811879556&_p=1786096541264&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=18&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115938465~115938469~118897920~118897930~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fregister&dt=Learning%20Goal%20-%20Duolingo&en=page_view&tfd=4848",
+            "method": "POST"
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096541264&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=18&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=2&_s=2&tag_exp=115938465~115938469~118897920~118897930~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fregister&dt=Learning%20Goal%20-%20Duolingo&en=user_engagement&_et=3183&tfd=4849",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096541264&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=18&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=3&_s=2&tag_exp=115938465~115938469~118897920~118897930~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fregister&dt=Learning%20Goal%20-%20Duolingo&en=user_engagement&_et=3183&tfd=4849",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930z8811879556za20gzb811879556zd811879556&_p=1786096541264&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=18&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=3&_s=1&tag_exp=115938465~115938469~118897920~118897930~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fregister&dt=Learning%20Goal%20-%20Duolingo&en=page_view&tfd=4848",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.duolingo.com/api/1/courses/en/en/show?ui_language_abbrev=en&_=1786096545410",
+            "method": "GET"
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930z8811879556za20gzb811879556zd811879556&_p=1786096545311&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115938466~115938468~118897920~118897930~119337770~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&dt=Duolingo&en=page_view&tfd=949",
+            "method": "POST"
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/728842606/?random=1786096545687&cv=11&fst=1786096545687&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118131809~118395335~118897920~118897930~119527019~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&rcb=6&frm=0&tiba=Duolingo&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.com/rmkt/collect/728842606/?random=1786096545687&cv=11&fst=1786096545687&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118131809~118395335~118897920~118897930~119527019~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&rcb=6&frm=0&tiba=Duolingo&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.googleadservices.com/pagead/conversion/397119219/?random=1786096545974&cv=11&fst=1786096545974&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118131809~118395334~118897920~118897930~119337769~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&rcb=9&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Duolingo&bttype=purchase&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=3~0~0~1&category=acrcp_v1_512&ept=5",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.com/pagead/1p-user-list/728842606/?random=1786096545687&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118131809~118395335~118897920~118897930~119527019~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&rcb=6&frm=0&tiba=Duolingo&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgf4XU9Dm0-egQfeDGqdEgh48UqKXA7AJQSa8Uhc-kRpgE53v993ZE7SB9nHobI3YSDgtApre629FVKvsi1jQlZ_t8Keolw94W7JTw0aCK3D8ZMNP_J_xz6xcbaGpBPWNno1eJsUwHQXpMB6pxwOmGYr-Smpoy2s0x3wi-fRE_voPQkAcmv2RJBcKBYYf9dy6l4o64SuEwysr_XAOhkcAhKSW3LJvK6CbV_l1nYZMMSt3FrjvWUU7YhngY1u8X8oL5L451kgXJkNxfh9Q8fQNN37_1iaVqISLYZH8gNebuudMnH3gZLaXAl4A-k_dOeOs0HI7XTJa&random=1016058928&rmt_tld=0&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.co.in/pagead/1p-user-list/728842606/?random=1786096545687&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118131809~118395335~118897920~118897930~119527019~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&rcb=6&frm=0&tiba=Duolingo&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgf4XU9Dm0-egQfeDGqdEgh48UqKXA7AJQSa8Uhc-kRpgE53v993ZE7SB9nHobI3YSDgtApre629FVKvsi1jQlZ_t8Keolw94W7JTw0aCK3D8ZMNP_J_xz6xcbaGpBPWNno1eJsUwHQXpMB6pxwOmGYr-Smpoy2s0x3wi-fRE_voPQkAcmv2RJBcKBYYf9dy6l4o64SuEwysr_XAOhkcAhKSW3LJvK6CbV_l1nYZMMSt3FrjvWUU7YhngY1u8X8oL5L451kgXJkNxfh9Q8fQNN37_1iaVqISLYZH8gNebuudMnH3gZLaXAl4A-k_dOeOs0HI7XTJa&random=1016058928&rmt_tld=1&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/397119219/?random=1183362281&cv=11&fst=1786096545974&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118131809~118395334~118897920~118897930~119337769~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&rcb=9&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Duolingo&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=3~0~0~1&category=acrcp_v1_512&ept=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgjJ47ECCJfUsQIIyduxAgjN5rECCNTmsQIIseGxAgiz4bECCKbdsQIIsN6xAgiA27ECShR0cmlnZ2VyO2V2ZW50LXNvdXJjZVoDCgEBYgMKAQM&cerd=Cgzr370t24m-Laenvi0&eitems=ChAI8ITW0wYQ67K2qamGhdMYEh0AOvrz87m3OLkreBWgfxrKy5PBCEjrXVn3YKdAYw&fsk=ChEI8ITW0wYQiuue8aibnYG0ARIsALH-Z8t4RZmE1uviFRnaUkAqNeZXU5_kMnv-0_-D-TfjIcIW8WHQgqd6fSkaAqnH&pscrd=IhMI8cLFkaCOlgMVe_agAh2BDCb5OhlodHRwczovL3d3dy5kdW9saW5nby5jb20vQldDaEFJOElUVzB3WVEtTGJ1dzRpWnJxdy1FaTBBZVhoUFlTQmRfSUxibC1yUWpfd2RfNVFmdGVOMjV2Y2FmYmN3OGFJWElRTC1mUllwQVNOQWg5Rk9jZVF6DAgJYggIABAAGAAgAA",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.google.com/pagead/1p-conversion/397119219/?random=1183362281&cv=11&fst=1786096545974&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118131809~118395334~118897920~118897930~119337769~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&rcb=9&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Duolingo&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=3~0~0~1&category=acrcp_v1_512&ept=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgjJ47ECCJfUsQIIyduxAgjN5rECCNTmsQIIseGxAgiz4bECCKbdsQIIsN6xAgiA27ECShR0cmlnZ2VyO2V2ZW50LXNvdXJjZVoDCgEBYgMKAQM&cerd=Cgzr370t24m-Laenvi0&fsk=ChEI8ITW0wYQiuue8aibnYG0ARIsALH-Z8t4RZmE1uviFRnaUkAqNeZXU5_kMnv-0_-D-TfjIcIW8WHQgqd6fSkaAqnH&pscrd=IhMI8cLFkaCOlgMVe_agAh2BDCb5OhlodHRwczovL3d3dy5kdW9saW5nby5jb20vQldDaEFJOElUVzB3WVEtTGJ1dzRpWnJxdy1FaTBBZVhoUFlTQmRfSUxibC1yUWpfd2RfNVFmdGVOMjV2Y2FmYmN3OGFJWElRTC1mUllwQVNOQWg5Rk9jZVF6DAgJYggIABAAGAAgAA&is_vtc=1&cid=CAQS-gEAEQoqgX4s3tF5m3azY5cvik1XD79FfsGng8gogW2jicWv65MPX_dd3WJf7sGM2SWL6uvAKiFacLWT3Oyv3cJazOl89ZdA_zDJiPZQ_1hiOaJcvn-odLQFKopw14vAJEsm9SB0jm3ojo8vWcIgCXK-Yo5WTukDO6MpMdwcNGDrLOf1i-O4bMdsycUiqB2xWLjD181EM8_fYyBCUBbcgahWQs336G2oy21jqT1blXeNriC7B69Vu_SE-kQY1tW79N5wlnEQq4ni0I3yP5BBWRIyufb6g8PzEqrBc_MUe6rOMMKc2H7v_VYUCw3os0jYK3DHQt30IMAewAqB&eitems=ChAI8ITW0wYQ67K2qamGhdMYEh0AOvrz84nUu9g9bJ8h6N6vVq9a61gWRWoZdLtE9g&random=277973043",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.co.in/pagead/1p-conversion/397119219/?random=1183362281&cv=11&fst=1786096545974&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118131809~118395334~118897920~118897930~119337769~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&rcb=9&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Duolingo&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=3~0~0~1&category=acrcp_v1_512&ept=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgjJ47ECCJfUsQIIyduxAgjN5rECCNTmsQIIseGxAgiz4bECCKbdsQIIsN6xAgiA27ECShR0cmlnZ2VyO2V2ZW50LXNvdXJjZVoDCgEBYgMKAQM&cerd=Cgzr370t24m-Laenvi0&fsk=ChEI8ITW0wYQiuue8aibnYG0ARIsALH-Z8t4RZmE1uviFRnaUkAqNeZXU5_kMnv-0_-D-TfjIcIW8WHQgqd6fSkaAqnH&is_vtc=1&cid=CAQS-gEAEQoqgX4s3tF5m3azY5cvik1XD79FfsGng8gogW2jicWv65MPX_dd3WJf7sGM2SWL6uvAKiFacLWT3Oyv3cJazOl89ZdA_zDJiPZQ_1hiOaJcvn-odLQFKopw14vAJEsm9SB0jm3ojo8vWcIgCXK-Yo5WTukDO6MpMdwcNGDrLOf1i-O4bMdsycUiqB2xWLjD181EM8_fYyBCUBbcgahWQs336G2oy21jqT1blXeNriC7B69Vu_SE-kQY1tW79N5wlnEQq4ni0I3yP5BBWRIyufb6g8PzEqrBc_MUe6rOMMKc2H7v_VYUCw3os0jYK3DHQt30IMAewAqB&eitems=ChAI8ITW0wYQ67K2qamGhdMYEh0AOvrz84nUu9g9bJ8h6N6vVq9a61gWRWoZdLtE9g&random=277973043&ipr=y&pscrd=IhMI8cLFkaCOlgMVe_agAh2BDCb5OhlodHRwczovL3d3dy5kdW9saW5nby5jb20vQldDaEFJOElUVzB3WVEtTGJ1dzRpWnJxdy1FaTBBZVhoUFlTQmRfSUxibC1yUWpfd2RfNVFmdGVOMjV2Y2FmYmN3OGFJWElRTC1mUllwQVNOQWg5Rk9jZVF6DAgJYggIABAAGAAgAIIBBXABiAEB",
+            "method": "GET"
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096545311&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAGQC&_ng=1&ae=a&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=2&_s=2&tag_exp=115938466~115938468~118897920~118897930~119337770~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&dt=Duolingo&en=scroll&epn.percent_scrolled=90&_et=11&tfd=3063",
+            "method": "POST"
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096545311&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=2&_s=3&tag_exp=115938466~115938468~118897920~118897930~119337770~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&dt=Learn%20English%20with%20lessons%20that%20work%20-%20Duolingo&en=user_engagement&_et=2104&tfd=3065",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096545311&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAGQC&_ng=1&ae=a&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=3&_s=2&tag_exp=115938466~115938468~118897920~118897930~119337770~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&dt=Duolingo&en=scroll&epn.percent_scrolled=90&_et=11&tfd=3063",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096545311&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=3&_s=3&tag_exp=115938466~115938468~118897920~118897930~119337770~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fcourse%2Fen%2Fen%2FLearn-English&dt=Learn%20English%20with%20lessons%20that%20work%20-%20Duolingo&en=user_engagement&_et=2104&tfd=3065",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+            "method": "GET"
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/728842606/?random=1786096548427&cv=11&fst=1786096548427&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118131809~118897920~118897930~119527020~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fchess&rcb=5&frm=0&tiba=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.com/rmkt/collect/728842606/?random=1786096548427&cv=11&fst=1786096548427&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118131809~118897920~118897930~119527020~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fchess&rcb=5&frm=0&tiba=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.googleadservices.com/pagead/conversion/397119219/?random=1786096548564&cv=11&fst=1786096548564&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118131809~118395333~118897920~118897930~119404701~119527020~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fchess&rcb=10&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&bttype=purchase&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=4~0~0~1&category=acrcp_v1_512&ept=5",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.com/pagead/1p-user-list/728842606/?random=1786096548427&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118131809~118897920~118897930~119527020~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fchess&rcb=5&frm=0&tiba=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgaIJmpRu-xONNiTb3MqbWOL-x9UPvKM5dBxhOmy-7Lr46j7yDdtbojjEqHbwunhL-e5Gzl0oIiQ8p5I9chY7fwnXHfTR6Fykfk8n5PEbZJmbE_tKQNmGj9ih3ORne9Gt14nOFCJZs6t9ec3GGF1Ej17J5LJliLeEToJ1V1AuWankXOHSlsRHaEL4Qc5UR_aY1f_VVVTY0N9i_0OdVGCWcPr6AT6qPepCSUsqbP8xmfKDmFShpfVQX_UM9aUjc-NkEhriqmj3WOlHpqOyLsI9bAhnXNXfhfVoLuNgavcCc-GAwbEcpDTVGVk2WbneL93dm9p3dL3-&random=2276897514&rmt_tld=0&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.co.in/pagead/1p-user-list/728842606/?random=1786096548427&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118131809~118897920~118897930~119527020~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fchess&rcb=5&frm=0&tiba=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgaIJmpRu-xONNiTb3MqbWOL-x9UPvKM5dBxhOmy-7Lr46j7yDdtbojjEqHbwunhL-e5Gzl0oIiQ8p5I9chY7fwnXHfTR6Fykfk8n5PEbZJmbE_tKQNmGj9ih3ORne9Gt14nOFCJZs6t9ec3GGF1Ej17J5LJliLeEToJ1V1AuWankXOHSlsRHaEL4Qc5UR_aY1f_VVVTY0N9i_0OdVGCWcPr6AT6qPepCSUsqbP8xmfKDmFShpfVQX_UM9aUjc-NkEhriqmj3WOlHpqOyLsI9bAhnXNXfhfVoLuNgavcCc-GAwbEcpDTVGVk2WbneL93dm9p3dL3-&random=2276897514&rmt_tld=1&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/397119219/?random=1301349480&cv=11&fst=1786096548564&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118131809~118395333~118897920~118897930~119404701~119527020~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fchess&rcb=10&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=4~0~0~1&category=acrcp_v1_512&ept=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgjJ47ECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAkorbm90LW5hdmlnYXRpb24tc291cmNlO2V2ZW50LXNvdXJjZSwgdHJpZ2dlcloDCgEBYgMKAQM&cerd=Cgjr370tp6e-LQ&eitems=ChAI8ITW0wYQ67K2qamGhdMYEh0AOvrz84UDrmW30gyAFt4h7nHq2PvS7eTePR2wrg&fsk=ChEI8ITW0wYQiuue8aibnYG0ARIsALH-Z8st4-iMpsJjAjH0YyxwgtQp2KbusxWuivpCoQ5kpzMCt9oksh9NeTkaAhKj&pscrd=IhMIkvPjkqCOlgMV-IFjBh0G1x2kOhlodHRwczovL3d3dy5kdW9saW5nby5jb20vQldDaEFJOElUVzB3WVEtTGJ1dzRpWnJxdy1FaTBBZVhoUFlUTk1WZEU5YzlGcGt4QzFuNVB0YjFLaFdiOThBakpEVDhGdDVqZlhVdlYwa0FuaXlzeEt0QU16DAgJYggIABAAGAAgAA",
+            "method": "POST"
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930z8811879556za20gzb811879556zd811879556&_p=1786096547863&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fchess&dt=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&en=page_view&tfd=2678",
+            "method": "POST"
+          },
+          {
+            "url": "https://analytics.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096547863&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=2&_s=2&tag_exp=115938465~115938468~118897920~118897930~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fchess&dt=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&en=user_engagement&_et=1769&tfd=2679",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930z8811879556za20gzb811879556zd811879556&_p=1786096547863&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=3&_s=1&tag_exp=115938465~115938468~118897920~118897930~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fchess&dt=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&en=page_view&tfd=2678",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.google.com/g/collect?v=2&tid=G-CSFDVCPQ4F&gtm=45je6852h1v899653930za20gzb811879556zd811879556&_p=1786096547863&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_ng=1&are=1&cid=1537034970.1786096540&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-gb&gaf=3&_s=2&tag_exp=115938465~115938468~118897920~118897930~119527020~119896802&sid=1786096539&sct=1&seg=1&dl=https%3A%2F%2Fwww.duolingo.com%2Fchess&dt=Duolingo%20Chess%20-%20Play%20Games%20-%20Learn%20Chess%20Online%20-%20For%20Free&en=user_engagement&_et=1769&tfd=2679",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+            "method": "GET"
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/728842606/?random=1786096550573&cv=11&fst=1786096550573&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131809~118897920~118897930~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fmath&rcb=10&frm=0&tiba=Duolingo%20Math%20-%20Learn%20Math%20For%20Free%20-%20Grades%202%E2%80%9312&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.com/rmkt/collect/728842606/?random=1786096550573&cv=11&fst=1786096550573&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131809~118897920~118897930~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fmath&rcb=10&frm=0&tiba=Duolingo%20Math%20-%20Learn%20Math%20For%20Free%20-%20Grades%202%E2%80%9312&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+            "method": "POST"
+          },
+          {
+            "url": "https://www.googleadservices.com/pagead/conversion/397119219/?random=1786096550689&cv=11&fst=1786096550689&fmt=7&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118131809~118897920~118897930~119527020~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fmath&rcb=15&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Duolingo%20Math%20-%20Learn%20Math%20For%20Free%20-%20Grades%202%E2%80%9312&bttype=purchase&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=5~0~0~1&category=acrcp_v1_512&ept=5",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.com/pagead/1p-user-list/728842606/?random=1786096550573&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131809~118897920~118897930~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fmath&rcb=10&frm=0&tiba=Duolingo%20Math%20-%20Learn%20Math%20For%20Free%20-%20Grades%202%E2%80%9312&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgWsB3AxhKNrcBNNyChT9Dqs52Pp1AKG5SHcTQi7-ayskMmsOhcgjj8LmWAB6_R59CeEa0gpwOrlhG1q5SvuaHWO3zksh8YEcvrprla0xcWnYzKQ0Rkn4U-TKotRjjbcfY0FtYsPWfD6s7VsaqGhZU1t9g1Gz0LJve9S0WoTBNe8euoULg0tiCzO7TybtGlETSH8blCNz6uUwMtQlCd8aZyu4OKIhJdtyJnGUUo8rYP-hh4CpPj2ZgtaAe_NeG1ud7aPuZoJWCy9WJ8YiuWorJteTCWuZMorHdykMmdE0JcMhuOmgHV2Zbq_nT0QjuBhHuiR8-vw0&random=2071354999&rmt_tld=0&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://www.google.co.in/pagead/1p-user-list/728842606/?random=1786096550573&cv=11&fst=1786093200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6852h1v9103119162z8811879556za20gzb811879556zd811879556xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118131809~118897920~118897930~119527019~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fmath&rcb=10&frm=0&tiba=Duolingo%20Math%20-%20Learn%20Math%20For%20Free%20-%20Grades%202%E2%80%9312&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS-gEAEQoqgWsB3AxhKNrcBNNyChT9Dqs52Pp1AKG5SHcTQi7-ayskMmsOhcgjj8LmWAB6_R59CeEa0gpwOrlhG1q5SvuaHWO3zksh8YEcvrprla0xcWnYzKQ0Rkn4U-TKotRjjbcfY0FtYsPWfD6s7VsaqGhZU1t9g1Gz0LJve9S0WoTBNe8euoULg0tiCzO7TybtGlETSH8blCNz6uUwMtQlCd8aZyu4OKIhJdtyJnGUUo8rYP-hh4CpPj2ZgtaAe_NeG1ud7aPuZoJWCy9WJ8YiuWorJteTCWuZMorHdykMmdE0JcMhuOmgHV2Zbq_nT0QjuBhHuiR8-vw0&random=2071354999&rmt_tld=1&ipr=y",
+            "method": "GET"
+          },
+          {
+            "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/397119219/?random=166605090&cv=11&fst=1786096550689&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be6852h1v9181788653z8811879556za20gzb811879556zd811879556xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118131809~118897920~118897930~119527020~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.duolingo.com%2Fmath&rcb=15&label=k0ETCJGBvf0BEPOdrr0B&capi=1&frm=0&tiba=Duolingo%20Math%20-%20Learn%20Math%20For%20Free%20-%20Grades%202%E2%80%9312&value=1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1470581355.1786096540&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&gcl_ctr=5~0~0~1&category=acrcp_v1_512&ept=5&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCK_hsQIIobixAgixwbECCLDBsQIIscOxAgiKxbECCMLJsQII1-ixAgi0xrECCJPasQII29yxAgiH27ECCNPFsQII68yxAgjtzrECCNXPsQII9NqxAgjJ47ECCJfUsQIIyduxAgjN5rECCLHhsQIIs-GxAgim3bECCLDesQIIgNuxAkoZdHJpZ2dlcj1uYXZpZ2F0aW9uLXNvdXJjZVoDCgEBYgMKAQM&cerd=Cgjs370tpqe-LQ&eitems=ChAI8ITW0wYQ67K2qamGhdMYEh0AOvrz83lXFUXmH4mSC-YVvlTu6j-CruIHS0aoJw&fsk=ChEI8ITW0wYQiuue8aibnYG0ARIsALH-Z8sutAx0pz7Ok0ZAgRAbEH3lt5_d0wIAWKmtQvVPS7MVNOil2vpWU-kaAk_S&pscrd=IhMIgKvlk6COlgMVr9w4Bh0PYQXOOhlodHRwczovL3d3dy5kdW9saW5nby5jb20vQldDaEFJOElUVzB3WVEtTGJ1dzRpWnJxdy1FaTBBZVhoUFlVeUs0TURrYWJJUWNKeTgtWWFWcEMzaFhlOU91WmFxcmZHV0tRbmxRU3NEVWh5Y3VoSDhpVXN6DAgJYggIABAAGAAgAA",
+            "method": "POST"
+          }
+        ]
+      },
+      "console_errors": [
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] requestStorageAccess: Permission denied.",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] requestStorageAccess: Permission denied.",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] requestStorageAccess: Permission denied.",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] requestStorageAccess: Permission denied.",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] requestStorageAccess: Permission denied.",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] requestStorageAccess: Permission denied.",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] Failed to load resource: the server responded with a status of 404 ()",
+        "[ERROR] requestStorageAccess: Permission denied."
+      ],
+      "cookies_storage": {
+        "cookies": [
+          {
+            "name": "logged_out_uuid",
+            "value": "b0ca4959-2d02-436b-9482-a89f895d2bec",
+            "domain": ".duolingo.com",
+            "path": "/",
+            "expires": 1817632535.536147,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "lang",
+            "value": "en",
+            "domain": ".duolingo.com",
+            "path": "/",
+            "expires": 1817632535.537165,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "wuuid",
+            "value": "253aadf0-9f39-4c6b-841a-0440185ad66a",
+            "domain": "www.duolingo.com",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "tsl",
+            "value": "1786096531141",
+            "domain": ".duolingo.com",
+            "path": "/",
+            "expires": 1817632531,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "lu",
+            "value": "https://www.duolingo.com/",
+            "domain": ".duolingo.com",
+            "path": "/",
+            "expires": 1817632531,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "initial_referrer",
+            "value": "$direct",
+            "domain": ".duolingo.com",
+            "path": "/",
+            "expires": 1817632531,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "lr",
+            "value": "",
+            "domain": ".duolingo.com",
+            "path": "/",
+            "expires": 1817632531,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "lp",
+            "value": "splash",
+            "domain": ".duolingo.com",
+            "path": "/",
+            "expires": 1817632531,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "AWSALB",
+            "value": "BYyKPzpSfh9p3rml99TpK09MH+u9E0zJq65gheG3ybzDSn2GCBm6r/jGd/D+hYjr2Fmtrjp/iIjIQTdWr80BW6I3a84DUjF0L1VgzRbDBQHDGvds93n1O6XiY9bu",
+            "domain": "www.duolingo.com",
+            "path": "/",
+            "expires": 1786701334.046251,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "AWSALBCORS",
+            "value": "BYyKPzpSfh9p3rml99TpK09MH+u9E0zJq65gheG3ybzDSn2GCBm6r/jGd/D+hYjr2Fmtrjp/iIjIQTdWr80BW6I3a84DUjF0L1VgzRbDBQHDGvds93n1O6XiY9bu",
+            "domain": "www.duolingo.com",
+            "path": "/",
+            "expires": 1786701334.046603,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "OptanonConsent",
+            "value": "isGpcEnabled=0&datestamp=Fri+Aug+07+2026+15%3A25%3A36+GMT%2B0530+(India+Standard+Time)&version=202404.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=76c2068e-5ed0-489d-af29-d2c0726f0b52&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fwww.duolingo.com%2F",
+            "domain": ".duolingo.com",
+            "path": "/",
+            "expires": 1801648536,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          }
+        ],
+        "local_storage": {
+          "duo.state": "\"H4sIAAAAAAAACm1W227bOBD9l3lWC3eLAoXect0YSFqvnezLIijG5FiamiKFGcqxG/jfF6Qk23HyYlBzOXPhmaFfQSNGgvIVfoeIDOXrvgAh222TDE3NtKGGfNR/v/bKpYQXJVlQjOwrTWYmNK2jSHPakCg9Cnp1GDn4x13LvrrxuHRkoVyhUyrAsUby16xZ/OQjOygnBWhLuH4vjhmPI0nG1JPQ+wLiByH2BZgaBU0k6TMcvxZDufsCdM1tS/bCtTUuKf6NkaY2gyb34Fdc5R5UNCeNwiYFv+eGI5RfvhZgHJOPN9uWhHOHelgTOlHKUVGg/A/IQwErgQIsQQG6gecCjA6q5ywezUh72+cCyB0tyOezvgHiCAW06ce7Tz/uoYAKkw77IKlvCTEkg/Dp8icU0K2hAOmSn4MCzC6D69ssM+QxgsFktMqlZOkxUY5JVfMx0bo7ntmenGM6Z/he8BuPynU4nvtSDp/tSRPa+EEKfa/kBEG6QznZtg+qSRXlVPWc+3Hw25yU8acez/sCbH/zKLu7oBFKsH99tl1w7Kvw2YQmxSCMndCtw5GV2hKZenDoP946HZhyxxqDML2jzz7lzuRtzyVVGilmBV9IoPSdcyl44n1/FjKhacjbPClTvwqjRrulGuE2T9BA8iqgy+BLtFWmQWIjr1ZsOhd3efgIxZO9PDEYkvqno1TcKzjUuCDyjyGim0mohFShnOyLg+oh+Fi73VWNzpGvaGqhBDjqf9A23p7ALiJKzOGbM88R/6m1eZAnBbTkLftqTi8odshRTU1Noli6wJpQoo6TD+S44qWj2yC3QjSnFTt32E01oYv1+cbqIaD8VkCD27vjl5IJ3uqMJAsXVKVVAOWX75PJpIDOu7QwyPYuFxtkl5APwGcGi5rJ2an+XK2Oq4wjNfma2G/IxyC7ngYNbhdntwqs9wHt6SLUOrS98y9s219tJ6ZGpb5PZ+YFNKxmYMc5Y95h7wtocZfqfaBYh0PvSZWDv0JT536vaafDTeianRsnJHY2t+oVjENVCaF5i3BhIm84Mo3uHc9IND0etn920qhcI7vdnFZCWi/q8OJ7+Do09ECqWLGvrvKqPtn9rev0Er0nGV0SWspmkt+/NkgkO5OwYkdPSjI9MisI3bNfk536KxT7EcBQwI23M9fpxcc2UQjXN9tI3pJ95Ib0Po/Dhvw1HlrWaZr05ImmnpMJYocG0rZ16McnkYa6K2r06vB4VZk5k148I1msM9f7Ig356HbJddGgxEdux6vp09er4V23/eucE77GiDmfTiT3NAnHJeOCr/L4ngpboQ2HTk+liTt/QrNkegg2syT9D+k0bdfh/Yd9Mkp/KDh4KL9/2/8PR/Cl3q0IAAA=\""
+        },
+        "session_storage": {}
+      },
+      "actions_possible": [
+        {
+          "action": "click",
+          "target": "button:has-text('Site language: English')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('I ALREADY HAVE AN ACCOUNT')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Try 1 week free')"
+        }
+      ],
+      "page_state_snapshot": {
+        "url": "https://duolingo.com",
+        "dom": "<a role=\"\"></a>\n<button role=\"\">SITE LANGUAGE: ENGLISH</button>\n<a role=\"\">GET STARTED</a>\n<button role=\"\">I ALREADY HAVE AN ACCOUNT</button>\n<a role=\"\">ENGLISH</a>\n<a role=\"\">CHESS</a>\n<a role=\"\">MATH</a>\n<a role=\"\">SPANISH</a>\n<a role=\"\">FRENCH</a>\n<a role=\"\">GERMAN</a>\n<a role=\"\">ITALIAN</a>\n<a role=\"\">PORTUGUESE</a>\n<a role=\"\">DUTCH</a>\n<a role=\"\">JAPANESE</a>\n<a role=\"\">ARABIC</a>\n<a role=\"\">CZECH</a>\n<a role=\"\">WELSH</a>\n<a role=\"\">DANISH</a>\n<a role=\"\">GREEK</a>\n<a role=\"\">ESPERANTO</a>\n<a role=\"\">FINNISH</a>\n<a role=\"\">IRISH</a>\n<a role=\"\">SCOTTISH GAELIC</a>\n<a role=\"\">HEBREW</a>\n<a role=\"\">HINDI</a>\n<a role=\"\">HAITIAN CREOLE</a>\n<a role=\"\">HUNGARIAN</a>\n<a role=\"\">HIGH VALYRIAN</a>\n<a role=\"\">HAWAIIAN</a>\n<a role=\"\">INDONESIAN</a>\n<a role=\"\">KOREAN</a>\n<a role=\"\">LATIN</a>\n<a role=\"\">NORWEGIAN (BOKM\u00c5L)</a>\n<a role=\"\">NAVAJO</a>\n<a role=\"\">POLISH</a>\n<a role=\"\">ROMANIAN</a>\n<a role=\"\">RUSSIAN</a>\n<a role=\"\">SWEDISH</a>\n<a role=\"\">SWAHILI</a>\n<a role=\"\">KLINGON</a>\n<a role=\"\">TURKISH</a>\n<a role=\"\">UKRAINIAN</a>\n<a role=\"\">VIETNAMESE</a>\n<a role=\"\">YIDDISH</a>\n<a role=\"\">CHINESE (SIMPLIFIED)</a>\n<a role=\"\">ZULU</a>\n<a role=\"\">research shows that it works</a>\n<a role=\"\">Download on the\nApp Store</a>\n<a role=\"\">Get it on\nGoogle Play</a>\n<button role=\"\">TRY 1 WEEK FREE</button>\n<a role=\"\">CERTIFY YOUR ENGLISH</a>\n<a role=\"\">GET STARTED</a>\n<a role=\"\">Courses</a>\n<a role=\"\">Mission</a>\n<a role=\"\">Approach</a>\n<a role=\"\">Efficacy</a>\n<a role=\"\">Duolingo Handbook</a>\n<a role=\"\">Research</a>\n<a role=\"\">Careers</a>\n<a role=\"\">Brand guidelines</a>\n<a role=\"\">Store</a>\n<a role=\"\">Press</a>\n<a role=\"\">Investors</a>\n<a role=\"\">Contact us</a>\n<a role=\"\">Duolingo</a>\n<a role=\"\">Duolingo for Schools</a>\n<a role=\"\">Duolingo English Test</a>\n<a role=\"\">Podcast</a>\n<a role=\"\">Duolingo for Business</a>\n<a role=\"\">Super Duolingo</a>\n<a role=\"\">Gift Super Duolingo</a>\n<a role=\"\">Duolingo Max</a>\n<a role=\"\">Duolingo for Android</a>\n<a role=\"\">Duolingo for iOS</a>\n<a role=\"\">Duolingo FAQs</a>\n<a role=\"\">Schools FAQs</a>\n<a role=\"\">Duolingo English Test FAQs</a>\n<a role=\"\">Status</a>\n<a role=\"\">Community guidelines</a>\n<a role=\"\">Terms</a>\n<a role=\"\">Privacy</a>\n<a role=\"\">Do Not Sell or Share My Personal Information</a>\n<a role=\"\">Blog</a>\n<a role=\"\">Instagram</a>\n<a role=\"\">TikTok</a>\n<a role=\"\">Twitter</a>\n<a role=\"\">YouTube</a>\n<a role=\"\">LinkedIn</a>\n<a role=\"\">\u0627\u0644\u0639\u0631\u0628\u064a\u0629</a>\n<a role=\"\">\u09ac\u09be\u0982\u09b2\u09be</a>\n<a role=\"\">\u010ce\u0161tina</a>\n<a role=\"\">Deutsch</a>\n<a role=\"\">\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac</a>\n<a role=\"\">English</a>\n<a role=\"\">Espa\u00f1ol</a>\n<a role=\"\">Fran\u00e7ais</a>\n<a role=\"\">\u0939\u093f\u0902\u0926\u0940</a>\n<a role=\"\">Magyar</a>\n<a role=\"\">Bahasa Indonesia</a>\n<a role=\"\">Italiano</a>\n<a role=\"\">\u65e5\u672c\u8a9e</a>\n<a role=\"\">\ud55c\uad6d\uc5b4</a>\n<a role=\"\">Nederlands</a>\n<a role=\"\">\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40</a>\n<a role=\"\">Polski</a>\n<a role=\"\">Portugu\u00eas</a>\n<a role=\"\">Rom\u00e2n\u0103</a>\n<a role=\"\">\u0420\u0443\u0441\u0441\u043a\u0438\u0439</a>\n<a role=\"\">svenska</a>\n<a role=\"\">\u0ba4\u0bae\u0bbf\u0bb4\u0bcd</a>\n<a role=\"\">\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41</a>\n<a role=\"\">\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22</a>\n<a role=\"\">Tagalog</a>\n<a role=\"\">T\u00fcrk\u00e7e</a>\n<a role=\"\">\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u043e\u044e</a>\n<a role=\"\">\u0627\u064f\u0631\u062f\u064f\u0648</a>\n<a role=\"\">Ti\u1ebfng Vi\u1ec7t</a>\n<a role=\"\">\u4e2d\u6587</a>\n<iframe role=\"presentation\"></iframe>\n<textarea role=\"\"></textarea>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1786096558/agent_screenshots/explorer_page_20260807_152554_orhspphw.png",
+        "elements": {
+          "buttons": [
+            {
+              "type": "button",
+              "text": "Site language: English",
+              "id": "",
+              "class": "_1gEmM _7jW2t _2cPiq _3IYFo _2Rt1l",
+              "selector": "button:has-text('Site language: English')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "I ALREADY HAVE AN ACCOUNT",
+              "id": "",
+              "class": "_2V6ug _1ursp _7jW2t -TeUZ _2Ccfj",
+              "selector": "button:has-text('I ALREADY HAVE AN ACCOUNT')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Try 1 week free",
+              "id": "",
+              "class": "_1rcV8 _1VYyp _1ursp _7jW2t _1aASh _19taU",
+              "selector": "button:has-text('Try 1 week free')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Spanish42M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Spanish42M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "French22.8M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('French22.8M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Chess",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Chess')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "English20.8M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('English20.8M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Japanese18.3M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Japanese18.3M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "German15.9M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('German15.9M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Math",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Math')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Hindi13.9M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Hindi13.9M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Korean12.5M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Korean12.5M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Italian10.5M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Italian10.5M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Chinese (Simplified)9.27M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Chinese (Simplified)9.27M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Russian7.82M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Russian7.82M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Arabic6.66M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Arabic6.66M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Portuguese4.61M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Portuguese4.61M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Turkish3.98M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Turkish3.98M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Dutch2.71M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Dutch2.71M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Greek2.56M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Greek2.56M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Polish2.12M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Polish2.12M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Swedish1.92M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Swedish1.92M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Vietnamese1.85M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Vietnamese1.85M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Latin1.8M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Latin1.8M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Norwegian (Bokm\u00e5l)1.56M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Norwegian (Bokm\u00e5l)1.56M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Irish1.52M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Irish1.52M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Hebrew1.29M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Hebrew1.29M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Indonesian1.21M learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Indonesian1.21M learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "High Valyrian954K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('High Valyrian954K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Ukrainian936K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Ukrainian936K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Finnish934K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Finnish934K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Danish917K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Danish917K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Romanian879K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Romanian879K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Czech772K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Czech772K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Hawaiian729K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Hawaiian729K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Zulu722K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Zulu722K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Swahili672K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Swahili672K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Welsh607K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Welsh607K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Hungarian578K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Hungarian578K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Scottish Gaelic541K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Scottish Gaelic541K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Haitian Creole448K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Haitian Creole448K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Esperanto306K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Esperanto306K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Klingon292K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Klingon292K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Navajo282K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Navajo282K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Yiddish282K learners",
+              "id": "",
+              "class": "_1dr5q qcdrk _1IKTB",
+              "selector": "button:has-text('Yiddish282K learners')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Get started",
+              "id": "",
+              "class": "_1rcV8 _1VYyp _1ursp _7jW2t _2skPy _3u1lX",
+              "selector": "button:has-text('Get started')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Get started",
+              "id": "",
+              "class": "_1rcV8 _1VYyp _1ursp _7jW2t _3Wy9F _3u1lX",
+              "selector": "button:has-text('Get started')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "I ALREADY HAVE AN ACCOUNT",
+              "id": "",
+              "class": "_2paU5 rdtAy _2V6ug _1ursp _7jW2t gtm-attribution-link _2FRwj _1fX9y",
+              "selector": "button:has-text('I ALREADY HAVE AN ACCOUNT')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Site language: English",
+              "id": "",
+              "class": "_1gEmM _7jW2t DWV0g _3IYFo _2Rt1l",
+              "selector": "button:has-text('Site language: English')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "I ALREADY HAVE AN ACCOUNT",
+              "id": "",
+              "class": "_2paU5 rdtAy _2V6ug _1ursp _7jW2t gtm-attribution-link _239NE _1_q8f _2Ccfj",
+              "selector": "button:has-text('I ALREADY HAVE AN ACCOUNT')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            }
+          ],
+          "inputs": [],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-08-07T15:25:58.592104"
+      },
+      "visited_routes": [
+        "https://duolingo.com",
+        "https://duolingo.com/register",
+        "https://duolingo.com/course/en/en/Learn-English",
+        "https://duolingo.com/chess",
+        "https://duolingo.com/math"
+      ],
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "Duolingo - The world\u2019s most popular way to learn",
+        "url": "https://duolingo.com",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 10,
+        "high_priority": 3,
+        "medium_priority": 5,
+        "low_priority": 2
+      },
+      "test_cases": [
+        {
+          "id": "TC001",
+          "title": "Verify navigation to 'Get started' page",
+          "category": "Smoke Testing",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Ensure clicking 'Get started' link navigates to the registration page",
+          "preconditions": [
+            "User is on the Duolingo homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Get started')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://duolingo.com/register",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is navigated to the registration page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC002",
+          "title": "Verify navigation to 'Chess' page",
+          "category": "Smoke Testing",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Ensure clicking 'Chess' link navigates to the Chess page",
+          "preconditions": [
+            "User is on the Duolingo homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Chess')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://duolingo.com/chess",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is navigated to the Chess page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC003",
+          "title": "Verify navigation to 'Math' page",
+          "category": "Smoke Testing",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Ensure clicking 'Math' link navigates to the Math page",
+          "preconditions": [
+            "User is on the Duolingo homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Math')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://duolingo.com/math",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is navigated to the Math page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC004",
+          "title": "Verify 'Site language: English' button functionality",
+          "category": "Regression Testing",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Ensure clicking 'Site language: English' button works correctly",
+          "preconditions": [
+            "User is on the Duolingo homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "button:has-text('Site language: English')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "element_visible",
+              "expected": "true",
+              "selector": "button:has-text('Site language: English')"
+            }
+          ],
+          "expected_result": "Site language dropdown is displayed",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC005",
+          "title": "Verify 'I ALREADY HAVE AN ACCOUNT' button functionality",
+          "category": "Regression Testing",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Ensure clicking 'I ALREADY HAVE AN ACCOUNT' button works correctly",
+          "preconditions": [
+            "User is on the Duolingo homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "button:has-text('I ALREADY HAVE AN ACCOUNT')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "element_visible",
+              "expected": "true",
+              "selector": "button:has-text('I ALREADY HAVE AN ACCOUNT')"
+            }
+          ],
+          "expected_result": "Login form is displayed",
+          "estimated_execution_time": "5 sec"
+        }
+      ]
+    },
+    "executor_output": {
+      "execution_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify navigation to 'Get started' page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.02,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to the registration page"
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify navigation to 'Chess' page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.03,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to the Chess page"
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify navigation to 'Math' page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.03,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to the Math page"
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify 'Site language: English' button functionality",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.03,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "Site language dropdown is displayed"
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Verify 'I ALREADY HAVE AN ACCOUNT' button functionality",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.03,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "Login form is displayed"
+        }
+      ]
+    },
+    "memory_output": {
+      "compressed_context": "Fallback execution compression.",
+      "execution_log_summary": "Failed to run summarization LLM step.",
+      "key_highlights": [
+        "Execution logs completed."
+      ],
+      "suggested_focus_areas": [
+        "Manual regression testing recommended."
+      ]
+    },
+    "validator_output": {
+      "validation_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify navigation to 'Get started' page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify navigation to 'Chess' page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify navigation to 'Math' page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify 'Site language: English' button functionality",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Verify 'I ALREADY HAVE AN ACCOUNT' button functionality",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        }
+      ]
+    },
+    "bug_analyzer_output": {
+      "bug_analyses": [
+        {
+          "test_case_id": "TC001",
+          "test_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "Test case TC001 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC002",
+          "test_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Test case TC002 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC003",
+          "test_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "Test case TC003 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC004",
+          "test_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "Test case TC004 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC005",
+          "test_id": "TC005",
+          "bug_type": "Functional",
+          "issue": "Test case TC005 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        }
+      ]
+    },
+    "reporter_output": {
+      "summary": "Autonomous QA audit completed for duolingo app. Executed 5 test cases (0 passed, 5 failed).",
+      "execution_statistics": {
+        "total_tests": 5,
+        "passed": 0,
+        "failed": 5,
+        "skipped": 0,
+        "success_rate": 0.0,
+        "failure_rate": 100.0
+      },
+      "bug_summary": [
+        {
+          "test_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "Test case TC001 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Test case TC002 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "Test case TC003 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "Test case TC004 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC005",
+          "bug_type": "Functional",
+          "issue": "Test case TC005 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        }
+      ],
+      "severity_distribution": {
+        "critical": 0,
+        "high": 5,
+        "medium": 0,
+        "low": 0
+      },
+      "failed_test_cases": [
+        {
+          "test_id": "TC001",
+          "title": "Verify navigation to 'Get started' page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC002",
+          "title": "Verify navigation to 'Chess' page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC003",
+          "title": "Verify navigation to 'Math' page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC004",
+          "title": "Verify 'Site language: English' button functionality",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC005",
+          "title": "Verify 'I ALREADY HAVE AN ACCOUNT' button functionality",
+          "reason": "FAILED: Failed at step unknown: "
+        }
+      ],
+      "top_issues": [
+        "[High] Test case TC001 failed: Failed at step unknown: ",
+        "[High] Test case TC002 failed: Failed at step unknown: ",
+        "[High] Test case TC003 failed: Failed at step unknown: ",
+        "[High] Test case TC004 failed: Failed at step unknown: ",
+        "[High] Test case TC005 failed: Failed at step unknown: "
+      ],
+      "recommendations": [
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior."
+      ],
+      "overall_assessment": "Action Required",
+      "overall_status": "FAIL",
+      "total_pages_tested": 1,
+      "passed_count": 0,
+      "failed_count": 0,
+      "bugs_found": 0
+    }
+  },
+  "logs": [
+    "[2026-08-07T09:54:33.645537+00:00] Initializing new execution pipeline...",
+    "[2026-08-07T09:54:35.054848+00:00] Agent 'Planner' execution started",
+    "[2026-08-07T09:54:35.059002+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:54:35.059002+00:00] Analyzing project requirements and target structure...",
+    "[2026-08-07T09:55:24.203521+00:00] Planner Agent used fallback strategy.",
+    "[2026-08-07T09:55:24.203521+00:00] Pipeline progress updated: 10%",
+    "[2026-08-07T09:55:24.203521+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 49.14s)",
+    "[2026-08-07T09:55:24.203521+00:00] Agent 'Planner' completed successfully in 49.14s",
+    "[2026-08-07T09:55:24.234377+00:00] Agent 'Explorer' execution started",
+    "[2026-08-07T09:55:24.234377+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:55:24.243762+00:00] Launching browser and navigating to target URL...",
+    "[2026-08-07T09:55:37.791354+00:00] Extracting DOM, forms, and interactive element maps...",
+    "[2026-08-07T09:55:40.321213+00:00] Deep analyzing route: https://duolingo.com/register",
+    "[2026-08-07T09:55:44.683921+00:00] Deep analyzing route: https://duolingo.com/course/en/en/Learn-English",
+    "[2026-08-07T09:55:47.258117+00:00] Deep analyzing route: https://duolingo.com/chess",
+    "[2026-08-07T09:55:49.093314+00:00] Deep analyzing route: https://duolingo.com/math",
+    "[2026-08-07T09:56:20.356102+00:00] Pipeline progress updated: 25%",
+    "[2026-08-07T09:56:20.356102+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 56.12s)",
+    "[2026-08-07T09:56:20.356102+00:00] Agent 'Explorer' completed successfully in 56.12s",
+    "[2026-08-07T09:56:20.444760+00:00] Agent 'Generator' execution started",
+    "[2026-08-07T09:56:20.444760+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:56:20.445140+00:00] Synthesizing test cases (smoke, edge, boundary)...",
+    "[2026-08-07T09:57:00.264741+00:00] Agent 'Generator' executed model 'deepseek/deepseek-chat' (openrouter). Latency: 39.77s, Tokens (In/Out): 9406/1200",
+    "[2026-08-07T09:57:00.265742+00:00] Generated 5 executable test cases.",
+    "[2026-08-07T09:57:00.266743+00:00] Pipeline progress updated: 45%",
+    "[2026-08-07T09:57:00.266743+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 39.82s)",
+    "[2026-08-07T09:57:00.266743+00:00] Agent 'Generator' completed successfully in 39.82s",
+    "[2026-08-07T09:57:00.313014+00:00] Agent 'Executor' execution started",
+    "[2026-08-07T09:57:00.314024+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:57:00.314024+00:00] ExecutorAgent starting. Running 5 test cases with 4 parallel workers.",
+    "[2026-08-07T09:57:00.314024+00:00] Executing TC001: Verify navigation to 'Get started' page...",
+    "[2026-08-07T09:57:00.314024+00:00] Executing TC002: Verify navigation to 'Chess' page...",
+    "[2026-08-07T09:57:00.314024+00:00] Executing TC003: Verify navigation to 'Math' page...",
+    "[2026-08-07T09:57:00.314024+00:00] Executing TC004: Verify 'Site language: English' button functionality...",
+    "[2026-08-07T09:57:00.314024+00:00] Executing TC005: Verify 'I ALREADY HAVE AN ACCOUNT' button functionality...",
+    "[2026-08-07T09:57:00.344203+00:00] Test Case TC001 finished. Duration: 0.02s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T09:57:00.344203+00:00] Test Case TC002 finished. Duration: 0.03s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T09:57:00.344203+00:00] Test Case TC003 finished. Duration: 0.03s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T09:57:00.344203+00:00] Test Case TC004 finished. Duration: 0.03s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T09:57:00.344203+00:00] Test Case TC005 finished. Duration: 0.03s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T09:57:00.344203+00:00] Pipeline progress updated: 65%",
+    "[2026-08-07T09:57:00.344203+00:00] [WARN] Executor detected high failures: 5/5 test cases failed (100% failure rate). Proceeding to Validator and BugAnalyzer for deep root-cause analysis.",
+    "[2026-08-07T09:57:00.344203+00:00] Agent 'Executor' status updated to Success (Retries: 0, Time: 0.03s)",
+    "[2026-08-07T09:57:00.344203+00:00] Agent 'Executor' completed successfully in 0.03s",
+    "[2026-08-07T09:57:00.394852+00:00] Agent 'Memory' execution started",
+    "[2026-08-07T09:57:00.394852+00:00] Agent 'Memory' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:57:00.394852+00:00] MemoryAgent starting. Compressing execution logs & structuring context...",
+    "[2026-08-07T09:57:22.105089+00:00] Pipeline progress updated: 70%",
+    "[2026-08-07T09:57:22.105089+00:00] Agent 'Memory' status updated to Success (Retries: 0, Time: 21.71s)",
+    "[2026-08-07T09:57:22.105089+00:00] Agent 'Memory' completed successfully in 21.71s",
+    "[2026-08-07T09:57:22.152033+00:00] Agent 'Validator' execution started",
+    "[2026-08-07T09:57:22.152033+00:00] Agent 'Validator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:57:22.152033+00:00] ValidatorAgent starting. Validating 5 test executions.",
+    "[2026-08-07T09:57:22.153039+00:00] Validator LLM enrichment failed for batch 1 ('model_name'). Using deterministic results.",
+    "[2026-08-07T09:57:22.153039+00:00] Pipeline progress updated: 80%",
+    "[2026-08-07T09:57:22.154032+00:00] Agent 'Validator' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:57:22.154032+00:00] Agent 'Validator' completed successfully in 0.0s",
+    "[2026-08-07T09:57:22.205511+00:00] Agent 'BugAnalyzer' execution started",
+    "[2026-08-07T09:57:22.206510+00:00] Agent 'BugAnalyzer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:57:22.206510+00:00] BugAnalyzerAgent starting. Analyzing failures...",
+    "[2026-08-07T09:57:22.206510+00:00] Analyzing failure for Test Case TC001",
+    "[2026-08-07T09:57:44.040820+00:00] Bug analysis LLM call failed for TC001: cannot access local variable 'response' where it is not associated with a value. Using fallback.",
+    "[2026-08-07T09:57:44.040820+00:00] Analyzing failure for Test Case TC002",
+    "[2026-08-07T09:58:05.647936+00:00] Bug analysis LLM call failed for TC002: cannot access local variable 'response' where it is not associated with a value. Using fallback.",
+    "[2026-08-07T09:58:05.647936+00:00] Analyzing failure for Test Case TC003",
+    "[2026-08-07T09:58:27.348902+00:00] Bug analysis LLM call failed for TC003: cannot access local variable 'response' where it is not associated with a value. Using fallback.",
+    "[2026-08-07T09:58:27.348902+00:00] Analyzing failure for Test Case TC004",
+    "[2026-08-07T09:58:49.078611+00:00] Bug analysis LLM call failed for TC004: cannot access local variable 'response' where it is not associated with a value. Using fallback.",
+    "[2026-08-07T09:58:49.078611+00:00] Analyzing failure for Test Case TC005",
+    "[2026-08-07T09:59:10.764367+00:00] Bug analysis LLM call failed for TC005: cannot access local variable 'response' where it is not associated with a value. Using fallback.",
+    "[2026-08-07T09:59:10.765373+00:00] Pipeline progress updated: 90%",
+    "[2026-08-07T09:59:10.765373+00:00] Agent 'BugAnalyzer' status updated to Success (Retries: 0, Time: 108.56s)",
+    "[2026-08-07T09:59:10.765373+00:00] Agent 'BugAnalyzer' completed successfully in 108.56s",
+    "[2026-08-07T09:59:10.943010+00:00] Agent 'Reporter' execution started",
+    "[2026-08-07T09:59:10.943010+00:00] Agent 'Reporter' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T09:59:10.943010+00:00] Compiling final QA audit report...",
+    "[2026-08-07T09:59:32.746143+00:00] Pipeline progress updated: 100%",
+    "[2026-08-07T09:59:32.746143+00:00] Agent 'Reporter' status updated to Success (Retries: 0, Time: 21.8s)",
+    "[2026-08-07T09:59:32.746143+00:00] Agent 'Reporter' completed successfully in 21.8s",
+    "[2026-08-07T09:59:32.837880+00:00] Orchestration pipeline execution finished in 297.78s"
+  ],
+  "execution_time": 297.78,
+  "progress": 100
+}

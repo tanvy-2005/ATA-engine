@@ -1,0 +1,50 @@
+{
+  "execution_id": "6a730d6aecaa467588f8cfcf",
+  "project_name": "shadcn web",
+  "target_url": "https://shadcnspace.com/",
+  "status": "Failed",
+  "current_agent": "Planner",
+  "current_stage": "init",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-05T10:16:10.579312+00:00",
+  "last_updated_at": "2026-08-05T10:16:24.739790+00:00",
+  "completed_agents": [],
+  "failed_agents": [
+    "Planner"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Failed",
+      "execution_time": 2.61,
+      "retry_count": 1,
+      "error_object": "PlannerAgent LLM failed to produce valid structured output: [ModelManager] Ollama is not available for agent 'Planner'. Please ensure Ollama is running: `ollama serve`",
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "shadcn web",
+      "description": "Autonomous smoke and assertion validations suite",
+      "target_url": "https://shadcnspace.com/"
+    },
+    "integrations": {}
+  },
+  "logs": [
+    "[2026-08-05T10:16:10.579312+00:00] Initializing new execution pipeline...",
+    "[2026-08-05T10:16:22.125559+00:00] Agent 'Planner' execution started",
+    "[2026-08-05T10:16:22.127583+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-05T10:16:23.674347+00:00] Agent 'Planner' failed with: PlannerAgent LLM failed to produce valid structured output: [ModelManager] Ollama is not available for agent 'Planner'. Please ensure Ollama is running: `ollama serve`. Retrying (1/1)...",
+    "[2026-08-05T10:16:23.675376+00:00] Agent 'Planner' status updated to Retrying (Retries: 1, Time: 1.55s)",
+    "[2026-08-05T10:16:24.739790+00:00] Agent 'Planner' failed permanently after 2 retries. Error: PlannerAgent LLM failed to produce valid structured output: [ModelManager] Ollama is not available for agent 'Planner'. Please ensure Ollama is running: `ollama serve`",
+    "[2026-08-05T10:16:24.739790+00:00] Agent 'Planner' status updated to Failed (Retries: 1, Time: 2.61s)",
+    "[2026-08-05T10:16:24.739790+00:00] Agent 'Planner' crashed: PlannerAgent LLM failed to produce valid structured output: [ModelManager] Ollama is not available for agent 'Planner'. Please ensure Ollama is running: `ollama serve`"
+  ],
+  "execution_time": 0.0,
+  "progress": 0
+}

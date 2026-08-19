@@ -1,0 +1,243 @@
+{
+  "execution_id": "6a74e36123c3fca5703933b3",
+  "project_name": "Custom Project",
+  "target_url": "https://example.com",
+  "status": "Failed",
+  "current_agent": "Explorer",
+  "current_stage": "planner",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-06T19:41:21.415493+00:00",
+  "last_updated_at": "2026-08-06T19:44:27.290040+00:00",
+  "completed_agents": [
+    "Planner"
+  ],
+  "failed_agents": [
+    "Explorer"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 181.77,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Failed",
+      "execution_time": 4.06,
+      "retry_count": 3,
+      "error_object": "'Page' object has no attribute 'accessibility'",
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "Custom Project",
+      "description": "Autonomous testing run",
+      "target_url": "https://example.com"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "The project involves running an autonomous testing system on a website or web application.",
+        "key_components": [
+          "Autonomous AI Testing System",
+          "Website/Application"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "To automate the testing process for a website or web application.",
+        "primary_users": [
+          "Developers, QA Engineers"
+        ],
+        "expected_user_journey": [
+          "Upload project details",
+          "Configure test settings",
+          "Run tests",
+          "Review results"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify that the homepage loads correctly",
+          "Check if login functionality works"
+        ],
+        "regression_tests": [
+          "Test all core functionalities of the application"
+        ],
+        "boundary_tests": [
+          "Input boundary conditions in forms/inputs"
+        ],
+        "negative_tests": [
+          "Attempt to access restricted areas without authentication",
+          "Submit invalid data"
+        ],
+        "accessibility_tests": [
+          "Audit for compliance with WCAG standards"
+        ],
+        "integration_tests": [
+          "Verify integration between different modules/components"
+        ],
+        "system_tests": [
+          "Test the system under load"
+        ],
+        "ui_tests": [
+          "Check UI visual consistency across different browsers and devices"
+        ],
+        "functional_tests": [
+          "Verify all functional requirements are met"
+        ],
+        "exploratory_tests": [
+          "Explore uncharted areas of the application"
+        ],
+        "compatibility_tests": [
+          "Test compatibility with various browsers and devices"
+        ],
+        "security_tests": [
+          "Perform security audits for authentication, payment, and other critical routes"
+        ],
+        "performance_test_suggestions": [
+          "Load test the system under high user load"
+        ],
+        "api_test_suggestions": [
+          "Load test API endpoints"
+        ]
+      },
+      "priority_areas": [
+        "Smoke tests",
+        "Regression tests",
+        "Security tests"
+      ],
+      "business_workflow": [
+        "Project setup",
+        "Test configuration",
+        "Execution",
+        "Review"
+      ],
+      "user_workflow": [
+        "Upload project details",
+        "Configure settings",
+        "Run tests",
+        "View results"
+      ],
+      "module_dependency_graph": {
+        "Autonomous AI Testing System": [
+          "Website/Application"
+        ]
+      },
+      "detected_modules": [
+        {
+          "name": "Autonomous AI Testing System",
+          "purpose": "Handles the entire testing process from configuration to result review.",
+          "business_importance": "HIGH",
+          "risk_level": "CRITICAL",
+          "priority": "HIGH",
+          "dependencies": [
+            "Website/Application"
+          ]
+        },
+        {
+          "name": "Website/Application",
+          "purpose": "The subject of the testing process.",
+          "business_importance": "UNKNOWN",
+          "risk_level": "UNKNOWN",
+          "priority": "UNKNOWN",
+          "dependencies": []
+        }
+      ],
+      "critical_user_journeys": [
+        "Upload project details",
+        "Configure settings",
+        "Run tests",
+        "Review results"
+      ],
+      "high_risk_areas": [
+        "Security audits for authentication and payment routes"
+      ],
+      "security_sensitive_areas": [
+        "Authentication pages",
+        "Payment processing pages"
+      ],
+      "functional_requirements": [
+        "All core functionalities must work as expected"
+      ],
+      "non_functional_requirements": [
+        "System should handle high user load without performance degradation"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "Valid project details",
+          "Correct configuration settings"
+        ],
+        "invalid_data": [
+          "Invalid project details",
+          "Incorrect configuration settings"
+        ],
+        "boundary_data": [
+          "Edge cases in project setup and configuration"
+        ],
+        "special_characters": [
+          "Inputs with special characters in project details"
+        ],
+        "duplicate_data": [
+          "Duplicate project configurations"
+        ],
+        "empty_data": [
+          "Empty project details or configuration settings"
+        ],
+        "large_data": [
+          "Large project details or configuration settings"
+        ]
+      },
+      "assertions": [
+        "Page loaded successfully",
+        "Button is clickable",
+        "Validation messages appear as expected"
+      ],
+      "explorer_instructions": [
+        "Scan for all interactive elements and forms"
+      ],
+      "generator_instructions": [
+        "Cover edge cases in project setup, configuration, and test execution"
+      ],
+      "validator_instructions": [
+        "Verify that all critical success criteria are met"
+      ],
+      "bug_analyzer_instructions": [
+        "Capture console traces and network issues during validation failure"
+      ],
+      "reporter_instructions": [
+        "Collect execution metrics such as test duration, pass/fail rates"
+      ]
+    }
+  },
+  "logs": [
+    "[2026-08-06T19:41:21.415493+00:00] Initializing new execution pipeline...",
+    "[2026-08-06T19:41:21.446478+00:00] Agent 'Planner' execution started",
+    "[2026-08-06T19:41:21.446478+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-06T19:44:23.215907+00:00] Agent 'Planner' executed model 'qwen2.5-coder:7b' (ollama). Latency: 180.22s, Tokens (In/Out): 880/850",
+    "[2026-08-06T19:44:23.217881+00:00] Pipeline progress updated: 10%",
+    "[2026-08-06T19:44:23.217881+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 181.77s)",
+    "[2026-08-06T19:44:23.217881+00:00] Agent 'Planner' completed successfully in 181.77s",
+    "[2026-08-06T19:44:23.231425+00:00] Agent 'Explorer' execution started",
+    "[2026-08-06T19:44:23.231425+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-06T19:44:23.754632+00:00] Agent 'Explorer' failed with: 'Page' object has no attribute 'accessibility'. Retrying (1/3)...",
+    "[2026-08-06T19:44:23.754632+00:00] Agent 'Explorer' status updated to Retrying (Retries: 1, Time: 0.52s)",
+    "[2026-08-06T19:44:24.997574+00:00] Agent 'Explorer' failed with: 'Page' object has no attribute 'accessibility'. Retrying (2/3)...",
+    "[2026-08-06T19:44:24.997574+00:00] Agent 'Explorer' status updated to Retrying (Retries: 2, Time: 1.77s)",
+    "[2026-08-06T19:44:26.135800+00:00] Agent 'Explorer' failed with: 'Page' object has no attribute 'accessibility'. Retrying (3/3)...",
+    "[2026-08-06T19:44:26.135800+00:00] Agent 'Explorer' status updated to Retrying (Retries: 3, Time: 2.9s)",
+    "[2026-08-06T19:44:27.290040+00:00] Agent 'Explorer' failed permanently after 4 retries. Error: 'Page' object has no attribute 'accessibility'",
+    "[2026-08-06T19:44:27.290040+00:00] Agent 'Explorer' status updated to Failed (Retries: 3, Time: 4.06s)",
+    "[2026-08-06T19:44:27.290040+00:00] Agent 'Explorer' crashed: 'Page' object has no attribute 'accessibility'"
+  ],
+  "execution_time": 0.0,
+  "progress": 10
+}

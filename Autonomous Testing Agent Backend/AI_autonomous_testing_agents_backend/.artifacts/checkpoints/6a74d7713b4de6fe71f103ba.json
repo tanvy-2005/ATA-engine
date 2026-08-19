@@ -1,0 +1,224 @@
+{
+  "execution_id": "6a74d7713b4de6fe71f103ba",
+  "project_name": "shadcn",
+  "target_url": "https://shadcnspace.com/",
+  "status": "Failed",
+  "current_agent": "Explorer",
+  "current_stage": "planner",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-06T18:50:25.051979+00:00",
+  "last_updated_at": "2026-08-06T19:29:52.265798+00:00",
+  "completed_agents": [
+    "Planner"
+  ],
+  "failed_agents": [
+    "Explorer"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 2362.53,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Failed",
+      "execution_time": 3.13,
+      "retry_count": 3,
+      "error_object": "BrowserContext.new_page: Connection closed while reading from the driver",
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "shadcn",
+      "description": "Autonomous testing run",
+      "target_url": "https://shadcnspace.com/"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "shadcn is a UI component library for React, providing pre-built components that can be easily customized and styled.",
+        "key_components": [
+          "React",
+          "UI Components"
+        ],
+        "project_type": "Admin Dashboard",
+        "business_domain": "Software Development Tools",
+        "main_purpose": "To provide developers with a set of reusable UI components to speed up development and improve consistency across projects.",
+        "primary_users": [
+          "Developers",
+          "Designers"
+        ],
+        "expected_user_journey": [
+          "Navigate to the library page",
+          "Browse available components",
+          "Select a component",
+          "Customize the component",
+          "Preview the component"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify that the homepage loads without errors",
+          "Check if all components are displayed correctly"
+        ],
+        "regression_tests": [
+          "Ensure that existing components continue to function as expected after updates or changes"
+        ],
+        "boundary_tests": [
+          "Test edge cases such as maximum number of customizations allowed for a component"
+        ],
+        "negative_tests": [
+          "Attempt to use invalid props with components and verify error handling"
+        ],
+        "accessibility_tests": [
+          "Audit the website for compliance with WCAG standards"
+        ],
+        "integration_tests": [
+          "Verify that components integrate well with other libraries or frameworks"
+        ],
+        "system_tests": [
+          "Test the performance of the library under load"
+        ],
+        "ui_tests": [
+          "Check if UI elements are visually consistent and responsive"
+        ],
+        "functional_tests": [
+          "Ensure that all functional aspects of each component work as intended"
+        ],
+        "exploratory_tests": [
+          "Explore less common use cases to identify potential issues"
+        ],
+        "compatibility_tests": [
+          "Test the library on different browsers and devices"
+        ],
+        "security_tests": [
+          "Check for vulnerabilities in the components or library itself"
+        ],
+        "performance_test_suggestions": [
+          "Load test the library with a large number of users simultaneously"
+        ],
+        "api_test_suggestions": [
+          "Load test API endpoints used by the components"
+        ]
+      },
+      "priority_areas": [
+        "Critical UI components",
+        "Performance under load"
+      ],
+      "business_workflow": [
+        "Developers using shadcn to build applications"
+      ],
+      "user_workflow": [
+        "Navigating and customizing components"
+      ],
+      "module_dependency_graph": {
+        "shadcn": [
+          "React"
+        ]
+      },
+      "detected_modules": [
+        {
+          "name": "Components",
+          "purpose": "Pre-built UI components for React",
+          "business_importance": "HIGH",
+          "risk_level": "MEDIUM",
+          "priority": "HIGH",
+          "dependencies": [
+            "React"
+          ]
+        }
+      ],
+      "critical_user_journeys": [
+        "Selecting and customizing a component"
+      ],
+      "high_risk_areas": [
+        "Customization options",
+        "Performance under load"
+      ],
+      "security_sensitive_areas": [
+        "Authentication routes"
+      ],
+      "functional_requirements": [
+        "Components should render correctly with various props",
+        "Components should handle errors gracefully"
+      ],
+      "non_functional_requirements": [
+        "Library should be compatible with multiple browsers and devices",
+        "Performance should not degrade under heavy load"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "Valid props for components"
+        ],
+        "invalid_data": [
+          "Invalid props that should cause errors"
+        ],
+        "boundary_data": [
+          "Maximum number of customizations allowed"
+        ],
+        "special_characters": [
+          "Inputs with special characters in component names"
+        ],
+        "duplicate_data": [
+          "Duplicate component usage"
+        ],
+        "empty_data": [
+          "Empty props or empty component usage"
+        ],
+        "large_data": []
+      },
+      "assertions": [
+        "Page Loaded",
+        "Button Clickable",
+        "Validation message displayed for invalid inputs"
+      ],
+      "explorer_instructions": [
+        "Scan all UI components and their customization options"
+      ],
+      "generator_instructions": [
+        "Cover edge cases such as maximum number of customizations, invalid props, and boundary conditions"
+      ],
+      "validator_instructions": [
+        "Verify that all functional aspects of each component work as intended"
+      ],
+      "bug_analyzer_instructions": [
+        "Capture console traces or network issues on validation failure"
+      ],
+      "reporter_instructions": [
+        "Collect execution metrics such as load time, error rate, and performance under load"
+      ]
+    }
+  },
+  "logs": [
+    "[2026-08-06T18:50:25.051979+00:00] Initializing new execution pipeline...",
+    "[2026-08-06T18:50:26.579417+00:00] Agent 'Planner' execution started",
+    "[2026-08-06T18:50:26.585474+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-06T19:29:49.111013+00:00] Agent 'Planner' executed model 'qwen2.5-coder:7b' (ollama). Latency: 174.56s, Tokens (In/Out): 928/829",
+    "[2026-08-06T19:29:49.115920+00:00] Pipeline progress updated: 10%",
+    "[2026-08-06T19:29:49.116919+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 2362.53s)",
+    "[2026-08-06T19:29:49.116919+00:00] Agent 'Planner' completed successfully in 2362.53s",
+    "[2026-08-06T19:29:49.132221+00:00] Agent 'Explorer' execution started",
+    "[2026-08-06T19:29:49.132221+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-06T19:29:49.255299+00:00] Agent 'Explorer' failed with: BrowserContext.new_page: Connection closed while reading from the driver. Retrying (1/3)...",
+    "[2026-08-06T19:29:49.255885+00:00] Agent 'Explorer' status updated to Retrying (Retries: 1, Time: 0.12s)",
+    "[2026-08-06T19:29:50.256082+00:00] Agent 'Explorer' failed with: BrowserContext.new_page: Connection closed while reading from the driver. Retrying (2/3)...",
+    "[2026-08-06T19:29:50.256082+00:00] Agent 'Explorer' status updated to Retrying (Retries: 2, Time: 1.12s)",
+    "[2026-08-06T19:29:51.268634+00:00] Agent 'Explorer' failed with: BrowserContext.new_page: Connection closed while reading from the driver. Retrying (3/3)...",
+    "[2026-08-06T19:29:51.268634+00:00] Agent 'Explorer' status updated to Retrying (Retries: 3, Time: 2.14s)",
+    "[2026-08-06T19:29:52.264802+00:00] Agent 'Explorer' failed permanently after 4 retries. Error: BrowserContext.new_page: Connection closed while reading from the driver",
+    "[2026-08-06T19:29:52.264802+00:00] Agent 'Explorer' status updated to Failed (Retries: 3, Time: 3.13s)",
+    "[2026-08-06T19:29:52.265798+00:00] Agent 'Explorer' crashed: BrowserContext.new_page: Connection closed while reading from the driver"
+  ],
+  "execution_time": 0.0,
+  "progress": 10
+}

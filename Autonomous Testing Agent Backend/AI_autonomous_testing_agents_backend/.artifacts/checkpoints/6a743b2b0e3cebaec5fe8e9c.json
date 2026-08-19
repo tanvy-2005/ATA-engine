@@ -1,0 +1,32 @@
+{
+  "execution_id": "6a743b2b0e3cebaec5fe8e9c",
+  "project_name": "Hindustaan",
+  "target_url": "https://hindustaan.in/",
+  "status": "Running",
+  "current_agent": "Planner",
+  "current_stage": "init",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-06T07:43:39.225302+00:00",
+  "last_updated_at": "2026-08-06T07:43:39.225399+00:00",
+  "completed_agents": [],
+  "failed_agents": [],
+  "agent_states": {},
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "Hindustaan",
+      "description": "Autonomous smoke and assertion validations suite",
+      "target_url": "https://hindustaan.in/"
+    },
+    "integrations": {}
+  },
+  "logs": [
+    "[2026-08-06T07:43:39.225399+00:00] Initializing new execution pipeline..."
+  ],
+  "execution_time": 0.0,
+  "progress": 0
+}

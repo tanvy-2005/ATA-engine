@@ -1,0 +1,203 @@
+{
+  "execution_id": "6a74d3f695205e4fd4c43899",
+  "project_name": "shadcn",
+  "target_url": "https://shadcnspace.com/",
+  "status": "Running",
+  "current_agent": "Explorer",
+  "current_stage": "planner",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-06T18:35:34.100922+00:00",
+  "last_updated_at": "2026-08-06T18:42:26.029691+00:00",
+  "completed_agents": [
+    "Planner"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 410.35,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "shadcn",
+      "description": "Autonomous testing run",
+      "target_url": "https://shadcnspace.com/"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "A website showcasing UI components built with React and Tailwind CSS.",
+        "key_components": [
+          "UI Components",
+          "Documentation",
+          "Examples"
+        ],
+        "project_type": "Portfolio",
+        "business_domain": "Software Development",
+        "main_purpose": "To demonstrate a collection of reusable UI components for developers.",
+        "primary_users": [
+          "Developers",
+          "Designers",
+          "Project Managers"
+        ],
+        "expected_user_journey": [
+          "Visit the homepage to see all available components.",
+          "Click on a component to view its documentation and examples."
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify that the homepage loads without errors.",
+          "Check if all UI components are displayed correctly."
+        ],
+        "regression_tests": [
+          "Test the functionality of each component after updates or changes.",
+          "Ensure that existing examples and documentation remain accurate."
+        ],
+        "boundary_tests": [
+          "Input invalid data into form fields to ensure error messages appear as expected."
+        ],
+        "negative_tests": [
+          "Attempt to access non-existent components or pages to verify 404 errors."
+        ],
+        "accessibility_tests": [
+          "Audit the website for compliance with WCAG standards."
+        ],
+        "integration_tests": [
+          "Test interactions between different UI components."
+        ],
+        "system_tests": [
+          "Verify that the website performs well under load."
+        ],
+        "ui_tests": [
+          "Check the visual consistency and responsiveness of the components across devices."
+        ],
+        "functional_tests": [
+          "Ensure that each component functions as intended according to its documentation."
+        ],
+        "exploratory_tests": [
+          "Explore user interactions with various components to identify unexpected behaviors."
+        ],
+        "compatibility_tests": [
+          "Test the website on multiple browsers and devices."
+        ],
+        "security_tests": [
+          "Scan for vulnerabilities such as XSS, CSRF, and SQL injection."
+        ],
+        "performance_test_suggestions": [
+          "Perform a performance audit using tools like Lighthouse."
+        ],
+        "api_test_suggestions": [
+          "Load test the API endpoints used by the components."
+        ]
+      },
+      "priority_areas": [
+        "UI Components",
+        "Documentation Accuracy"
+      ],
+      "business_workflow": [
+        "Developers use components for their projects",
+        "Designers use components for prototypes"
+      ],
+      "user_workflow": [
+        "Viewing and interacting with UI components"
+      ],
+      "module_dependency_graph": {
+        "Components": [
+          "None"
+        ]
+      },
+      "detected_modules": [
+        {
+          "name": "Components",
+          "purpose": "A collection of reusable UI components.",
+          "business_importance": "HIGH",
+          "risk_level": "LOW",
+          "priority": "HIGH",
+          "dependencies": []
+        }
+      ],
+      "critical_user_journeys": [
+        "Navigating through all available components and viewing their documentation"
+      ],
+      "high_risk_areas": [
+        "Security vulnerabilities in component interactions"
+      ],
+      "security_sensitive_areas": [
+        "Authentication routes, if any"
+      ],
+      "functional_requirements": [
+        "Components should render correctly on various devices.",
+        "Documentation for each component should be accurate."
+      ],
+      "non_functional_requirements": [
+        "Website should load within a reasonable time frame.",
+        "Responsiveness and performance under load"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "Sample data to populate form fields"
+        ],
+        "invalid_data": [
+          "Invalid input for form fields"
+        ],
+        "boundary_data": [
+          "Boundary values for numeric inputs"
+        ],
+        "special_characters": [
+          "Inputs with special characters"
+        ],
+        "duplicate_data": [
+          "Duplicate entries in forms"
+        ],
+        "empty_data": [
+          "Empty form submissions"
+        ],
+        "large_data": [
+          "Large size data inputs"
+        ]
+      },
+      "assertions": [
+        "Page Loaded",
+        "Button Clickable",
+        "Validation message appears for invalid input"
+      ],
+      "explorer_instructions": [
+        "Scan all UI components and their documentation pages"
+      ],
+      "generator_instructions": [
+        "Cover edge cases such as large data inputs and special characters"
+      ],
+      "validator_instructions": [
+        "Verify that all components render correctly and documentation is accurate"
+      ],
+      "bug_analyzer_instructions": [
+        "Capture console traces and network issues during validation failure"
+      ],
+      "reporter_instructions": [
+        "Collect execution metrics such as load times and error rates"
+      ]
+    }
+  },
+  "logs": [
+    "[2026-08-06T18:35:34.100922+00:00] Initializing new execution pipeline...",
+    "[2026-08-06T18:35:35.673761+00:00] Agent 'Planner' execution started",
+    "[2026-08-06T18:35:35.673761+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-06T18:42:26.027691+00:00] Agent 'Planner' executed model 'qwen2.5-coder:7b' (ollama). Latency: 408.8s, Tokens (In/Out): 884/897",
+    "[2026-08-06T18:42:26.029691+00:00] Pipeline progress updated: 10%",
+    "[2026-08-06T18:42:26.029691+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 410.35s)",
+    "[2026-08-06T18:42:26.029691+00:00] Agent 'Planner' completed successfully in 410.35s"
+  ],
+  "execution_time": 0.0,
+  "progress": 10
+}

@@ -1,0 +1,52 @@
+{
+  "execution_id": "6a759d668d65d4def8fa8b43",
+  "project_name": "karmanisht",
+  "target_url": "https://karmanisht.com",
+  "status": "Failed",
+  "current_agent": "Planner",
+  "current_stage": "init",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Analyzing project requirements and target structure...",
+  "started_at": "2026-08-07T08:55:02.701998+00:00",
+  "last_updated_at": "2026-08-07T08:56:00.070741+00:00",
+  "completed_agents": [],
+  "failed_agents": [
+    "Planner"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Failed",
+      "execution_time": 57.33,
+      "retry_count": 1,
+      "error_object": "8 validation errors for PlannerOutput\nproject_analysis.summary\n  Field required [type=missing, input_value={'overview': 'Automated Q...n', 'forms', 'routing']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nproject_analysis.key_components\n  Field required [type=missing, input_value={'overview': 'Automated Q...n', 'forms', 'routing']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.smoke_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.regression_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.boundary_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.negative_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.accessibility_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\npriority_areas\n  Field required [type=missing, input_value={'project_analysis': {'ov..., 'estimated_cases': 6}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing",
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "karmanisht",
+      "description": "Autonomous testing run",
+      "target_url": "https://karmanisht.com"
+    },
+    "integrations": {}
+  },
+  "logs": [
+    "[2026-08-07T08:55:02.701998+00:00] Initializing new execution pipeline...",
+    "[2026-08-07T08:55:02.743567+00:00] Agent 'Planner' execution started",
+    "[2026-08-07T08:55:02.743567+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T08:55:02.747208+00:00] Analyzing project requirements and target structure...",
+    "[2026-08-07T08:55:31.102887+00:00] Agent 'Planner' failed with: 8 validation errors for PlannerOutput\nproject_analysis.summary\n  Field required [type=missing, input_value={'overview': 'Automated Q...n', 'forms', 'routing']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nproject_analysis.key_components\n  Field required [type=missing, input_value={'overview': 'Automated Q...n', 'forms', 'routing']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.smoke_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.regression_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.boundary_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.negative_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.accessibility_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\npriority_areas\n  Field required [type=missing, input_value={'project_analysis': {'ov..., 'estimated_cases': 6}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing. Retrying (1/1)...",
+    "[2026-08-07T08:55:31.102887+00:00] Agent 'Planner' status updated to Retrying (Retries: 1, Time: 28.36s)",
+    "[2026-08-07T08:55:32.112930+00:00] Analyzing project requirements and target structure...",
+    "[2026-08-07T08:56:00.070741+00:00] Agent 'Planner' failed permanently after 2 retries. Error: 8 validation errors for PlannerOutput\nproject_analysis.summary\n  Field required [type=missing, input_value={'overview': 'Automated Q...n', 'forms', 'routing']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nproject_analysis.key_components\n  Field required [type=missing, input_value={'overview': 'Automated Q...n', 'forms', 'routing']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.smoke_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.regression_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.boundary_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.negative_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.accessibility_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\npriority_areas\n  Field required [type=missing, input_value={'project_analysis': {'ov..., 'estimated_cases': 6}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing",
+    "[2026-08-07T08:56:00.070741+00:00] Agent 'Planner' status updated to Failed (Retries: 1, Time: 57.33s)",
+    "[2026-08-07T08:56:00.070741+00:00] Agent 'Planner' crashed: 8 validation errors for PlannerOutput\nproject_analysis.summary\n  Field required [type=missing, input_value={'overview': 'Automated Q...n', 'forms', 'routing']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nproject_analysis.key_components\n  Field required [type=missing, input_value={'overview': 'Automated Q...n', 'forms', 'routing']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.smoke_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.regression_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.boundary_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.negative_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntesting_strategy.accessibility_tests\n  Field required [type=missing, input_value={'priority_areas': ['smok...], 'estimated_cases': 6}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\npriority_areas\n  Field required [type=missing, input_value={'project_analysis': {'ov..., 'estimated_cases': 6}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing"
+  ],
+  "execution_time": 0.0,
+  "progress": 0
+}

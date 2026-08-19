@@ -1,0 +1,201 @@
+{
+  "execution_id": "6a6d97552e70502bcb919c3f",
+  "project_name": "Custom Project",
+  "target_url": "https://leetcode.com/accounts/login/",
+  "status": "Cancelled",
+  "current_agent": "Planner",
+  "current_stage": "planner",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-01T06:51:01.163410+00:00",
+  "last_updated_at": "2026-08-01T06:53:04.981234+00:00",
+  "completed_agents": [
+    "Planner"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 123.77,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "Custom Project",
+      "description": "Autonomous smoke and assertion validations suite",
+      "target_url": "https://leetcode.com/accounts/login/"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "The application is a login page for LeetCode, an online platform for practicing programming problems.",
+        "key_components": [
+          "Login Form",
+          "Error Messages"
+        ],
+        "project_type": "Admin Dashboard",
+        "business_domain": "Education/Online Learning",
+        "main_purpose": "To allow users to log in and access the platform's features",
+        "primary_users": [
+          "Students",
+          "Programmers"
+        ],
+        "expected_user_journey": [
+          "Navigate to login page",
+          "Enter credentials",
+          "Submit form"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify that the login page loads successfully"
+        ],
+        "regression_tests": [
+          "Test the login functionality with valid credentials",
+          "Test the login functionality with invalid credentials"
+        ],
+        "boundary_tests": [
+          "Test the login form with boundary values for username and password (e.g., minimum/maximum length)"
+        ],
+        "negative_tests": [
+          "Test the login functionality with empty fields",
+          "Test the login functionality with special characters in username/password"
+        ],
+        "accessibility_tests": [
+          "Audit the login page for accessibility standards"
+        ],
+        "integration_tests": [
+          "Verify that the login form integrates correctly with the backend authentication service"
+        ],
+        "system_tests": [
+          "Test the system's ability to handle multiple concurrent users logging in simultaneously"
+        ],
+        "ui_tests": [
+          "Check the visual appearance of the login page and its elements"
+        ],
+        "functional_tests": [
+          "Verify that the login form functions correctly under various conditions (e.g., network latency, browser compatibility)"
+        ],
+        "exploratory_tests": [
+          "Explore alternative user flows for logging in (e.g., using social media accounts)"
+        ],
+        "compatibility_tests": [
+          "Test the login page on multiple browsers and devices"
+        ],
+        "security_tests": [
+          "Perform security checks to ensure that the login form is secure against common vulnerabilities (e.g., SQL injection, cross-site scripting)"
+        ],
+        "performance_test_suggestions": [
+          "Audit the login page's performance under load conditions"
+        ],
+        "api_test_suggestions": [
+          "Load test the backend authentication service endpoints"
+        ]
+      },
+      "priority_areas": [
+        "Login functionality",
+        "Security checks"
+      ],
+      "business_workflow": [
+        "User logs in to access programming problems and solutions"
+      ],
+      "user_workflow": [
+        "Navigate to login page, enter credentials, submit form"
+      ],
+      "module_dependency_graph": {
+        "LoginForm": [
+          "AuthenticationService"
+        ]
+      },
+      "detected_modules": [
+        {
+          "name": "LoginForm",
+          "purpose": "Handles user authentication",
+          "business_importance": "HIGH",
+          "risk_level": "CRITICAL",
+          "priority": "HIGH",
+          "dependencies": [
+            "AuthenticationService"
+          ]
+        }
+      ],
+      "critical_user_journeys": [
+        "User logs in with valid credentials"
+      ],
+      "high_risk_areas": [
+        "Login form security",
+        "Backend authentication service"
+      ],
+      "security_sensitive_areas": [
+        "/login",
+        "/authenticate"
+      ],
+      "functional_requirements": [
+        "The login form must accept valid username and password combinations",
+        "The login form must reject invalid username and password combinations",
+        "The login form must handle empty fields gracefully",
+        "The login form must handle special characters in username/password"
+      ],
+      "non_functional_requirements": [
+        "The login page must load within a specified time limit",
+        "The login form must be accessible to users with disabilities"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "{'username': 'user1', 'password': 'pass123'}",
+          "{'username': 'admin', 'password': 'admin123'}"
+        ],
+        "invalid_data": [
+          "{'username': '', 'password': ''}",
+          "{'username': 'user1', 'password': ''}"
+        ],
+        "boundary_data": [
+          "{'username': 'a', 'password': 'a'}",
+          "{'username': 'z'}"
+        ],
+        "special_characters": [
+          "{'username': '!@#$%', 'password': '!@#$%'}",
+          "{'username': 'user1', 'password': 'pass!@#'}"
+        ],
+        "duplicate_data": [
+          "{'username': 'user1', 'password': 'pass123'}",
+          "{'username': 'user1', 'password': 'pass123'}"
+        ],
+        "empty_data": [
+          "{'username': '', 'password': ''}",
+          "{'username': 'user1', 'password': ''}"
+        ],
+        "large_data": [
+          "{'username': 'a'}",
+          "{'username': 'z'}"
+        ]
+      },
+      "assertions": [],
+      "explorer_instructions": [],
+      "generator_instructions": [],
+      "validator_instructions": [],
+      "bug_analyzer_instructions": [],
+      "reporter_instructions": []
+    }
+  },
+  "logs": [
+    "[2026-08-01T06:51:01.163410+00:00] Initializing new execution pipeline...",
+    "[2026-08-01T06:51:01.207187+00:00] Agent 'Planner' execution started",
+    "[2026-08-01T06:51:01.207187+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-01T06:53:04.973814+00:00] Agent 'Planner' executed model 'qwen2.5-coder:7b' (ollama). Latency: 122.24s, Tokens (In/Out): 885/1200",
+    "[2026-08-01T06:53:04.973814+00:00] Pipeline progress updated: 10%",
+    "[2026-08-01T06:53:04.973814+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 123.77s)",
+    "[2026-08-01T06:53:04.973814+00:00] Agent 'Planner' completed successfully in 123.77s",
+    "[2026-08-01T06:53:04.981234+00:00] Pipeline execution cancelled by user request."
+  ],
+  "execution_time": 0.0,
+  "progress": 10
+}

@@ -1,0 +1,52 @@
+{
+  "execution_id": "6a75873c383399d090b9acae",
+  "project_name": "karmanisht",
+  "target_url": "https://karmanisht.com",
+  "status": "Failed",
+  "current_agent": "Planner",
+  "current_stage": "init",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Analyzing project requirements and target structure...",
+  "started_at": "2026-08-07T07:20:28.120589+00:00",
+  "last_updated_at": "2026-08-07T07:20:58.908801+00:00",
+  "completed_agents": [],
+  "failed_agents": [
+    "Planner"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Failed",
+      "execution_time": 30.77,
+      "retry_count": 1,
+      "error_object": "PlannerAgent LLM failed to produce valid structured output: cannot access local variable 'response' where it is not associated with a value",
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "karmanisht",
+      "description": "Autonomous testing run",
+      "target_url": "https://karmanisht.com"
+    },
+    "integrations": {}
+  },
+  "logs": [
+    "[2026-08-07T07:20:28.120589+00:00] Initializing new execution pipeline...",
+    "[2026-08-07T07:20:28.138872+00:00] Agent 'Planner' execution started",
+    "[2026-08-07T07:20:28.141111+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T07:20:28.141111+00:00] Analyzing project requirements and target structure...",
+    "[2026-08-07T07:20:43.652045+00:00] Agent 'Planner' failed with: PlannerAgent LLM failed to produce valid structured output: cannot access local variable 'response' where it is not associated with a value. Retrying (1/1)...",
+    "[2026-08-07T07:20:43.652045+00:00] Agent 'Planner' status updated to Retrying (Retries: 1, Time: 15.51s)",
+    "[2026-08-07T07:20:44.654786+00:00] Analyzing project requirements and target structure...",
+    "[2026-08-07T07:20:58.908801+00:00] Agent 'Planner' failed permanently after 2 retries. Error: PlannerAgent LLM failed to produce valid structured output: cannot access local variable 'response' where it is not associated with a value",
+    "[2026-08-07T07:20:58.908801+00:00] Agent 'Planner' status updated to Failed (Retries: 1, Time: 30.77s)",
+    "[2026-08-07T07:20:58.908801+00:00] Agent 'Planner' crashed: PlannerAgent LLM failed to produce valid structured output: cannot access local variable 'response' where it is not associated with a value"
+  ],
+  "execution_time": 0.0,
+  "progress": 0
+}

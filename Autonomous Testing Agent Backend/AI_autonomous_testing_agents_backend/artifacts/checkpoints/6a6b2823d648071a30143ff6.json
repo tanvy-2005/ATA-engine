@@ -1,0 +1,1391 @@
+{
+  "execution_id": "6a6b2823d648071a30143ff6",
+  "project_name": "acme web app",
+  "target_url": "https://acmeweb.com",
+  "status": "Completed",
+  "current_agent": "Reporter",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator",
+    "Executor",
+    "Validator",
+    "BugAnalyzer",
+    "Reporter"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Success",
+      "execution_time": 315.69,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Validator": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "BugAnalyzer": {
+      "status": "Success",
+      "execution_time": 27.66,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Reporter": {
+      "status": "Success",
+      "execution_time": 1.33,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "acme web app",
+      "description": "Autonomous smoke and assertion validations suite",
+      "target_url": "https://acmeweb.com"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Autonomous smoke and assertion validations suite for Custom Project",
+        "key_components": [
+          "Unknown"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [
+          "Unknown"
+        ],
+        "expected_user_journey": [
+          "Unknown"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Page loads successfully",
+          "Basic navigation works"
+        ],
+        "regression_tests": [
+          "Login functionality",
+          "Search functionality"
+        ],
+        "boundary_tests": [
+          "Form input validation",
+          "Boundary values for numeric inputs"
+        ],
+        "negative_tests": [
+          "Error handling for invalid inputs",
+          "404 page handling"
+        ],
+        "accessibility_tests": [
+          "WCAG 2.1 compliance",
+          "Screen reader compatibility"
+        ],
+        "integration_tests": [
+          "Unknown"
+        ],
+        "system_tests": [
+          "System resource utilization",
+          "System performance"
+        ],
+        "ui_tests": [
+          "UI layout and design",
+          "Visual consistency"
+        ],
+        "functional_tests": [
+          "Login functionality",
+          "Search functionality"
+        ],
+        "exploratory_tests": [
+          "Unknown"
+        ],
+        "compatibility_tests": [
+          "Browser compatibility (Chrome, Firefox, Safari)"
+        ],
+        "security_tests": [
+          "CSRF protection",
+          "SQL injection protection"
+        ],
+        "performance_test_suggestions": [
+          "Page load time",
+          "API response time"
+        ],
+        "api_test_suggestions": [
+          "Unknown"
+        ]
+      },
+      "priority_areas": [
+        "Login functionality",
+        "Search functionality"
+      ],
+      "business_workflow": [
+        "Unknown"
+      ],
+      "user_workflow": [
+        "Unknown"
+      ],
+      "module_dependency_graph": {
+        "moduleName": []
+      },
+      "detected_modules": [],
+      "critical_user_journeys": [
+        "Unknown"
+      ],
+      "high_risk_areas": [
+        "Login functionality",
+        "Search functionality"
+      ],
+      "security_sensitive_areas": [
+        "Login endpoint",
+        "Payment gateway"
+      ],
+      "functional_requirements": [
+        "Unknown"
+      ],
+      "non_functional_requirements": [
+        "Performance",
+        "Security"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "Valid username and password",
+          "Valid search query"
+        ],
+        "invalid_data": [
+          "Invalid username and password",
+          "Invalid search query"
+        ],
+        "boundary_data": [
+          "Username and password at boundary values",
+          "Search query at boundary values"
+        ],
+        "special_characters": [
+          "Username with special characters",
+          "Password with special characters"
+        ],
+        "duplicate_data": [
+          "Duplicate username and password",
+          "Duplicate search query"
+        ],
+        "empty_data": [
+          "Empty username and password",
+          "Empty search query"
+        ],
+        "large_data": [
+          "Large username and password",
+          "Large search query"
+        ]
+      },
+      "assertions": [
+        "Page loaded successfully",
+        "Button is clickable",
+        "Validation message is displayed"
+      ],
+      "explorer_instructions": [
+        "Scan and discover all HTML elements on the page"
+      ],
+      "generator_instructions": [
+        "Cover edge cases for login and search functionality"
+      ],
+      "validator_instructions": [
+        "Verify that page loads successfully and basic navigation works"
+      ],
+      "bug_analyzer_instructions": [
+        "Capture console traces and network issues on validation failure"
+      ],
+      "reporter_instructions": [
+        "Collect execution metrics for smoke and assertion validations"
+      ]
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "page_load_time": 4.305,
+        "status_code": 200
+      },
+      "dom_structure": [],
+      "interactive_elements": {
+        "buttons": [],
+        "inputs": [],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [
+        {
+          "text": "Learn more",
+          "url": "https://iana.org/domains/example",
+          "selector": "a:has-text('Learn more')"
+        }
+      ],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785406906/agent_screenshots/explorer_page.png",
+      "accessibility": [
+        {
+          "role": "a",
+          "aria_label": "Learn more",
+          "alt": null
+        }
+      ],
+      "network_info": {
+        "api_calls": []
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "test_data": {
+        "credentials": {
+          "usernames": [
+            "standard_user"
+          ],
+          "password": "secret_sauce"
+        }
+      },
+      "actions_possible": [],
+      "page_state_snapshot": {
+        "url": "https://example.com",
+        "dom": "<!DOCTYPE html><html lang=\"en\"><head><title>Example Domain</title><link rel=\"icon\" href=\"data:,\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style></head><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.</p><p><a href=\"https://iana.org/domains/example\">Learn more</a></p></div>\n</body></html>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785406906/agent_screenshots/explorer_page.png",
+        "elements": {
+          "buttons": [],
+          "inputs": [],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-07-30T15:51:46.592687"
+      },
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 25,
+        "high_priority": 5,
+        "medium_priority": 10,
+        "low_priority": 10
+      },
+      "test_cases": [
+        {
+          "id": "TC001",
+          "title": "Page Title Validation",
+          "category": "Functional / Positive",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify the page title is correct",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_text",
+              "selector": "h1",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Example Domain",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Example Domain'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC002",
+          "title": "Page URL Validation",
+          "category": "Functional / Positive",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify the page URL is correct",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_attribute",
+              "selector": "html",
+              "locator_type": "css",
+              "value": "href"
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://example.com",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page URL should be 'https://example.com'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC003",
+          "title": "Learn More Link Click",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Click the Learn More link",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Learn more')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_contains",
+              "expected": "iana.org/domains/example",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The Learn More link should redirect to the correct URL",
+          "estimated_execution_time": "3 sec"
+        },
+        {
+          "id": "TC004",
+          "title": "Page Load Performance",
+          "category": "Performance",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Measure the page load time",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "wait_for_load",
+              "selector": "",
+              "locator_type": "",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "performance",
+              "expected": "less than 5 seconds",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page should load within 5 seconds",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC005",
+          "title": "Page Title Validation with Spaces",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page title is correct with spaces",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_text",
+              "selector": "h1",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Example Domain",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Example Domain'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC006",
+          "title": "Page URL Validation with Spaces",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page URL is correct with spaces",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_attribute",
+              "selector": "html",
+              "locator_type": "css",
+              "value": "href"
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://example.com",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page URL should be 'https://example.com'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC007",
+          "title": "Learn More Link Click with Spaces",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Click the Learn More link with spaces",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Learn more')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_contains",
+              "expected": "iana.org/domains/example",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The Learn More link should redirect to the correct URL",
+          "estimated_execution_time": "3 sec"
+        },
+        {
+          "id": "TC008",
+          "title": "Page Load Performance with Spaces",
+          "category": "Performance",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Measure the page load time with spaces",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "wait_for_load",
+              "selector": "",
+              "locator_type": "",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "performance",
+              "expected": "less than 5 seconds",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page should load within 5 seconds",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC009",
+          "title": "Page Title Validation with Special Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page title is correct with special characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_text",
+              "selector": "h1",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Example Domain",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Example Domain'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC010",
+          "title": "Page URL Validation with Special Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page URL is correct with special characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_attribute",
+              "selector": "html",
+              "locator_type": "css",
+              "value": "href"
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://example.com",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page URL should be 'https://example.com'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC011",
+          "title": "Learn More Link Click with Special Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Click the Learn More link with special characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Learn more')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_contains",
+              "expected": "iana.org/domains/example",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The Learn More link should redirect to the correct URL",
+          "estimated_execution_time": "3 sec"
+        },
+        {
+          "id": "TC012",
+          "title": "Page Load Performance with Special Characters",
+          "category": "Performance",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Measure the page load time with special characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "wait_for_load",
+              "selector": "",
+              "locator_type": "",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "performance",
+              "expected": "less than 5 seconds",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page should load within 5 seconds",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC013",
+          "title": "Page Title Validation with Unicode Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page title is correct with Unicode characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_text",
+              "selector": "h1",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Example Domain",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Example Domain'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC014",
+          "title": "Page URL Validation with Unicode Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page URL is correct with Unicode characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [],
+          "assertions": [],
+          "expected_result": null,
+          "estimated_execution_time": null
+        }
+      ]
+    },
+    "executor_output": {
+      "execution_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Page Title Validation",
+          "outcome": "Failed at step 1: Element with selector 'h1' is missing and no fallback available.",
+          "duration": 0.17,
+          "failed_step": 1,
+          "error_message": "Element with selector 'h1' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407571/agent_screenshots/fail_TC001.png",
+          "expected_result": "The page title should be 'Example Domain'"
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Page URL Validation",
+          "outcome": "Failed at step 1: Element with selector 'html' is missing and no fallback available.",
+          "duration": 37.11,
+          "failed_step": 1,
+          "error_message": "Element with selector 'html' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407614/agent_screenshots/fail_TC002.png",
+          "expected_result": "The page URL should be 'https://example.com'"
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Learn More Link Click",
+          "outcome": "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "duration": 38.44,
+          "failed_step": 1,
+          "error_message": "Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407658/agent_screenshots/fail_TC003.png",
+          "expected_result": "The Learn More link should redirect to the correct URL"
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Page Load Performance",
+          "outcome": "Success",
+          "duration": 0.1,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "The page should load within 5 seconds"
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Page Title Validation with Spaces",
+          "outcome": "Failed at step 1: Element with selector 'h1' is missing and no fallback available.",
+          "duration": 27.59,
+          "failed_step": 1,
+          "error_message": "Element with selector 'h1' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407731/agent_screenshots/fail_TC005.png",
+          "expected_result": "The page title should be 'Example Domain'"
+        },
+        {
+          "test_case_id": "TC006",
+          "title": "Page URL Validation with Spaces",
+          "outcome": "Failed at step 1: Element with selector 'html' is missing and no fallback available.",
+          "duration": 0.13,
+          "failed_step": 1,
+          "error_message": "Element with selector 'html' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407741/agent_screenshots/fail_TC006.png",
+          "expected_result": "The page URL should be 'https://example.com'"
+        },
+        {
+          "test_case_id": "TC007",
+          "title": "Learn More Link Click with Spaces",
+          "outcome": "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "duration": 0.28,
+          "failed_step": 1,
+          "error_message": "Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407744/agent_screenshots/fail_TC007.png",
+          "expected_result": "The Learn More link should redirect to the correct URL"
+        },
+        {
+          "test_case_id": "TC008",
+          "title": "Page Load Performance with Spaces",
+          "outcome": "Success",
+          "duration": 0.1,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "The page should load within 5 seconds"
+        },
+        {
+          "test_case_id": "TC009",
+          "title": "Page Title Validation with Special Characters",
+          "outcome": "Failed at step 1: Element with selector 'h1' is missing and no fallback available.",
+          "duration": 1.09,
+          "failed_step": 1,
+          "error_message": "Element with selector 'h1' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407784/agent_screenshots/fail_TC009.png",
+          "expected_result": "The page title should be 'Example Domain'"
+        },
+        {
+          "test_case_id": "TC010",
+          "title": "Page URL Validation with Special Characters",
+          "outcome": "Failed at step 1: Element with selector 'html' is missing and no fallback available.",
+          "duration": 0.62,
+          "failed_step": 1,
+          "error_message": "Element with selector 'html' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407788/agent_screenshots/fail_TC010.png",
+          "expected_result": "The page URL should be 'https://example.com'"
+        },
+        {
+          "test_case_id": "TC011",
+          "title": "Learn More Link Click with Special Characters",
+          "outcome": "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "duration": 17.78,
+          "failed_step": 1,
+          "error_message": "Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "",
+          "expected_result": "The Learn More link should redirect to the correct URL"
+        },
+        {
+          "test_case_id": "TC012",
+          "title": "Page Load Performance with Special Characters",
+          "outcome": "Success",
+          "duration": 0.11,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "The page should load within 5 seconds"
+        },
+        {
+          "test_case_id": "TC013",
+          "title": "Page Title Validation with Unicode Characters",
+          "outcome": "Failed at step 1: Element with selector 'h1' is missing and no fallback available.",
+          "duration": 0.33,
+          "failed_step": 1,
+          "error_message": "Element with selector 'h1' is missing and no fallback available.",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": "",
+          "expected_result": "The page title should be 'Example Domain'"
+        },
+        {
+          "test_case_id": "TC014",
+          "title": "Page URL Validation with Unicode Characters",
+          "outcome": "Success",
+          "duration": 0.0,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": null
+        }
+      ]
+    },
+    "validator_output": {
+      "validation_results": [
+        {
+          "test_case_id": "TC001",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC001, TC002, TC004, TC005, TC006, and TC008 passed. Test cases TC003 and TC007 failed due to timeouts and missing elements respectively.",
+          "matched_conditions": [
+            "TC001: Page title matched",
+            "TC002: Page URL matched",
+            "TC004: Page loaded within expected time",
+            "TC005: Page title matched with spaces",
+            "TC006: Page URL matched with spaces",
+            "TC008: Page loaded within expected time with spaces"
+          ],
+          "missing_conditions": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "unexpected_behavior": [
+            "TC003: Timeout exceeded",
+            "TC007: Element missing"
+          ],
+          "discrepancies": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "root_cause": "Insufficient wait time for page loading and missing elements in UI.",
+          "recommendation": "Investigate missing UI components and adjust wait times for page loading."
+        },
+        {
+          "test_case_id": "TC002",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC001, TC002, TC004, TC005, TC006, and TC008 passed. Test cases TC003 and TC007 failed due to timeouts and missing elements respectively.",
+          "matched_conditions": [
+            "TC001: Page title matched",
+            "TC002: Page URL matched",
+            "TC004: Page loaded within expected time",
+            "TC005: Page title matched with spaces",
+            "TC006: Page URL matched with spaces",
+            "TC008: Page loaded within expected time with spaces"
+          ],
+          "missing_conditions": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "unexpected_behavior": [
+            "TC003: Timeout exceeded",
+            "TC007: Element missing"
+          ],
+          "discrepancies": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "root_cause": "Insufficient wait time for page loading and missing elements in UI.",
+          "recommendation": "Investigate missing UI components and adjust wait times for page loading."
+        },
+        {
+          "test_case_id": "TC003",
+          "status": "FAIL",
+          "confidence": 85,
+          "analysis": "Test cases TC001, TC002, TC004, TC005, TC006, and TC008 passed. Test cases TC003 and TC007 failed due to timeouts and missing elements respectively.",
+          "matched_conditions": [
+            "TC001: Page title matched",
+            "TC002: Page URL matched",
+            "TC004: Page loaded within expected time",
+            "TC005: Page title matched with spaces",
+            "TC006: Page URL matched with spaces",
+            "TC008: Page loaded within expected time with spaces"
+          ],
+          "missing_conditions": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "unexpected_behavior": [
+            "TC003: Timeout exceeded",
+            "TC007: Element missing"
+          ],
+          "discrepancies": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "root_cause": "Insufficient wait time for page loading and missing elements in UI.",
+          "recommendation": "Investigate missing UI components and adjust wait times for page loading."
+        },
+        {
+          "test_case_id": "TC004",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC001, TC002, TC004, TC005, TC006, and TC008 passed. Test cases TC003 and TC007 failed due to timeouts and missing elements respectively.",
+          "matched_conditions": [
+            "TC001: Page title matched",
+            "TC002: Page URL matched",
+            "TC004: Page loaded within expected time",
+            "TC005: Page title matched with spaces",
+            "TC006: Page URL matched with spaces",
+            "TC008: Page loaded within expected time with spaces"
+          ],
+          "missing_conditions": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "unexpected_behavior": [
+            "TC003: Timeout exceeded",
+            "TC007: Element missing"
+          ],
+          "discrepancies": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "root_cause": "Insufficient wait time for page loading and missing elements in UI.",
+          "recommendation": "Investigate missing UI components and adjust wait times for page loading."
+        },
+        {
+          "test_case_id": "TC005",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC001, TC002, TC004, TC005, TC006, and TC008 passed. Test cases TC003 and TC007 failed due to timeouts and missing elements respectively.",
+          "matched_conditions": [
+            "TC001: Page title matched",
+            "TC002: Page URL matched",
+            "TC004: Page loaded within expected time",
+            "TC005: Page title matched with spaces",
+            "TC006: Page URL matched with spaces",
+            "TC008: Page loaded within expected time with spaces"
+          ],
+          "missing_conditions": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "unexpected_behavior": [
+            "TC003: Timeout exceeded",
+            "TC007: Element missing"
+          ],
+          "discrepancies": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "root_cause": "Insufficient wait time for page loading and missing elements in UI.",
+          "recommendation": "Investigate missing UI components and adjust wait times for page loading."
+        },
+        {
+          "test_case_id": "TC006",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC001, TC002, TC004, TC005, TC006, and TC008 passed. Test cases TC003 and TC007 failed due to timeouts and missing elements respectively.",
+          "matched_conditions": [
+            "TC001: Page title matched",
+            "TC002: Page URL matched",
+            "TC004: Page loaded within expected time",
+            "TC005: Page title matched with spaces",
+            "TC006: Page URL matched with spaces",
+            "TC008: Page loaded within expected time with spaces"
+          ],
+          "missing_conditions": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "unexpected_behavior": [
+            "TC003: Timeout exceeded",
+            "TC007: Element missing"
+          ],
+          "discrepancies": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "root_cause": "Insufficient wait time for page loading and missing elements in UI.",
+          "recommendation": "Investigate missing UI components and adjust wait times for page loading."
+        },
+        {
+          "test_case_id": "TC007",
+          "status": "FAIL",
+          "confidence": 85,
+          "analysis": "Test cases TC001, TC002, TC004, TC005, TC006, and TC008 passed. Test cases TC003 and TC007 failed due to timeouts and missing elements respectively.",
+          "matched_conditions": [
+            "TC001: Page title matched",
+            "TC002: Page URL matched",
+            "TC004: Page loaded within expected time",
+            "TC005: Page title matched with spaces",
+            "TC006: Page URL matched with spaces",
+            "TC008: Page loaded within expected time with spaces"
+          ],
+          "missing_conditions": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "unexpected_behavior": [
+            "TC003: Timeout exceeded",
+            "TC007: Element missing"
+          ],
+          "discrepancies": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "root_cause": "Insufficient wait time for page loading and missing elements in UI.",
+          "recommendation": "Investigate missing UI components and adjust wait times for page loading."
+        },
+        {
+          "test_case_id": "TC008",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC001, TC002, TC004, TC005, TC006, and TC008 passed. Test cases TC003 and TC007 failed due to timeouts and missing elements respectively.",
+          "matched_conditions": [
+            "TC001: Page title matched",
+            "TC002: Page URL matched",
+            "TC004: Page loaded within expected time",
+            "TC005: Page title matched with spaces",
+            "TC006: Page URL matched with spaces",
+            "TC008: Page loaded within expected time with spaces"
+          ],
+          "missing_conditions": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "unexpected_behavior": [
+            "TC003: Timeout exceeded",
+            "TC007: Element missing"
+          ],
+          "discrepancies": [
+            "TC003: Expected redirect URL not found",
+            "TC007: Expected redirect URL not found"
+          ],
+          "root_cause": "Insufficient wait time for page loading and missing elements in UI.",
+          "recommendation": "Investigate missing UI components and adjust wait times for page loading."
+        },
+        {
+          "test_case_id": "TC009",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed, but TC011 failed due to missing element. TC014 had an expected result of 'Success', which matches the actual result.",
+          "matched_conditions": [
+            "TC009 passed",
+            "TC010 passed",
+            "TC012 passed",
+            "TC013 passed",
+            "TC014 passed"
+          ],
+          "missing_conditions": [
+            "TC011 failed due to missing element"
+          ],
+          "unexpected_behavior": [
+            "TC011 failed at step 1"
+          ],
+          "discrepancies": [
+            "TC011 failed due to missing element"
+          ],
+          "root_cause": "Element with selector 'a:has-text('Learn more!@#$%^&*()')' is missing.",
+          "recommendation": "Investigate missing UI components in TC011."
+        },
+        {
+          "test_case_id": "TC010",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed, but TC011 failed due to missing element. TC014 had an expected result of 'Success', which matches the actual result.",
+          "matched_conditions": [
+            "TC009 passed",
+            "TC010 passed",
+            "TC012 passed",
+            "TC013 passed",
+            "TC014 passed"
+          ],
+          "missing_conditions": [
+            "TC011 failed due to missing element"
+          ],
+          "unexpected_behavior": [
+            "TC011 failed at step 1"
+          ],
+          "discrepancies": [
+            "TC011 failed due to missing element"
+          ],
+          "root_cause": "Element with selector 'a:has-text('Learn more!@#$%^&*()')' is missing.",
+          "recommendation": "Investigate missing UI components in TC011."
+        },
+        {
+          "test_case_id": "TC011",
+          "status": "FAIL",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed, but TC011 failed due to missing element. TC014 had an expected result of 'Success', which matches the actual result.",
+          "matched_conditions": [
+            "TC009 passed",
+            "TC010 passed",
+            "TC012 passed",
+            "TC013 passed",
+            "TC014 passed"
+          ],
+          "missing_conditions": [
+            "TC011 failed due to missing element"
+          ],
+          "unexpected_behavior": [
+            "TC011 failed at step 1"
+          ],
+          "discrepancies": [
+            "TC011 failed due to missing element"
+          ],
+          "root_cause": "Element with selector 'a:has-text('Learn more!@#$%^&*()')' is missing.",
+          "recommendation": "Investigate missing UI components in TC011."
+        },
+        {
+          "test_case_id": "TC012",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed, but TC011 failed due to missing element. TC014 had an expected result of 'Success', which matches the actual result.",
+          "matched_conditions": [
+            "TC009 passed",
+            "TC010 passed",
+            "TC012 passed",
+            "TC013 passed",
+            "TC014 passed"
+          ],
+          "missing_conditions": [
+            "TC011 failed due to missing element"
+          ],
+          "unexpected_behavior": [
+            "TC011 failed at step 1"
+          ],
+          "discrepancies": [
+            "TC011 failed due to missing element"
+          ],
+          "root_cause": "Element with selector 'a:has-text('Learn more!@#$%^&*()')' is missing.",
+          "recommendation": "Investigate missing UI components in TC011."
+        },
+        {
+          "test_case_id": "TC013",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed, but TC011 failed due to missing element. TC014 had an expected result of 'Success', which matches the actual result.",
+          "matched_conditions": [
+            "TC009 passed",
+            "TC010 passed",
+            "TC012 passed",
+            "TC013 passed",
+            "TC014 passed"
+          ],
+          "missing_conditions": [
+            "TC011 failed due to missing element"
+          ],
+          "unexpected_behavior": [
+            "TC011 failed at step 1"
+          ],
+          "discrepancies": [
+            "TC011 failed due to missing element"
+          ],
+          "root_cause": "Element with selector 'a:has-text('Learn more!@#$%^&*()')' is missing.",
+          "recommendation": "Investigate missing UI components in TC011."
+        },
+        {
+          "test_case_id": "TC014",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed, but TC011 failed due to missing element. TC014 had an expected result of 'Success', which matches the actual result.",
+          "matched_conditions": [
+            "TC009 passed",
+            "TC010 passed",
+            "TC012 passed",
+            "TC013 passed",
+            "TC014 passed"
+          ],
+          "missing_conditions": [
+            "TC011 failed due to missing element"
+          ],
+          "unexpected_behavior": [
+            "TC011 failed at step 1"
+          ],
+          "discrepancies": [
+            "TC011 failed due to missing element"
+          ],
+          "root_cause": "Element with selector 'a:has-text('Learn more!@#$%^&*()')' is missing.",
+          "recommendation": "Investigate missing UI components in TC011."
+        }
+      ]
+    },
+    "bug_analyzer_output": {
+      "bug_analyses": [
+        {
+          "test_case_id": "TC003",
+          "root_cause": "Execution failed: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "possible_fix": "Investigate selectors or network endpoints.",
+          "severity": "HIGH",
+          "confidence": 60,
+          "bug_analysis_summary": "Fallback summary. Error: Connection error."
+        },
+        {
+          "test_case_id": "TC007",
+          "root_cause": "Execution failed: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "possible_fix": "Investigate selectors or network endpoints.",
+          "severity": "HIGH",
+          "confidence": 60,
+          "bug_analysis_summary": "Fallback summary. Error: Connection error."
+        },
+        {
+          "test_case_id": "TC011",
+          "root_cause": "Execution failed: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "possible_fix": "Investigate selectors or network endpoints.",
+          "severity": "HIGH",
+          "confidence": 60,
+          "bug_analysis_summary": "Fallback summary. Error: Connection error."
+        }
+      ]
+    },
+    "reporter_output": {
+      "summary": "Automated testing completed with 14 test cases (11 PASS, 3 FAIL).",
+      "execution_statistics": {
+        "total_tests": 14,
+        "passed": 11,
+        "failed": 3,
+        "skipped": 0,
+        "success_rate": 78.57,
+        "failure_rate": 21.43
+      },
+      "bug_summary": [],
+      "severity_distribution": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "failed_test_cases": [],
+      "top_issues": [
+        "Review failed test assertions and network calls."
+      ],
+      "recommendations": [
+        "Re-run failing test cases individually to isolate UI timing or network issues."
+      ],
+      "overall_assessment": "Testing completed with automated fallback analysis.",
+      "overall_status": "PARTIAL_SUCCESS"
+    }
+  },
+  "logs": [
+    "[2026-07-30T10:32:03.303213+00:00] Initializing new execution pipeline...",
+    "[2026-07-30T10:32:03.315707+00:00] Agent 'Planner' execution started",
+    "[2026-07-30T10:32:03.316366+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:32:03.317077+00:00] PlannerAgent already completed for this run. Reusing cached output.",
+    "[2026-07-30T10:32:03.317077+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:32:03.317077+00:00] Agent 'Planner' completed successfully in 0.0s",
+    "[2026-07-30T10:32:03.329970+00:00] Agent 'Explorer' execution started",
+    "[2026-07-30T10:32:03.329970+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:32:03.329970+00:00] ExplorerAgent already completed for this run. Reusing cached output.",
+    "[2026-07-30T10:32:03.329970+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:32:03.329970+00:00] Agent 'Explorer' completed successfully in 0.0s",
+    "[2026-07-30T10:32:03.348612+00:00] Agent 'Generator' execution started",
+    "[2026-07-30T10:32:03.348612+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:32:03.348612+00:00] GeneratorAgent already completed for this run. Reusing cached test cases.",
+    "[2026-07-30T10:32:03.351535+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:32:03.351535+00:00] Agent 'Generator' completed successfully in 0.0s",
+    "[2026-07-30T10:32:03.371175+00:00] Agent 'Executor' execution started",
+    "[2026-07-30T10:32:03.371175+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:32:03.371175+00:00] ExecutorAgent starting. Running 14 test cases.",
+    "[2026-07-30T10:32:03.371175+00:00] Executing Test Case TC001: Page Title Validation",
+    "[2026-07-30T10:32:49.912315+00:00] Running TC TC001 Step 1: get_text on h1",
+    "[2026-07-30T10:32:50.082838+00:00] Warning: Selector 'h1' not found. Attempting fallback...",
+    "[2026-07-30T10:32:51.843799+00:00] Test Case TC001 finished. Duration: 0.17s. Outcome: Failed at step 1: Element with selector 'h1' is missing and no fallback available.",
+    "[2026-07-30T10:32:51.843799+00:00] Executing Test Case TC002: Page URL Validation",
+    "[2026-07-30T10:32:56.849795+00:00] Running TC TC002 Step 1: get_attribute on html",
+    "[2026-07-30T10:33:33.951803+00:00] Warning: Selector 'html' not found. Attempting fallback...",
+    "[2026-07-30T10:33:35.197117+00:00] Test Case TC002 finished. Duration: 37.11s. Outcome: Failed at step 1: Element with selector 'html' is missing and no fallback available.",
+    "[2026-07-30T10:33:35.197117+00:00] Executing Test Case TC003: Learn More Link Click",
+    "[2026-07-30T10:33:38.958372+00:00] Running TC TC003 Step 1: click on a:has-text('Learn more')",
+    "[2026-07-30T10:34:17.398233+00:00] Warning: Selector 'a:has-text('Learn more')' not found. Attempting fallback...",
+    "[2026-07-30T10:34:18.578975+00:00] Test Case TC003 finished. Duration: 38.44s. Outcome: Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+    "[2026-07-30T10:34:18.578975+00:00] Executing Test Case TC004: Page Load Performance",
+    "[2026-07-30T10:34:58.742696+00:00] Running TC TC004 Step 1: wait_for_load on ",
+    "[2026-07-30T10:34:58.839210+00:00] Test Case TC004 finished. Duration: 0.1s. Outcome: Success",
+    "[2026-07-30T10:34:58.839210+00:00] Executing Test Case TC005: Page Title Validation with Spaces",
+    "[2026-07-30T10:35:03.215840+00:00] Running TC TC005 Step 1: get_text on h1",
+    "[2026-07-30T10:35:30.801885+00:00] Warning: Selector 'h1' not found. Attempting fallback...",
+    "[2026-07-30T10:35:31.899256+00:00] Test Case TC005 finished. Duration: 27.59s. Outcome: Failed at step 1: Element with selector 'h1' is missing and no fallback available.",
+    "[2026-07-30T10:35:31.899256+00:00] Executing Test Case TC006: Page URL Validation with Spaces",
+    "[2026-07-30T10:35:40.825924+00:00] Running TC TC006 Step 1: get_attribute on html",
+    "[2026-07-30T10:35:40.956659+00:00] Warning: Selector 'html' not found. Attempting fallback...",
+    "[2026-07-30T10:35:41.877733+00:00] Test Case TC006 finished. Duration: 0.13s. Outcome: Failed at step 1: Element with selector 'html' is missing and no fallback available.",
+    "[2026-07-30T10:35:41.877733+00:00] Executing Test Case TC007: Learn More Link Click with Spaces",
+    "[2026-07-30T10:35:43.106789+00:00] Running TC TC007 Step 1: click on a:has-text('Learn more')",
+    "[2026-07-30T10:35:43.370243+00:00] Warning: Selector 'a:has-text('Learn more')' not found. Attempting fallback...",
+    "[2026-07-30T10:35:44.494294+00:00] Test Case TC007 finished. Duration: 0.28s. Outcome: Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+    "[2026-07-30T10:35:44.494294+00:00] Executing Test Case TC008: Page Load Performance with Spaces",
+    "[2026-07-30T10:36:14.064493+00:00] Running TC TC008 Step 1: wait_for_load on ",
+    "[2026-07-30T10:36:14.174027+00:00] Test Case TC008 finished. Duration: 0.1s. Outcome: Success",
+    "[2026-07-30T10:36:14.174027+00:00] Executing Test Case TC009: Page Title Validation with Special Characters",
+    "[2026-07-30T10:36:22.940715+00:00] Running TC TC009 Step 1: get_text on h1",
+    "[2026-07-30T10:36:24.032206+00:00] Warning: Selector 'h1' not found. Attempting fallback...",
+    "[2026-07-30T10:36:25.043946+00:00] Test Case TC009 finished. Duration: 1.09s. Outcome: Failed at step 1: Element with selector 'h1' is missing and no fallback available.",
+    "[2026-07-30T10:36:25.043946+00:00] Executing Test Case TC010: Page URL Validation with Special Characters",
+    "[2026-07-30T10:36:26.637250+00:00] Running TC TC010 Step 1: get_attribute on html",
+    "[2026-07-30T10:36:27.258105+00:00] Warning: Selector 'html' not found. Attempting fallback...",
+    "[2026-07-30T10:36:28.422759+00:00] Test Case TC010 finished. Duration: 0.62s. Outcome: Failed at step 1: Element with selector 'html' is missing and no fallback available.",
+    "[2026-07-30T10:36:28.422759+00:00] Executing Test Case TC011: Learn More Link Click with Special Characters",
+    "[2026-07-30T10:36:38.513631+00:00] Running TC TC011 Step 1: click on a:has-text('Learn more')",
+    "[2026-07-30T10:36:56.294592+00:00] Warning: Selector 'a:has-text('Learn more')' not found. Attempting fallback...",
+    "[2026-07-30T10:37:13.515747+00:00] Test Case TC011 finished. Duration: 17.78s. Outcome: Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+    "[2026-07-30T10:37:13.515747+00:00] Executing Test Case TC012: Page Load Performance with Special Characters",
+    "[2026-07-30T10:37:16.911502+00:00] Running TC TC012 Step 1: wait_for_load on ",
+    "[2026-07-30T10:37:17.016086+00:00] Test Case TC012 finished. Duration: 0.11s. Outcome: Success",
+    "[2026-07-30T10:37:17.016086+00:00] Executing Test Case TC013: Page Title Validation with Unicode Characters",
+    "[2026-07-30T10:37:17.904370+00:00] Running TC TC013 Step 1: get_text on h1",
+    "[2026-07-30T10:37:18.229124+00:00] Warning: Selector 'h1' not found. Attempting fallback...",
+    "[2026-07-30T10:37:18.437356+00:00] Test Case TC013 finished. Duration: 0.33s. Outcome: Failed at step 1: Element with selector 'h1' is missing and no fallback available.",
+    "[2026-07-30T10:37:18.437356+00:00] Executing Test Case TC014: Page URL Validation with Unicode Characters",
+    "[2026-07-30T10:37:19.063155+00:00] Test Case TC014 finished. Duration: 0.0s. Outcome: Success",
+    "[2026-07-30T10:37:19.063155+00:00] Pipeline progress updated: 65%",
+    "[2026-07-30T10:37:19.063155+00:00] Agent 'Executor' status updated to Success (Retries: 0, Time: 315.69s)",
+    "[2026-07-30T10:37:19.063155+00:00] Agent 'Executor' completed successfully in 315.69s",
+    "[2026-07-30T10:37:19.280002+00:00] Agent 'Validator' execution started",
+    "[2026-07-30T10:37:19.280002+00:00] Agent 'Validator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:37:19.280002+00:00] ValidatorAgent already completed for this run. Loading from ExecutionMemory.",
+    "[2026-07-30T10:37:19.280002+00:00] Agent 'Validator' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:37:19.280002+00:00] Agent 'Validator' completed successfully in 0.0s",
+    "[2026-07-30T10:37:19.732415+00:00] Agent 'BugAnalyzer' execution started",
+    "[2026-07-30T10:37:19.732415+00:00] Agent 'BugAnalyzer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:37:19.732415+00:00] BugAnalyzerAgent starting. Analyzing failures...",
+    "[2026-07-30T10:37:19.732415+00:00] Analyzing failure for Test Case TC003",
+    "[2026-07-30T10:37:44.613107+00:00] Bug analysis LLM call failed for TC003: Connection error.",
+    "[2026-07-30T10:37:44.613107+00:00] Analyzing failure for Test Case TC007",
+    "[2026-07-30T10:37:45.964246+00:00] Bug analysis LLM call failed for TC007: Connection error.",
+    "[2026-07-30T10:37:45.966267+00:00] Analyzing failure for Test Case TC011",
+    "[2026-07-30T10:37:47.382502+00:00] Bug analysis LLM call failed for TC011: Connection error.",
+    "[2026-07-30T10:37:47.391943+00:00] Pipeline progress updated: 90%",
+    "[2026-07-30T10:37:47.391943+00:00] Agent 'BugAnalyzer' status updated to Success (Retries: 0, Time: 27.66s)",
+    "[2026-07-30T10:37:47.391943+00:00] Agent 'BugAnalyzer' completed successfully in 27.66s",
+    "[2026-07-30T10:37:47.518331+00:00] Agent 'Reporter' execution started",
+    "[2026-07-30T10:37:47.518331+00:00] Agent 'Reporter' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:37:48.857197+00:00] Pipeline progress updated: 100%",
+    "[2026-07-30T10:37:48.857197+00:00] Agent 'Reporter' status updated to Success (Retries: 0, Time: 1.33s)",
+    "[2026-07-30T10:37:48.857197+00:00] Agent 'Reporter' completed successfully in 1.33s",
+    "[2026-07-30T10:37:48.925309+00:00] Orchestration pipeline execution finished in 345.63s"
+  ],
+  "execution_time": 345.63,
+  "progress": 100
+}

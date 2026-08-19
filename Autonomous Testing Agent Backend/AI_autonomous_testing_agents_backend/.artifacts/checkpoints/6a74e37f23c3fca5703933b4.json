@@ -1,0 +1,32 @@
+{
+  "execution_id": "6a74e37f23c3fca5703933b4",
+  "project_name": "shadcn",
+  "target_url": "https://shadcnspace.com/",
+  "status": "Running",
+  "current_agent": "Planner",
+  "current_stage": "init",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-06T19:41:51.733144+00:00",
+  "last_updated_at": "2026-08-06T19:41:51.733144+00:00",
+  "completed_agents": [],
+  "failed_agents": [],
+  "agent_states": {},
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "shadcn",
+      "description": "Autonomous testing run",
+      "target_url": "https://shadcnspace.com/"
+    },
+    "integrations": {}
+  },
+  "logs": [
+    "[2026-08-06T19:41:51.733144+00:00] Initializing new execution pipeline..."
+  ],
+  "execution_time": 0.0,
+  "progress": 0
+}

@@ -1,0 +1,1721 @@
+{
+  "execution_id": "6a6b25bcd648071a30143fb3",
+  "project_name": "acme web app",
+  "target_url": "https://acmeweb.com",
+  "status": "Completed",
+  "current_agent": "Reporter",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator",
+    "Executor",
+    "Validator",
+    "BugAnalyzer",
+    "Reporter"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 81.82,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Success",
+      "execution_time": 21.11,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Validator": {
+      "status": "Success",
+      "execution_time": 59.22,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "BugAnalyzer": {
+      "status": "Success",
+      "execution_time": 27.1,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Reporter": {
+      "status": "Success",
+      "execution_time": 2.97,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "acme web app",
+      "description": "Autonomous smoke and assertion validations suite",
+      "target_url": "https://acmeweb.com"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Autonomous smoke and assertion validations suite for Custom Project",
+        "key_components": [
+          "Unknown"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [
+          "Unknown"
+        ],
+        "expected_user_journey": [
+          "Unknown"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Page loads successfully",
+          "Basic navigation works"
+        ],
+        "regression_tests": [
+          "Login functionality",
+          "Search functionality"
+        ],
+        "boundary_tests": [
+          "Form input validation",
+          "Boundary values for numeric inputs"
+        ],
+        "negative_tests": [
+          "Error handling for invalid inputs",
+          "404 page handling"
+        ],
+        "accessibility_tests": [
+          "WCAG 2.1 compliance",
+          "Screen reader compatibility"
+        ],
+        "integration_tests": [
+          "Unknown"
+        ],
+        "system_tests": [
+          "System resource utilization",
+          "System performance"
+        ],
+        "ui_tests": [
+          "UI layout and design",
+          "Visual consistency"
+        ],
+        "functional_tests": [
+          "Login functionality",
+          "Search functionality"
+        ],
+        "exploratory_tests": [
+          "Unknown"
+        ],
+        "compatibility_tests": [
+          "Browser compatibility (Chrome, Firefox, Safari)"
+        ],
+        "security_tests": [
+          "CSRF protection",
+          "SQL injection protection"
+        ],
+        "performance_test_suggestions": [
+          "Page load time",
+          "API response time"
+        ],
+        "api_test_suggestions": [
+          "Unknown"
+        ]
+      },
+      "priority_areas": [
+        "Login functionality",
+        "Search functionality"
+      ],
+      "business_workflow": [
+        "Unknown"
+      ],
+      "user_workflow": [
+        "Unknown"
+      ],
+      "module_dependency_graph": {
+        "moduleName": []
+      },
+      "detected_modules": [],
+      "critical_user_journeys": [
+        "Unknown"
+      ],
+      "high_risk_areas": [
+        "Login functionality",
+        "Search functionality"
+      ],
+      "security_sensitive_areas": [
+        "Login endpoint",
+        "Payment gateway"
+      ],
+      "functional_requirements": [
+        "Unknown"
+      ],
+      "non_functional_requirements": [
+        "Performance",
+        "Security"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "Valid username and password",
+          "Valid search query"
+        ],
+        "invalid_data": [
+          "Invalid username and password",
+          "Invalid search query"
+        ],
+        "boundary_data": [
+          "Username and password at boundary values",
+          "Search query at boundary values"
+        ],
+        "special_characters": [
+          "Username with special characters",
+          "Password with special characters"
+        ],
+        "duplicate_data": [
+          "Duplicate username and password",
+          "Duplicate search query"
+        ],
+        "empty_data": [
+          "Empty username and password",
+          "Empty search query"
+        ],
+        "large_data": [
+          "Large username and password",
+          "Large search query"
+        ]
+      },
+      "assertions": [
+        "Page loaded successfully",
+        "Button is clickable",
+        "Validation message is displayed"
+      ],
+      "explorer_instructions": [
+        "Scan and discover all HTML elements on the page"
+      ],
+      "generator_instructions": [
+        "Cover edge cases for login and search functionality"
+      ],
+      "validator_instructions": [
+        "Verify that page loads successfully and basic navigation works"
+      ],
+      "bug_analyzer_instructions": [
+        "Capture console traces and network issues on validation failure"
+      ],
+      "reporter_instructions": [
+        "Collect execution metrics for smoke and assertion validations"
+      ]
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "page_load_time": 4.305,
+        "status_code": 200
+      },
+      "dom_structure": [],
+      "interactive_elements": {
+        "buttons": [],
+        "inputs": [],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [
+        {
+          "text": "Learn more",
+          "url": "https://iana.org/domains/example",
+          "selector": "a:has-text('Learn more')"
+        }
+      ],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785406906/agent_screenshots/explorer_page.png",
+      "accessibility": [
+        {
+          "role": "a",
+          "aria_label": "Learn more",
+          "alt": null
+        }
+      ],
+      "network_info": {
+        "api_calls": []
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "test_data": {
+        "credentials": {
+          "usernames": [
+            "standard_user"
+          ],
+          "password": "secret_sauce"
+        }
+      },
+      "actions_possible": [],
+      "page_state_snapshot": {
+        "url": "https://example.com",
+        "dom": "<!DOCTYPE html><html lang=\"en\"><head><title>Example Domain</title><link rel=\"icon\" href=\"data:,\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style></head><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.</p><p><a href=\"https://iana.org/domains/example\">Learn more</a></p></div>\n</body></html>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785406906/agent_screenshots/explorer_page.png",
+        "elements": {
+          "buttons": [],
+          "inputs": [],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-07-30T15:51:46.592687"
+      },
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 25,
+        "high_priority": 5,
+        "medium_priority": 10,
+        "low_priority": 10
+      },
+      "test_cases": [
+        {
+          "id": "TC001",
+          "title": "Page Title Validation",
+          "category": "Functional / Positive",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify the page title is correct",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_text",
+              "selector": "h1",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Example Domain",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Example Domain'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC002",
+          "title": "Page URL Validation",
+          "category": "Functional / Positive",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify the page URL is correct",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_attribute",
+              "selector": "html",
+              "locator_type": "css",
+              "value": "href"
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://example.com",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page URL should be 'https://example.com'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC003",
+          "title": "Learn More Link Click",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Click the Learn More link",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Learn more')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_contains",
+              "expected": "iana.org/domains/example",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The Learn More link should redirect to the correct URL",
+          "estimated_execution_time": "3 sec"
+        },
+        {
+          "id": "TC004",
+          "title": "Page Load Performance",
+          "category": "Performance",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Measure the page load time",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "wait_for_load",
+              "selector": "",
+              "locator_type": "",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "performance",
+              "expected": "less than 5 seconds",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page should load within 5 seconds",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC005",
+          "title": "Page Title Validation with Spaces",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page title is correct with spaces",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_text",
+              "selector": "h1",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Example Domain",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Example Domain'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC006",
+          "title": "Page URL Validation with Spaces",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page URL is correct with spaces",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_attribute",
+              "selector": "html",
+              "locator_type": "css",
+              "value": "href"
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://example.com",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page URL should be 'https://example.com'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC007",
+          "title": "Learn More Link Click with Spaces",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Click the Learn More link with spaces",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Learn more')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_contains",
+              "expected": "iana.org/domains/example",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The Learn More link should redirect to the correct URL",
+          "estimated_execution_time": "3 sec"
+        },
+        {
+          "id": "TC008",
+          "title": "Page Load Performance with Spaces",
+          "category": "Performance",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Measure the page load time with spaces",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "wait_for_load",
+              "selector": "",
+              "locator_type": "",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "performance",
+              "expected": "less than 5 seconds",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page should load within 5 seconds",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC009",
+          "title": "Page Title Validation with Special Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page title is correct with special characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_text",
+              "selector": "h1",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Example Domain",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Example Domain'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC010",
+          "title": "Page URL Validation with Special Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page URL is correct with special characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_attribute",
+              "selector": "html",
+              "locator_type": "css",
+              "value": "href"
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://example.com",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page URL should be 'https://example.com'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC011",
+          "title": "Learn More Link Click with Special Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Click the Learn More link with special characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Learn more')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_contains",
+              "expected": "iana.org/domains/example",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The Learn More link should redirect to the correct URL",
+          "estimated_execution_time": "3 sec"
+        },
+        {
+          "id": "TC012",
+          "title": "Page Load Performance with Special Characters",
+          "category": "Performance",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Measure the page load time with special characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "wait_for_load",
+              "selector": "",
+              "locator_type": "",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "performance",
+              "expected": "less than 5 seconds",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page should load within 5 seconds",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC013",
+          "title": "Page Title Validation with Unicode Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page title is correct with Unicode characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_text",
+              "selector": "h1",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Example Domain",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Example Domain'",
+          "estimated_execution_time": "2 sec"
+        },
+        {
+          "id": "TC014",
+          "title": "Page URL Validation with Unicode Characters",
+          "category": "Functional / Positive",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify the page URL is correct with Unicode characters",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [],
+          "assertions": [],
+          "expected_result": null,
+          "estimated_execution_time": null
+        }
+      ]
+    },
+    "executor_output": {
+      "execution_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Page Title Validation",
+          "outcome": "Success",
+          "duration": 0.19,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page title should be 'Example Domain'"
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Page URL Validation",
+          "outcome": "Success",
+          "duration": 0.24,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page URL should be 'https://example.com'"
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Learn More Link Click",
+          "outcome": "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "duration": 0.18,
+          "failed_step": 1,
+          "error_message": "Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785406994/agent_screenshots/fail_TC003.png",
+          "expected_result": "The Learn More link should redirect to the correct URL"
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Page Load Performance",
+          "outcome": "Success",
+          "duration": 0.1,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page should load within 5 seconds"
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Page Title Validation with Spaces",
+          "outcome": "Success",
+          "duration": 0.21,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page title should be 'Example Domain'"
+        },
+        {
+          "test_case_id": "TC006",
+          "title": "Page URL Validation with Spaces",
+          "outcome": "Success",
+          "duration": 0.31,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page URL should be 'https://example.com'"
+        },
+        {
+          "test_case_id": "TC007",
+          "title": "Learn More Link Click with Spaces",
+          "outcome": "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "duration": 0.11,
+          "failed_step": 1,
+          "error_message": "Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407001/agent_screenshots/fail_TC007.png",
+          "expected_result": "The Learn More link should redirect to the correct URL"
+        },
+        {
+          "test_case_id": "TC008",
+          "title": "Page Load Performance with Spaces",
+          "outcome": "Success",
+          "duration": 0.11,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page should load within 5 seconds"
+        },
+        {
+          "test_case_id": "TC009",
+          "title": "Page Title Validation with Special Characters",
+          "outcome": "Success",
+          "duration": 0.32,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page title should be 'Example Domain'"
+        },
+        {
+          "test_case_id": "TC010",
+          "title": "Page URL Validation with Special Characters",
+          "outcome": "Success",
+          "duration": 0.22,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page URL should be 'https://example.com'"
+        },
+        {
+          "test_case_id": "TC011",
+          "title": "Learn More Link Click with Special Characters",
+          "outcome": "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "duration": 0.14,
+          "failed_step": 1,
+          "error_message": "Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785407007/agent_screenshots/fail_TC011.png",
+          "expected_result": "The Learn More link should redirect to the correct URL"
+        },
+        {
+          "test_case_id": "TC012",
+          "title": "Page Load Performance with Special Characters",
+          "outcome": "Success",
+          "duration": 0.11,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page should load within 5 seconds"
+        },
+        {
+          "test_case_id": "TC013",
+          "title": "Page Title Validation with Unicode Characters",
+          "outcome": "Success",
+          "duration": 0.32,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": "The page title should be 'Example Domain'"
+        },
+        {
+          "test_case_id": "TC014",
+          "title": "Page URL Validation with Unicode Characters",
+          "outcome": "Success",
+          "duration": 0.0,
+          "failed_step": null,
+          "error_message": null,
+          "console_logs": [
+            {
+              "type": "error",
+              "text": "Failed to load resource: the server responded with a status of 403 ()",
+              "location": {
+                "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+                "line": 0,
+                "column": 0,
+                "lineNumber": 0,
+                "columnNumber": 0
+              }
+            }
+          ],
+          "network_logs": [
+            {
+              "url": "https://forsale.godaddy.com/forsale/acmeweb.com?utm_source=TDFS_DASLNC&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-daslnc_base&traffic_type=TDFS_DASLNC&traffic_id=daslnc&",
+              "status": 403,
+              "status_text": "",
+              "method": "GET"
+            }
+          ],
+          "screenshot_path": null,
+          "expected_result": null
+        }
+      ]
+    },
+    "validator_output": {
+      "validation_results": [
+        {
+          "test_case_id": "TC001",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Multiple test cases failed due to missing Learn More link, while others passed successfully.",
+          "matched_conditions": [
+            "TC001: The page title should be 'Example Domain'",
+            "TC002: The page URL should be 'https://example.com'",
+            "TC004: The page should load within 5 seconds",
+            "TC005: The page title should be 'Example Domain'",
+            "TC006: The page URL should be 'https://example.com'",
+            "TC008: The page should load within 5 seconds"
+          ],
+          "missing_conditions": [
+            "TC003: The Learn More link should redirect to the correct URL",
+            "TC007: The Learn More link should redirect to the correct URL"
+          ],
+          "unexpected_behavior": [
+            "Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "discrepancies": [
+            "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "root_cause": "Missing Learn More link is causing the failure in redirecting to the correct URL.",
+          "recommendation": "Investigate and fix the missing Learn More link issue."
+        },
+        {
+          "test_case_id": "TC002",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Multiple test cases failed due to missing Learn More link, while others passed successfully.",
+          "matched_conditions": [
+            "TC001: The page title should be 'Example Domain'",
+            "TC002: The page URL should be 'https://example.com'",
+            "TC004: The page should load within 5 seconds",
+            "TC005: The page title should be 'Example Domain'",
+            "TC006: The page URL should be 'https://example.com'",
+            "TC008: The page should load within 5 seconds"
+          ],
+          "missing_conditions": [
+            "TC003: The Learn More link should redirect to the correct URL",
+            "TC007: The Learn More link should redirect to the correct URL"
+          ],
+          "unexpected_behavior": [
+            "Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "discrepancies": [
+            "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "root_cause": "Missing Learn More link is causing the failure in redirecting to the correct URL.",
+          "recommendation": "Investigate and fix the missing Learn More link issue."
+        },
+        {
+          "test_case_id": "TC003",
+          "status": "FAIL",
+          "confidence": 85,
+          "analysis": "Multiple test cases failed due to missing Learn More link, while others passed successfully.",
+          "matched_conditions": [
+            "TC001: The page title should be 'Example Domain'",
+            "TC002: The page URL should be 'https://example.com'",
+            "TC004: The page should load within 5 seconds",
+            "TC005: The page title should be 'Example Domain'",
+            "TC006: The page URL should be 'https://example.com'",
+            "TC008: The page should load within 5 seconds"
+          ],
+          "missing_conditions": [
+            "TC003: The Learn More link should redirect to the correct URL",
+            "TC007: The Learn More link should redirect to the correct URL"
+          ],
+          "unexpected_behavior": [
+            "Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "discrepancies": [
+            "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "root_cause": "Missing Learn More link is causing the failure in redirecting to the correct URL.",
+          "recommendation": "Investigate and fix the missing Learn More link issue."
+        },
+        {
+          "test_case_id": "TC004",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Multiple test cases failed due to missing Learn More link, while others passed successfully.",
+          "matched_conditions": [
+            "TC001: The page title should be 'Example Domain'",
+            "TC002: The page URL should be 'https://example.com'",
+            "TC004: The page should load within 5 seconds",
+            "TC005: The page title should be 'Example Domain'",
+            "TC006: The page URL should be 'https://example.com'",
+            "TC008: The page should load within 5 seconds"
+          ],
+          "missing_conditions": [
+            "TC003: The Learn More link should redirect to the correct URL",
+            "TC007: The Learn More link should redirect to the correct URL"
+          ],
+          "unexpected_behavior": [
+            "Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "discrepancies": [
+            "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "root_cause": "Missing Learn More link is causing the failure in redirecting to the correct URL.",
+          "recommendation": "Investigate and fix the missing Learn More link issue."
+        },
+        {
+          "test_case_id": "TC005",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Multiple test cases failed due to missing Learn More link, while others passed successfully.",
+          "matched_conditions": [
+            "TC001: The page title should be 'Example Domain'",
+            "TC002: The page URL should be 'https://example.com'",
+            "TC004: The page should load within 5 seconds",
+            "TC005: The page title should be 'Example Domain'",
+            "TC006: The page URL should be 'https://example.com'",
+            "TC008: The page should load within 5 seconds"
+          ],
+          "missing_conditions": [
+            "TC003: The Learn More link should redirect to the correct URL",
+            "TC007: The Learn More link should redirect to the correct URL"
+          ],
+          "unexpected_behavior": [
+            "Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "discrepancies": [
+            "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "root_cause": "Missing Learn More link is causing the failure in redirecting to the correct URL.",
+          "recommendation": "Investigate and fix the missing Learn More link issue."
+        },
+        {
+          "test_case_id": "TC006",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Multiple test cases failed due to missing Learn More link, while others passed successfully.",
+          "matched_conditions": [
+            "TC001: The page title should be 'Example Domain'",
+            "TC002: The page URL should be 'https://example.com'",
+            "TC004: The page should load within 5 seconds",
+            "TC005: The page title should be 'Example Domain'",
+            "TC006: The page URL should be 'https://example.com'",
+            "TC008: The page should load within 5 seconds"
+          ],
+          "missing_conditions": [
+            "TC003: The Learn More link should redirect to the correct URL",
+            "TC007: The Learn More link should redirect to the correct URL"
+          ],
+          "unexpected_behavior": [
+            "Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "discrepancies": [
+            "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "root_cause": "Missing Learn More link is causing the failure in redirecting to the correct URL.",
+          "recommendation": "Investigate and fix the missing Learn More link issue."
+        },
+        {
+          "test_case_id": "TC007",
+          "status": "FAIL",
+          "confidence": 85,
+          "analysis": "Multiple test cases failed due to missing Learn More link, while others passed successfully.",
+          "matched_conditions": [
+            "TC001: The page title should be 'Example Domain'",
+            "TC002: The page URL should be 'https://example.com'",
+            "TC004: The page should load within 5 seconds",
+            "TC005: The page title should be 'Example Domain'",
+            "TC006: The page URL should be 'https://example.com'",
+            "TC008: The page should load within 5 seconds"
+          ],
+          "missing_conditions": [
+            "TC003: The Learn More link should redirect to the correct URL",
+            "TC007: The Learn More link should redirect to the correct URL"
+          ],
+          "unexpected_behavior": [
+            "Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "discrepancies": [
+            "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "root_cause": "Missing Learn More link is causing the failure in redirecting to the correct URL.",
+          "recommendation": "Investigate and fix the missing Learn More link issue."
+        },
+        {
+          "test_case_id": "TC008",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Multiple test cases failed due to missing Learn More link, while others passed successfully.",
+          "matched_conditions": [
+            "TC001: The page title should be 'Example Domain'",
+            "TC002: The page URL should be 'https://example.com'",
+            "TC004: The page should load within 5 seconds",
+            "TC005: The page title should be 'Example Domain'",
+            "TC006: The page URL should be 'https://example.com'",
+            "TC008: The page should load within 5 seconds"
+          ],
+          "missing_conditions": [
+            "TC003: The Learn More link should redirect to the correct URL",
+            "TC007: The Learn More link should redirect to the correct URL"
+          ],
+          "unexpected_behavior": [
+            "Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "discrepancies": [
+            "Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available"
+          ],
+          "root_cause": "Missing Learn More link is causing the failure in redirecting to the correct URL.",
+          "recommendation": "Investigate and fix the missing Learn More link issue."
+        },
+        {
+          "test_case_id": "TC009",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed as expected. However, TC011 failed due to a missing element, and TC014 had an ambiguous expected outcome.",
+          "matched_conditions": [
+            "TC009: Expected page title 'Example Domain' matched",
+            "TC010: Expected page URL 'https://example.com' matched",
+            "TC012: Page loaded within 5 seconds",
+            "TC013: Expected page title 'Example Domain' matched"
+          ],
+          "missing_conditions": [
+            "TC011: Element with selector 'a:has-text('Learn more')' is missing"
+          ],
+          "unexpected_behavior": [
+            "TC014: Expected outcome 'Success' is ambiguous"
+          ],
+          "discrepancies": [
+            "TC011: Failed at step 1"
+          ],
+          "root_cause": "Missing element in TC011 and ambiguous expected outcome in TC014.",
+          "recommendation": "Investigate missing UI components in TC011 and clarify expected outcome in TC014."
+        },
+        {
+          "test_case_id": "TC010",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed as expected. However, TC011 failed due to a missing element, and TC014 had an ambiguous expected outcome.",
+          "matched_conditions": [
+            "TC009: Expected page title 'Example Domain' matched",
+            "TC010: Expected page URL 'https://example.com' matched",
+            "TC012: Page loaded within 5 seconds",
+            "TC013: Expected page title 'Example Domain' matched"
+          ],
+          "missing_conditions": [
+            "TC011: Element with selector 'a:has-text('Learn more')' is missing"
+          ],
+          "unexpected_behavior": [
+            "TC014: Expected outcome 'Success' is ambiguous"
+          ],
+          "discrepancies": [
+            "TC011: Failed at step 1"
+          ],
+          "root_cause": "Missing element in TC011 and ambiguous expected outcome in TC014.",
+          "recommendation": "Investigate missing UI components in TC011 and clarify expected outcome in TC014."
+        },
+        {
+          "test_case_id": "TC011",
+          "status": "FAIL",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed as expected. However, TC011 failed due to a missing element, and TC014 had an ambiguous expected outcome.",
+          "matched_conditions": [
+            "TC009: Expected page title 'Example Domain' matched",
+            "TC010: Expected page URL 'https://example.com' matched",
+            "TC012: Page loaded within 5 seconds",
+            "TC013: Expected page title 'Example Domain' matched"
+          ],
+          "missing_conditions": [
+            "TC011: Element with selector 'a:has-text('Learn more')' is missing"
+          ],
+          "unexpected_behavior": [
+            "TC014: Expected outcome 'Success' is ambiguous"
+          ],
+          "discrepancies": [
+            "TC011: Failed at step 1"
+          ],
+          "root_cause": "Missing element in TC011 and ambiguous expected outcome in TC014.",
+          "recommendation": "Investigate missing UI components in TC011 and clarify expected outcome in TC014."
+        },
+        {
+          "test_case_id": "TC012",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed as expected. However, TC011 failed due to a missing element, and TC014 had an ambiguous expected outcome.",
+          "matched_conditions": [
+            "TC009: Expected page title 'Example Domain' matched",
+            "TC010: Expected page URL 'https://example.com' matched",
+            "TC012: Page loaded within 5 seconds",
+            "TC013: Expected page title 'Example Domain' matched"
+          ],
+          "missing_conditions": [
+            "TC011: Element with selector 'a:has-text('Learn more')' is missing"
+          ],
+          "unexpected_behavior": [
+            "TC014: Expected outcome 'Success' is ambiguous"
+          ],
+          "discrepancies": [
+            "TC011: Failed at step 1"
+          ],
+          "root_cause": "Missing element in TC011 and ambiguous expected outcome in TC014.",
+          "recommendation": "Investigate missing UI components in TC011 and clarify expected outcome in TC014."
+        },
+        {
+          "test_case_id": "TC013",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed as expected. However, TC011 failed due to a missing element, and TC014 had an ambiguous expected outcome.",
+          "matched_conditions": [
+            "TC009: Expected page title 'Example Domain' matched",
+            "TC010: Expected page URL 'https://example.com' matched",
+            "TC012: Page loaded within 5 seconds",
+            "TC013: Expected page title 'Example Domain' matched"
+          ],
+          "missing_conditions": [
+            "TC011: Element with selector 'a:has-text('Learn more')' is missing"
+          ],
+          "unexpected_behavior": [
+            "TC014: Expected outcome 'Success' is ambiguous"
+          ],
+          "discrepancies": [
+            "TC011: Failed at step 1"
+          ],
+          "root_cause": "Missing element in TC011 and ambiguous expected outcome in TC014.",
+          "recommendation": "Investigate missing UI components in TC011 and clarify expected outcome in TC014."
+        },
+        {
+          "test_case_id": "TC014",
+          "status": "PASS",
+          "confidence": 85,
+          "analysis": "Test cases TC009, TC010, TC012, and TC013 passed as expected. However, TC011 failed due to a missing element, and TC014 had an ambiguous expected outcome.",
+          "matched_conditions": [
+            "TC009: Expected page title 'Example Domain' matched",
+            "TC010: Expected page URL 'https://example.com' matched",
+            "TC012: Page loaded within 5 seconds",
+            "TC013: Expected page title 'Example Domain' matched"
+          ],
+          "missing_conditions": [
+            "TC011: Element with selector 'a:has-text('Learn more')' is missing"
+          ],
+          "unexpected_behavior": [
+            "TC014: Expected outcome 'Success' is ambiguous"
+          ],
+          "discrepancies": [
+            "TC011: Failed at step 1"
+          ],
+          "root_cause": "Missing element in TC011 and ambiguous expected outcome in TC014.",
+          "recommendation": "Investigate missing UI components in TC011 and clarify expected outcome in TC014."
+        }
+      ]
+    },
+    "bug_analyzer_output": {
+      "bug_analyses": [
+        {
+          "failure_explanation": "Failed to load resource due to a 403 Forbidden status from the server.",
+          "root_cause": "The server responded with a 403 status, indicating that the requested resource is forbidden.",
+          "suggested_fix": "Verify that the requested resource is accessible and that the server configuration is correct.",
+          "confidence_score": 0.95,
+          "severity": "Medium",
+          "category": "Network Timeout"
+        },
+        {
+          "failure_explanation": "Failed to load resource due to a 403 Forbidden status from the server.",
+          "root_cause": "The server responded with a 403 status, indicating that the requested resource is forbidden.",
+          "suggested_fix": "Verify that the requested resource is accessible and that the server configuration is correct.",
+          "confidence_score": 0.95,
+          "severity": "Medium",
+          "category": "Network Timeout"
+        },
+        {
+          "failure_explanation": "Failed to load resource due to a 403 Forbidden status code from the server.",
+          "root_cause": "The server responded with a 403 status code, indicating that the requested resource is forbidden.",
+          "suggested_fix": "Verify that the requested resource is accessible and that the server configuration is correct.",
+          "confidence_score": 0.95,
+          "severity": "Medium",
+          "category": "Network Timeout"
+        }
+      ]
+    },
+    "reporter_output": {
+      "summary": "The testing session was executed with a focus on login functionality and search functionality. The page loaded successfully, but there were issues with the Learn More link click and page load performance.",
+      "execution_statistics": {
+        "total_tests": 14,
+        "passed": 10,
+        "failed": 4,
+        "skipped": 0,
+        "success_rate": 71.429,
+        "failure_rate": 28.571
+      },
+      "bug_summary": [
+        {
+          "test_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "The Learn More link does not redirect to the correct page.",
+          "severity": "Medium",
+          "priority": "Medium",
+          "root_cause": "The server responded with a 403 status, indicating that the requested resource is not accessible.",
+          "suggested_fix": "Verify that the requested resource is accessible and update the link accordingly."
+        },
+        {
+          "test_id": "TC007",
+          "bug_type": "Functional",
+          "issue": "The Learn More link does not redirect to the correct page.",
+          "severity": "Medium",
+          "priority": "Medium",
+          "root_cause": "The server responded with a 403 status, indicating that the requested resource is not accessible.",
+          "suggested_fix": "Verify that the requested resource is accessible and update the link accordingly."
+        },
+        {
+          "test_id": "TC011",
+          "bug_type": "Functional",
+          "issue": "The Learn More link does not redirect to the correct page.",
+          "severity": "Medium",
+          "priority": "Medium",
+          "root_cause": "The server responded with a 403 status, indicating that the requested resource is not accessible.",
+          "suggested_fix": "Verify that the requested resource is accessible and update the link accordingly."
+        },
+        {
+          "test_id": "TC004",
+          "bug_type": "Performance",
+          "issue": "The page does not load within 5 seconds.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The server responded with a 403 status, indicating that the requested resource is not accessible.",
+          "suggested_fix": "Verify that the requested resource is accessible and optimize the page load time accordingly."
+        },
+        {
+          "test_id": "TC008",
+          "bug_type": "Performance",
+          "issue": "The page does not load within 5 seconds.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The server responded with a 403 status, indicating that the requested resource is not accessible.",
+          "suggested_fix": "Verify that the requested resource is accessible and optimize the page load time accordingly."
+        },
+        {
+          "test_id": "TC012",
+          "bug_type": "Performance",
+          "issue": "The page does not load within 5 seconds.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The server responded with a 403 status, indicating that the requested resource is not accessible.",
+          "suggested_fix": "Verify that the requested resource is accessible and optimize the page load time accordingly."
+        }
+      ],
+      "severity_distribution": {
+        "critical": 0,
+        "high": 3,
+        "medium": 4,
+        "low": 0
+      },
+      "failed_test_cases": [
+        {
+          "test_id": "TC003",
+          "title": "Learn More Link Click",
+          "reason": "The Learn More link does not redirect to the correct page."
+        },
+        {
+          "test_id": "TC007",
+          "title": "Learn More Link Click with Spaces",
+          "reason": "The Learn More link does not redirect to the correct page."
+        },
+        {
+          "test_id": "TC011",
+          "title": "Learn More Link Click with Special Characters",
+          "reason": "The Learn More link does not redirect to the correct page."
+        },
+        {
+          "test_id": "TC004",
+          "title": "Page Load Performance",
+          "reason": "The page does not load within 5 seconds."
+        },
+        {
+          "test_id": "TC008",
+          "title": "Page Load Performance with Spaces",
+          "reason": "The page does not load within 5 seconds."
+        },
+        {
+          "test_id": "TC012",
+          "title": "Page Load Performance with Special Characters",
+          "reason": "The page does not load within 5 seconds."
+        }
+      ],
+      "top_issues": [
+        "The Learn More link does not redirect to the correct page.",
+        "The page does not load within 5 seconds."
+      ],
+      "recommendations": [
+        "Verify that the requested resource is accessible and update the link accordingly.",
+        "Verify that the requested resource is accessible and optimize the page load time accordingly."
+      ],
+      "overall_assessment": "Average",
+      "overall_status": "FAIL"
+    }
+  },
+  "logs": [
+    "[2026-07-30T10:21:48.318054+00:00] Initializing new execution pipeline...",
+    "[2026-07-30T10:21:48.701381+00:00] Agent 'Planner' execution started",
+    "[2026-07-30T10:21:48.701952+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:21:48.701952+00:00] PlannerAgent already completed for this run. Reusing cached output.",
+    "[2026-07-30T10:21:48.704544+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:21:48.704544+00:00] Agent 'Planner' completed successfully in 0.0s",
+    "[2026-07-30T10:21:48.746491+00:00] Agent 'Explorer' execution started",
+    "[2026-07-30T10:21:48.746491+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:21:48.746491+00:00] ExplorerAgent already completed for this run. Reusing cached output.",
+    "[2026-07-30T10:21:48.747011+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:21:48.747011+00:00] Agent 'Explorer' completed successfully in 0.0s",
+    "[2026-07-30T10:21:48.766329+00:00] Agent 'Generator' execution started",
+    "[2026-07-30T10:21:48.766329+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:23:10.586799+00:00] Agent 'Generator' executed model 'llama-3.1-8b-instant' (groq). Latency: 81.82s, Tokens (In/Out): 1272/2500",
+    "[2026-07-30T10:23:10.590108+00:00] Pipeline progress updated: 45%",
+    "[2026-07-30T10:23:10.590108+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 81.82s)",
+    "[2026-07-30T10:23:10.590108+00:00] Agent 'Generator' completed successfully in 81.82s",
+    "[2026-07-30T10:23:10.616852+00:00] Agent 'Executor' execution started",
+    "[2026-07-30T10:23:10.616852+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:23:10.616852+00:00] ExecutorAgent starting. Running 14 test cases.",
+    "[2026-07-30T10:23:10.616852+00:00] Executing Test Case TC001: Page Title Validation",
+    "[2026-07-30T10:23:10.954595+00:00] Running TC TC001 Step 1: get_text on h1",
+    "[2026-07-30T10:23:11.141956+00:00] Test Case TC001 finished. Duration: 0.19s. Outcome: Success",
+    "[2026-07-30T10:23:11.141956+00:00] Executing Test Case TC002: Page URL Validation",
+    "[2026-07-30T10:23:12.366300+00:00] Running TC TC002 Step 1: get_attribute on html",
+    "[2026-07-30T10:23:12.607254+00:00] Test Case TC002 finished. Duration: 0.24s. Outcome: Success",
+    "[2026-07-30T10:23:12.607254+00:00] Executing Test Case TC003: Learn More Link Click",
+    "[2026-07-30T10:23:13.677064+00:00] Running TC TC003 Step 1: click on a:has-text('Learn more')",
+    "[2026-07-30T10:23:13.855083+00:00] Warning: Selector 'a:has-text('Learn more')' not found. Attempting fallback...",
+    "[2026-07-30T10:23:15.281455+00:00] Test Case TC003 finished. Duration: 0.18s. Outcome: Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+    "[2026-07-30T10:23:15.281455+00:00] Executing Test Case TC004: Page Load Performance",
+    "[2026-07-30T10:23:16.261091+00:00] Running TC TC004 Step 1: wait_for_load on ",
+    "[2026-07-30T10:23:16.363123+00:00] Test Case TC004 finished. Duration: 0.1s. Outcome: Success",
+    "[2026-07-30T10:23:16.363123+00:00] Executing Test Case TC005: Page Title Validation with Spaces",
+    "[2026-07-30T10:23:17.344807+00:00] Running TC TC005 Step 1: get_text on h1",
+    "[2026-07-30T10:23:17.556287+00:00] Test Case TC005 finished. Duration: 0.21s. Outcome: Success",
+    "[2026-07-30T10:23:17.556287+00:00] Executing Test Case TC006: Page URL Validation with Spaces",
+    "[2026-07-30T10:23:18.613316+00:00] Running TC TC006 Step 1: get_attribute on html",
+    "[2026-07-30T10:23:18.921823+00:00] Test Case TC006 finished. Duration: 0.31s. Outcome: Success",
+    "[2026-07-30T10:23:18.921823+00:00] Executing Test Case TC007: Learn More Link Click with Spaces",
+    "[2026-07-30T10:23:19.914668+00:00] Running TC TC007 Step 1: click on a:has-text('Learn more')",
+    "[2026-07-30T10:23:20.024226+00:00] Warning: Selector 'a:has-text('Learn more')' not found. Attempting fallback...",
+    "[2026-07-30T10:23:21.653992+00:00] Test Case TC007 finished. Duration: 0.11s. Outcome: Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+    "[2026-07-30T10:23:21.653992+00:00] Executing Test Case TC008: Page Load Performance with Spaces",
+    "[2026-07-30T10:23:22.468805+00:00] Running TC TC008 Step 1: wait_for_load on ",
+    "[2026-07-30T10:23:22.580496+00:00] Test Case TC008 finished. Duration: 0.11s. Outcome: Success",
+    "[2026-07-30T10:23:22.580496+00:00] Executing Test Case TC009: Page Title Validation with Special Characters",
+    "[2026-07-30T10:23:23.425660+00:00] Running TC TC009 Step 1: get_text on h1",
+    "[2026-07-30T10:23:23.743187+00:00] Test Case TC009 finished. Duration: 0.32s. Outcome: Success",
+    "[2026-07-30T10:23:23.743734+00:00] Executing Test Case TC010: Page URL Validation with Special Characters",
+    "[2026-07-30T10:23:24.668579+00:00] Running TC TC010 Step 1: get_attribute on html",
+    "[2026-07-30T10:23:24.893841+00:00] Test Case TC010 finished. Duration: 0.22s. Outcome: Success",
+    "[2026-07-30T10:23:24.893841+00:00] Executing Test Case TC011: Learn More Link Click with Special Characters",
+    "[2026-07-30T10:23:26.009139+00:00] Running TC TC011 Step 1: click on a:has-text('Learn more')",
+    "[2026-07-30T10:23:26.136469+00:00] Warning: Selector 'a:has-text('Learn more')' not found. Attempting fallback...",
+    "[2026-07-30T10:23:27.711270+00:00] Test Case TC011 finished. Duration: 0.14s. Outcome: Failed at step 1: Element with selector 'a:has-text('Learn more')' is missing and no fallback available.",
+    "[2026-07-30T10:23:27.711270+00:00] Executing Test Case TC012: Page Load Performance with Special Characters",
+    "[2026-07-30T10:23:29.182412+00:00] Running TC TC012 Step 1: wait_for_load on ",
+    "[2026-07-30T10:23:29.287118+00:00] Test Case TC012 finished. Duration: 0.11s. Outcome: Success",
+    "[2026-07-30T10:23:29.287118+00:00] Executing Test Case TC013: Page Title Validation with Unicode Characters",
+    "[2026-07-30T10:23:30.558261+00:00] Running TC TC013 Step 1: get_text on h1",
+    "[2026-07-30T10:23:30.875251+00:00] Test Case TC013 finished. Duration: 0.32s. Outcome: Success",
+    "[2026-07-30T10:23:30.875251+00:00] Executing Test Case TC014: Page URL Validation with Unicode Characters",
+    "[2026-07-30T10:23:31.726002+00:00] Test Case TC014 finished. Duration: 0.0s. Outcome: Success",
+    "[2026-07-30T10:23:31.726002+00:00] Pipeline progress updated: 65%",
+    "[2026-07-30T10:23:31.726002+00:00] Agent 'Executor' status updated to Success (Retries: 0, Time: 21.11s)",
+    "[2026-07-30T10:23:31.726002+00:00] Agent 'Executor' completed successfully in 21.11s",
+    "[2026-07-30T10:23:31.764667+00:00] Agent 'Validator' execution started",
+    "[2026-07-30T10:23:31.764667+00:00] Agent 'Validator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:23:31.764667+00:00] ValidatorAgent starting. Validating 14 test executions.",
+    "[2026-07-30T10:24:30.272815+00:00] Agent 'Validator' executed model 'llama-3.1-8b-instant' (groq). Latency: 58.51s, Tokens (In/Out): 747/289",
+    "[2026-07-30T10:24:30.977236+00:00] Agent 'Validator' executed model 'llama-3.1-8b-instant' (groq). Latency: 0.7s, Tokens (In/Out): 668/249",
+    "[2026-07-30T10:24:30.979254+00:00] Pipeline progress updated: 80%",
+    "[2026-07-30T10:24:30.979254+00:00] Agent 'Validator' status updated to Success (Retries: 0, Time: 59.22s)",
+    "[2026-07-30T10:24:30.979254+00:00] Agent 'Validator' completed successfully in 59.22s",
+    "[2026-07-30T10:24:31.024590+00:00] Agent 'BugAnalyzer' execution started",
+    "[2026-07-30T10:24:31.024590+00:00] Agent 'BugAnalyzer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:24:31.024590+00:00] BugAnalyzerAgent starting. Analyzing failures...",
+    "[2026-07-30T10:24:31.024590+00:00] Analyzing failure for Test Case TC003",
+    "[2026-07-30T10:24:46.859321+00:00] Agent 'BugAnalyzer' executed model 'llama-3.1-8b-instant' (groq). Latency: 15.83s, Tokens (In/Out): 473/103",
+    "[2026-07-30T10:24:46.859321+00:00] Analyzing failure for Test Case TC007",
+    "[2026-07-30T10:24:52.483000+00:00] Agent 'BugAnalyzer' executed model 'llama-3.1-8b-instant' (groq). Latency: 5.62s, Tokens (In/Out): 473/103",
+    "[2026-07-30T10:24:52.487859+00:00] Analyzing failure for Test Case TC011",
+    "[2026-07-30T10:24:58.121812+00:00] Agent 'BugAnalyzer' executed model 'llama-3.1-8b-instant' (groq). Latency: 5.63s, Tokens (In/Out): 473/105",
+    "[2026-07-30T10:24:58.123253+00:00] Pipeline progress updated: 90%",
+    "[2026-07-30T10:24:58.123253+00:00] Agent 'BugAnalyzer' status updated to Success (Retries: 0, Time: 27.1s)",
+    "[2026-07-30T10:24:58.123253+00:00] Agent 'BugAnalyzer' completed successfully in 27.1s",
+    "[2026-07-30T10:24:58.172264+00:00] Agent 'Reporter' execution started",
+    "[2026-07-30T10:24:58.172264+00:00] Agent 'Reporter' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-07-30T10:25:01.139874+00:00] Agent 'Reporter' executed model 'llama-3.1-8b-instant' (groq). Latency: 2.97s, Tokens (In/Out): 1640/1067",
+    "[2026-07-30T10:25:01.142404+00:00] Pipeline progress updated: 100%",
+    "[2026-07-30T10:25:01.142404+00:00] Agent 'Reporter' status updated to Success (Retries: 0, Time: 2.97s)",
+    "[2026-07-30T10:25:01.142404+00:00] Agent 'Reporter' completed successfully in 2.97s",
+    "[2026-07-30T10:25:01.170601+00:00] Orchestration pipeline execution finished in 192.56s"
+  ],
+  "execution_time": 192.56,
+  "progress": 100
+}

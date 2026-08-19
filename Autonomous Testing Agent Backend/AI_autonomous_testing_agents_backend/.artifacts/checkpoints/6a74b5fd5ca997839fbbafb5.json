@@ -1,0 +1,233 @@
+{
+  "execution_id": "6a74b5fd5ca997839fbbafb5",
+  "project_name": "shadcn",
+  "target_url": "https://shadcnspace.com/",
+  "status": "Failed",
+  "current_agent": "Explorer",
+  "current_stage": "planner",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-06T16:27:41.410507+00:00",
+  "last_updated_at": "2026-08-06T18:09:06.007927+00:00",
+  "completed_agents": [
+    "Planner"
+  ],
+  "failed_agents": [
+    "Explorer"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 6065.86,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Failed",
+      "execution_time": 3.18,
+      "retry_count": 3,
+      "error_object": "BrowserContext.new_page: Connection closed while reading from the driver",
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "shadcn",
+      "description": "Autonomous smoke and assertion validations suite",
+      "target_url": "https://shadcnspace.com/"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "A suite for autonomous smoke and assertion validations, likely built using modern web technologies.",
+        "key_components": [
+          "smoke tests",
+          "assertions"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "To provide an automated testing solution for web applications.",
+        "primary_users": [
+          "developers",
+          "QA engineers"
+        ],
+        "expected_user_journey": [
+          "Installation",
+          "Configuration",
+          "Running tests"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify application loads without errors",
+          "Check basic functionality of core features"
+        ],
+        "regression_tests": [
+          "UNKNOWN"
+        ],
+        "boundary_tests": [
+          "UNKNOWN"
+        ],
+        "negative_tests": [
+          "UNKNOWN"
+        ],
+        "accessibility_tests": [
+          "UNKNOWN"
+        ],
+        "integration_tests": [
+          "UNKNOWN"
+        ],
+        "system_tests": [
+          "UNKNOWN"
+        ],
+        "ui_tests": [
+          "UNKNOWN"
+        ],
+        "functional_tests": [
+          "UNKNOWN"
+        ],
+        "exploratory_tests": [
+          "UNKNOWN"
+        ],
+        "compatibility_tests": [
+          "UNKNOWN"
+        ],
+        "security_tests": [
+          "UNKNOWN"
+        ],
+        "performance_test_suggestions": [
+          "UNKNOWN"
+        ],
+        "api_test_suggestions": [
+          "UNKNOWN"
+        ]
+      },
+      "priority_areas": [
+        "Smoke tests",
+        "Assertions"
+      ],
+      "business_workflow": [
+        "UNKNOWN"
+      ],
+      "user_workflow": [
+        "Installation",
+        "Configuration",
+        "Running tests"
+      ],
+      "module_dependency_graph": {
+        "smoke_tests": [],
+        "assertions": []
+      },
+      "detected_modules": [
+        {
+          "name": "Smoke Tests",
+          "purpose": "To quickly verify the basic functionality of the application.",
+          "business_importance": "HIGH",
+          "risk_level": "CRITICAL",
+          "priority": "HIGH",
+          "dependencies": []
+        },
+        {
+          "name": "Assertions",
+          "purpose": "To validate specific behaviors and conditions within the application.",
+          "business_importance": "MEDIUM",
+          "risk_level": "HIGH",
+          "priority": "MEDIUM",
+          "dependencies": [
+            "Smoke Tests"
+          ]
+        }
+      ],
+      "critical_user_journeys": [
+        "Installation",
+        "Configuration",
+        "Running tests"
+      ],
+      "high_risk_areas": [
+        "Application loading",
+        "Basic functionality"
+      ],
+      "security_sensitive_areas": [
+        "UNKNOWN"
+      ],
+      "functional_requirements": [
+        "Application should load without errors",
+        "Core features should function as expected"
+      ],
+      "non_functional_requirements": [
+        "Performance should be acceptable under normal conditions"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "Valid configuration settings"
+        ],
+        "invalid_data": [
+          "Invalid configuration settings"
+        ],
+        "boundary_data": [
+          "Boundary values for configuration parameters"
+        ],
+        "special_characters": [
+          "Special characters in configuration strings"
+        ],
+        "duplicate_data": [
+          "Duplicate configuration entries"
+        ],
+        "empty_data": [
+          "Empty configuration settings"
+        ],
+        "large_data": [
+          "Large size configuration files"
+        ]
+      },
+      "assertions": [
+        "Application loads without errors",
+        "Core features are accessible and functional"
+      ],
+      "explorer_instructions": [
+        "Scan for all installation, configuration, and test running elements"
+      ],
+      "generator_instructions": [
+        "Cover edge cases in installation, configuration, and test running scenarios"
+      ],
+      "validator_instructions": [
+        "Verify that the application loads correctly and core features function as expected"
+      ],
+      "bug_analyzer_instructions": [
+        "Capture console traces or network issues during validation failure"
+      ],
+      "reporter_instructions": [
+        "Collect execution metrics such as time taken for tests to run"
+      ]
+    }
+  },
+  "logs": [
+    "[2026-08-06T16:27:41.418543+00:00] Initializing new execution pipeline...",
+    "[2026-08-06T16:27:56.957599+00:00] Agent 'Planner' execution started",
+    "[2026-08-06T16:27:56.957599+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-06T18:09:02.806627+00:00] Agent 'Planner' executed model 'qwen2.5-coder:7b' (ollama). Latency: 317.85s, Tokens (In/Out): 931/708",
+    "[2026-08-06T18:09:02.809664+00:00] Pipeline progress updated: 10%",
+    "[2026-08-06T18:09:02.809664+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 6065.86s)",
+    "[2026-08-06T18:09:02.809664+00:00] Agent 'Planner' completed successfully in 6065.86s",
+    "[2026-08-06T18:09:02.829982+00:00] Agent 'Explorer' execution started",
+    "[2026-08-06T18:09:02.829982+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-06T18:09:02.943808+00:00] Agent 'Explorer' failed with: BrowserContext.new_page: Connection closed while reading from the driver. Retrying (1/3)...",
+    "[2026-08-06T18:09:02.943808+00:00] Agent 'Explorer' status updated to Retrying (Retries: 1, Time: 0.11s)",
+    "[2026-08-06T18:09:03.964884+00:00] Agent 'Explorer' failed with: BrowserContext.new_page: Connection closed while reading from the driver. Retrying (2/3)...",
+    "[2026-08-06T18:09:03.964884+00:00] Agent 'Explorer' status updated to Retrying (Retries: 2, Time: 1.14s)",
+    "[2026-08-06T18:09:04.979108+00:00] Agent 'Explorer' failed with: BrowserContext.new_page: Connection closed while reading from the driver. Retrying (3/3)...",
+    "[2026-08-06T18:09:04.979108+00:00] Agent 'Explorer' status updated to Retrying (Retries: 3, Time: 2.15s)",
+    "[2026-08-06T18:09:06.007927+00:00] Agent 'Explorer' failed permanently after 4 retries. Error: BrowserContext.new_page: Connection closed while reading from the driver",
+    "[2026-08-06T18:09:06.007927+00:00] Agent 'Explorer' status updated to Failed (Retries: 3, Time: 3.18s)",
+    "[2026-08-06T18:09:06.007927+00:00] Agent 'Explorer' crashed: BrowserContext.new_page: Connection closed while reading from the driver"
+  ],
+  "execution_time": 0.0,
+  "progress": 10
+}

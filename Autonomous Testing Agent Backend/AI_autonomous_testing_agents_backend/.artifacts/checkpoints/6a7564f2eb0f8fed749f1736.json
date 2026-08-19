@@ -1,0 +1,50 @@
+{
+  "execution_id": "6a7564f2eb0f8fed749f1736",
+  "project_name": "karmanisht",
+  "target_url": "https://karmanisht.com",
+  "status": "Failed",
+  "current_agent": "Planner",
+  "current_stage": "init",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-07T04:54:11.302316+00:00",
+  "last_updated_at": "2026-08-07T04:54:13.318465+00:00",
+  "completed_agents": [],
+  "failed_agents": [
+    "Planner"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Failed",
+      "execution_time": 1.97,
+      "retry_count": 1,
+      "error_object": "PlannerAgent LLM failed to produce valid structured output: Error code: 400 - [{'error': {'code': 400, 'message': 'Invalid JSON payload received. Unknown name \"options\": Cannot find field.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.BadRequest', 'fieldViolations': [{'description': 'Invalid JSON payload received. Unknown name \"options\": Cannot find field.'}]}]}}]",
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "karmanisht",
+      "description": "Autonomous testing run",
+      "target_url": "https://karmanisht.com"
+    },
+    "integrations": {}
+  },
+  "logs": [
+    "[2026-08-07T04:54:11.302316+00:00] Initializing new execution pipeline...",
+    "[2026-08-07T04:54:11.353077+00:00] Agent 'Planner' execution started",
+    "[2026-08-07T04:54:11.353077+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T04:54:11.860225+00:00] Agent 'Planner' failed with: PlannerAgent LLM failed to produce valid structured output: Error code: 400 - [{'error': {'code': 400, 'message': 'Invalid JSON payload received. Unknown name \"options\": Cannot find field.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.BadRequest', 'fieldViolations': [{'description': 'Invalid JSON payload received. Unknown name \"options\": Cannot find field.'}]}]}}]. Retrying (1/1)...",
+    "[2026-08-07T04:54:11.860225+00:00] Agent 'Planner' status updated to Retrying (Retries: 1, Time: 0.51s)",
+    "[2026-08-07T04:54:13.318465+00:00] Agent 'Planner' failed permanently after 2 retries. Error: PlannerAgent LLM failed to produce valid structured output: Error code: 400 - [{'error': {'code': 400, 'message': 'Invalid JSON payload received. Unknown name \"options\": Cannot find field.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.BadRequest', 'fieldViolations': [{'description': 'Invalid JSON payload received. Unknown name \"options\": Cannot find field.'}]}]}}]",
+    "[2026-08-07T04:54:13.318465+00:00] Agent 'Planner' status updated to Failed (Retries: 1, Time: 1.97s)",
+    "[2026-08-07T04:54:13.318465+00:00] Agent 'Planner' crashed: PlannerAgent LLM failed to produce valid structured output: Error code: 400 - [{'error': {'code': 400, 'message': 'Invalid JSON payload received. Unknown name \"options\": Cannot find field.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.BadRequest', 'fieldViolations': [{'description': 'Invalid JSON payload received. Unknown name \"options\": Cannot find field.'}]}]}}]"
+  ],
+  "execution_time": 0.0,
+  "progress": 0
+}

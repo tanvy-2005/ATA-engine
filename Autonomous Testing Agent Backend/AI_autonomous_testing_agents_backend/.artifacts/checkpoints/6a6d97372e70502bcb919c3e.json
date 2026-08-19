@@ -1,0 +1,222 @@
+{
+  "execution_id": "6a6d97372e70502bcb919c3e",
+  "project_name": "LEETCODE (1)",
+  "target_url": "https://leetcode.com/accounts/login/",
+  "status": "Cancelled",
+  "current_agent": "Planner",
+  "current_stage": "planner",
+  "pages_discovered": 0,
+  "pages_total": null,
+  "tests_generated": 0,
+  "tests_executed": 0,
+  "tests_total": 0,
+  "current_action": "Initializing pipeline...",
+  "started_at": "2026-08-01T06:50:31.095601+00:00",
+  "last_updated_at": "2026-08-01T06:52:04.898733+00:00",
+  "completed_agents": [
+    "Planner"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 77.63,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "LEETCODE (1)",
+      "description": "Autonomous smoke and assertion validations suite",
+      "target_url": "https://leetcode.com/accounts/login/"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "LEETCODE is a platform for coding practice and learning. It requires users to log in to access its features.",
+        "key_components": [
+          "Login Page",
+          "Dashboard"
+        ],
+        "project_type": "Learning Platform",
+        "business_domain": "Education/IT",
+        "main_purpose": "To provide a platform for programmers to practice coding problems and learn new skills.",
+        "primary_users": [
+          "Programmers, Students, Educators"
+        ],
+        "expected_user_journey": [
+          "Visit the login page",
+          "Enter valid credentials",
+          "Navigate to the dashboard"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify that the login page loads successfully.",
+          "Check if the login form is visible."
+        ],
+        "regression_tests": [
+          "Test the entire user journey from login to accessing a problem on the dashboard."
+        ],
+        "boundary_tests": [
+          "Enter valid credentials with different lengths and characters."
+        ],
+        "negative_tests": [
+          "Attempt to log in with invalid credentials.",
+          "Leave required fields empty."
+        ],
+        "accessibility_tests": [
+          "Ensure that all elements are accessible via keyboard navigation."
+        ],
+        "integration_tests": [
+          "Verify the integration between the login page and the dashboard."
+        ],
+        "system_tests": [
+          "Test the system under load to ensure it can handle multiple users simultaneously."
+        ],
+        "ui_tests": [
+          "Check that all UI elements are displayed correctly."
+        ],
+        "functional_tests": [
+          "Verify that the user can log in successfully with valid credentials.",
+          "Ensure that the dashboard loads after successful login."
+        ],
+        "exploratory_tests": [
+          "Explore different scenarios and edge cases during the login process."
+        ],
+        "compatibility_tests": [
+          "Test compatibility across multiple browsers and devices."
+        ],
+        "security_tests": [
+          "Check for vulnerabilities in the login mechanism."
+        ],
+        "performance_test_suggestions": [
+          "Audit the page load time and responsiveness under different conditions."
+        ],
+        "api_test_suggestions": [
+          "Load test API endpoints related to user authentication."
+        ]
+      },
+      "priority_areas": [
+        "Login functionality",
+        "Security"
+      ],
+      "business_workflow": [
+        "User logs in, accesses problems, solves them, submits solutions"
+      ],
+      "user_workflow": [
+        "Visit login page, enter credentials, navigate to dashboard"
+      ],
+      "module_dependency_graph": {
+        "LoginPage": [],
+        "Dashboard": [
+          "LoginPage"
+        ]
+      },
+      "detected_modules": [
+        {
+          "name": "LoginPage",
+          "purpose": "Handles user authentication.",
+          "business_importance": "HIGH",
+          "risk_level": "CRITICAL",
+          "priority": "HIGH",
+          "dependencies": []
+        },
+        {
+          "name": "Dashboard",
+          "purpose": "Displays problems and solutions for users.",
+          "business_importance": "MEDIUM",
+          "risk_level": "HIGH",
+          "priority": "MEDIUM",
+          "dependencies": [
+            "LoginPage"
+          ]
+        }
+      ],
+      "critical_user_journeys": [
+        "User logs in with valid credentials and accesses the dashboard."
+      ],
+      "high_risk_areas": [
+        "Login functionality",
+        "Security features"
+      ],
+      "security_sensitive_areas": [
+        "/login",
+        "/dashboard"
+      ],
+      "functional_requirements": [
+        "Users should be able to log in with valid credentials.",
+        "The dashboard should load after successful login."
+      ],
+      "non_functional_requirements": [
+        "System should handle multiple users simultaneously without performance degradation.",
+        "All UI elements should be accessible via keyboard navigation."
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "{'username': 'user1', 'password': 'pass123'}",
+          "{'username': 'admin', 'password': 'admin123'}"
+        ],
+        "invalid_data": [
+          "{'username': 'user1', 'password': ''}",
+          "{'username': '', 'password': 'pass123'}"
+        ],
+        "boundary_data": [
+          "{'username': 'a', 'password': 'a'}",
+          "{'username': 'zzz', 'password': 'zzz'}"
+        ],
+        "special_characters": [
+          "{'username': '@user1', 'password': '!@#'}",
+          "{'username': 'user1@', 'password': '!@#'}"
+        ],
+        "duplicate_data": [
+          "{'username': 'user1', 'password': 'pass123'}",
+          "{'username': 'user1', 'password': 'pass123'}"
+        ],
+        "empty_data": [
+          "{'username': '', 'password': ''}",
+          "{'username': ' ', 'password': ' '}"
+        ],
+        "large_data": [
+          "{'username': 'a'}"
+        ]
+      },
+      "assertions": [
+        "Page Loaded",
+        "Button Clickable",
+        "Validation message displayed for invalid credentials"
+      ],
+      "explorer_instructions": [
+        "Scan all input fields and buttons on the login page."
+      ],
+      "generator_instructions": [
+        "Cover edge cases such as empty inputs, boundary conditions, and special characters."
+      ],
+      "validator_instructions": [
+        "Verify that the user can log in successfully with valid credentials.",
+        "Ensure that the dashboard loads after successful login."
+      ],
+      "bug_analyzer_instructions": [
+        "Capture console traces or network issues if validation fails."
+      ],
+      "reporter_instructions": [
+        "Collect execution metrics such as page load time and response times."
+      ]
+    }
+  },
+  "logs": [
+    "[2026-08-01T06:50:31.095601+00:00] Initializing new execution pipeline...",
+    "[2026-08-01T06:50:47.271100+00:00] Agent 'Planner' execution started",
+    "[2026-08-01T06:50:47.271100+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-01T06:52:04.894708+00:00] Agent 'Planner' executed model 'qwen2.5-coder:7b' (ollama). Latency: 76.11s, Tokens (In/Out): 888/1173",
+    "[2026-08-01T06:52:04.896718+00:00] Pipeline progress updated: 10%",
+    "[2026-08-01T06:52:04.896718+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 77.63s)",
+    "[2026-08-01T06:52:04.896718+00:00] Agent 'Planner' completed successfully in 77.63s",
+    "[2026-08-01T06:52:04.898733+00:00] Pipeline execution cancelled by user request."
+  ],
+  "execution_time": 0.0,
+  "progress": 10
+}

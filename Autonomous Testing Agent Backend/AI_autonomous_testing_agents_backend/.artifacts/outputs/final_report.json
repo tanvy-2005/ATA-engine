@@ -1,0 +1,125 @@
+{
+  "summary": "Autonomous QA audit completed for karmanisht. Executed 6 test cases (0 passed, 6 failed).",
+  "execution_statistics": {
+    "total_tests": 6,
+    "passed": 0,
+    "failed": 6,
+    "skipped": 0,
+    "success_rate": 0.0,
+    "failure_rate": 100.0
+  },
+  "bug_summary": [
+    {
+      "test_id": "TC001",
+      "bug_type": "Functional",
+      "issue": "Test case TC001 failed: Failed at step unknown: ",
+      "severity": "High",
+      "priority": "High",
+      "root_cause": "Execution failure: Failed at step unknown: ",
+      "suggested_fix": "Review the element selectors and verify target application behavior."
+    },
+    {
+      "test_id": "TC002",
+      "bug_type": "Functional",
+      "issue": "Test case TC002 failed: Failed at step unknown: ",
+      "severity": "High",
+      "priority": "High",
+      "root_cause": "Execution failure: Failed at step unknown: ",
+      "suggested_fix": "Review the element selectors and verify target application behavior."
+    },
+    {
+      "test_id": "TC003",
+      "bug_type": "Functional",
+      "issue": "Test case TC003 failed: Failed at step unknown: ",
+      "severity": "High",
+      "priority": "High",
+      "root_cause": "Execution failure: Failed at step unknown: ",
+      "suggested_fix": "Review the element selectors and verify target application behavior."
+    },
+    {
+      "test_id": "TC004",
+      "bug_type": "Functional",
+      "issue": "Test case TC004 failed: Failed at step unknown: ",
+      "severity": "High",
+      "priority": "High",
+      "root_cause": "Execution failure: Failed at step unknown: ",
+      "suggested_fix": "Review the element selectors and verify target application behavior."
+    },
+    {
+      "test_id": "TC005",
+      "bug_type": "Functional",
+      "issue": "Test case TC005 failed: Failed at step unknown: ",
+      "severity": "High",
+      "priority": "High",
+      "root_cause": "Execution failure: Failed at step unknown: ",
+      "suggested_fix": "Review the element selectors and verify target application behavior."
+    },
+    {
+      "test_id": "TC006",
+      "bug_type": "Functional",
+      "issue": "Test case TC006 failed: Failed at step unknown: ",
+      "severity": "High",
+      "priority": "High",
+      "root_cause": "Execution failure: Failed at step unknown: ",
+      "suggested_fix": "Review the element selectors and verify target application behavior."
+    }
+  ],
+  "severity_distribution": {
+    "critical": 0,
+    "high": 6,
+    "medium": 0,
+    "low": 0
+  },
+  "failed_test_cases": [
+    {
+      "test_id": "TC001",
+      "title": "Verify navigation to 'How it works' page",
+      "reason": "FAILED: Failed at step unknown: "
+    },
+    {
+      "test_id": "TC002",
+      "title": "Verify navigation to 'Services' page",
+      "reason": "FAILED: Failed at step unknown: "
+    },
+    {
+      "test_id": "TC003",
+      "title": "Verify navigation to 'For providers' page",
+      "reason": "FAILED: Failed at step unknown: "
+    },
+    {
+      "test_id": "TC004",
+      "title": "Verify navigation to 'Cities' page",
+      "reason": "FAILED: Failed at step unknown: "
+    },
+    {
+      "test_id": "TC005",
+      "title": "Verify 'Download App' button functionality",
+      "reason": "FAILED: Failed at step unknown: "
+    },
+    {
+      "test_id": "TC006",
+      "title": "Verify 'Learn More' button functionality",
+      "reason": "FAILED: Failed at step unknown: "
+    }
+  ],
+  "top_issues": [
+    "[High] Test case TC001 failed: Failed at step unknown: ",
+    "[High] Test case TC002 failed: Failed at step unknown: ",
+    "[High] Test case TC003 failed: Failed at step unknown: ",
+    "[High] Test case TC004 failed: Failed at step unknown: ",
+    "[High] Test case TC005 failed: Failed at step unknown: "
+  ],
+  "recommendations": [
+    "Review the element selectors and verify target application behavior.",
+    "Review the element selectors and verify target application behavior.",
+    "Review the element selectors and verify target application behavior.",
+    "Review the element selectors and verify target application behavior.",
+    "Review the element selectors and verify target application behavior."
+  ],
+  "overall_assessment": "Action Required",
+  "overall_status": "FAIL",
+  "total_pages_tested": 1,
+  "passed_count": 0,
+  "failed_count": 0,
+  "bugs_found": 0
+}

@@ -1,0 +1,1250 @@
+{
+  "execution_id": "6a757215c3b09c0030c8e8f4",
+  "project_name": "Palak",
+  "target_url": "https://arch-student-collaboration-and-refe-seven.vercel.app",
+  "status": "Completed",
+  "current_agent": "Reporter",
+  "current_stage": "completed",
+  "pages_discovered": 2,
+  "pages_total": null,
+  "tests_generated": 5,
+  "tests_executed": 5,
+  "tests_total": 5,
+  "current_action": "Reporter generated final QA audit report.",
+  "started_at": "2026-08-07T05:50:13.574164+00:00",
+  "last_updated_at": "2026-08-07T05:54:56.043775+00:00",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator",
+    "Executor",
+    "Validator",
+    "BugAnalyzer",
+    "Reporter"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 179.42,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 14.22,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 33.74,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Success",
+      "execution_time": 0.02,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Validator": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "BugAnalyzer": {
+      "status": "Success",
+      "execution_time": 8.53,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Reporter": {
+      "status": "Success",
+      "execution_time": 46.36,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "Palak",
+      "description": "Autonomous testing run",
+      "target_url": "https://arch-student-collaboration-and-refe-seven.vercel.app"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "A web application focused on architecture student collaboration and reference sharing, likely a community-driven platform for design resources.",
+        "key_components": [
+          "User Authentication",
+          "Resource/Reference Repository",
+          "Collaboration/Discussion Module",
+          "Project/Portfolio Showcase",
+          "Search and Filter System"
+        ],
+        "project_type": "Collaboration Platform",
+        "business_domain": "Education/Architecture",
+        "main_purpose": "To facilitate the sharing of architectural references and collaboration among students.",
+        "primary_users": [
+          "Architecture Students",
+          "Design Educators",
+          "Content Contributors"
+        ],
+        "expected_user_journey": [
+          "User registration and profile setup",
+          "Searching for specific architectural references",
+          "Uploading design assets or references",
+          "Interacting with shared content (likes/comments/saves)",
+          "Collaborating on shared project boards"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify application loads successfully",
+          "Verify user login/signup functionality",
+          "Verify main dashboard/feed visibility",
+          "Verify search functionality works"
+        ],
+        "regression_tests": [
+          "User authentication flows",
+          "Content upload and retrieval",
+          "Search and filtering accuracy",
+          "User profile management",
+          "Interaction features (comments/likes)"
+        ],
+        "boundary_tests": [
+          "File upload size limits",
+          "Character limits in forum posts/comments",
+          "Search query length",
+          "Input field character limits"
+        ],
+        "negative_tests": [
+          "Login with invalid credentials",
+          "Uploading unsupported file formats",
+          "Submitting empty forms",
+          "Accessing protected routes without authentication"
+        ],
+        "accessibility_tests": [
+          "WCAG 2.1 compliance audit",
+          "Keyboard navigation accessibility",
+          "Screen reader compatibility",
+          "Color contrast ratios"
+        ],
+        "integration_tests": [
+          "Frontend to Backend API communication",
+          "Third-party storage integration for file uploads",
+          "Authentication provider integration"
+        ],
+        "system_tests": [
+          "End-to-end user workflow from signup to content sharing",
+          "Database integrity after content deletion"
+        ],
+        "ui_tests": [
+          "Responsive design across mobile, tablet, and desktop",
+          "Visual consistency of UI components",
+          "Loading states and error message visibility"
+        ],
+        "functional_tests": [
+          "Search accuracy and relevance",
+          "File upload/download functionality",
+          "User profile update capability",
+          "Notification system"
+        ],
+        "exploratory_tests": [
+          "Unstructured navigation to find broken links",
+          "Stress testing user interaction speed",
+          "Testing unexpected user input sequences"
+        ],
+        "compatibility_tests": [
+          "Chrome, Firefox, Safari, Edge",
+          "iOS and Android mobile browsers"
+        ],
+        "security_tests": [
+          "XSS prevention in user comments",
+          "CSRF protection on form submissions",
+          "Authorization checks on resource deletion",
+          "Secure file upload handling"
+        ],
+        "performance_test_suggestions": [
+          "Page load time for heavy image/PDF content",
+          "API response latency",
+          "Concurrent user load testing"
+        ],
+        "api_test_suggestions": [
+          "GET /resources",
+          "POST /upload",
+          "POST /auth/login",
+          "PUT /user/profile"
+        ]
+      },
+      "priority_areas": [
+        "User Authentication",
+        "File Upload and Retrieval",
+        "Search and Filtering",
+        "Data Privacy and Access Control"
+      ],
+      "business_workflow": [
+        "Content creation and sharing lifecycle",
+        "User onboarding and community engagement"
+      ],
+      "user_workflow": [
+        "Search -> View Reference -> Save/Download",
+        "Login -> Upload Asset -> Tag/Categorize -> Publish"
+      ],
+      "module_dependency_graph": {
+        "Authentication": [
+          "User Profile",
+          "Content Upload",
+          "Interaction Module"
+        ],
+        "Content Repository": [
+          "Search Engine",
+          "User Profile"
+        ],
+        "Search Engine": [
+          "Content Repository"
+        ]
+      },
+      "detected_modules": [
+        {
+          "name": "Auth Module",
+          "purpose": "Manage user sessions and permissions",
+          "business_importance": "HIGH",
+          "risk_level": "CRITICAL",
+          "priority": "HIGH",
+          "dependencies": [
+            "User Profile"
+          ]
+        },
+        {
+          "name": "Resource Module",
+          "purpose": "Handle architectural references and files",
+          "business_importance": "HIGH",
+          "risk_level": "HIGH",
+          "priority": "HIGH",
+          "dependencies": [
+            "Auth Module"
+          ]
+        }
+      ],
+      "critical_user_journeys": [],
+      "high_risk_areas": [],
+      "security_sensitive_areas": [],
+      "functional_requirements": [],
+      "non_functional_requirements": [],
+      "test_data_requirements": null,
+      "assertions": [],
+      "explorer_instructions": [],
+      "generator_instructions": [],
+      "validator_instructions": [],
+      "bug_analyzer_instructions": [],
+      "reporter_instructions": []
+    },
+    "explorer_summary": {
+      "summary": "The page is a minimal static site with no forms or inputs, featuring a simple navigation structure with two links and three buttons. It appears to be a student collaboration or reference page built with modern frontend technologies, likely using Vercel for deployment.",
+      "detected_technologies": [
+        "Vercel",
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "navigation_analysis": {
+        "navigation_flow": "Linear navigation with two primary links likely leading to internal sections or external resources; no complex hierarchy or dropdowns detected."
+      }
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "Arch",
+        "url": "https://arch-student-collaboration-and-refe-seven.vercel.app",
+        "page_load_time": 1.65,
+        "status_code": 200
+      },
+      "dom_structure": [
+        {
+          "element": "root",
+          "children": [
+            "start-btn",
+            "alumni-btn",
+            "student-btn"
+          ]
+        },
+        {
+          "element": "landing-navbar",
+          "children": [
+            "start-btn"
+          ]
+        },
+        {
+          "element": "navbar-container",
+          "children": [
+            "start-btn"
+          ]
+        },
+        {
+          "element": "hero-container",
+          "children": [
+            "alumni-btn",
+            "student-btn"
+          ]
+        },
+        {
+          "element": "hero-left",
+          "children": [
+            "alumni-btn",
+            "student-btn"
+          ]
+        },
+        {
+          "element": "hero-buttons",
+          "children": [
+            "alumni-btn",
+            "student-btn"
+          ]
+        }
+      ],
+      "interactive_elements": {
+        "buttons": [
+          {
+            "type": "button",
+            "text": "Get Started",
+            "id": "",
+            "class": "start-btn",
+            "selector": "button:has-text('Get Started')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Join as Student",
+            "id": "",
+            "class": "student-btn",
+            "selector": "button:has-text('Join as Student')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Join as Alumni",
+            "id": "",
+            "class": "alumni-btn",
+            "selector": "button:has-text('Join as Alumni')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          }
+        ],
+        "inputs": [],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [
+        {
+          "text": "Home",
+          "url": "/",
+          "selector": "a:has-text('Home')"
+        },
+        {
+          "text": "About",
+          "url": "/about",
+          "selector": "a:has-text('About')"
+        }
+      ],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1786081999/agent_screenshots/explorer_page_20260807_112316_456sscwe.png",
+      "accessibility": [
+        {
+          "role": "img",
+          "aria_label": "Arch",
+          "alt": "Arch"
+        },
+        {
+          "role": "a",
+          "aria_label": "Home",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "About",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Get Started",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Join as Student",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Join as Alumni",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Arch Illustration",
+          "alt": "Arch Illustration"
+        }
+      ],
+      "network_info": {
+        "api_calls": [
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+            "method": "GET"
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+            "method": "GET"
+          }
+        ]
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [
+          {
+            "name": "_ga",
+            "value": "GA1.1.1572288809.1786081340",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1820641348.849727,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "twk_idm_key",
+            "value": "P-VlJo2xkxtylu7azyr86",
+            "domain": "shadcnspace.com",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "__Secure-YNID",
+            "value": "20.YT=ReXBa4Gc6nDBLiXVYWgloIiXf7Ocj2Wf1R_XQK1CZ1E70qii1OFlBYtoYis_ZGHYqRdKiRRA5IOv6GNUD5iWVbidMfQMD5ffOhKpMhSmqFIhyIJJUZJ0RBDG1jm_SgsR6fzlbOI42IpHh3qC34upwTB4rKzeIfaUK5MAZDB_x7WNpMTlOndONAJrW_c3nGFpNqVKlrV1b_7JdJ0etR1yoPXz1OwXN72e6dMn6RZyvOAJTf5ABa0vnc_JeyWPG3R8WYFq-s3UCFrBwNzuN4olggCWAJTYKciWGUwPD5vuu38b6kbsnVunKbZnr_67rlapqv69aGijkOlfZQvj_bXMuw",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": 1801633343.950415,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "YSC",
+            "value": "vl9rBOMfhxA",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "VISITOR_INFO1_LIVE",
+            "value": "lSpVs8xlH6Q",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": 1801633343.955873,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "VISITOR_PRIVACY_METADATA",
+            "value": "CgJJThIEGgAgNA%3D%3D",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": 1801633343.955997,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "__Secure-ROLLOUT_TOKEN",
+            "value": "CObAt5Xq5p6CLxC57MbA542WAxi57MbA542WAw%3D%3D",
+            "domain": ".youtube.com",
+            "path": "/",
+            "expires": 1801633343.956116,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None",
+            "partitionKey": "https://shadcnspace.com",
+            "_crHasCrossSiteAncestor": true
+          },
+          {
+            "name": "CLID",
+            "value": "f42a41ca39c349858a0977d409b4bd77.20260807.20270807",
+            "domain": "www.clarity.ms",
+            "path": "/",
+            "expires": 1817617346.016975,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "_clck",
+            "value": "952ou7%5E2%5Eg8e%5E0%5E2410",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1817617346,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "SM",
+            "value": "T",
+            "domain": ".c.clarity.ms",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "MUID",
+            "value": "3D0A3ED8EAF762533DB82976EEF76C2F",
+            "domain": ".clarity.ms",
+            "path": "/",
+            "expires": 1819777347.087805,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "MUID",
+            "value": "2301322DD26868F238022583D3806916",
+            "domain": ".bing.com",
+            "path": "/",
+            "expires": 1819777347.553959,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "MR",
+            "value": "0",
+            "domain": ".c.bing.com",
+            "path": "/",
+            "expires": 1786686147.554154,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "SRM_B",
+            "value": "2301322DD26868F238022583D3806916",
+            "domain": ".c.bing.com",
+            "path": "/",
+            "expires": 1819777347.554245,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+          },
+          {
+            "name": "TawkConnectionTime",
+            "value": "0",
+            "domain": "shadcnspace.com",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "twk_uuid_6976fd14c6f35c198037ac25",
+            "value": "%7B%22uuid%22%3A%221.Ws78TUashPWsg5lVG7zsSc4TtYhp2iUxiBv4EoJTbHppJrN0F8GrKruIL4BWcvqlAfZhqrHT5eX0C65AAWMSI1IQKx1mcMVMi2AnuMl9YoybJ3EQrLVCvppY1%22%2C%22version%22%3A3%2C%22domain%22%3A%22shadcnspace.com%22%2C%22ts%22%3A1786081350399%7D",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1801633350,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "_clsk",
+            "value": "10waa8y%5E1786081351904%5E1%5E1%5Ea.clarity.ms%2Fcollect",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1786167751,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          },
+          {
+            "name": "_ga_H9WJ8Y3F4W",
+            "value": "GS2.1.s1786081339$o1$g1$t1786081993$j60$l0$h0",
+            "domain": ".shadcnspace.com",
+            "path": "/",
+            "expires": 1820641993.888694,
+            "httpOnly": false,
+            "secure": false,
+            "sameSite": "Lax"
+          }
+        ],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "actions_possible": [
+        {
+          "action": "click",
+          "target": "button:has-text('Get Started')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Join as Student')"
+        },
+        {
+          "action": "click",
+          "target": "button:has-text('Join as Alumni')"
+        }
+      ],
+      "page_state_snapshot": {
+        "url": "https://arch-student-collaboration-and-refe-seven.vercel.app",
+        "dom": "<a role=\"\">Home</a>\n<a role=\"\">About</a>\n<button role=\"\">Get Started</button>\n<button role=\"\">Join as Student</button>\n<button role=\"\">Join as Alumni</button>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1786081999/agent_screenshots/explorer_page_20260807_112316_456sscwe.png",
+        "elements": {
+          "buttons": [
+            {
+              "type": "button",
+              "text": "Get Started",
+              "id": "",
+              "class": "start-btn",
+              "selector": "button:has-text('Get Started')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Join as Student",
+              "id": "",
+              "class": "student-btn",
+              "selector": "button:has-text('Join as Student')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Join as Alumni",
+              "id": "",
+              "class": "alumni-btn",
+              "selector": "button:has-text('Join as Alumni')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            }
+          ],
+          "inputs": [],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-08-07T11:23:19.615759"
+      },
+      "visited_routes": [
+        "https://arch-student-collaboration-and-refe-seven.vercel.app",
+        "https://arch-student-collaboration-and-refe-seven.vercel.app/about"
+      ],
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "Arch",
+        "url": "https://arch-student-collaboration-and-refe-seven.vercel.app",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 9,
+        "high_priority": 3,
+        "medium_priority": 3,
+        "low_priority": 3
+      },
+      "test_cases": [
+        {
+          "id": "TC001",
+          "title": "Verify Home link navigation",
+          "category": "Navigation",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify that clicking the Home link navigates to the home page",
+          "preconditions": [
+            "User is on the Arch website"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Home')",
+              "locator_type": "css",
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://arch-student-collaboration-and-refe-seven.vercel.app",
+              "selector": null
+            }
+          ],
+          "expected_result": "User is navigated to the home page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC002",
+          "title": "Verify About link navigation",
+          "category": "Navigation",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify that clicking the About link navigates to the about page",
+          "preconditions": [
+            "User is on the Arch website"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('About')",
+              "locator_type": "css",
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://arch-student-collaboration-and-refe-seven.vercel.app/about",
+              "selector": null
+            }
+          ],
+          "expected_result": "User is navigated to the about page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC003",
+          "title": "Verify Get Started button click",
+          "category": "Functional",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify that clicking the Get Started button performs the expected action",
+          "preconditions": [
+            "User is on the Arch website"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "button:has-text('Get Started')",
+              "locator_type": "css",
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "element_visible",
+              "expected": "button:has-text('Get Started')",
+              "selector": "button:has-text('Get Started')"
+            }
+          ],
+          "expected_result": "Get Started button performs the expected action",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC004",
+          "title": "Verify Join as Student button click",
+          "category": "Functional",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify that clicking the Join as Student button performs the expected action",
+          "preconditions": [
+            "User is on the Arch website"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "button:has-text('Join as Student')",
+              "locator_type": "css",
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "element_visible",
+              "expected": "button:has-text('Join as Student')",
+              "selector": "button:has-text('Join as Student')"
+            }
+          ],
+          "expected_result": "Join as Student button performs the expected action",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC005",
+          "title": "Verify Join as Alumni button click",
+          "category": "Functional",
+          "priority": "Medium",
+          "severity": "Major",
+          "description": "Verify that clicking the Join as Alumni button performs the expected action",
+          "preconditions": [
+            "User is on the Arch website"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "button:has-text('Join as Alumni')",
+              "locator_type": "css",
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "element_visible",
+              "expected": "button:has-text('Join as Alumni')",
+              "selector": "button:has-text('Join as Alumni')"
+            }
+          ],
+          "expected_result": "Join as Alumni button performs the expected action",
+          "estimated_execution_time": "5 sec"
+        }
+      ]
+    },
+    "executor_output": {
+      "execution_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify Home link navigation",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.01,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to the home page"
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify About link navigation",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.01,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is navigated to the about page"
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify Get Started button click",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.02,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "Get Started button performs the expected action"
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify Join as Student button click",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.02,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "Join as Student button performs the expected action"
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Verify Join as Alumni button click",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.02,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "Join as Alumni button performs the expected action"
+        }
+      ]
+    },
+    "validator_output": {
+      "validation_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify Home link navigation",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify About link navigation",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify Get Started button click",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify Join as Student button click",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Verify Join as Alumni button click",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        }
+      ]
+    },
+    "bug_analyzer_output": {
+      "bug_analyses": [
+        {
+          "test_case_id": "TC001",
+          "test_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "Test case TC001 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC002",
+          "test_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Test case TC002 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC003",
+          "test_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "Test case TC003 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC004",
+          "test_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "Test case TC004 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC005",
+          "test_id": "TC005",
+          "bug_type": "Functional",
+          "issue": "Test case TC005 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        }
+      ]
+    },
+    "reporter_output": {
+      "summary": "Autonomous QA audit completed for Palak. Executed 5 test cases (0 passed, 5 failed).",
+      "execution_statistics": {
+        "total_tests": 5,
+        "passed": 0,
+        "failed": 5,
+        "skipped": 0,
+        "success_rate": 0.0,
+        "failure_rate": 100.0
+      },
+      "bug_summary": [
+        {
+          "test_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "Test case TC001 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Test case TC002 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "Test case TC003 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "Test case TC004 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC005",
+          "bug_type": "Functional",
+          "issue": "Test case TC005 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        }
+      ],
+      "severity_distribution": {
+        "critical": 0,
+        "high": 5,
+        "medium": 0,
+        "low": 0
+      },
+      "failed_test_cases": [
+        {
+          "test_id": "TC001",
+          "title": "Verify Home link navigation",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC002",
+          "title": "Verify About link navigation",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC003",
+          "title": "Verify Get Started button click",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC004",
+          "title": "Verify Join as Student button click",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC005",
+          "title": "Verify Join as Alumni button click",
+          "reason": "FAILED: Failed at step unknown: "
+        }
+      ],
+      "top_issues": [
+        "[High] Test case TC001 failed: Failed at step unknown: ",
+        "[High] Test case TC002 failed: Failed at step unknown: ",
+        "[High] Test case TC003 failed: Failed at step unknown: ",
+        "[High] Test case TC004 failed: Failed at step unknown: ",
+        "[High] Test case TC005 failed: Failed at step unknown: "
+      ],
+      "recommendations": [
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior.",
+        "Review the element selectors and verify target application behavior."
+      ],
+      "overall_assessment": "Action Required",
+      "overall_status": "FAIL"
+    }
+  },
+  "logs": [
+    "[2026-08-07T05:50:13.574164+00:00] Initializing new execution pipeline...",
+    "[2026-08-07T05:50:13.669018+00:00] Agent 'Planner' execution started",
+    "[2026-08-07T05:50:13.669018+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T05:50:59.718186+00:00] Agent 'Planner' executed model 'openrouter/free' (openrouter). Latency: 45.98s, Tokens (In/Out): 937/1200",
+    "[2026-08-07T05:53:13.084478+00:00] Agent 'Planner' executed model 'openrouter/free' (openrouter). Latency: 133.31s, Tokens (In/Out): 1119/1200",
+    "[2026-08-07T05:53:13.085490+00:00] Pipeline progress updated: 10%",
+    "[2026-08-07T05:53:13.085490+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 179.42s)",
+    "[2026-08-07T05:53:13.085490+00:00] Agent 'Planner' completed successfully in 179.42s",
+    "[2026-08-07T05:53:13.090589+00:00] Agent 'Explorer' execution started",
+    "[2026-08-07T05:53:13.091616+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T05:53:15.011797+00:00] [Explorer] Deep crawling route: https://arch-student-collaboration-and-refe-seven.vercel.app/about",
+    "[2026-08-07T05:53:27.298668+00:00] Agent 'Explorer' executed model 'openrouter/free' (openrouter). Latency: 7.66s, Tokens (In/Out): 176/119",
+    "[2026-08-07T05:53:27.310437+00:00] Pipeline progress updated: 25%",
+    "[2026-08-07T05:53:27.310437+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 14.22s)",
+    "[2026-08-07T05:53:27.310437+00:00] Agent 'Explorer' completed successfully in 14.22s",
+    "[2026-08-07T05:53:27.322884+00:00] Agent 'Generator' execution started",
+    "[2026-08-07T05:53:27.322884+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T05:54:01.057747+00:00] Agent 'Generator' executed model 'deepseek/deepseek-chat' (openrouter). Latency: 33.71s, Tokens (In/Out): 2092/1200",
+    "[2026-08-07T05:54:01.059760+00:00] Pipeline progress updated: 45%",
+    "[2026-08-07T05:54:01.059760+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 33.74s)",
+    "[2026-08-07T05:54:01.059760+00:00] Agent 'Generator' completed successfully in 33.74s",
+    "[2026-08-07T05:54:01.069812+00:00] Agent 'Executor' execution started",
+    "[2026-08-07T05:54:01.069812+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T05:54:01.069812+00:00] ExecutorAgent starting. Running 5 test cases with 4 parallel workers.",
+    "[2026-08-07T05:54:01.071825+00:00] Executing Test Case TC001: Verify Home link navigation",
+    "[2026-08-07T05:54:01.071825+00:00] Executing Test Case TC002: Verify About link navigation",
+    "[2026-08-07T05:54:01.071825+00:00] Executing Test Case TC003: Verify Get Started button click",
+    "[2026-08-07T05:54:01.071825+00:00] Executing Test Case TC004: Verify Join as Student button click",
+    "[2026-08-07T05:54:01.071825+00:00] Executing Test Case TC005: Verify Join as Alumni button click",
+    "[2026-08-07T05:54:01.089827+00:00] Test Case TC001 finished. Duration: 0.01s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T05:54:01.089827+00:00] Test Case TC002 finished. Duration: 0.01s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T05:54:01.089827+00:00] Test Case TC003 finished. Duration: 0.02s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T05:54:01.089827+00:00] Test Case TC004 finished. Duration: 0.02s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T05:54:01.089827+00:00] Test Case TC005 finished. Duration: 0.02s. Outcome: Failed at step unknown: ",
+    "[2026-08-07T05:54:01.089827+00:00] Pipeline progress updated: 65%",
+    "[2026-08-07T05:54:01.089827+00:00] [WARN] Executor detected high failures: 5/5 test cases failed (100% failure rate). Proceeding to Validator and BugAnalyzer for deep root-cause analysis.",
+    "[2026-08-07T05:54:01.091614+00:00] Agent 'Executor' status updated to Success (Retries: 0, Time: 0.02s)",
+    "[2026-08-07T05:54:01.091614+00:00] Agent 'Executor' completed successfully in 0.02s",
+    "[2026-08-07T05:54:01.110309+00:00] Agent 'Validator' execution started",
+    "[2026-08-07T05:54:01.110309+00:00] Agent 'Validator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T05:54:01.110309+00:00] ValidatorAgent starting. Validating 5 test executions.",
+    "[2026-08-07T05:54:01.110309+00:00] Validator LLM enrichment failed for batch 1 ('model_name'). Using deterministic results.",
+    "[2026-08-07T05:54:01.110309+00:00] Pipeline progress updated: 80%",
+    "[2026-08-07T05:54:01.110309+00:00] Agent 'Validator' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T05:54:01.110309+00:00] Agent 'Validator' completed successfully in 0.0s",
+    "[2026-08-07T05:54:01.126362+00:00] Agent 'BugAnalyzer' execution started",
+    "[2026-08-07T05:54:01.126362+00:00] Agent 'BugAnalyzer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T05:54:01.126362+00:00] BugAnalyzerAgent starting. Analyzing failures...",
+    "[2026-08-07T05:54:01.126362+00:00] Analyzing failure for Test Case TC001",
+    "[2026-08-07T05:54:02.946898+00:00] Bug analysis LLM call failed for TC001: Error code: 404 - {'error': {'message': 'No endpoints found for anthropic/claude-3.5-sonnet.', 'code': 404}, 'user_id': 'user_3HYMcJaNqm2lNu9r9fElruMIDzF'}. Using fallback.",
+    "[2026-08-07T05:54:02.946898+00:00] Analyzing failure for Test Case TC002",
+    "[2026-08-07T05:54:04.648429+00:00] Bug analysis LLM call failed for TC002: Error code: 404 - {'error': {'message': 'No endpoints found for anthropic/claude-3.5-sonnet.', 'code': 404}, 'user_id': 'user_3HYMcJaNqm2lNu9r9fElruMIDzF'}. Using fallback.",
+    "[2026-08-07T05:54:04.648429+00:00] Analyzing failure for Test Case TC003",
+    "[2026-08-07T05:54:06.307477+00:00] Bug analysis LLM call failed for TC003: Error code: 404 - {'error': {'message': 'No endpoints found for anthropic/claude-3.5-sonnet.', 'code': 404}, 'user_id': 'user_3HYMcJaNqm2lNu9r9fElruMIDzF'}. Using fallback.",
+    "[2026-08-07T05:54:06.307477+00:00] Analyzing failure for Test Case TC004",
+    "[2026-08-07T05:54:07.963996+00:00] Bug analysis LLM call failed for TC004: Error code: 404 - {'error': {'message': 'No endpoints found for anthropic/claude-3.5-sonnet.', 'code': 404}, 'user_id': 'user_3HYMcJaNqm2lNu9r9fElruMIDzF'}. Using fallback.",
+    "[2026-08-07T05:54:07.963996+00:00] Analyzing failure for Test Case TC005",
+    "[2026-08-07T05:54:09.652586+00:00] Bug analysis LLM call failed for TC005: Error code: 404 - {'error': {'message': 'No endpoints found for anthropic/claude-3.5-sonnet.', 'code': 404}, 'user_id': 'user_3HYMcJaNqm2lNu9r9fElruMIDzF'}. Using fallback.",
+    "[2026-08-07T05:54:09.655810+00:00] Pipeline progress updated: 90%",
+    "[2026-08-07T05:54:09.655810+00:00] Agent 'BugAnalyzer' status updated to Success (Retries: 0, Time: 8.53s)",
+    "[2026-08-07T05:54:09.655810+00:00] Agent 'BugAnalyzer' completed successfully in 8.53s",
+    "[2026-08-07T05:54:09.672445+00:00] Agent 'Reporter' execution started",
+    "[2026-08-07T05:54:09.672445+00:00] Agent 'Reporter' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-08-07T05:54:56.028814+00:00] Pipeline progress updated: 100%",
+    "[2026-08-07T05:54:56.028814+00:00] Agent 'Reporter' status updated to Success (Retries: 0, Time: 46.36s)",
+    "[2026-08-07T05:54:56.028814+00:00] Agent 'Reporter' completed successfully in 46.36s",
+    "[2026-08-07T05:54:56.043775+00:00] Orchestration pipeline execution finished in 282.4s"
+  ],
+  "execution_time": 282.4,
+  "progress": 100
+}

@@ -1,0 +1,313 @@
+{
+  "execution_id": "6a6b2c7fd648071a3014400a",
+  "project_name": "acme web app",
+  "target_url": "https://acmeweb.com",
+  "status": "Cancelled",
+  "current_agent": "Executor",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator",
+    "Executor"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Success",
+      "execution_time": 237.22,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "acme web app",
+      "description": "Autonomous smoke and assertion validations suite",
+      "target_url": "https://acmeweb.com"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Autonomous smoke and assertion validations suite for Custom Project",
+        "key_components": [
+          "Unknown"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [
+          "Unknown"
+        ],
+        "expected_user_journey": [
+          "Unknown"
+        ]
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Page loads successfully",
+          "Basic navigation works"
+        ],
+        "regression_tests": [
+          "Login functionality",
+          "Search functionality"
+        ],
+        "boundary_tests": [
+          "Form input validation",
+          "Boundary values for numeric inputs"
+        ],
+        "negative_tests": [
+          "Error handling for invalid inputs",
+          "404 page handling"
+        ],
+        "accessibility_tests": [
+          "WCAG 2.1 compliance",
+          "Screen reader compatibility"
+        ],
+        "integration_tests": [
+          "Unknown"
+        ],
+        "system_tests": [
+          "System resource utilization",
+          "System performance"
+        ],
+        "ui_tests": [
+          "UI layout and design",
+          "Visual consistency"
+        ],
+        "functional_tests": [
+          "Login functionality",
+          "Search functionality"
+        ],
+        "exploratory_tests": [
+          "Unknown"
+        ],
+        "compatibility_tests": [
+          "Browser compatibility (Chrome, Firefox, Safari)"
+        ],
+        "security_tests": [
+          "CSRF protection",
+          "SQL injection protection"
+        ],
+        "performance_test_suggestions": [
+          "Page load time",
+          "API response time"
+        ],
+        "api_test_suggestions": [
+          "Unknown"
+        ]
+      },
+      "priority_areas": [
+        "Login functionality",
+        "Search functionality"
+      ],
+      "business_workflow": [
+        "Unknown"
+      ],
+      "user_workflow": [
+        "Unknown"
+      ],
+      "module_dependency_graph": {
+        "moduleName": []
+      },
+      "detected_modules": [],
+      "critical_user_journeys": [
+        "Unknown"
+      ],
+      "high_risk_areas": [
+        "Login functionality",
+        "Search functionality"
+      ],
+      "security_sensitive_areas": [
+        "Login endpoint",
+        "Payment gateway"
+      ],
+      "functional_requirements": [
+        "Unknown"
+      ],
+      "non_functional_requirements": [
+        "Performance",
+        "Security"
+      ],
+      "test_data_requirements": {
+        "valid_data": [
+          "Valid username and password",
+          "Valid search query"
+        ],
+        "invalid_data": [
+          "Invalid username and password",
+          "Invalid search query"
+        ],
+        "boundary_data": [
+          "Username and password at boundary values",
+          "Search query at boundary values"
+        ],
+        "special_characters": [
+          "Username with special characters",
+          "Password with special characters"
+        ],
+        "duplicate_data": [
+          "Duplicate username and password",
+          "Duplicate search query"
+        ],
+        "empty_data": [
+          "Empty username and password",
+          "Empty search query"
+        ],
+        "large_data": [
+          "Large username and password",
+          "Large search query"
+        ]
+      },
+      "assertions": [
+        "Page loaded successfully",
+        "Button is clickable",
+        "Validation message is displayed"
+      ],
+      "explorer_instructions": [
+        "Scan and discover all HTML elements on the page"
+      ],
+      "generator_instructions": [
+        "Cover edge cases for login and search functionality"
+      ],
+      "validator_instructions": [
+        "Verify that page loads successfully and basic navigation works"
+      ],
+      "bug_analyzer_instructions": [
+        "Capture console traces and network issues on validation failure"
+      ],
+      "reporter_instructions": [
+        "Collect execution metrics for smoke and assertion validations"
+      ]
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "page_load_time": 4.305,
+        "status_code": 200
+      },
+      "dom_structure": [],
+      "interactive_elements": {
+        "buttons": [],
+        "inputs": [],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [
+        {
+          "text": "Learn more",
+          "url": "https://iana.org/domains/example",
+          "selector": "a:has-text('Learn more')"
+        }
+      ],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785406906/agent_screenshots/explorer_page.png",
+      "accessibility": [
+        {
+          "role": "a",
+          "aria_label": "Learn more",
+          "alt": null
+        }
+      ],
+      "network_info": {
+        "api_calls": []
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "test_data": {
+        "credentials": {
+          "usernames": [
+            "standard_user"
+          ],
+          "password": "secret_sauce"
+        }
+      },
+      "actions_possible": [],
+      "page_state_snapshot": {
+        "url": "https://example.com",
+        "dom": "<!DOCTYPE html><html lang=\"en\"><head><title>Example Domain</title><link rel=\"icon\" href=\"data:,\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style></head><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.</p><p><a href=\"https://iana.org/domains/example\">Learn more</a></p></div>\n</body></html>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1785406906/agent_screenshots/explorer_page.png",
+        "elements": {
+          "buttons": [],
+          "inputs": [],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-07-30T15:51:46.592687"
+      },
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 25,
+        "high_priority": 5,
+        "medium_priority": 10,
+        "low_priority": 10
+      },
+      "test_cases": [
+        {
+          "id": "TC001",
+          "title": "Page Title Validation",
+          "category": "Functional / Positive",
+          "priority": "High",
+          "severity": "Critical",
+          "description": "Verify the page title is correct",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "get_text",
+              "selector": "h1",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_equals",
+              "expected": "Example Domain",
+              "selector": ""
+            }
+          ],
+          "expected_result": "The page title should be 'Example Domain'",
+          "estimated_execution_time": "2 sec",
+          "project_name": "acme web app",
+          "created_at": "2026-07-30T10:37:49.102874+00:00",
+          "_id": 
