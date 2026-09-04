@@ -1,0 +1,300 @@
+{/* 3D Viewport-Constrained Topology Graph Grid */}
+                                    <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 p-8 z-10 w-full h-full [perspective:1200px]">
+
+                                        {/* Row 1, Col 1: Planner Node — Step 01 */}
+                                        <div className="col-start-1 row-start-1 flex items-center justify-center">
+                                            <TooltipProvider>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="cursor-pointer block outline-none border-none bg-transparent p-0 m-0 w-full h-full text-left">
+                                                        <motion.div
+                                                            whileHover={{ scale: 1.05, y: -6, rotateX: 6, rotateY: -6, translateZ: 15 }}
+                                                            transition={{ type: "spring", stiffness: 350, damping: 14 }}
+                                                            
+                                                            className="relative group w-[180px] h-[100px] rounded-2xl border transition-all duration-300 p-4 text-center cursor-pointer shadow-sm bg-cyan-950/20 border-cyan-500/50 hover:bg-cyan-900/30"
+                                                        >
+
+                                                            <div className="absolute top-2 left-3">
+                                                                <span className="text-[9px] font-quicksand text-cyan-500/60 font-bold tracking-widest">01</span>
+                                                            </div>
+                                                            <div className="absolute top-3 right-3">
+                                                                <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+                                                            </div>
+                                                            <div className="flex justify-center mb-1.5 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                                                                <Layers3 className="h-7 w-7" />
+                                                            </div>
+                                                            <h4 className="font-bold text-slate-800 dark:text-white text-xs tracking-wide">Planner</h4>
+                                                            <p className="text-[9px] text-slate-500 dark:text-slate-600 mt-0.5 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">Click for details</p>
+                                                            <div className="flex justify-between items-center mt-2 text-[10px] font-quicksand text-slate-500">
+                                                                <span>Prog: 100%</span>
+                                                                <span>Time: 44s</span>
+                                                            </div>
+
+                                                        </motion.div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent sideOffset={5} className="bg-white border border-cyan-100 dark:border-cyan-800 text-slate-700 dark:bg-slate-900 dark:text-slate-200 shadow-md font-quicksand font-bold rounded-full px-4 py-1.5 text-[11px]">
+                                                        Click to view Planner details
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </div>
+
+                                        {/* Row 1, Col 2: Explorer Node — Step 02 */}
+                                        <div className="col-start-2 row-start-1 flex items-center justify-center">
+                                            <TooltipProvider>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="cursor-pointer block outline-none border-none bg-transparent p-0 m-0 w-full h-full text-left">
+                                                        <motion.div
+                                                            whileHover={{ scale: 1.05, y: -6, rotateX: 6, rotateY: -6, translateZ: 15 }}
+                                                            transition={{ type: "spring", stiffness: 350, damping: 14 }}
+                                                            
+                                                            className="relative group w-[180px] h-[100px] rounded-2xl border transition-all duration-300 p-4 text-center cursor-pointer shadow-sm bg-cyan-950/20 border-cyan-500/50 hover:bg-cyan-900/30"
+                                                        >
+
+                                                            <div className="absolute top-2 left-3">
+                                                                <span className="text-[9px] font-quicksand text-cyan-500/60 font-bold tracking-widest">02</span>
+                                                            </div>
+                                                            <div className="absolute top-3 right-3">
+                                                                <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+                                                            </div>
+                                                            <div className="flex justify-center mb-1.5 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                                                                <Search className="h-7 w-7" />
+                                                            </div>
+                                                            <h4 className="font-bold text-slate-800 dark:text-white text-xs tracking-wide">Explorer</h4>
+                                                            <p className="text-[9px] text-slate-500 dark:text-slate-600 mt-0.5 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">Click for details</p>
+                                                            <div className="flex justify-between items-center mt-2 text-[10px] font-quicksand text-slate-500">
+                                                                <span>Prog: 100%</span>
+                                                                <span>Time: 39s</span>
+                                                            </div>
+
+                                                        </motion.div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent sideOffset={5} className="bg-white border border-cyan-100 dark:border-cyan-800 text-slate-700 dark:bg-slate-900 dark:text-slate-200 shadow-md font-quicksand font-bold rounded-full px-4 py-1.5 text-[11px]">
+                                                        Click to view Explorer details
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </div>
+
+                                        {/* Row 1, Col 3: Generator Node — Step 03 */}
+                                        <div className="col-start-3 row-start-1 flex items-center justify-center">
+                                            <TooltipProvider>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="cursor-pointer block outline-none border-none bg-transparent p-0 m-0 w-full h-full text-left">
+                                                        <motion.div
+                                                            whileHover={{ scale: 1.05, y: -6, rotateX: 6, rotateY: -6, translateZ: 15 }}
+                                                            transition={{ type: "spring", stiffness: 350, damping: 14 }}
+                                                            
+                                                            className="relative group w-[180px] h-[100px] rounded-2xl border transition-all duration-300 p-4 text-center cursor-pointer shadow-sm bg-cyan-950/20 border-cyan-500/50 hover:bg-cyan-900/30"
+                                                        >
+
+                                                            <div className="absolute top-2 left-3">
+                                                                <span className="text-[9px] font-quicksand text-cyan-500/60 font-bold tracking-widest">03</span>
+                                                            </div>
+                                                            <div className="absolute top-3 right-3">
+                                                                <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+                                                            </div>
+                                                            <div className="flex justify-center mb-1.5 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                                                                <Code className="h-7 w-7" />
+                                                            </div>
+                                                            <h4 className="font-bold text-slate-800 dark:text-white text-xs tracking-wide">Generator</h4>
+                                                            <p className="text-[9px] text-slate-500 dark:text-slate-600 mt-0.5 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">Click for details</p>
+                                                            <div className="flex justify-between items-center mt-2 text-[10px] font-quicksand text-slate-500">
+                                                                <span>Prog: 100%</span>
+                                                                <span>Time: 26s</span>
+                                                            </div>
+
+                                                        </motion.div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent sideOffset={5} className="bg-white border border-cyan-100 dark:border-cyan-800 text-slate-700 dark:bg-slate-900 dark:text-slate-200 shadow-md font-quicksand font-bold rounded-full px-4 py-1.5 text-[11px]">
+                                                        Click to view Generator details
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </div>
+
+                                        {/* Row 1, Col 4: Executor Node — Step 04 */}
+                                        <div className="col-start-4 row-start-1 flex items-center justify-center">
+                                            <TooltipProvider>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="cursor-pointer block outline-none border-none bg-transparent p-0 m-0 w-full h-full text-left">
+                                                        <motion.div
+                                                            whileHover={{ scale: 1.05, y: -6, rotateX: 6, rotateY: -6, translateZ: 15 }}
+                                                            transition={{ type: "spring", stiffness: 350, damping: 14 }}
+                                                            
+                                                            className="relative group w-[180px] h-[100px] rounded-2xl border transition-all duration-300 p-4 text-center cursor-pointer shadow-sm bg-cyan-950/20 border-cyan-500/50 hover:bg-cyan-900/30"
+                                                        >
+
+                                                            <div className="absolute top-2 left-3">
+                                                                <span className="text-[9px] font-quicksand text-cyan-500/60 font-bold tracking-widest">04</span>
+                                                            </div>
+                                                            <div className="absolute top-3 right-3">
+                                                                <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+                                                            </div>
+                                                            <div className="flex justify-center mb-1.5 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                                                                <Cpu className="h-7 w-7" />
+                                                            </div>
+                                                            <h4 className="font-bold text-slate-800 dark:text-white text-xs tracking-wide">Executor</h4>
+                                                            <p className="text-[9px] text-slate-500 dark:text-slate-600 mt-0.5 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">Click for details</p>
+                                                            <div className="flex justify-between items-center mt-2 text-[10px] font-quicksand text-slate-500">
+                                                                <span>Prog: 100%</span>
+                                                                <span>Time: 0s</span>
+                                                            </div>
+
+                                                        </motion.div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent sideOffset={5} className="bg-white border border-cyan-100 dark:border-cyan-800 text-slate-700 dark:bg-slate-900 dark:text-slate-200 shadow-md font-quicksand font-bold rounded-full px-4 py-1.5 text-[11px]">
+                                                        Click to view Executor details
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </div>
+
+                                        {/* Row 2, Col 4: Memory Layer Node — Step 05 (flows from Executor down) */}
+                                        <div className="col-start-4 row-start-2 flex items-center justify-center">
+                                            <TooltipProvider>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="cursor-pointer block outline-none border-none bg-transparent p-0 m-0 w-full h-full text-left">
+                                                        <motion.div
+                                                            whileHover={{ scale: 1.05, y: -6, rotateX: 6, rotateY: -6, translateZ: 15 }}
+                                                            transition={{ type: "spring", stiffness: 350, damping: 14 }}
+                                                            
+                                                            className="relative group w-[180px] h-[100px] rounded-2xl border transition-all duration-300 p-4 text-center cursor-pointer shadow-sm bg-cyan-950/20 border-cyan-500/50 hover:bg-cyan-900/30"
+                                                        >
+
+                                                            <div className="absolute top-2 left-3">
+                                                                <span className="text-[9px] font-quicksand text-cyan-500/60 font-bold tracking-widest">05</span>
+                                                            </div>
+                                                            <div className="absolute top-3 right-3">
+                                                                <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+                                                            </div>
+                                                            <div className="flex justify-center mb-1.5 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                                                                <Layers className="h-7 w-7" />
+                                                            </div>
+                                                            <h4 className="font-bold text-slate-800 dark:text-white text-xs tracking-wide">Memory Layer</h4>
+                                                            <p className="text-[9px] text-slate-500 dark:text-slate-600 mt-0.5 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">Click for details</p>
+                                                            <div className="flex justify-between items-center mt-2 text-[10px] font-quicksand text-slate-500">
+                                                                <span>Prog: 100%</span>
+                                                                <span>Time: 22s</span>
+                                                            </div>
+
+                                                        </motion.div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent sideOffset={5} className="bg-white border border-cyan-100 dark:border-cyan-800 text-slate-700 dark:bg-slate-900 dark:text-slate-200 shadow-md font-quicksand font-bold rounded-full px-4 py-1.5 text-[11px]">
+                                                        Click to view Memory Layer details
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </div>
+
+                                        {/* Row 2, Col 3: Validator Node — Step 06 (flows from Memory Layer going left) */}
+                                        <div className="col-start-3 row-start-2 flex items-center justify-center">
+                                            <TooltipProvider>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="cursor-pointer block outline-none border-none bg-transparent p-0 m-0 w-full h-full text-left">
+                                                        <motion.div
+                                                            whileHover={{ scale: 1.05, y: -6, rotateX: 6, rotateY: -6, translateZ: 15 }}
+                                                            transition={{ type: "spring", stiffness: 350, damping: 14 }}
+                                                            
+                                                            className="relative group w-[180px] h-[100px] rounded-2xl border transition-all duration-300 p-4 text-center cursor-pointer shadow-sm bg-cyan-950/20 border-cyan-500/50 hover:bg-cyan-900/30"
+                                                        >
+
+                                                            <div className="absolute top-2 left-3">
+                                                                <span className="text-[9px] font-quicksand text-cyan-500/60 font-bold tracking-widest">06</span>
+                                                            </div>
+                                                            <div className="absolute top-3 right-3">
+                                                                <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+                                                            </div>
+                                                            <div className="flex justify-center mb-1.5 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                                                                <ShieldCheck className="h-7 w-7" />
+                                                            </div>
+                                                            <h4 className="font-bold text-slate-800 dark:text-white text-xs tracking-wide">Validator</h4>
+                                                            <p className="text-[9px] text-slate-500 dark:text-slate-600 mt-0.5 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">Click for details</p>
+                                                            <div className="flex justify-between items-center mt-2 text-[10px] font-quicksand text-slate-500">
+                                                                <span>Prog: 100%</span>
+                                                                <span>Time: 0s</span>
+                                                            </div>
+
+                                                        </motion.div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent sideOffset={5} className="bg-white border border-cyan-100 dark:border-cyan-800 text-slate-700 dark:bg-slate-900 dark:text-slate-200 shadow-md font-quicksand font-bold rounded-full px-4 py-1.5 text-[11px]">
+                                                        Click to view Validator details
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </div>
+
+                                        {/* Row 2, Col 2: Bug Analyzer Node — Step 07 */}
+                                        <div className="col-start-2 row-start-2 flex items-center justify-center">
+                                            <TooltipProvider>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="cursor-pointer block outline-none border-none bg-transparent p-0 m-0 w-full h-full text-left">
+                                                        <motion.div
+                                                            whileHover={{ scale: 1.05, y: -6, rotateX: 6, rotateY: -6, translateZ: 15 }}
+                                                            transition={{ type: "spring", stiffness: 350, damping: 14 }}
+                                                            
+                                                            className="relative group w-[180px] h-[100px] rounded-2xl border transition-all duration-300 p-4 text-center cursor-pointer shadow-sm bg-cyan-950/20 border-cyan-500/50 hover:bg-cyan-900/30"
+                                                        >
+
+                                                            <div className="absolute top-2 left-3">
+                                                                <span className="text-[9px] font-quicksand text-cyan-500/60 font-bold tracking-widest">07</span>
+                                                            </div>
+                                                            <div className="absolute top-3 right-3">
+                                                                <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+                                                            </div>
+                                                            <div className="flex justify-center mb-1.5 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                                                                <Bug className="h-7 w-7" />
+                                                            </div>
+                                                            <h4 className="font-bold text-slate-800 dark:text-white text-xs tracking-wide">Bug Analyzer</h4>
+                                                            <p className="text-[9px] text-slate-500 dark:text-slate-600 mt-0.5 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">Click for details</p>
+                                                            <div className="flex justify-between items-center mt-2 text-[10px] font-quicksand text-slate-500">
+                                                                <span>Prog: 100%</span>
+                                                                <span>Time: 111s</span>
+                                                            </div>
+
+                                                        </motion.div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent sideOffset={5} className="bg-white border border-cyan-100 dark:border-cyan-800 text-slate-700 dark:bg-slate-900 dark:text-slate-200 shadow-md font-quicksand font-bold rounded-full px-4 py-1.5 text-[11px]">
+                                                        Click to view Bug Analyzer details
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </div>
+
+                                        {/* Row 2, Col 1: Reporter Node — Step 08 (final) */}
+                                        <div className="col-start-1 row-start-2 flex items-center justify-center">
+                                            <TooltipProvider>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="cursor-pointer block outline-none border-none bg-transparent p-0 m-0 w-full h-full text-left">
+                                                        <motion.div
+                                                            whileHover={{ scale: 1.05, y: -6, rotateX: 6, rotateY: -6, translateZ: 15 }}
+                                                            transition={{ type: "spring", stiffness: 350, damping: 14 }}
+                                                            
+                                                            className="relative group w-[180px] h-[100px] rounded-2xl border transition-all duration-300 p-4 text-center cursor-pointer shadow-sm bg-cyan-950/20 border-cyan-500/50 hover:bg-cyan-900/30"
+                                                        >
+
+                                                            <div className="absolute top-2 left-3">
+                                                                <span className="text-[9px] font-quicksand text-cyan-500/60 font-bold tracking-widest">08</span>
+                                                            </div>
+                                                            <div className="absolute top-3 right-3">
+                                                                <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+                                                            </div>
+                                                            <div className="flex justify-center mb-1.5 text-cyan-400 group-hover:scale-110 transition-transform duration-300">
+                                                                <FileText className="h-7 w-7" />
+                                                            </div>
+                                                            <h4 className="font-bold text-slate-800 dark:text-white text-xs tracking-wide">Reporter</h4>
+                                                            <p className="text-[9px] text-slate-500 dark:text-slate-600 mt-0.5 group-hover:text-slate-700 dark:group-hover:text-slate-400 transition-colors">Click for details</p>
+                                                            <div className="flex justify-between items-center mt-2 text-[10px] font-quicksand text-slate-500">
+                                                                <span>Prog: 100%</span>
+                                                                <span>Time: 22s</span>
+                                                            </div>
+
+                                                        </motion.div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent sideOffset={5} className="bg-white border border-cyan-100 dark:border-cyan-800 text-slate-700 dark:bg-slate-900 dark:text-slate-200 shadow-md font-quicksand font-bold rounded-full px-4 py-1.5 text-[11px]">
+                                                        Click to view Reporter details
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        </div>
+
+                                    </div>

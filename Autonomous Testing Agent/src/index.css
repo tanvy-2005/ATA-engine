@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Core Backgrounds & Foregrounds */
+  --background: #ffffff;
+  --foreground: #0F172A;
+  --card: #ffffff;
+  --card-foreground: #0F172A;
+  --popover: #ffffff;
+  --popover-foreground: #0F172A;
+
+  /* Primary, Secondary, Muted */
+  --primary: #6366F1;
+  --primary-foreground: #ffffff;
+  --secondary: #F1F5F9;
+  --secondary-foreground: #0F172A;
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B;
+  --accent: #F1F5F9;
+  --accent-foreground: #0F172A;
+  --destructive: #ef4444;
+
+  /* Borders & Inputs */
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #6366F1;
+
+  /* Brand Gradients */
+  --brand-indigo: #6366F1;
+  --brand-purple: #8B5CF6;
+  --brand-fuchsia: #D946EF;
+  --brand-pink: #EC4899;
+
+  /* Charts */
+  --chart-1: #6366F1;
+  --chart-2: #8B5CF6;
+  --chart-3: #D946EF;
+  --chart-4: #EC4899;
+  --chart-5: #38bdf8;
+  
+  --radius: 0.75rem;
+
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0F172A;
+  --sidebar-primary: #6366F1;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #F1F5F9;
+  --sidebar-accent-foreground: #0F172A;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #6366F1;
+}
+
+@theme inline {
+  --font-heading: 'Instrument Serif', serif;
+  --font-sans: 'Quicksand', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+  --font-quicksand: 'Quicksand', sans-serif;
+  
+  --color-brand-indigo: var(--brand-indigo);
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-fuchsia: var(--brand-fuchsia);
+  --color-brand-pink: var(--brand-pink);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #f4f4f5;
+  --card: #000000;
+  --card-foreground: #f4f4f5;
+  --popover: #09090b;
+  --popover-foreground: #f4f4f5;
+
+  --primary: #ffffff;
+  --primary-foreground: #09090b;
+  --secondary: #18181b;
+  --secondary-foreground: #f4f4f5;
+  --muted: #18181b;
+  --muted-foreground: #a1a1aa;
+  --accent: #18181b;
+  --accent-foreground: #f4f4f5;
+  --destructive: #ef4444;
+
+  --border: #1c1c1f;
+  --input: #18181b;
+  --ring: #27272a;
+
+  --sidebar: #141414;
+  --sidebar-foreground: #f4f4f5;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #09090b;
+  --sidebar-accent: #18181b;
+  --sidebar-accent-foreground: #f4f4f5;
+  --sidebar-border: #1c1c1f;
+  --sidebar-ring: #27272a;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html, body {
+    background-color: #000205;
+    color: #ffffff;
+  }
+  body, #root, input, button, select, textarea {
+    @apply text-foreground font-sans;
+    font-family: 'Quicksand', sans-serif;
+  }
+  html {
+    @apply font-sans;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  /* Prevent transitions on load to avoid flashing */
+  html.preload,
+  html.preload *,
+  html.preload *::before,
+  html.preload *::after {
+    transition: none !important;
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Custom white scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Completely remove tiny scrollbar buttons/arrows in WebKit */
+::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 9999px;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff transparent;
+}
+
+/* Light mode edge glow for all card/panel elements */
+html:not(.dark) [class*="dark:border-cyan"] {
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.12), 0 3px 16px rgba(34, 211, 238, 0.08) !important;
+}
+
+/* Prevent Chrome / WebKit Browser Autofill from turning inputs white in dark mode */
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark input:-webkit-autofill:active,
+.dark textarea:-webkit-autofill,
+.dark textarea:-webkit-autofill:hover,
+.dark textarea:-webkit-autofill:focus,
+.dark textarea:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #080d1a inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  border-color: rgba(34, 211, 238, 0.3) !important;
+  caret-color: #ffffff !important;
+  transition: background-color 50000s ease-in-out 0s !important;
+}
+
+/* Remove scrollbars from all modules for mobile view only */
+@media (max-width: 767px) {
+  /* Hide native webkit scrollbar */
+  ::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  
+  /* Hide standard scrollbars for Firefox */
+  * {
+    scrollbar-width: none !important;
+  }
+
+  /* Hide custom/shadcn scrollbar component */
+  [data-slot="scroll-area-scrollbar"] {
+    display: none !important;
+    pointer-events: none !important;
+  }
+}
+.hide-scrollbar::-webkit-scrollbar { display: none !important; width: 0 !important; height: 0 !important; }
+.hide-scrollbar { -ms-overflow-style: none !important; scrollbar-width: none !important; }
