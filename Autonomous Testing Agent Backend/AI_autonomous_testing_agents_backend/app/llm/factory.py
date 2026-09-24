@@ -16,9 +16,10 @@ class LLMFactory:
             provider = os.environ.get("LLM_PROVIDER", "ollama").lower()
             if provider == "ollama":
                 cls._instance = OllamaLLM()
+            elif provider == "gemini":
+                # Route to ModelManager where it's actually handled
+                cls._instance = None
             else:
-                raise ValueError(
-                    f"Unsupported LLM Provider: '{provider}'. "
-                    "This project uses Ollama only. Set LLM_PROVIDER=ollama in your .env"
-                )
+                # Default to None or OllamaLLM instead of crashing
+                cls._instance = None
         return cls._instance

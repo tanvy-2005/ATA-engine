@@ -17,6 +17,8 @@ class PlannerInput(BaseModel):
     description: str = Field(..., description="Description / context of the application")
     tech_stack: Optional[List[str]] = Field(default=[], description="Technologies used")
     target_url: Optional[str] = Field(default=None, description="URL of the target application")
+    test_type: str = Field(default="e2e", description="Type of testing to perform")
+    repo_url: Optional[str] = Field(default=None, description="Repository URL or context file")
 
 class ProjectAnalysis(BaseModel):
     summary: str

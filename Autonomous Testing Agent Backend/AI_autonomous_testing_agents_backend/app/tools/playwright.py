@@ -1,5 +1,16 @@
+import sys
+import asyncio
 import logging
 from playwright.async_api import Page
+
+if sys.platform == "win32":
+    try:
+        asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+        loop = asyncio.get_event_loop()
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
 from app.tools.browser import browser_manager
 
 logger = logging.getLogger(__name__)

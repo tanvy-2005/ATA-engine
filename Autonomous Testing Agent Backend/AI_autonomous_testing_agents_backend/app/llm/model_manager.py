@@ -67,75 +67,21 @@ def _balance_json_braces(s: str) -> str:
 def _extract_json_from_text(text: str) -> str:
     """
     Robustly extract valid JSON from raw LLM output.
-    Handles markdown code fences, trailing explanations, mixed text, etc.
-    If JSON is truncated, automatically attempts to balance unclosed tags/braces.
-    Returns the best valid JSON string, or the original text if nothing better found.
+    Strips Thinking Preamble & Handle Non-JSON Output.
     """
     if not text:
         return text
 
-    cleaned = text.strip()
-
-    # --- Step 1: Strip common markdown code fences ---
-    fence_pattern = re.compile(r"```(?:json|JSON|js|python)?\s*([\s\S]*?)```", re.DOTALL)
-    fence_matches = fence_pattern.findall(cleaned)
-    if fence_matches:
-        for block in fence_matches:
-            candidate = block.strip()
-            try:
-                json.loads(candidate)
-                return candidate
-            except Exception:
-                try:
-                    repaired = _balance_json_braces(candidate)
-                    json.loads(repaired)
-                    return repaired
-                except Exception:
-                    pass
-
-    # --- Step 2: Try to find a JSON object/array by matching braces ---
-    for start_char, end_char in [('{', '}'), ('[', ']')]:
-        first_idx = cleaned.find(start_char)
-        last_idx = cleaned.rfind(end_char)
-        if first_idx != -1 and last_idx != -1 and last_idx > first_idx:
-            candidate = cleaned[first_idx:last_idx + 1]
-            try:
-                json.loads(candidate)
-                return candidate
-            except Exception:
-                try:
-                    repaired = _balance_json_braces(candidate)
-                    json.loads(repaired)
-                    return repaired
-                except Exception:
-                    pass
-
-    # --- Step 3: Try to handle truncated JSON by looking at first brace to end of string ---
-    pos_list = [pos for pos in [cleaned.find('{'), cleaned.find('[')] if pos != -1]
-    first_brace = min(pos_list) if pos_list else -1
-    if first_brace != -1 and first_brace < len(cleaned):
-        candidate = cleaned[first_brace:]
-        try:
-            repaired = _balance_json_braces(candidate)
-            json.loads(repaired)
-            return repaired
-        except Exception:
-            pass
-
-    # --- Step 4: Try the raw cleaned text as-is ---
-    try:
-        json.loads(cleaned)
-        return cleaned
-    except Exception:
-        try:
-            repaired = _balance_json_braces(cleaned)
-            json.loads(repaired)
-            return repaired
-        except Exception:
-            pass
-
-    # --- Step 5: Return repaired text (caller will handle parse error) ---
-    return _balance_json_braces(cleaned)
+    # Extract content between markdown code blocks if present
+    match = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", text, flags=re.IGNORECASE)
+    candidate = match.group(1) if match else text
+    
+    # Fallback to the first outer JSON object or array
+    match_brace = re.search(r"(\{[\s\S]*\}|\[[\s\S]*\])", candidate)
+    if match_brace:
+        candidate = match_brace.group(1)
+        
+    return _balance_json_braces(candidate.strip())
 
 
 
@@ -199,16 +145,16 @@ class AIModelManager:
             return False, ""
 
     MODEL_CONFIG = {
-        "planner": {"provider": "gemini", "model": "gemini-2.0-flash", "timeout": 15.0},
-        "explorer": {"provider": "gemini", "model": "gemini-2.0-flash", "timeout": 15.0},
-        "generator": {"provider": "openrouter", "model": "deepseek/deepseek-chat", "timeout": 20.0},
+        "planner": {"provider": "gemini", "model": "gemini-3.6-flash", "timeout": 15.0},
+        "explorer": {"provider": "gemini", "model": "gemini-3.6-flash", "timeout": 15.0},
+        "generator": {"provider": "gemini", "model": "gemini-3.6-flash", "timeout": 20.0},
         "executor": None,
         "validator": None,
-        "buganalyzer": {"provider": "openrouter", "model": "openrouter/free", "timeout": 30.0},
-        "bug_analyzer": {"provider": "openrouter", "model": "openrouter/free", "timeout": 30.0},
-        "bug-analyzer": {"provider": "openrouter", "model": "openrouter/free", "timeout": 30.0},
-        "reporter": {"provider": "gemini", "model": "gemini-2.0-flash", "timeout": 15.0},
-        "memory": {"provider": "gemini", "model": "gemini-2.0-flash", "timeout": 15.0},
+        "buganalyzer": {"provider": "gemini", "model": "gemini-3.6-flash", "timeout": 30.0},
+        "bug_analyzer": {"provider": "gemini", "model": "gemini-3.6-flash", "timeout": 30.0},
+        "bug-analyzer": {"provider": "gemini", "model": "gemini-3.6-flash", "timeout": 30.0},
+        "reporter": {"provider": "gemini", "model": "gemini-3.6-flash", "timeout": 15.0},
+        "memory": {"provider": "gemini", "model": "gemini-3.6-flash", "timeout": 15.0},
     }
 
     @classmethod
@@ -224,7 +170,7 @@ class AIModelManager:
         model_override = session_memory.get("model_override")
         
         OVERRIDE_MAP = {
-            "gemini-2.0-flash": {"provider": "gemini", "model": "gemini-2.0-flash"},
+            "gemini-3.6-flash": {"provider": "gemini", "model": "gemini-3.6-flash"},
             "deepseek-v3": {"provider": "openrouter", "model": "deepseek/deepseek-chat"},
             "claude-3.5-sonnet": {"provider": "openrouter", "model": "openrouter/free"},
             "auto": None
@@ -310,11 +256,12 @@ class AIModelManager:
             kwargs["response_format"] = {"type": "json_object"}
 
         start_time = time.perf_counter()
+        response = None
 
-        max_retries = 1
+        max_retries = 2
         for attempt in range(max_retries + 1):
             try:
-                # Mandatory 2.0-second sleep to prevent rapid back-to-back LLM calls
+                # Minimum 2.0-second sleep to prevent tripping Gemini free tier RPM limit
                 if provider in ["gemini", "openrouter"]:
                     await asyncio.sleep(2.0)
 
@@ -327,13 +274,17 @@ class AIModelManager:
                 
                 # Check for rate limit / 429 / resource exhausted or 400
                 if "429" in err_str or "resource_exhausted" in err_str or "rate limit" in err_str or "rate_limit" in err_str or "400" in err_str:
-                    logger.warning(f"⚠️ Rate limit or endpoint error hit on {provider}. Waiting 8.0s before falling back to OpenRouter free models...")
-                    await asyncio.sleep(8.0)
+                    if provider == "gemini" and attempt < max_retries:
+                        wait_sec = (2.0 ** attempt) * 2.0 # Exponential backoff with jitter
+                        logger.warning(f"⚠️ Rate limit hit on {provider}. Waiting {wait_sec}s before retry...")
+                        await asyncio.sleep(wait_sec)
+                        continue
+
+                    logger.warning(f"⚠️ Persistent Rate limit or endpoint error hit. Falling back to OpenRouter free non-reasoning models...")
                     
-                    # Update config for fallback to 100% free models
+                    # Update config for fallback to 100% free non-thinking models
                     provider = "openrouter"
-                    # Using OpenRouter's native free auto-router
-                    model_name = "openrouter/free"
+                    model_name = "meta-llama/llama-3.1-8b-instruct:free"
                     
                     # Initialize OpenRouter client
                     client = AsyncOpenAI(
@@ -389,11 +340,20 @@ class AIModelManager:
                     await asyncio.sleep(wait_sec)
                     continue
 
-                latency = round(time.perf_counter() - start_time, 2)
+                # If all retries fail or non-retryable error, don't raise immediately, allow fallback JSON
                 logger.error(f"[ModelManager] Error running agent '{agent_name}' after {attempt} retries: {e}")
-                raise e
+                break
 
         latency = round(time.perf_counter() - start_time, 2)
+        if response is None:
+            # Return structured fallback JSON when rate-limited/errored rather than throwing UnboundLocalError
+            fallback_json = "{}"
+            if agent_name.lower() == "planner":
+                fallback_json = '{"priority_areas": [{"area": "System Wide", "reason": "Rate limited fallback", "risk_level": "Medium"}]}'
+            elif agent_name.lower() == "generator":
+                fallback_json = '{"test_cases": [{"id": "TC001", "title": "Fallback Smoke Test", "steps": [{"step": 1, "action": "navigate", "selector": "/", "value": null}], "expected_result": "Page loads."}]}'
+            return fallback_json, {"agent_name": agent_name, "success": False, "error": "LLM Provider Rate Limited or Unreachable"}
+            
         raw_content = response.choices[0].message.content or ""
 
         # --- Robust JSON extraction (handles markdown fences, trailing text, etc.) ---

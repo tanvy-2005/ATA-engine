@@ -11,6 +11,8 @@ from app.modules.agents_router import get_orchestrator, active_pipelines, runnin
 
 logger = logging.getLogger(__name__)
 
+sse_event_queues: Dict[str, asyncio.Queue] = {}
+
 router = APIRouter(prefix="/runs", tags=["runs"])
 
 class StartRunRequest(BaseModel):
@@ -20,6 +22,8 @@ class StartRunRequest(BaseModel):
     executionMode: str = "parallel"
     workers: int = 4
     modelProvider: str | None = None
+    test_type: str = "e2e"
+    repo_url: str | None = None
 
 @router.post("/start", status_code=202)
 async def start_run(req: StartRunRequest, background_tasks: BackgroundTasks, orchestrator: OrchestratorWorkflow = Depends(get_orchestrator)):
@@ -60,7 +64,9 @@ async def start_run(req: StartRunRequest, background_tasks: BackgroundTasks, orc
         description="Autonomous testing run",
         target_url=req.targetUrl,
         workspace_id=None,
-        force_restart=False
+        force_restart=False,
+        test_type=req.test_type,
+        repo_url=req.repo_url
     )
     
     cancel_event = asyncio.Event()
@@ -92,8 +98,21 @@ async def sse_event_generator(request: Request, run_id: str, orchestrator: Orche
     while True:
         if await request.is_disconnected():
             logger.info("Client disconnected from SSE.")
+            if run_id in sse_event_queues:
+                del sse_event_queues[run_id]
             break
             
+        if run_id not in sse_event_queues:
+            sse_event_queues[run_id] = asyncio.Queue()
+            
+        q = sse_event_queues[run_id]
+        while not q.empty():
+            try:
+                evt = q.get_nowait()
+                yield json.dumps(evt)
+            except asyncio.QueueEmpty:
+                break
+                
         state = orchestrator._load_checkpoint(run_id)
         if state:
             status = state.status.upper()

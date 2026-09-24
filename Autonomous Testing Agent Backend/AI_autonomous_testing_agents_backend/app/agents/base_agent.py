@@ -46,9 +46,12 @@ class BaseAgent(ABC):
             except Exception as e:
                 logger.error(f"Failed to log agent metadata: {e}")
 
+        model_name = metadata.get('model_name') or metadata.get('model') or 'gemini-3.6-flash'
+        provider = metadata.get('provider') or 'unknown'
+        
         state.log(
-            f"Agent '{self.name}' executed model '{metadata['model_name']}' ({metadata['provider']}). "
-            f"Latency: {metadata['latency']}s, Tokens (In/Out): {metadata['input_tokens']}/{metadata['output_tokens']}"
+            f"Agent '{self.name}' executed model '{model_name}' ({provider}). "
+            f"Latency: {metadata.get('latency', 0)}s, Tokens (In/Out): {metadata.get('input_tokens', 0)}/{metadata.get('output_tokens', 0)}"
         )
 
         return content

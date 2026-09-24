@@ -1,0 +1,798 @@
+{
+  "execution_id": "6aa96f3ea5e7dab1dfa9d514",
+  "project_name": "FRAME IN GOA",
+  "target_url": "https://frame-in-goa-six.vercel.app/",
+  "test_type": "e2e",
+  "repo_url": null,
+  "status": "Failed",
+  "current_agent": "Executor",
+  "current_stage": "generator",
+  "pages_discovered": 2,
+  "pages_total": null,
+  "tests_generated": 3,
+  "tests_executed": 0,
+  "tests_total": 3,
+  "current_action": "Running Playwright parallel workers...",
+  "started_at": "2026-09-15T16:15:58.395994+00:00",
+  "last_updated_at": "2026-09-15T16:20:18.496119+00:00",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator"
+  ],
+  "failed_agents": [
+    "Executor"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 40.87,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 70.85,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 137.5,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Failed",
+      "execution_time": 1.07,
+      "retry_count": 1,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "FRAME IN GOA",
+      "description": "Autonomous testing run",
+      "target_url": "https://frame-in-goa-six.vercel.app/",
+      "test_type": "e2e",
+      "repo_url": null
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Automated fallback analysis for target workspace.",
+        "key_components": [
+          "authentication",
+          "navigation_bar",
+          "form_inputs",
+          "api_routes"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [],
+        "expected_user_journey": []
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify homepage navigation",
+          "Check main CTA buttons"
+        ],
+        "regression_tests": [
+          "Validate form submission workflows",
+          "Check route redirects"
+        ],
+        "boundary_tests": [
+          "Test empty input fields",
+          "Test maximum string length bounds"
+        ],
+        "negative_tests": [
+          "Test invalid form entries",
+          "Check 404 page handling"
+        ],
+        "accessibility_tests": [
+          "Verify ARIA roles",
+          "Check contrast & focus management"
+        ],
+        "integration_tests": [],
+        "system_tests": [],
+        "ui_tests": [],
+        "functional_tests": [],
+        "exploratory_tests": [],
+        "compatibility_tests": [],
+        "security_tests": [],
+        "performance_test_suggestions": [],
+        "api_test_suggestions": []
+      },
+      "priority_areas": [
+        "navigation",
+        "forms",
+        "routing"
+      ],
+      "business_workflow": [],
+      "user_workflow": [],
+      "module_dependency_graph": {},
+      "detected_modules": [],
+      "critical_user_journeys": [],
+      "high_risk_areas": [],
+      "security_sensitive_areas": [],
+      "functional_requirements": [],
+      "non_functional_requirements": [],
+      "test_data_requirements": null,
+      "assertions": [],
+      "explorer_instructions": [],
+      "generator_instructions": [],
+      "validator_instructions": [],
+      "bug_analyzer_instructions": [],
+      "reporter_instructions": []
+    },
+    "explorer_summary": {
+      "summary": "Landing page for HH GOA 2026 | Frame in Goa, hosted on Vercel. It features interactive elements including multiple action buttons and input fields, likely designed for event registration, inquiries, or newsletter subscriptions.",
+      "detected_technologies": [
+        "Vercel",
+        "JavaScript",
+        "HTML5",
+        "CSS"
+      ],
+      "navigation_analysis": {
+        "navigation_flow": "Users navigate through the page via 7 links and interact with 7 actionable buttons alongside 3 input fields for data entry."
+      }
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "HH GOA 2026 | Frame in Goa",
+        "url": "https://frame-in-goa-six.vercel.app/",
+        "page_load_time": 14.48,
+        "status_code": 200
+      },
+      "dom_structure": [
+        {
+          "element": "fixed",
+          "children": [
+            "flex",
+            "transition-colors",
+            "hover:opacity-80"
+          ]
+        },
+        {
+          "element": "w-full",
+          "children": [
+            "flex",
+            "transition-colors",
+            "hover:opacity-80"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "hover:opacity-80"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "flex",
+            "transition-colors"
+          ]
+        },
+        {
+          "element": "w-full",
+          "children": [
+            "group",
+            "w-full"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "group"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "group"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "w-full"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "w-full"
+          ]
+        }
+      ],
+      "interactive_elements": {
+        "buttons": [
+          {
+            "type": "button",
+            "text": "Profile Frame",
+            "id": "",
+            "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-primary text-black translate-y-0.5 shadow-[0px_0px_0_#07140D]",
+            "selector": "button:has-text('Profile Frame')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Builder ID",
+            "id": "",
+            "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-secondary text-black hover:bg-accent hover:text-white",
+            "selector": "button:has-text('Builder ID')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Team Frame",
+            "id": "",
+            "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-secondary text-black hover:bg-accent hover:text-white",
+            "selector": "button:has-text('Team Frame')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "UPLOAD PHOTO",
+            "id": "",
+            "class": "w-full bg-[#1A4F36] hover:bg-[#2D7350] text-[#84E296] font-bold py-2.5 sm:py-3 rounded-lg text-xs sm:text-sm uppercase transition-colors",
+            "selector": "button:has-text('UPLOAD PHOTO')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Post on X with #FrameInGoa",
+            "id": "",
+            "class": "w-full h-12 sm:h-16 flex items-center justify-center text-sm sm:text-xl font-bold rounded-full bg-[#0A0A0A] text-white hover:bg-black/80 transition-all hover:-translate-y-1 px-4",
+            "selector": "button:has-text('Post on X with #FrameInGoa')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Download Image",
+            "id": "",
+            "class": "w-full h-12 sm:h-14 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full bg-yellow-400 text-black hover:bg-yellow-500 transition-colors",
+            "selector": "button:has-text('Download Image')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Share File",
+            "id": "",
+            "class": "w-full h-12 sm:h-14 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full border-2 border-[#15422D] bg-[#0A2E1F] text-white hover:bg-[#15422D] transition-colors",
+            "selector": "button:has-text('Share File')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          }
+        ],
+        "inputs": [
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "ENTER TEAM NAME",
+            "required": false,
+            "selector": "#base-ui-_R_2lsklubtb_",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "FULL NAME",
+            "required": false,
+            "selector": "#base-ui-_R_etsklubtb_",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "file",
+            "name": "",
+            "placeholder": "",
+            "required": false,
+            "selector": "#hidden-team-file-input",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          }
+        ],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [
+        {
+          "text": "link",
+          "url": "/",
+          "selector": "a.hover:opacity-80.transition-opacity.flex.items-center"
+        },
+        {
+          "text": "Generator",
+          "url": "/create",
+          "selector": "a:has-text('Generator')"
+        },
+        {
+          "text": "Apply",
+          "url": "https://hhgoa.com/",
+          "selector": "a:has-text('Apply')"
+        },
+        {
+          "text": "CREATE YOUR FRAME",
+          "url": "/create",
+          "selector": "a:has-text('CREATE YOUR FRAME')"
+        },
+        {
+          "text": "APPLY ON DEVFOLIO",
+          "url": "https://hacker-house-goa-2026.devfolio.co/overview",
+          "selector": "a:has-text('APPLY ON DEVFOLIO')"
+        },
+        {
+          "text": "BACK TO THE FRAME",
+          "url": "/create",
+          "selector": "a:has-text('BACK TO THE FRAME')"
+        },
+        {
+          "text": "BACK TO PREVIEW",
+          "url": "/",
+          "selector": "a:has-text('BACK TO PREVIEW')"
+        }
+      ],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1789489043/agent_screenshots/explorer_page_20260915_214710_qmz5uyra.png",
+      "accessibility": [
+        {
+          "role": "a",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "HH Goa Logo",
+          "alt": "HH Goa Logo"
+        },
+        {
+          "role": "img",
+          "aria_label": "2:47 PM Studio",
+          "alt": "2:47 PM Studio"
+        },
+        {
+          "role": "a",
+          "aria_label": "Generator",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Apply",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Hero Background",
+          "alt": "Hero Background"
+        },
+        {
+          "role": "a",
+          "aria_label": "CREATE YOUR FRAME",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "CTA Background",
+          "alt": "CTA Background"
+        },
+        {
+          "role": "a",
+          "aria_label": "APPLY ON DEVFOLIO",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "BACK TO THE FRAME",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Profile Frame",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Builder ID",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Team Frame",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "BACK TO PREVIEW",
+          "alt": null
+        },
+        {
+          "role": "textbox",
+          "aria_label": "ENTER TEAM NAME",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "UPLOAD PHOTO",
+          "alt": null
+        },
+        {
+          "role": "textbox",
+          "aria_label": "FULL NAME",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Profile Frame Preview",
+          "alt": "Profile Frame Preview"
+        },
+        {
+          "role": "button",
+          "aria_label": "Post on X with #FrameInGoa",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Download Image",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Share File",
+          "alt": null
+        },
+        {
+          "role": "file",
+          "aria_label": null,
+          "alt": null
+        }
+      ],
+      "network_info": {
+        "api_calls": []
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "actions_possible": [],
+      "page_state_snapshot": {
+        "url": "https://frame-in-goa-six.vercel.app/",
+        "dom": "<a role=\"\"></a>\n<a role=\"\">GENERATOR</a>\n<a role=\"\">APPLY</a>\n<a role=\"\">CREATE YOUR FRAME</a>\n<a role=\"\">APPLY ON DEVFOLIO</a>\n<a role=\"\">BACK TO THE FRAME</a>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1789489043/agent_screenshots/explorer_page_20260915_214710_qmz5uyra.png",
+        "elements": {
+          "buttons": [
+            {
+              "type": "button",
+              "text": "Profile Frame",
+              "id": "",
+              "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-primary text-black translate-y-0.5 shadow-[0px_0px_0_#07140D]",
+              "selector": "button:has-text('Profile Frame')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Builder ID",
+              "id": "",
+              "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-secondary text-black hover:bg-accent hover:text-white",
+              "selector": "button:has-text('Builder ID')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Team Frame",
+              "id": "",
+              "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-secondary text-black hover:bg-accent hover:text-white",
+              "selector": "button:has-text('Team Frame')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "UPLOAD PHOTO",
+              "id": "",
+              "class": "w-full bg-[#1A4F36] hover:bg-[#2D7350] text-[#84E296] font-bold py-2.5 sm:py-3 rounded-lg text-xs sm:text-sm uppercase transition-colors",
+              "selector": "button:has-text('UPLOAD PHOTO')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Post on X with #FrameInGoa",
+              "id": "",
+              "class": "w-full h-12 sm:h-16 flex items-center justify-center text-sm sm:text-xl font-bold rounded-full bg-[#0A0A0A] text-white hover:bg-black/80 transition-all hover:-translate-y-1 px-4",
+              "selector": "button:has-text('Post on X with #FrameInGoa')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Download Image",
+              "id": "",
+              "class": "w-full h-12 sm:h-14 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full bg-yellow-400 text-black hover:bg-yellow-500 transition-colors",
+              "selector": "button:has-text('Download Image')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Share File",
+              "id": "",
+              "class": "w-full h-12 sm:h-14 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full border-2 border-[#15422D] bg-[#0A2E1F] text-white hover:bg-[#15422D] transition-colors",
+              "selector": "button:has-text('Share File')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            }
+          ],
+          "inputs": [
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "ENTER TEAM NAME",
+              "required": false,
+              "selector": "#base-ui-_R_2lsklubtb_",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "FULL NAME",
+              "required": false,
+              "selector": "#base-ui-_R_etsklubtb_",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "file",
+              "name": "",
+              "placeholder": "",
+              "required": false,
+              "selector": "#hidden-team-file-input",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            }
+          ],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-09-15T21:47:23.049643"
+      },
+      "visited_routes": [
+        "https://frame-in-goa-six.vercel.app/",
+        "https://frame-in-goa-six.vercel.app/create"
+      ],
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "HH GOA 2026 | Frame in Goa",
+        "url": "https://frame-in-goa-six.vercel.app/",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 3,
+        "high_priority": 2,
+        "medium_priority": 1,
+        "low_priority": 0
+      },
+      "test_cases": [
+        {
+          "id": "TC-AUTO-01",
+          "title": "Verify Target Website Reachability & HTTP Load",
+          "category": "functional",
+          "priority": "high",
+          "severity": "blocker",
+          "description": "Verify that the target URL resolves and returns a valid page without fatal error codes.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "navigate",
+              "selector": null,
+              "locator_type": null,
+              "value": "https://frame-in-goa-six.vercel.app/"
+            }
+          ],
+          "assertions": [
+            {
+              "type": "http_status",
+              "expected": 200,
+              "selector": null
+            }
+          ],
+          "expected_result": "Page loads successfully with HTTP status 200.",
+          "estimated_execution_time": null
+        },
+        {
+          "id": "TC-AUTO-02",
+          "title": "Verify Page Title and Core Metadata",
+          "category": "ui",
+          "priority": "medium",
+          "severity": "major",
+          "description": "Check that the page title is present and non-empty.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "check_title",
+              "selector": null,
+              "locator_type": null,
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_present",
+              "expected": true,
+              "selector": null
+            }
+          ],
+          "expected_result": "Page has a valid title tag and metadata.",
+          "estimated_execution_time": null
+        },
+        {
+          "id": "TC-AUTO-03",
+          "title": "Verify Discovered Navigation Links Accessibility",
+          "category": "functional",
+          "priority": "high",
+          "severity": "major",
+          "description": "Verify that primary discovered navigation links are reachable and do not redirect to error pages.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "verify_links",
+              "selector": null,
+              "locator_type": null,
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "links_valid",
+              "expected": true,
+              "selector": null
+            }
+          ],
+          "expected_result": "Discovered links respond cleanly without broken references.",
+          "estimated_execution_time": null
+        }
+      ]
+    }
+  },
+  "logs": [
+    "[2026-09-15T16:15:58.395994+00:00] Initializing new execution pipeline...",
+    "[2026-09-15T16:16:08.138216+00:00] Agent 'Planner' execution started",
+    "[2026-09-15T16:16:08.138729+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-15T16:16:08.144278+00:00] Analyzing project requirements and target structure...",
+    "[2026-09-15T16:16:23.126010+00:00] Agent 'Planner' executed model 'gemini-3.6-flash' (gemini). Latency: 14.85s, Tokens (In/Out): 1049/46",
+    "[2026-09-15T16:16:48.997435+00:00] Agent 'Planner' executed model 'gemini-3.6-flash' (gemini). Latency: 25.83s, Tokens (In/Out): 1101/512",
+    "[2026-09-15T16:16:49.006424+00:00] Planner Agent used fallback strategy.",
+    "[2026-09-15T16:16:49.007759+00:00] Pipeline progress updated: 10%",
+    "[2026-09-15T16:16:49.007759+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 40.87s)",
+    "[2026-09-15T16:16:49.007759+00:00] Agent 'Planner' completed successfully in 40.87s",
+    "[2026-09-15T16:16:49.027586+00:00] Agent 'Explorer' execution started",
+    "[2026-09-15T16:16:49.027586+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-15T16:16:49.030263+00:00] Launching browser and navigating to target URL...",
+    "[2026-09-15T16:17:04.076391+00:00] Extracting DOM, forms, and interactive element maps...",
+    "[2026-09-15T16:17:04.166340+00:00] Deep analyzing route: https://frame-in-goa-six.vercel.app/create",
+    "[2026-09-15T16:17:59.861144+00:00] Agent 'Explorer' executed model 'gemini-3.6-flash' (gemini). Latency: 36.78s, Tokens (In/Out): 171/108",
+    "[2026-09-15T16:17:59.881753+00:00] Pipeline progress updated: 25%",
+    "[2026-09-15T16:17:59.881753+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 70.85s)",
+    "[2026-09-15T16:17:59.881753+00:00] Agent 'Explorer' completed successfully in 70.85s",
+    "[2026-09-15T16:17:59.908050+00:00] Agent 'Generator' execution started",
+    "[2026-09-15T16:17:59.908050+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-15T16:17:59.912643+00:00] Synthesizing test cases (smoke, edge, boundary)...",
+    "[2026-09-15T16:20:17.413121+00:00] Pipeline progress updated: 45%",
+    "[2026-09-15T16:20:17.413121+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 137.5s)",
+    "[2026-09-15T16:20:17.413121+00:00] Agent 'Generator' completed successfully in 137.5s",
+    "[2026-09-15T16:20:17.421864+00:00] Agent 'Executor' execution started",
+    "[2026-09-15T16:20:17.421864+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-15T16:20:17.421864+00:00] ExecutorAgent starting. Running 3 test cases with 4 parallel workers.",
+    "[2026-09-15T16:20:17.506687+00:00] Agent 'Executor' failed with: . Retrying (1/1)...",
+    "[2026-09-15T16:20:17.506687+00:00] Agent 'Executor' status updated to Retrying (Retries: 1, Time: 0.08s)",
+    "[2026-09-15T16:20:18.495107+00:00] ExecutorAgent starting. Running 3 test cases with 4 parallel workers.",
+    "[2026-09-15T16:20:18.496119+00:00] Agent 'Executor' failed permanently after 2 retries. Error: ",
+    "[2026-09-15T16:20:18.496119+00:00] Agent 'Executor' status updated to Failed (Retries: 1, Time: 1.07s)",
+    "[2026-09-15T16:20:18.496119+00:00] Agent 'Executor' crashed: "
+  ],
+  "execution_time": 0.0,
+  "progress": 45
+}

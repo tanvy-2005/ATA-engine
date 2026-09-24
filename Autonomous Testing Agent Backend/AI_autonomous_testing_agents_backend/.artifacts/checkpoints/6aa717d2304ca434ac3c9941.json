@@ -1,0 +1,1335 @@
+{
+  "execution_id": "6aa717d2304ca434ac3c9941",
+  "project_name": "Custom Project",
+  "target_url": "https://frame-in-goa-six.vercel.app/",
+  "status": "Completed",
+  "current_agent": "Reporter",
+  "current_stage": "completed",
+  "pages_discovered": 2,
+  "pages_total": null,
+  "tests_generated": 6,
+  "tests_executed": 6,
+  "tests_total": 6,
+  "current_action": "Reporter generated final QA audit report.",
+  "started_at": "2026-09-13T21:38:26.938643+00:00",
+  "last_updated_at": "2026-09-13T21:40:34.220685+00:00",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator",
+    "Executor",
+    "Memory",
+    "Validator",
+    "BugAnalyzer",
+    "Reporter"
+  ],
+  "failed_agents": [],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 5.46,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 17.64,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 21.57,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Success",
+      "execution_time": 0.08,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Memory": {
+      "status": "Success",
+      "execution_time": 2.68,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Validator": {
+      "status": "Success",
+      "execution_time": 0.0,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "BugAnalyzer": {
+      "status": "Success",
+      "execution_time": 77.09,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Reporter": {
+      "status": "Success",
+      "execution_time": 2.53,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "Custom Project",
+      "description": "Autonomous testing run",
+      "target_url": "https://frame-in-goa-six.vercel.app/"
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Automated fallback analysis for target workspace.",
+        "key_components": [
+          "authentication",
+          "navigation_bar",
+          "form_inputs",
+          "api_routes"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [],
+        "expected_user_journey": []
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify homepage navigation",
+          "Check main CTA buttons"
+        ],
+        "regression_tests": [
+          "Validate form submission workflows",
+          "Check route redirects"
+        ],
+        "boundary_tests": [
+          "Test empty input fields",
+          "Test maximum string length bounds"
+        ],
+        "negative_tests": [
+          "Test invalid form entries",
+          "Check 404 page handling"
+        ],
+        "accessibility_tests": [
+          "Verify ARIA roles",
+          "Check contrast & focus management"
+        ],
+        "integration_tests": [],
+        "system_tests": [],
+        "ui_tests": [],
+        "functional_tests": [],
+        "exploratory_tests": [],
+        "compatibility_tests": [],
+        "security_tests": [],
+        "performance_test_suggestions": [],
+        "api_test_suggestions": []
+      },
+      "priority_areas": [
+        "navigation",
+        "forms",
+        "routing"
+      ],
+      "business_workflow": [],
+      "user_workflow": [],
+      "module_dependency_graph": {},
+      "detected_modules": [],
+      "critical_user_journeys": [],
+      "high_risk_areas": [],
+      "security_sensitive_areas": [],
+      "functional_requirements": [],
+      "non_functional_requirements": [],
+      "test_data_requirements": null,
+      "assertions": [],
+      "explorer_instructions": [],
+      "generator_instructions": [],
+      "validator_instructions": [],
+      "bug_analyzer_instructions": [],
+      "reporter_instructions": []
+    },
+    "explorer_summary": {
+      "summary": "Page 'HH GOA 2026 | Frame in Goa' at https://frame-in-goa-six.vercel.app/ explored successfully.",
+      "detected_technologies": [],
+      "navigation_analysis": {
+        "navigation_flow": "Direct single-page navigation."
+      }
+    },
+    "explorer_output": {
+      "page_info": {
+        "title": "HH GOA 2026 | Frame in Goa",
+        "url": "https://frame-in-goa-six.vercel.app/",
+        "page_load_time": 7.568,
+        "status_code": 200
+      },
+      "dom_structure": [
+        {
+          "element": "fixed",
+          "children": [
+            "hover:opacity-80",
+            "transition-colors",
+            "flex"
+          ]
+        },
+        {
+          "element": "w-full",
+          "children": [
+            "hover:opacity-80",
+            "transition-colors",
+            "flex"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "hover:opacity-80"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "transition-colors",
+            "flex"
+          ]
+        },
+        {
+          "element": "w-full",
+          "children": [
+            "group",
+            "w-full"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "group"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "group"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "w-full"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "w-full"
+          ]
+        }
+      ],
+      "interactive_elements": {
+        "buttons": [
+          {
+            "type": "button",
+            "text": "Profile Frame",
+            "id": "",
+            "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-primary text-black translate-y-0.5 shadow-[0px_0px_0_#07140D]",
+            "selector": "button:has-text('Profile Frame')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Builder ID",
+            "id": "",
+            "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-secondary text-black hover:bg-accent hover:text-white",
+            "selector": "button:has-text('Builder ID')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Team Frame",
+            "id": "",
+            "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-secondary text-black hover:bg-accent hover:text-white",
+            "selector": "button:has-text('Team Frame')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "UPLOAD PHOTO",
+            "id": "",
+            "class": "w-full bg-[#1A4F36] hover:bg-[#2D7350] text-[#84E296] font-bold py-2.5 sm:py-3 rounded-lg text-xs sm:text-sm uppercase transition-colors",
+            "selector": "button:has-text('UPLOAD PHOTO')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Post on X with #FrameInGoa",
+            "id": "",
+            "class": "w-full h-12 sm:h-16 flex items-center justify-center text-sm sm:text-xl font-bold rounded-full bg-[#0A0A0A] text-white hover:bg-black/80 transition-all hover:-translate-y-1 px-4",
+            "selector": "button:has-text('Post on X with #FrameInGoa')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Download Image",
+            "id": "",
+            "class": "w-full h-12 sm:h-14 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full bg-yellow-400 text-black hover:bg-yellow-500 transition-colors",
+            "selector": "button:has-text('Download Image')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          },
+          {
+            "type": "button",
+            "text": "Share File",
+            "id": "",
+            "class": "w-full h-12 sm:h-14 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full border-2 border-[#15422D] bg-[#0A2E1F] text-white hover:bg-[#15422D] transition-colors",
+            "selector": "button:has-text('Share File')",
+            "xpath": "//button",
+            "role": "button",
+            "visibility": true,
+            "enabled": true,
+            "action": "click"
+          }
+        ],
+        "inputs": [
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "ENTER TEAM NAME",
+            "required": false,
+            "selector": "#base-ui-_R_2lsklubtb_",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "FULL NAME",
+            "required": false,
+            "selector": "#base-ui-_R_etsklubtb_",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          },
+          {
+            "type": "file",
+            "name": "",
+            "placeholder": "",
+            "required": false,
+            "selector": "#hidden-team-file-input",
+            "default_value": "",
+            "min_length": null,
+            "max_length": null,
+            "pattern": null,
+            "visible": true,
+            "enabled": true,
+            "editable": true
+          }
+        ],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [
+        {
+          "text": "link",
+          "url": "/",
+          "selector": "a.hover:opacity-80.transition-opacity.flex.items-center"
+        },
+        {
+          "text": "Generator",
+          "url": "/create",
+          "selector": "a:has-text('Generator')"
+        },
+        {
+          "text": "Apply",
+          "url": "https://hhgoa.com/",
+          "selector": "a:has-text('Apply')"
+        },
+        {
+          "text": "CREATE YOUR FRAME",
+          "url": "/create",
+          "selector": "a:has-text('CREATE YOUR FRAME')"
+        },
+        {
+          "text": "APPLY ON DEVFOLIO",
+          "url": "https://hacker-house-goa-2026.devfolio.co/overview",
+          "selector": "a:has-text('APPLY ON DEVFOLIO')"
+        },
+        {
+          "text": "BACK TO THE FRAME",
+          "url": "/create",
+          "selector": "a:has-text('BACK TO THE FRAME')"
+        },
+        {
+          "text": "BACK TO PREVIEW",
+          "url": "/",
+          "selector": "a:has-text('BACK TO PREVIEW')"
+        }
+      ],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1789335525/agent_screenshots/explorer_page_20260914_030841_s9ih41zc.png",
+      "accessibility": [
+        {
+          "role": "a",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "HH Goa Logo",
+          "alt": "HH Goa Logo"
+        },
+        {
+          "role": "img",
+          "aria_label": "2:47 PM Studio",
+          "alt": "2:47 PM Studio"
+        },
+        {
+          "role": "a",
+          "aria_label": "Generator",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Apply",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Hero Background",
+          "alt": "Hero Background"
+        },
+        {
+          "role": "a",
+          "aria_label": "CREATE YOUR FRAME",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "CTA Background",
+          "alt": "CTA Background"
+        },
+        {
+          "role": "a",
+          "aria_label": "APPLY ON DEVFOLIO",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "BACK TO THE FRAME",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Profile Frame",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Builder ID",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Team Frame",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "BACK TO PREVIEW",
+          "alt": null
+        },
+        {
+          "role": "textbox",
+          "aria_label": "ENTER TEAM NAME",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "UPLOAD PHOTO",
+          "alt": null
+        },
+        {
+          "role": "textbox",
+          "aria_label": "FULL NAME",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Post on X with #FrameInGoa",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Download Image",
+          "alt": null
+        },
+        {
+          "role": "button",
+          "aria_label": "Share File",
+          "alt": null
+        },
+        {
+          "role": "file",
+          "aria_label": null,
+          "alt": null
+        }
+      ],
+      "network_info": {
+        "api_calls": []
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "actions_possible": [],
+      "page_state_snapshot": {
+        "url": "https://frame-in-goa-six.vercel.app/",
+        "dom": "<a role=\"\"></a>\n<a role=\"\">GENERATOR</a>\n<a role=\"\">APPLY</a>\n<a role=\"\">CREATE YOUR FRAME</a>\n<a role=\"\">APPLY ON DEVFOLIO</a>\n<a role=\"\">BACK TO THE FRAME</a>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1789335525/agent_screenshots/explorer_page_20260914_030841_s9ih41zc.png",
+        "elements": {
+          "buttons": [
+            {
+              "type": "button",
+              "text": "Profile Frame",
+              "id": "",
+              "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-primary text-black translate-y-0.5 shadow-[0px_0px_0_#07140D]",
+              "selector": "button:has-text('Profile Frame')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Builder ID",
+              "id": "",
+              "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-secondary text-black hover:bg-accent hover:text-white",
+              "selector": "button:has-text('Builder ID')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Team Frame",
+              "id": "",
+              "class": "px-4 py-2 sm:px-6 sm:py-3 font-bold uppercase tracking-wider sm:tracking-widest text-xs sm:text-sm md:text-base transition-all border-3 sm:border-4 border-black shadow-[2px_2px_0_#07140D] sm:shadow-[4px_4px_0_#07140D] bg-secondary text-black hover:bg-accent hover:text-white",
+              "selector": "button:has-text('Team Frame')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "UPLOAD PHOTO",
+              "id": "",
+              "class": "w-full bg-[#1A4F36] hover:bg-[#2D7350] text-[#84E296] font-bold py-2.5 sm:py-3 rounded-lg text-xs sm:text-sm uppercase transition-colors",
+              "selector": "button:has-text('UPLOAD PHOTO')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Post on X with #FrameInGoa",
+              "id": "",
+              "class": "w-full h-12 sm:h-16 flex items-center justify-center text-sm sm:text-xl font-bold rounded-full bg-[#0A0A0A] text-white hover:bg-black/80 transition-all hover:-translate-y-1 px-4",
+              "selector": "button:has-text('Post on X with #FrameInGoa')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Download Image",
+              "id": "",
+              "class": "w-full h-12 sm:h-14 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full bg-yellow-400 text-black hover:bg-yellow-500 transition-colors",
+              "selector": "button:has-text('Download Image')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            },
+            {
+              "type": "button",
+              "text": "Share File",
+              "id": "",
+              "class": "w-full h-12 sm:h-14 flex items-center justify-center text-xs sm:text-sm font-bold rounded-full border-2 border-[#15422D] bg-[#0A2E1F] text-white hover:bg-[#15422D] transition-colors",
+              "selector": "button:has-text('Share File')",
+              "xpath": "//button",
+              "role": "button",
+              "visibility": true,
+              "enabled": true,
+              "action": "click"
+            }
+          ],
+          "inputs": [
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "ENTER TEAM NAME",
+              "required": false,
+              "selector": "#base-ui-_R_2lsklubtb_",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "text",
+              "name": "",
+              "placeholder": "FULL NAME",
+              "required": false,
+              "selector": "#base-ui-_R_etsklubtb_",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            },
+            {
+              "type": "file",
+              "name": "",
+              "placeholder": "",
+              "required": false,
+              "selector": "#hidden-team-file-input",
+              "default_value": "",
+              "min_length": null,
+              "max_length": null,
+              "pattern": null,
+              "visible": true,
+              "enabled": true,
+              "editable": true
+            }
+          ],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-09-14T03:08:47.592074"
+      },
+      "visited_routes": [
+        "https://frame-in-goa-six.vercel.app/",
+        "https://frame-in-goa-six.vercel.app/create"
+      ],
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "HH GOA 2026 | Frame in Goa",
+        "url": "https://frame-in-goa-six.vercel.app/",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 12,
+        "high_priority": 5,
+        "medium_priority": 5,
+        "low_priority": 2
+      },
+      "test_cases": [
+        {
+          "id": "TC001",
+          "title": "Verify navigation to Generator page",
+          "category": "Navigation",
+          "priority": "High",
+          "severity": "Major",
+          "description": "Verify user can navigate to Generator page using the Generator link",
+          "preconditions": [
+            "User is on the homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Generator')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://frame-in-goa-six.vercel.app/create",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is redirected to Generator page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC002",
+          "title": "Verify navigation to Apply page",
+          "category": "Navigation",
+          "priority": "High",
+          "severity": "Major",
+          "description": "Verify user can navigate to external Apply page",
+          "preconditions": [
+            "User is on the homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('Apply')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_contains",
+              "expected": "hhgoa.com",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is redirected to external Apply page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC003",
+          "title": "Verify CREATE YOUR FRAME button functionality",
+          "category": "Functional",
+          "priority": "High",
+          "severity": "Major",
+          "description": "Verify CREATE YOUR FRAME button redirects to create page",
+          "preconditions": [
+            "User is on the homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('CREATE YOUR FRAME')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://frame-in-goa-six.vercel.app/create",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is redirected to create page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC004",
+          "title": "Verify APPLY ON DEVFOLIO button functionality",
+          "category": "Functional",
+          "priority": "High",
+          "severity": "Major",
+          "description": "Verify APPLY ON DEVFOLIO button redirects to external Devfolio page",
+          "preconditions": [
+            "User is on the homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('APPLY ON DEVFOLIO')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_contains",
+              "expected": "devfolio.co",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is redirected to external Devfolio page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC005",
+          "title": "Verify BACK TO THE FRAME link functionality",
+          "category": "Navigation",
+          "priority": "Medium",
+          "severity": "Normal",
+          "description": "Verify BACK TO THE FRAME link redirects to create page",
+          "preconditions": [
+            "User is on the homepage"
+          ],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "click",
+              "selector": "a:has-text('BACK TO THE FRAME')",
+              "locator_type": "css",
+              "value": ""
+            }
+          ],
+          "assertions": [
+            {
+              "type": "url_equals",
+              "expected": "https://frame-in-goa-six.vercel.app/create",
+              "selector": ""
+            }
+          ],
+          "expected_result": "User is redirected to create page",
+          "estimated_execution_time": "5 sec"
+        },
+        {
+          "id": "TC006",
+          "title": "Verify BACK TO PREVIEW link functionality",
+          "category": "Navigation",
+          "priority": "Medium",
+          "severity": "Normal",
+          "description": "Verify BACK TO PREVIEW link redirects to homepage",
+          "preconditions": [
+            "User is on the create page"
+          ],
+          "test_data": {},
+          "steps": [],
+          "assertions": [],
+          "expected_result": null,
+          "estimated_execution_time": null
+        }
+      ]
+    },
+    "executor_output": {
+      "execution_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify navigation to Generator page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.02,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is redirected to Generator page"
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify navigation to Apply page",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.03,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is redirected to external Apply page"
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify CREATE YOUR FRAME button functionality",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.03,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is redirected to create page"
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify APPLY ON DEVFOLIO button functionality",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.03,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is redirected to external Devfolio page"
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Verify BACK TO THE FRAME link functionality",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.07,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": "User is redirected to create page"
+        },
+        {
+          "test_case_id": "TC006",
+          "title": "Verify BACK TO PREVIEW link functionality",
+          "outcome": "Failed at step unknown: ",
+          "duration": 0.07,
+          "failed_step": null,
+          "error_message": "",
+          "console_logs": [],
+          "network_logs": [],
+          "screenshot_path": null,
+          "expected_result": null
+        }
+      ]
+    },
+    "memory_output": {
+      "compressed_context": "Fallback execution compression.",
+      "execution_log_summary": "Failed to run summarization LLM step.",
+      "key_highlights": [
+        "Execution logs completed."
+      ],
+      "suggested_focus_areas": [
+        "Manual regression testing recommended."
+      ]
+    },
+    "validator_output": {
+      "validation_results": [
+        {
+          "test_case_id": "TC001",
+          "title": "Verify navigation to Generator page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC002",
+          "title": "Verify navigation to Apply page",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC003",
+          "title": "Verify CREATE YOUR FRAME button functionality",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC004",
+          "title": "Verify APPLY ON DEVFOLIO button functionality",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC005",
+          "title": "Verify BACK TO THE FRAME link functionality",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        },
+        {
+          "test_case_id": "TC006",
+          "title": "Verify BACK TO PREVIEW link functionality",
+          "status": "FAIL",
+          "confidence": 95,
+          "analysis": "FAILED: Failed at step unknown: ",
+          "matched_conditions": [],
+          "missing_conditions": [
+            "Expected success but got: Failed at step unknown: "
+          ],
+          "unexpected_behavior": [],
+          "discrepancies": [],
+          "root_cause": "",
+          "recommendation": "Investigate the failing test step and selector.",
+          "error": "",
+          "message": ""
+        }
+      ]
+    },
+    "bug_analyzer_output": {
+      "bug_analyses": [
+        {
+          "test_case_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "The test case 'Verify navigation to Generator page' failed at an unknown step, indicating that the navigation to the Generator page did not occur as expected. The failure occurred without a specific step being identified, suggesting a possible issue with the navigation mechanism or page load.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The root cause is likely related to a broken or missing navigation link, incorrect routing configuration, or the Generator page failing to load properly. Without additional logs or a captured screenshot, the exact point of failure cannot be determined, but the navigation flow to the Generator page is not functioning as intended.",
+          "suggested_fix": "Inspect the navigation component or button that triggers the route to the Generator page. Verify the routing configuration and ensure the Generator page component is correctly defined and accessible. Add detailed logging or error handling to capture the specific step where the failure occurs. Re-run the test with enhanced logging to pinpoint the exact failure point.",
+          "confidence_score": 0.75,
+          "test_id": "TC001"
+        },
+        {
+          "test_case_id": "TC002",
+          "test_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Test case TC002 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        },
+        {
+          "test_case_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "The 'CREATE YOUR FRAME' button functionality failed during test execution. The test failed at an unknown step with no console logs, network logs, or screenshot captured, making it difficult to pinpoint the exact failure point.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Insufficient diagnostic data (no logs, no screenshot) to determine the exact root cause. Likely causes include: button not rendered, click event not bound, navigation/modal failure after click, or JavaScript error not captured in logs.",
+          "suggested_fix": "1. Add explicit wait for button visibility and clickability. 2. Capture screenshot on failure. 3. Enable console and network log collection. 4. Verify button selector and event handler. 5. Check if the button triggers the expected action (modal, navigation, API call).",
+          "confidence_score": 0.45,
+          "test_id": "TC003"
+        },
+        {
+          "test_case_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "The test for verifying the APPLY ON DEVFOLIO button functionality failed at an unknown step, with no console or network logs available for diagnosis.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The failure occurred during an unidentified step, likely due to the button not being interactable, a JavaScript error, or a backend issue, but insufficient data prevents precise root cause identification.",
+          "suggested_fix": "Enhance test logging to capture step-by-step details, include screenshots on failure, and monitor console and network activity. Verify button element presence, clickability, and associated API calls.",
+          "confidence_score": 0.5,
+          "test_id": "TC004"
+        },
+        {
+          "test_case_id": "TC005",
+          "bug_type": "Functional",
+          "issue": "The 'BACK TO THE FRAME' link functionality failed during test execution. The test failed at an unknown step with no console or network logs, indicating a possible issue with element interaction or frame navigation.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The link element may be missing, not clickable, or the test may not be correctly switching to the appropriate frame context before interacting with the link.",
+          "suggested_fix": "Verify the presence and visibility of the 'BACK TO THE FRAME' link. Ensure the test switches to the correct frame/iframe before clicking. Check the link's href attribute or click handler for correct navigation. Add explicit waits and logging to capture the failure point.",
+          "confidence_score": 0.7,
+          "test_id": "TC005"
+        },
+        {
+          "test_case_id": "TC006",
+          "test_id": "TC006",
+          "bug_type": "Functional",
+          "issue": "Test case TC006 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior.",
+          "confidence_score": 0.7
+        }
+      ]
+    },
+    "reporter_output": {
+      "summary": "Autonomous QA audit completed for Custom Project. Executed 6 test cases (0 passed, 6 failed).",
+      "execution_statistics": {
+        "total_tests": 6,
+        "passed": 0,
+        "failed": 6,
+        "skipped": 0,
+        "success_rate": 0.0,
+        "failure_rate": 100.0
+      },
+      "bug_summary": [
+        {
+          "test_id": "TC001",
+          "bug_type": "Functional",
+          "issue": "The test case 'Verify navigation to Generator page' failed at an unknown step, indicating that the navigation to the Generator page did not occur as expected. The failure occurred without a specific step being identified, suggesting a possible issue with the navigation mechanism or page load.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The root cause is likely related to a broken or missing navigation link, incorrect routing configuration, or the Generator page failing to load properly. Without additional logs or a captured screenshot, the exact point of failure cannot be determined, but the navigation flow to the Generator page is not functioning as intended.",
+          "suggested_fix": "Inspect the navigation component or button that triggers the route to the Generator page. Verify the routing configuration and ensure the Generator page component is correctly defined and accessible. Add detailed logging or error handling to capture the specific step where the failure occurs. Re-run the test with enhanced logging to pinpoint the exact failure point."
+        },
+        {
+          "test_id": "TC002",
+          "bug_type": "Functional",
+          "issue": "Test case TC002 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        },
+        {
+          "test_id": "TC003",
+          "bug_type": "Functional",
+          "issue": "The 'CREATE YOUR FRAME' button functionality failed during test execution. The test failed at an unknown step with no console logs, network logs, or screenshot captured, making it difficult to pinpoint the exact failure point.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Insufficient diagnostic data (no logs, no screenshot) to determine the exact root cause. Likely causes include: button not rendered, click event not bound, navigation/modal failure after click, or JavaScript error not captured in logs.",
+          "suggested_fix": "1. Add explicit wait for button visibility and clickability. 2. Capture screenshot on failure. 3. Enable console and network log collection. 4. Verify button selector and event handler. 5. Check if the button triggers the expected action (modal, navigation, API call)."
+        },
+        {
+          "test_id": "TC004",
+          "bug_type": "Functional",
+          "issue": "The test for verifying the APPLY ON DEVFOLIO button functionality failed at an unknown step, with no console or network logs available for diagnosis.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The failure occurred during an unidentified step, likely due to the button not being interactable, a JavaScript error, or a backend issue, but insufficient data prevents precise root cause identification.",
+          "suggested_fix": "Enhance test logging to capture step-by-step details, include screenshots on failure, and monitor console and network activity. Verify button element presence, clickability, and associated API calls."
+        },
+        {
+          "test_id": "TC005",
+          "bug_type": "Functional",
+          "issue": "The 'BACK TO THE FRAME' link functionality failed during test execution. The test failed at an unknown step with no console or network logs, indicating a possible issue with element interaction or frame navigation.",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "The link element may be missing, not clickable, or the test may not be correctly switching to the appropriate frame context before interacting with the link.",
+          "suggested_fix": "Verify the presence and visibility of the 'BACK TO THE FRAME' link. Ensure the test switches to the correct frame/iframe before clicking. Check the link's href attribute or click handler for correct navigation. Add explicit waits and logging to capture the failure point."
+        },
+        {
+          "test_id": "TC006",
+          "bug_type": "Functional",
+          "issue": "Test case TC006 failed: Failed at step unknown: ",
+          "severity": "High",
+          "priority": "High",
+          "root_cause": "Execution failure: Failed at step unknown: ",
+          "suggested_fix": "Review the element selectors and verify target application behavior."
+        }
+      ],
+      "severity_distribution": {
+        "critical": 0,
+        "high": 6,
+        "medium": 0,
+        "low": 0
+      },
+      "failed_test_cases": [
+        {
+          "test_id": "TC001",
+          "title": "Verify navigation to Generator page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC002",
+          "title": "Verify navigation to Apply page",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC003",
+          "title": "Verify CREATE YOUR FRAME button functionality",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC004",
+          "title": "Verify APPLY ON DEVFOLIO button functionality",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC005",
+          "title": "Verify BACK TO THE FRAME link functionality",
+          "reason": "FAILED: Failed at step unknown: "
+        },
+        {
+          "test_id": "TC006",
+          "title": "Verify BACK TO PREVIEW link functionality",
+          "reason": "FAILED: Failed at step unknown: "
+        }
+      ],
+      "top_issues": [
+        "[High] The test case 'Verify navigation to Generator page' failed at an unknown step, indicating that the navigation to the Generator page did not occur as expected. The failure occurred without a specific step being identified, suggesting a possible issue with the navigation mechanism or page load.",
+        "[High] Test case TC002 failed: Failed at step unknown: ",
+        "[High] The 'CREATE YOUR FRAME' button functionality failed during test execution. The test failed at an unknown step with no console logs, network logs, or screenshot captured, making it difficult to pinpoint the exact failure point.",
+        "[High] The test for verifying the APPLY ON DEVFOLIO button functionality failed at an unknown step, with no console or network logs available for diagnosis.",
+        "[High] The 'BACK TO THE FRAME' link functionality failed during test execution. The test failed at an unknown step with no console or network logs, indicating a possible issue with element interaction or frame navigation."
+      ],
+      "recommendations": [
+        "Inspect the navigation component or button that triggers the route to the Generator page. Verify the routing configuration and ensure the Generator page component is correctly defined and accessible. Add detailed logging or error handling to capture the specific step where the failure occurs. Re-run the test with enhanced logging to pinpoint the exact failure point.",
+        "Review the element selectors and verify target application behavior.",
+        "1. Add explicit wait for button visibility and clickability. 2. Capture screenshot on failure. 3. Enable console and network log collection. 4. Verify button selector and event handler. 5. Check if the button triggers the expected action (modal, navigation, API call).",
+        "Enhance test logging to capture step-by-step details, include screenshots on failure, and monitor console and network activity. Verify button element presence, clickability, and associated API calls.",
+        "Verify the presence and visibility of the 'BACK TO THE FRAME' link. Ensure the test switches to the correct frame/iframe before clicking. Check the link's href attribute or click handler for correct navigation. Add explicit waits and logging to capture the failure point."
+      ],
+      "overall_assessment": "Action Required",
+      "overall_status": "FAIL",
+      "total_pages_tested": 1,
+      "passed_count": 0,
+      "failed_count": 0,
+      "bugs_found": 0
+    }
+  },
+  "logs": [
+    "[2026-09-13T21:38:26.938643+00:00] Initializing new execution pipeline...",
+    "[2026-09-13T21:38:27.002171+00:00] Agent 'Planner' execution started",
+    "[2026-09-13T21:38:27.002171+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-13T21:38:27.003679+00:00] Analyzing project requirements and target structure...",
+    "[2026-09-13T21:38:32.461048+00:00] Planner Agent used fallback strategy.",
+    "[2026-09-13T21:38:32.461048+00:00] Pipeline progress updated: 10%",
+    "[2026-09-13T21:38:32.461048+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 5.46s)",
+    "[2026-09-13T21:38:32.461048+00:00] Agent 'Planner' completed successfully in 5.46s",
+    "[2026-09-13T21:38:32.482299+00:00] Agent 'Explorer' execution started",
+    "[2026-09-13T21:38:32.482861+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-13T21:38:32.487848+00:00] Launching browser and navigating to target URL...",
+    "[2026-09-13T21:38:40.371825+00:00] Extracting DOM, forms, and interactive element maps...",
+    "[2026-09-13T21:38:40.491847+00:00] Deep analyzing route: https://frame-in-goa-six.vercel.app/create",
+    "[2026-09-13T21:38:50.126166+00:00] Pipeline progress updated: 25%",
+    "[2026-09-13T21:38:50.126166+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 17.64s)",
+    "[2026-09-13T21:38:50.126166+00:00] Agent 'Explorer' completed successfully in 17.64s",
+    "[2026-09-13T21:38:50.152746+00:00] Agent 'Generator' execution started",
+    "[2026-09-13T21:38:50.152746+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-13T21:38:50.152746+00:00] Synthesizing test cases (smoke, edge, boundary)...",
+    "[2026-09-13T21:39:11.718344+00:00] Agent 'Generator' executed model 'deepseek/deepseek-chat' (openrouter). Latency: 21.52s, Tokens (In/Out): 2895/1200",
+    "[2026-09-13T21:39:11.727330+00:00] Generated 6 executable test cases.",
+    "[2026-09-13T21:39:11.727330+00:00] Pipeline progress updated: 45%",
+    "[2026-09-13T21:39:11.727330+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 21.57s)",
+    "[2026-09-13T21:39:11.727330+00:00] Agent 'Generator' completed successfully in 21.57s",
+    "[2026-09-13T21:39:11.736550+00:00] Agent 'Executor' execution started",
+    "[2026-09-13T21:39:11.736550+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-13T21:39:11.736550+00:00] ExecutorAgent starting. Running 6 test cases with 4 parallel workers.",
+    "[2026-09-13T21:39:11.736550+00:00] Executing TC001: Verify navigation to Generator page...",
+    "[2026-09-13T21:39:11.736550+00:00] Executing TC002: Verify navigation to Apply page...",
+    "[2026-09-13T21:39:11.736550+00:00] Executing TC003: Verify CREATE YOUR FRAME button functionality...",
+    "[2026-09-13T21:39:11.736550+00:00] Executing TC004: Verify APPLY ON DEVFOLIO button functionality...",
+    "[2026-09-13T21:39:11.745843+00:00] Executing TC005: Verify BACK TO THE FRAME link functionality...",
+    "[2026-09-13T21:39:11.745843+00:00] Executing TC006: Verify BACK TO PREVIEW link functionality...",
+    "[2026-09-13T21:39:11.817882+00:00] Test Case TC001 finished. Duration: 0.02s. Outcome: Failed at step unknown: ",
+    "[2026-09-13T21:39:11.817882+00:00] Test Case TC002 finished. Duration: 0.03s. Outcome: Failed at step unknown: ",
+    "[2026-09-13T21:39:11.817882+00:00] Test Case TC003 finished. Duration: 0.03s. Outcome: Failed at step unknown: ",
+    "[2026-09-13T21:39:11.817882+00:00] Test Case TC004 finished. Duration: 0.03s. Outcome: Failed at step unknown: ",
+    "[2026-09-13T21:39:11.817882+00:00] Test Case TC005 finished. Duration: 0.07s. Outcome: Failed at step unknown: ",
+    "[2026-09-13T21:39:11.817882+00:00] Test Case TC006 finished. Duration: 0.07s. Outcome: Failed at step unknown: ",
+    "[2026-09-13T21:39:11.817882+00:00] Pipeline progress updated: 65%",
+    "[2026-09-13T21:39:11.817882+00:00] [WARN] Executor detected high failures: 6/6 test cases failed (100% failure rate). Proceeding to Validator and BugAnalyzer for deep root-cause analysis.",
+    "[2026-09-13T21:39:11.820412+00:00] Agent 'Executor' status updated to Success (Retries: 0, Time: 0.08s)",
+    "[2026-09-13T21:39:11.820412+00:00] Agent 'Executor' completed successfully in 0.08s",
+    "[2026-09-13T21:39:11.848737+00:00] Agent 'Memory' execution started",
+    "[2026-09-13T21:39:11.849253+00:00] Agent 'Memory' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-13T21:39:11.849253+00:00] MemoryAgent starting. Compressing execution logs & structuring context...",
+    "[2026-09-13T21:39:14.523955+00:00] Pipeline progress updated: 70%",
+    "[2026-09-13T21:39:14.524745+00:00] Agent 'Memory' status updated to Success (Retries: 0, Time: 2.68s)",
+    "[2026-09-13T21:39:14.524745+00:00] Agent 'Memory' completed successfully in 2.68s",
+    "[2026-09-13T21:39:14.544158+00:00] Agent 'Validator' execution started",
+    "[2026-09-13T21:39:14.544158+00:00] Agent 'Validator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-13T21:39:14.544158+00:00] ValidatorAgent starting. Validating 6 test executions.",
+    "[2026-09-13T21:39:14.548657+00:00] Validator LLM enrichment failed for batch 1 ('model_name'). Using deterministic results.",
+    "[2026-09-13T21:39:14.548657+00:00] Pipeline progress updated: 80%",
+    "[2026-09-13T21:39:14.548657+00:00] Agent 'Validator' status updated to Success (Retries: 0, Time: 0.0s)",
+    "[2026-09-13T21:39:14.548657+00:00] Agent 'Validator' completed successfully in 0.0s",
+    "[2026-09-13T21:39:14.574375+00:00] Agent 'BugAnalyzer' execution started",
+    "[2026-09-13T21:39:14.574375+00:00] Agent 'BugAnalyzer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-13T21:39:14.574375+00:00] BugAnalyzerAgent starting. Analyzing failures...",
+    "[2026-09-13T21:39:14.574375+00:00] Analyzing failure for Test Case TC001",
+    "[2026-09-13T21:39:23.561452+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 8.96s, Tokens (In/Out): 330/256",
+    "[2026-09-13T21:39:23.562468+00:00] Analyzing failure for Test Case TC002",
+    "[2026-09-13T21:39:27.331785+00:00] Bug analysis LLM call failed for TC002: Output of agent 'BugAnalyzer' was not valid JSON: Expecting value: line 1 column 1 (char 0). Using fallback.",
+    "[2026-09-13T21:39:27.331785+00:00] Analyzing failure for Test Case TC003",
+    "[2026-09-13T21:39:38.157899+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 10.8s, Tokens (In/Out): 328/480",
+    "[2026-09-13T21:39:38.157899+00:00] Analyzing failure for Test Case TC004",
+    "[2026-09-13T21:39:53.967643+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 15.78s, Tokens (In/Out): 309/1196",
+    "[2026-09-13T21:39:53.967643+00:00] Analyzing failure for Test Case TC005",
+    "[2026-09-13T21:40:02.818528+00:00] Agent 'BugAnalyzer' executed model 'openrouter/free' (openrouter). Latency: 8.79s, Tokens (In/Out): 329/461",
+    "[2026-09-13T21:40:02.818528+00:00] Analyzing failure for Test Case TC006",
+    "[2026-09-13T21:40:31.666188+00:00] Bug analysis LLM call failed for TC006: Output of agent 'BugAnalyzer' was not valid JSON: Expecting value: line 1 column 1 (char 0). Using fallback.",
+    "[2026-09-13T21:40:31.666706+00:00] Pipeline progress updated: 90%",
+    "[2026-09-13T21:40:31.666706+00:00] Agent 'BugAnalyzer' status updated to Success (Retries: 0, Time: 77.09s)",
+    "[2026-09-13T21:40:31.666706+00:00] Agent 'BugAnalyzer' completed successfully in 77.09s",
+    "[2026-09-13T21:40:31.686234+00:00] Agent 'Reporter' execution started",
+    "[2026-09-13T21:40:31.686234+00:00] Agent 'Reporter' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-13T21:40:31.686234+00:00] Compiling final QA audit report...",
+    "[2026-09-13T21:40:34.212979+00:00] Pipeline progress updated: 100%",
+    "[2026-09-13T21:40:34.212979+00:00] Agent 'Reporter' status updated to Success (Retries: 0, Time: 2.53s)",
+    "[2026-09-13T21:40:34.212979+00:00] Agent 'Reporter' completed successfully in 2.53s",
+    "[2026-09-13T21:40:34.220685+00:00] Orchestration pipeline execution finished in 127.24s"
+  ],
+  "execution_time": 127.24,
+  "progress": 100
+}

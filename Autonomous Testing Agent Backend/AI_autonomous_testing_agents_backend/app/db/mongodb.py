@@ -38,6 +38,7 @@ async def connect_to_mongo():
         await db_client.db["projects"].create_index("created_at")
         await db_client.db["workspaces"].create_index("slug", unique=True)
         await db_client.db["workspaces"].create_index("created_at")
+        await db_client.db["users"].create_index("email", unique=True)
         print("MongoDB indexes initialized successfully")
     except Exception as e:
         print(f"Warning: Failed to create indexes: {e}")

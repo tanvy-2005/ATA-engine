@@ -37,6 +37,9 @@ class PlannerAgent(BaseAgent):
             f"Description: {inputs.description}\n"
             f"Tech Stack: {', '.join(inputs.tech_stack) if inputs.tech_stack else 'Not Specified'}\n"
             f"Target URL: {inputs.target_url or 'Not Specified'}\n"
+            f"Test Type: {inputs.test_type}\n"
+            f"Repository URL: {inputs.repo_url or 'Not Specified'}\n"
+            "Analyze the above project configuration based on the requested Test Type. Output your plan strictly adhering to the JSON schema, ensuring 'priority_areas' is included as a top-level required key."
         )
 
         attempt_prompt = prompt

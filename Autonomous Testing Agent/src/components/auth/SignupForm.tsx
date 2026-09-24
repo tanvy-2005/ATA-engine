@@ -59,8 +59,9 @@ export function SignupForm({ isDark }: SignupFormProps) {
       await signup(name, email, password);
       setSuccessMessage("Account created successfully. Redirecting to verification...");
       setTimeout(() => navigate("/verify-otp", { state: { email } }), 1500);
-    } catch (err) {
-      setError("Failed to create account.");
+    } catch (err: any) {
+      const detail = err.response?.data?.detail;
+      setError(typeof detail === 'string' ? detail : "Failed to create account.");
     } finally {
       setLocalLoading(false);
     }

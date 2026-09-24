@@ -2,7 +2,7 @@ from fastapi import APIRouter, BackgroundTasks, HTTPException
 from pydantic import BaseModel
 import logging
 from app.db.mongodb import db_client
-from app.modules.integrations.services import notify_slack_teams, create_jira_bug, trigger_custom_webhook, report_to_cicd
+from app.modules.integrations.services import notify_slack_teams, create_jira_bug, report_to_cicd
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -47,11 +47,7 @@ async def process_integrations_after_test(workspace_id: str, test_result: dict):
                 if all([jira_url, email, token, project_key]):
                     await create_jira_bug(jira_url, email, token, project_key, summary, details)
                     
-            elif itype == "webhook":
-                webhook_url = config.get("webhookUrl")
-                secret = config.get("secret")
-                if webhook_url:
-                    await trigger_custom_webhook(webhook_url, test_result, secret)
+
                     
             elif itype in ["github", "gitlab", "jenkins"]:
                 repo_url = config.get("repoUrl")

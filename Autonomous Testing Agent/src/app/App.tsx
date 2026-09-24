@@ -38,8 +38,6 @@ const JenkinsSetupPage = lazy(() => import("@/pages/integrations/JenkinsSetupPag
 const SlackSetupPage = lazy(() => import("@/pages/integrations/SlackSetupPage"));
 const MicrosoftTeamsSetupPage = lazy(() => import("@/pages/integrations/MicrosoftTeamsSetupPage"));
 const JiraSetupPage = lazy(() => import("@/pages/integrations/JiraSetupPage"));
-const WebhookSetupPage = lazy(() => import("@/pages/integrations/WebhookSetupPage"));
-const CliSetupPage = lazy(() => import("@/pages/integrations/CliSetupPage"));
 import NotFoundPage from "@/pages/NotFoundPage";
 import AgentsPage from "@/pages/agents/AgentsPage";
 import ProfilePage from "@/pages/settings/ProfilePage";
@@ -124,8 +122,6 @@ export default function App() {
                     <Route path="integrations/slack" element={<Suspense fallback={<PageLoader />}><SlackSetupPage /></Suspense>} />
                     <Route path="integrations/microsoft-teams" element={<Suspense fallback={<PageLoader />}><MicrosoftTeamsSetupPage /></Suspense>} />
                     <Route path="integrations/jira" element={<Suspense fallback={<PageLoader />}><JiraSetupPage /></Suspense>} />
-                    <Route path="integrations/webhooks" element={<Suspense fallback={<PageLoader />}><WebhookSetupPage /></Suspense>} />
-                    <Route path="integrations/cli" element={<Suspense fallback={<PageLoader />}><CliSetupPage /></Suspense>} />
                     <Route path="agents" element={<AgentsPage />} />
 
                     {/* Test Routes */}

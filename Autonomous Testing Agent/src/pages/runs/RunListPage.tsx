@@ -87,6 +87,8 @@ export default function RunListPage() {
     const [targetUrl, setTargetUrl] = useState('');
     const [projectName, setProjectName] = useState('');
     const [selectedModel, setSelectedModel] = useState("auto");
+    const [testType, setTestType] = useState('e2e');
+    const [repoUrl, setRepoUrl] = useState('');
     const description = 'Autonomous smoke and assertion validations suite';
 
     // Stage State
@@ -210,6 +212,15 @@ export default function RunListPage() {
                             logType = 'error';
                         }
                         batchedLogs.push({ time: new Date().toLocaleTimeString(), type: logType, text: data.currentAction });
+                    }
+                    if (data.type === 'log') {
+                        batchedLogs.push({
+                            time: new Date().toLocaleTimeString(),
+                            type: 'agent_summary',
+                            agent: data.agent,
+                            text: data.message,
+                            summary: data.summary
+                        });
                     }
                     if (data.agents && Array.isArray(data.agents)) {
                         data.agents.forEach((agent: any) => {
@@ -460,7 +471,9 @@ export default function RunListPage() {
                     pipelineType: "8-Stage Orchestration Suite",
                     executionMode: "parallel",
                     workers: 4,
-                    modelProvider: selectedModel
+                    modelProvider: selectedModel,
+                    test_type: testType,
+                    repo_url: repoUrl
                 })
             });
 
@@ -660,24 +673,7 @@ export default function RunListPage() {
                     >
                         {/* Header Area (Runs Title) spanning full width */}
                         <div className="col-span-12 mb-2 space-y-3">
-                            <Breadcrumb className="mb-2">
-                                <BreadcrumbList className="font-quicksand text-xs font-semibold">
-                                    <BreadcrumbItem>
-                                        <BreadcrumbLink
-                                            onClick={() => navigate(-1)}
-                                            className="cursor-pointer text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-cyan-300 flex items-center gap-1.5"
-                                        >
-                                            <ArrowLeft className="w-3.5 h-3.5" /> Back
-                                        </BreadcrumbLink>
-                                    </BreadcrumbItem>
-                                    <BreadcrumbSeparator className="text-slate-400 dark:text-cyan-500/50" />
-                                    <BreadcrumbItem>
-                                        <BreadcrumbPage className="text-slate-900 dark:text-cyan-100 font-bold">
-                                            Runs
-                                        </BreadcrumbPage>
-                                    </BreadcrumbItem>
-                                </BreadcrumbList>
-                            </Breadcrumb>
+
 
                             <div className="flex items-center gap-3 pt-1">
                                 <div className="rounded-full border-[1.5px] border-cyan-400 p-1.5 flex items-center justify-center">
@@ -721,11 +717,33 @@ export default function RunListPage() {
                                 </div>
                                 <div className="space-y-1 py-3 border-b border-slate-100 dark:border-white/5">
                                     <span className="text-[10px] font-quicksand text-slate-400 dark:text-slate-500 uppercase tracking-widest block font-semibold">Testing Type</span>
-                                    <span className="text-xs font-medium text-slate-700 dark:text-slate-200 block">Smoke & Assertions Validation</span>
+                                    <Select value={testType} onValueChange={setTestType}>
+                                        <SelectTrigger className="h-6 w-full p-0 border-none bg-transparent shadow-none text-xs font-medium text-slate-700 dark:text-slate-200 focus:ring-0">
+                                            <SelectValue placeholder="Select Testing Type" />
+                                        </SelectTrigger>
+                                        <SelectContent>
+                                            <SelectItem value="e2e">Functional E2E</SelectItem>
+                                            <SelectItem value="unit">Unit Testing</SelectItem>
+                                            <SelectItem value="integration">Integration Testing</SelectItem>
+                                            <SelectItem value="visual">Visual & Responsive Layout</SelectItem>
+                                            <SelectItem value="api_network">API & Network Resilience</SelectItem>
+                                            <SelectItem value="fuzzing">Fuzz & Boundary Testing</SelectItem>
+                                            <SelectItem value="security">Security & Header Posture</SelectItem>
+                                            <SelectItem value="accessibility">Accessibility (WCAG 2.1)</SelectItem>
+                                            <SelectItem value="chaos">Chaos & Resilience</SelectItem>
+                                            <SelectItem value="full_audit">Full System Audit</SelectItem>
+                                        </SelectContent>
+                                    </Select>
                                 </div>
                                 <div className="space-y-1 py-3 border-b border-slate-100 dark:border-white/5">
-                                    <span className="text-[10px] font-quicksand text-slate-400 dark:text-slate-500 uppercase tracking-widest block font-semibold">Planned AI Pipeline</span>
-                                    <span className="text-xs font-medium text-cyan-600 dark:text-cyan-400 block">8-Stage Orchestration Suite</span>
+                                    <span className="text-[10px] font-quicksand text-slate-400 dark:text-slate-500 uppercase tracking-widest block font-semibold">Repository URL</span>
+                                    <input
+                                        type="text"
+                                        placeholder="Optional for white-box testing"
+                                        value={repoUrl}
+                                        onChange={(e) => setRepoUrl(e.target.value)}
+                                        className="w-full bg-transparent border-none p-0 text-xs font-medium text-cyan-600 dark:text-cyan-400 focus:outline-none focus:ring-0 placeholder-slate-400 dark:placeholder-slate-500"
+                                    />
                                 </div>
                                 <div className="space-y-1 pt-3">
                                     <span className="text-[10px] font-quicksand text-slate-400 dark:text-slate-500 uppercase tracking-widest block font-semibold">Est. Number of Pages</span>
@@ -921,39 +939,60 @@ export default function RunListPage() {
                         {/* Action Toolbar Overlay */}
                         <div className="h-14 bg-white/40 dark:bg-black/40 border-b border-slate-200 dark:border-cyan-500/10 px-6 flex items-center justify-between shrink-0 relative z-30">
                             <div className="flex items-center gap-4">
-                                <div className="text-slate-500 dark:text-slate-400 text-xs font-quicksand">
-                                    Live Session: Started at {startedTime || "N/A"}
+                                <div className="text-slate-500 dark:text-slate-400 text-xs font-quicksand flex items-center gap-2">
+                                    <span>Live Session: Started at {startedTime || "N/A"}</span>
+                                    <Badge className="bg-cyan-50 text-cyan-600 dark:bg-cyan-500/10 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-500/20 uppercase tracking-wider text-[9px] px-1.5 py-0">
+                                        Active Mode: {testType}
+                                    </Badge>
                                 </div>
-                                <div className="w-[300px]">
+                                <div className="w-[300px] flex items-center gap-3">
                                     <Select value={selectedModel} onValueChange={(val: any) => setSelectedModel(val || '')}>
-                                        <SelectTrigger className="h-8 bg-white dark:bg-[#0d131f] border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-200 font-quicksand">
+                                        <SelectTrigger className="h-8 flex-1 bg-white dark:bg-[#0d131f] border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-200 font-quicksand">
                                             <SelectValue placeholder="Select Model" />
                                         </SelectTrigger>
                                         <SelectContent className="bg-white dark:bg-[#0d131f] border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 font-quicksand">
                                             <SelectItem value="auto">
                                                 <div className="flex items-center gap-2">
                                                     <Wand2 className="w-3.5 h-3.5 text-cyan-500" />
-                                                    <span>Auto-Routed (Gemini + DeepSeek) [Default]</span>
+                                                    <span>Auto-Routed (Gemini + DeepSeek)</span>
                                                 </div>
                                             </SelectItem>
                                             <SelectItem value="gemini-2.0-flash">
                                                 <div className="flex items-center gap-2">
                                                     <Sparkles className="w-3.5 h-3.5 text-indigo-500" />
-                                                    <span>Gemini 2.0 Flash (Ultra-Fast)</span>
+                                                    <span>Gemini 2.0 Flash</span>
                                                 </div>
                                             </SelectItem>
                                             <SelectItem value="deepseek-v3">
                                                 <div className="flex items-center gap-2">
                                                     <Bot className="w-3.5 h-3.5 text-blue-500" />
-                                                    <span>DeepSeek V3 (High Accuracy)</span>
+                                                    <span>DeepSeek V3</span>
                                                 </div>
                                             </SelectItem>
                                             <SelectItem value="claude-3-5-sonnet">
                                                 <div className="flex items-center gap-2">
                                                     <Brain className="w-3.5 h-3.5 text-orange-500" />
-                                                    <span>Claude 3.5 Sonnet (Deep Analysis)</span>
+                                                    <span>Claude 3.5 Sonnet</span>
                                                 </div>
                                             </SelectItem>
+                                        </SelectContent>
+                                    </Select>
+
+                                    <Select value={testType} onValueChange={setTestType}>
+                                        <SelectTrigger className="h-8 flex-1 bg-white dark:bg-[#0d131f] border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-200 font-quicksand">
+                                            <SelectValue placeholder="Test Type" />
+                                        </SelectTrigger>
+                                        <SelectContent className="bg-white dark:bg-[#0d131f] border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-200 font-quicksand">
+                                            <SelectItem value="e2e">Functional E2E [Default]</SelectItem>
+                                            <SelectItem value="unit">Unit Testing</SelectItem>
+                                            <SelectItem value="integration">Integration Testing</SelectItem>
+                                            <SelectItem value="visual">Visual & Responsive Layout</SelectItem>
+                                            <SelectItem value="api_network">API & Network Resilience</SelectItem>
+                                            <SelectItem value="fuzzing">Fuzz & Boundary Testing</SelectItem>
+                                            <SelectItem value="security">Security & Header Posture</SelectItem>
+                                            <SelectItem value="accessibility">Accessibility (WCAG 2.1)</SelectItem>
+                                            <SelectItem value="chaos">Chaos & Resilience</SelectItem>
+                                            <SelectItem value="full_audit">Full System Audit</SelectItem>
                                         </SelectContent>
                                     </Select>
                                 </div>
@@ -1402,11 +1441,27 @@ export default function RunListPage() {
                                             <div ref={logsContainerRef} className="flex-1 p-3 overflow-y-auto font-quicksand text-[11px] space-y-1.5 select-text bg-white dark:bg-[#07080b]/95 min-h-0 shadow-inner [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                                                 {logs.length > 0 ? (
                                                     logs.map((log, idx) => (
-                                                        <div key={idx} className="flex gap-2 leading-relaxed font-quicksand">
-                                                            <span className="text-slate-500 dark:text-slate-600 shrink-0 font-bold">[{log.time}]</span>
-                                                            <span className={`break-all ${log.type === 'error' ? 'text-rose-500 font-medium' : log.type === 'warn' ? 'text-amber-600 dark:text-amber-400' : log.type === 'success' ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}`}>
-                                                                {log.text}
-                                                            </span>
+                                                        <div key={idx} className="flex flex-col gap-1.5 font-quicksand mb-2">
+                                                            <div className="flex gap-2 leading-relaxed">
+                                                                <span className="text-slate-500 dark:text-slate-600 shrink-0 font-bold">[{log.time}]</span>
+                                                                <span className={`break-all ${log.type === 'error' ? 'text-rose-500 font-medium' : log.type === 'warn' ? 'text-amber-600 dark:text-amber-400' : log.type === 'success' ? 'text-emerald-600 dark:text-emerald-400' : log.type === 'agent_summary' ? 'text-cyan-600 dark:text-cyan-400 font-bold' : 'text-slate-700 dark:text-slate-300'}`}>
+                                                                    {log.agent ? `[${log.agent}] ` : ''}
+                                                                    {log.text.startsWith('[ACTION]') ? (
+                                                                        <><span className="text-blue-500 font-bold">[ACTION]</span> {log.text.replace('[ACTION]', '').trim()}</>
+                                                                    ) : log.text.startsWith('[VERIFIED]') ? (
+                                                                        <><span className="text-emerald-500 font-bold">[VERIFIED]</span> {log.text.replace('[VERIFIED]', '').trim()}</>
+                                                                    ) : log.text.startsWith('[DEFECT]') ? (
+                                                                        <><span className="text-rose-500 font-bold">[DEFECT]</span> {log.text.replace('[DEFECT]', '').trim()}</>
+                                                                    ) : (
+                                                                        log.text
+                                                                    )}
+                                                                </span>
+                                                            </div>
+                                                            {log.type === 'agent_summary' && log.summary && (
+                                                                <div className="ml-14 mr-4 p-3 rounded-lg border border-cyan-500/30 bg-cyan-500/5 text-slate-800 dark:text-slate-300 whitespace-pre-wrap font-medium">
+                                                                    {log.summary}
+                                                                </div>
+                                                            )}
                                                         </div>
                                                     ))
                                                 ) : (

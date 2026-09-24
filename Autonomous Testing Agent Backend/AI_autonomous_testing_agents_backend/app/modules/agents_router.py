@@ -96,6 +96,8 @@ running_urls: Dict[str, str] = {}  # Map: target_url -> execution_id
 class PipelineTriggerPayload(PlannerInput):
     workspace_id: Optional[str] = None
     force_restart: Optional[bool] = False
+    test_type: str = "e2e"
+    repo_url: Optional[str] = None
 
 async def execute_pipeline_task(payload: PipelineTriggerPayload, orchestrator: OrchestratorWorkflow, cancel_event: asyncio.Event, execution_id: str):
     try:
@@ -105,7 +107,9 @@ async def execute_pipeline_task(payload: PipelineTriggerPayload, orchestrator: O
             target_url=payload.target_url,
             cancel_event=cancel_event,
             execution_id=execution_id,
-            workspace_id=payload.workspace_id
+            workspace_id=payload.workspace_id,
+            test_type=payload.test_type,
+            repo_url=payload.repo_url
         )
     except Exception as e:
         logger.error(f"Background pipeline failed: {e}")

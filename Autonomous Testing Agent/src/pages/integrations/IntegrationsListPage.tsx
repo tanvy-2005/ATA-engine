@@ -22,15 +22,15 @@ export default function IntegrationsListPage() {
     { id: "slack-1", type: "slack", name: "Slack", description: "Receive test results, alerts, and notifications directly in your team's Slack channels.", status: "connected", isEnabled: true, workspaceId, lastSynced: "1 hour ago" },
     { id: "teams-1", type: "teams", name: "Microsoft Teams", description: "Send automated test reports and failure alerts to Microsoft Teams channels.", status: "offline", isEnabled: false, workspaceId },
     { id: "jira-1", type: "jira", name: "Jira", description: "Automatically create detailed Jira issues when tests fail or bugs are detected.", status: "disconnected", isEnabled: false, workspaceId },
-    { id: "webhook-1", type: "webhook", name: "Outgoing Webhooks", description: "Send real-time JSON payloads to custom HTTP endpoints on test events.", status: "connected", isEnabled: true, workspaceId },
-    { id: "cli-1", type: "cli", name: "CLI Agent", description: "Run tests from your local terminal or integrate with custom build scripts.", status: "offline", isEnabled: false, workspaceId },
   ];
 
   const [localIntegrations, setLocalIntegrations] = useState<Integration[]>(() => {
     const saved = localStorage.getItem("ata_integrations_state");
     if (saved) {
       try {
-        return JSON.parse(saved);
+        const parsed = JSON.parse(saved);
+        const defaultIds = defaultIntegrations.map(d => d.id);
+        return parsed.filter((item: Integration) => defaultIds.includes(item.id));
       } catch (e) {
         console.error("Failed to parse integrations state", e);
       }
@@ -66,8 +66,6 @@ export default function IntegrationsListPage() {
       case 'slack': navigate('/integrations/slack'); break;
       case 'teams': navigate('/integrations/microsoft-teams'); break;
       case 'jira': navigate('/integrations/jira'); break;
-      case 'webhook': navigate('/integrations/webhooks'); break;
-      case 'cli': navigate('/integrations/cli'); break;
       default: break;
     }
   }, [navigate]);
@@ -80,8 +78,6 @@ export default function IntegrationsListPage() {
       case "slack": return <img src="/slack-icon.png" alt="Slack" className="w-10 h-10 object-contain" />;
       case "teams": return <img src="/teams-icon.png" alt="Microsoft Teams" className="w-10 h-10 object-contain" />;
       case "jira": return <img src="/jira-icon.png" alt="Jira" className="w-10 h-10 object-contain" />;
-      case "webhook": return <img src="/webhook-icon.png" alt="Webhook" className="w-10 h-10 object-contain" />;
-      case "cli": return <img src="/cli-icon.svg" alt="CLI Agent" className="w-10 h-10 object-contain" />;
       default: return <Blocks className="w-8 h-8 text-slate-700 dark:text-slate-300" />;
     }
   }, []);

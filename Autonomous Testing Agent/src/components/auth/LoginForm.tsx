@@ -47,21 +47,8 @@ export function LoginForm({ isDark }: LoginFormProps) {
       await login(email, password, false);
       navigate("/workspaces");
     } catch (err: any) {
-      try {
-        await apiClient.post('/auth/signup', {
-          name: "check",
-          email: email.trim(),
-          password: "chk"
-        });
-        setError("Email not registered");
-      } catch (signupErr: any) {
-        const signupDetail = signupErr?.response?.data?.detail || "";
-        if (typeof signupDetail === "string" && signupDetail.toLowerCase().includes("already exists")) {
-          setError("Incorrect password");
-        } else {
-          setError("Email not registered");
-        }
-      }
+      const detail = err.response?.data?.detail;
+      setError(typeof detail === 'string' ? detail : "Incorrect email or password");
     } finally {
       setLocalLoading(false);
     }

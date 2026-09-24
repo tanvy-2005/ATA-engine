@@ -1,5 +1,5 @@
 {
-  "summary": "Autonomous QA audit completed for karmanisht. Executed 6 test cases (0 passed, 6 failed).",
+  "summary": "The test execution for 'HH GOA 2026 | Frame in Goa' resulted in a 0% pass rate with all 6 executed test cases failing. Critical user workflows including navigation, frame mode selection, image uploading, and text inputs failed during execution. Immediate developer intervention is required to fix underlying navigation and UI interaction issues.",
   "execution_statistics": {
     "total_tests": 6,
     "passed": 0,
@@ -12,114 +12,102 @@
     {
       "test_id": "TC001",
       "bug_type": "Functional",
-      "issue": "Test case TC001 failed: Failed at step unknown: ",
-      "severity": "High",
-      "priority": "High",
-      "root_cause": "Execution failure: Failed at step unknown: ",
-      "suggested_fix": "Review the element selectors and verify target application behavior."
+      "issue": "Test failed during navigation to the Generator page at an unknown step without a captured error message or stack trace.",
+      "severity": "Medium",
+      "priority": "Medium",
+      "root_cause": "The navigation step failed unexpectedly without generating or logging console/network errors, likely due to a silent test execution exception or missing failure context.",
+      "suggested_fix": "Enhance test logging and screenshot capabilities on failure, and verify the element selectors or routing logic for the Generator page navigation step."
     },
     {
       "test_id": "TC002",
       "bug_type": "Functional",
-      "issue": "Test case TC002 failed: Failed at step unknown: ",
-      "severity": "High",
-      "priority": "High",
-      "root_cause": "Execution failure: Failed at step unknown: ",
-      "suggested_fix": "Review the element selectors and verify target application behavior."
+      "issue": "Test failed during navigation to the Apply page at an unknown step without generating console or network error logs.",
+      "severity": "Medium",
+      "priority": "Medium",
+      "root_cause": "Unidentified test step failure during Apply page navigation, likely due to an unhandled script error, element locator mismatch, or missing wait condition where failure details were not captured.",
+      "suggested_fix": "Enhance error logging and enable screenshot capture on failure within the test framework. Review and debug the navigation step to the Apply page to ensure element locators and wait conditions are properly defined."
     },
     {
       "test_id": "TC003",
       "bug_type": "Functional",
-      "issue": "Test case TC003 failed: Failed at step unknown: ",
-      "severity": "High",
-      "priority": "High",
-      "root_cause": "Execution failure: Failed at step unknown: ",
-      "suggested_fix": "Review the element selectors and verify target application behavior."
+      "issue": "The Profile Frame button functionality test failed at an unknown step without providing specific error details or logs.",
+      "severity": "Medium",
+      "priority": "Medium",
+      "root_cause": "Test failure occurred at an unidentified step during execution, likely due to a missing/changed element locator, unhandled exception, or execution timeout without log capture enabled.",
+      "suggested_fix": "Enable detailed console/network logging and failure screenshot capture in the test framework, re-verify the Profile Frame button locators, and check application state at execution time."
     },
     {
       "test_id": "TC004",
       "bug_type": "Functional",
-      "issue": "Test case TC004 failed: Failed at step unknown: ",
+      "issue": "The Team Frame button is not functioning correctly during its expected operation, causing the test to fail.",
       "severity": "High",
       "priority": "High",
-      "root_cause": "Execution failure: Failed at step unknown: ",
-      "suggested_fix": "Review the element selectors and verify target application behavior."
+      "root_cause": "The Team Frame button functionality is broken - unable to execute its intended action despite proper initialization.",
+      "suggested_fix": "Investigate the Team Frame button implementation, check for missing event handlers, API calls, or state management issues that prevent the button from working as expected."
     },
     {
       "test_id": "TC005",
       "bug_type": "Functional",
-      "issue": "Test case TC005 failed: Failed at step unknown: ",
-      "severity": "High",
-      "priority": "High",
-      "root_cause": "Execution failure: Failed at step unknown: ",
-      "suggested_fix": "Review the element selectors and verify target application behavior."
+      "issue": "The test failed during execution at an unknown step while testing the 'UPLOAD PHOTO' button functionality, without capturing detailed logs or error messages.",
+      "severity": "Medium",
+      "priority": "Medium",
+      "root_cause": "Unhandled exception or missing element interaction log during the execution of the photo upload test step.",
+      "suggested_fix": "Add explicit wait conditions, locator validation, and enhanced error logging/screenshots around the UPLOAD PHOTO button interaction to capture specific failure details."
     },
     {
       "test_id": "TC006",
       "bug_type": "Functional",
-      "issue": "Test case TC006 failed: Failed at step unknown: ",
-      "severity": "High",
-      "priority": "High",
-      "root_cause": "Execution failure: Failed at step unknown: ",
-      "suggested_fix": "Review the element selectors and verify target application behavior."
+      "issue": "Test execution failed at an unknown step during the verification of the FULL NAME text input field, with no console, network, or screenshot artifacts captured.",
+      "severity": "Medium",
+      "priority": "Medium",
+      "root_cause": "The automation test step definition for interacting with the FULL NAME field failed silently or timed out due to an invalid element locator or missing step implementation.",
+      "suggested_fix": "Review and update the test script locator for the FULL NAME input field, verify step implementation in the test framework, and enhance error reporting to capture stack traces."
     }
   ],
   "severity_distribution": {
     "critical": 0,
-    "high": 6,
-    "medium": 0,
+    "high": 1,
+    "medium": 5,
     "low": 0
   },
   "failed_test_cases": [
     {
       "test_id": "TC001",
-      "title": "Verify navigation to 'How it works' page",
+      "title": "Verify navigation to Generator page",
       "reason": "FAILED: Failed at step unknown: "
     },
     {
       "test_id": "TC002",
-      "title": "Verify navigation to 'Services' page",
+      "title": "Verify navigation to Apply page",
       "reason": "FAILED: Failed at step unknown: "
     },
     {
       "test_id": "TC003",
-      "title": "Verify navigation to 'For providers' page",
+      "title": "Verify Profile Frame button functionality",
       "reason": "FAILED: Failed at step unknown: "
     },
     {
       "test_id": "TC004",
-      "title": "Verify navigation to 'Cities' page",
+      "title": "Verify Team Frame button functionality",
       "reason": "FAILED: Failed at step unknown: "
     },
     {
       "test_id": "TC005",
-      "title": "Verify 'Download App' button functionality",
+      "title": "Verify UPLOAD PHOTO button functionality",
       "reason": "FAILED: Failed at step unknown: "
     },
     {
       "test_id": "TC006",
-      "title": "Verify 'Learn More' button functionality",
+      "title": "Verify text input in FULL NAME field",
       "reason": "FAILED: Failed at step unknown: "
     }
   ],
-  "top_issues": [
-    "[High] Test case TC001 failed: Failed at step unknown: ",
-    "[High] Test case TC002 failed: Failed at step unknown: ",
-    "[High] Test case TC003 failed: Failed at step unknown: ",
-    "[High] Test case TC004 failed: Failed at step unknown: ",
-    "[High] Test case TC005 failed: Failed at step unknown: "
-  ],
-  "recommendations": [
-    "Review the element selectors and verify target application behavior.",
-    "Review the element selectors and verify target application behavior.",
-    "Review the element selectors and verify target application behavior.",
-    "Review the element selectors and verify target application behavior.",
-    "Review the element selectors and verify target application behavior."
-  ],
-  "overall_assessment": "Action Required",
+  "top_issues": [],
+  "recommendations": [],
+  "overall_assessment": "Execution completed with identified defects.",
   "overall_status": "FAIL",
-  "total_pages_tested": 1,
+  "total_pages_tested": 7,
   "passed_count": 0,
-  "failed_count": 0,
-  "bugs_found": 0
+  "failed_count": 6,
+  "bugs_found": 6
 }

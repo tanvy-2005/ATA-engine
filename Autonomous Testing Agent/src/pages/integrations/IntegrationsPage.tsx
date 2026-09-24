@@ -32,8 +32,7 @@ export default function IntegrationsPage() {
   const [configs, setConfigs] = useState<Record<string, IntegrationConfig>>({
     slack: { type: "slack", config: { webhookUrl: "", channel: "" }, isEnabled: false },
     jira: { type: "jira", config: { host: "", email: "", apiToken: "", projectKey: "" }, isEnabled: false },
-    github: { type: "github", config: { repo: "", token: "" }, isEnabled: false },
-    webhook: { type: "webhook", config: { url: "", secret: "" }, isEnabled: false },
+    github: { type: "github", config: { repo: "", token: "" }, isEnabled: false }
   });
 
   const [activeModal, setActiveModal] = useState<string | null>(null);
@@ -173,13 +172,6 @@ export default function IntegrationsPage() {
       description: "Trigger autonomous testing pipelines automatically on push or pull request deployments.",
       icon: <GitBranch className="h-10 w-10 text-slate-700 dark:text-white group-hover:scale-110 transition-transform" />,
       colorClass: "from-slate-500/10 to-zinc-500/10 hover:border-slate-400/50 dark:hover:border-slate-400/30"
-    },
-    {
-      id: "webhook",
-      title: "Outgoing Custom Webhooks",
-      description: "Register generic HTTP webhooks to dispatch run events and payloads to internal dashboards.",
-      icon: <Webhook className="h-10 w-10 text-cyan-500 dark:text-cyan-400 group-hover:scale-110 transition-transform" />,
-      colorClass: "from-cyan-500/10 to-teal-500/10 hover:border-cyan-400/50 dark:hover:border-cyan-500/30"
     }
   ];
 
@@ -420,51 +412,6 @@ export default function IntegrationsPage() {
                 className="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-xl"
               >
                 {saving === "github" ? <Loader2 className="h-4 w-4 animate-spin" /> : "Save Changes"}
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* WEBHOOK CONFIG MODAL */}
-      {activeModal === "webhook" && (
-        <div className="fixed inset-0 bg-black/75 backdrop-blur-md flex items-center justify-center z-[9999] p-4">
-          <div className="bg-[#0B0D19] border border-cyan-500/30 rounded-3xl p-6 w-full max-w-md shadow-2xl relative space-y-5 animate-in fade-in zoom-in duration-200">
-            <div className="flex items-center gap-3">
-              <Webhook className="h-7 w-7 text-cyan-400" />
-              <h3 className="text-white text-lg font-bold">Custom Webhook Configuration</h3>
-            </div>
-            <div className="space-y-4">
-              <div className="space-y-1.5">
-                <Label className="text-slate-300 text-xs">Payload URL</Label>
-                <Input 
-                  placeholder="https://api.yourdomain.com/webhooks" 
-                  value={configs.webhook.config.url || ""}
-                  onChange={(e) => updateConfigField("webhook", "url", e.target.value)}
-                  className="bg-[#05060D] border-white/10 text-white rounded-xl focus:border-cyan-500/50"
-                />
-              </div>
-              <div className="space-y-1.5">
-                <Label className="text-slate-300 text-xs">Signing Secret (HMAC verification)</Label>
-                <Input 
-                  type="password"
-                  placeholder="whsec_..." 
-                  value={configs.webhook.config.secret || ""}
-                  onChange={(e) => updateConfigField("webhook", "secret", e.target.value)}
-                  className="bg-[#05060D] border-white/10 text-white rounded-xl focus:border-cyan-500/50"
-                />
-              </div>
-            </div>
-            <div className="flex justify-end gap-3 border-t border-white/5 pt-4">
-              <Button onClick={() => setActiveModal(null)} variant="ghost" className="text-slate-400 hover:text-white rounded-xl">
-                Cancel
-              </Button>
-              <Button 
-                onClick={() => handleSave("webhook")} 
-                disabled={saving === "webhook"}
-                className="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold rounded-xl"
-              >
-                {saving === "webhook" ? <Loader2 className="h-4 w-4 animate-spin" /> : "Save Changes"}
               </Button>
             </div>
           </div>

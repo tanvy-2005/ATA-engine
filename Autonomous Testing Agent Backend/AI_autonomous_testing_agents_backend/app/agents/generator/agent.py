@@ -1,7 +1,7 @@
 import logging
 import json
 from app.agents.generator.state import GeneratorInput, GeneratorOutput, TestCase, TestStep, Assertion
-from app.llm.factory import LLMFactory
+
 from app.llm.utils import load_prompt
 from app.memory.execution_memory import execution_memory
 
@@ -115,7 +115,6 @@ from typing import Optional
 class GeneratorAgent(BaseAgent):
     def __init__(self):
         super().__init__(name="Generator", max_retries=1)
-        self.llm = LLMFactory.get_llm()
         self.system_prompt = load_prompt("generator.txt")
 
     async def execute_task(self, state: GlobalExecutionState) -> GeneratorOutput:
@@ -175,8 +174,33 @@ class GeneratorAgent(BaseAgent):
             except Exception as e:
                 logger.error(f"[Generator] Failed to fetch project active scopes: {e}")
 
+        test_type = getattr(state, "test_type", "e2e") if state else "e2e"
+        repo_url = getattr(state, "repo_url", "Not specified") if state else "Not specified"
+
+        test_type_instructions = ""
+        if test_type == "visual":
+            test_type_instructions = "FOCUS HEAVILY on visual layout assertions, CSS checks, and responsiveness."
+        elif test_type == "fuzzing":
+            test_type_instructions = "FOCUS HEAVILY on boundary fuzz payloads, extreme string lengths, and SQL/XSS injections."
+        elif test_type == "api_network":
+            test_type_instructions = "FOCUS HEAVILY on API route interceptions, network resilience, and latency handling."
+        elif test_type == "security":
+            test_type_instructions = "FOCUS HEAVILY on security headers, auth bypass, and posture validation."
+        elif test_type == "accessibility":
+            test_type_instructions = "FOCUS HEAVILY on WCAG 2.1 compliance, aria-labels, and contrast assertions."
+        elif test_type == "integration":
+            test_type_instructions = "FOCUS HEAVILY on multi-component workflows and data persistence across pages."
+        elif test_type == "unit":
+            test_type_instructions = "FOCUS on single component, isolated behaviors with targeted assertions."
+        elif test_type == "chaos":
+            test_type_instructions = "FOCUS HEAVILY on random clicking, unexpected state transitions, and resilience."
+
         scope_instructions = f"""
-Generate executable test cases ONLY for the enabled categories below:
+Generate executable test cases ONLY for the enabled categories below.
+CRITICAL OVERRIDE - CURRENT TEST TYPE: {test_type.upper()}
+{test_type_instructions}
+Repository: {repo_url}
+
 - Smoke Testing: {active_scopes.get('smoke_testing', True)}
 - Regression Testing: {active_scopes.get('regression_testing', True)}
 - Boundary & Format Checks: {active_scopes.get('boundary_checks', True)}

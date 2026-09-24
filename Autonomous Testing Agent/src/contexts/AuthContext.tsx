@@ -78,7 +78,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       console.error('Login error', error);
 
       throw error;
-      throw error;
     }
   };
 
@@ -95,7 +94,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     } catch (error: any) {
       console.error('Signup error', error);
 
-      throw error;
       throw error;
     }
   };

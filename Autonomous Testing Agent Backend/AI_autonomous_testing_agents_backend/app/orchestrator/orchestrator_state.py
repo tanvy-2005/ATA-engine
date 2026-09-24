@@ -25,6 +25,8 @@ class GlobalExecutionState(BaseModel):
     execution_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     project_name: str
     target_url: str
+    test_type: str = "e2e"
+    repo_url: Optional[str] = None
     status: str = "Running" # Running, Completed, Failed, Cancelled, Aborted
     current_agent: Optional[str] = None
     current_stage: str = "init"
@@ -49,6 +51,14 @@ class GlobalExecutionState(BaseModel):
         log_entry = f"[{timestamp}] {message}"
         self.logs.append(log_entry)
         self.last_updated_at = timestamp
+        
+        try:
+            from app.modules.runs_router import sse_event_queues
+            q = sse_event_queues.get(self.execution_id)
+            if q:
+                q.put_nowait({"currentAction": message})
+        except Exception:
+            pass
 
     def update_progress(self, value: int):
         self.progress = value

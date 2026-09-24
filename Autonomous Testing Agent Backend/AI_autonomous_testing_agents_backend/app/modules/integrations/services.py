@@ -66,25 +66,7 @@ async def create_jira_bug(jira_url: str, email: str, api_token: str, project_key
         logger.error(f"Failed to create Jira bug: {str(e)}")
         return None
 
-async def trigger_custom_webhook(webhook_url: str, payload: Dict[str, Any], secret: Optional[str] = None) -> bool:
-    """
-    FR-INT-04: Integrate with custom applications via webhooks.
-    """
-    logger.info(f"Triggering custom webhook to URL: {webhook_url}")
-    
-    headers = {"Content-Type": "application/json"}
-    if secret:
-        headers["X-ATA-Signature"] = secret # In real app, calculate HMAC signature
-        
-    try:
-        async with httpx.AsyncClient() as client:
-            response = await client.post(webhook_url, json=payload, headers=headers, timeout=10.0)
-            response.raise_for_status()
-            logger.info("Webhook triggered successfully.")
-            return True
-    except Exception as e:
-        logger.error(f"Failed to trigger webhook: {str(e)}")
-        return False
+
 
 async def report_to_cicd(provider: str, token: str, repository: str, status: str) -> bool:
     """

@@ -27,9 +27,14 @@ class BrowserManager:
         
         def run():
             if sys.platform == 'win32':
-                asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+                policy = asyncio.get_event_loop_policy()
+                if not isinstance(policy, asyncio.WindowsProactorEventLoopPolicy):
+                    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
                 logging.getLogger("asyncio").setLevel(logging.ERROR)
-            self._loop = asyncio.new_event_loop()
+                self._loop = asyncio.ProactorEventLoop()
+            else:
+                self._loop = asyncio.new_event_loop()
+                
             asyncio.set_event_loop(self._loop)
             self._loop.run_forever()
 
@@ -54,6 +59,15 @@ class BrowserManager:
         async def _start():
             if not self.playwright:
                 logger.info("[Browser] Launching Chromium")
+                import sys, asyncio
+                if sys.platform == "win32":
+                    try:
+                        loop = asyncio.get_event_loop()
+                        if not isinstance(loop, asyncio.ProactorEventLoop):
+                            new_loop = asyncio.ProactorEventLoop()
+                            asyncio.set_event_loop(new_loop)
+                    except Exception:
+                        asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
                 self.playwright = await async_playwright().start()
             
             if not self.browser:

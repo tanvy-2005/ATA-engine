@@ -37,6 +37,15 @@ async def signup(
             detail="The user with this email already exists in the system",
         )
     
+    # Validate password policy
+    try:
+        security.validate_password(user_in.password)
+    except ValueError as e:
+        raise HTTPException(
+            status_code=400,
+            detail=str(e),
+        )
+
     # Hash password and create user object
     hashed_password = security.get_password_hash(user_in.password)
     db_user = UserInDB(

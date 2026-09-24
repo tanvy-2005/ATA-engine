@@ -1,0 +1,468 @@
+{
+  "execution_id": "6aaa27c387df1c0aab4a5e35",
+  "project_name": "FRAME IN GOA",
+  "target_url": "https://frame-in-goa-six.vercel.app/",
+  "test_type": "e2e",
+  "repo_url": "",
+  "status": "Failed",
+  "current_agent": "Executor",
+  "current_stage": "generator",
+  "pages_discovered": 2,
+  "pages_total": null,
+  "tests_generated": 3,
+  "tests_executed": 0,
+  "tests_total": 3,
+  "current_action": "Running Playwright parallel workers...",
+  "started_at": "2026-09-16T05:23:15.559552+00:00",
+  "last_updated_at": "2026-09-16T05:25:50.329087+00:00",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator"
+  ],
+  "failed_agents": [
+    "Executor"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 52.1,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 53.4,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 32.3,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Failed",
+      "execution_time": 1.11,
+      "retry_count": 1,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "FRAME IN GOA",
+      "description": "Autonomous testing run",
+      "target_url": "https://frame-in-goa-six.vercel.app/",
+      "test_type": "e2e",
+      "repo_url": ""
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Automated fallback analysis for target workspace.",
+        "key_components": [
+          "authentication",
+          "navigation_bar",
+          "form_inputs",
+          "api_routes"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [],
+        "expected_user_journey": []
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify homepage navigation",
+          "Check main CTA buttons"
+        ],
+        "regression_tests": [
+          "Validate form submission workflows",
+          "Check route redirects"
+        ],
+        "boundary_tests": [
+          "Test empty input fields",
+          "Test maximum string length bounds"
+        ],
+        "negative_tests": [
+          "Test invalid form entries",
+          "Check 404 page handling"
+        ],
+        "accessibility_tests": [
+          "Verify ARIA roles",
+          "Check contrast & focus management"
+        ],
+        "integration_tests": [],
+        "system_tests": [],
+        "ui_tests": [],
+        "functional_tests": [],
+        "exploratory_tests": [],
+        "compatibility_tests": [],
+        "security_tests": [],
+        "performance_test_suggestions": [],
+        "api_test_suggestions": []
+      },
+      "priority_areas": [
+        "navigation",
+        "forms",
+        "routing"
+      ],
+      "business_workflow": [],
+      "user_workflow": [],
+      "module_dependency_graph": {},
+      "detected_modules": [],
+      "critical_user_journeys": [],
+      "high_risk_areas": [],
+      "security_sensitive_areas": [],
+      "functional_requirements": [],
+      "non_functional_requirements": [],
+      "test_data_requirements": null,
+      "assertions": [],
+      "explorer_instructions": [],
+      "generator_instructions": [],
+      "validator_instructions": [],
+      "bug_analyzer_instructions": [],
+      "reporter_instructions": []
+    },
+    "explorer_summary": {},
+    "explorer_output": {
+      "page_info": {
+        "title": "HH GOA 2026 | Frame in Goa",
+        "url": "https://frame-in-goa-six.vercel.app/",
+        "page_load_time": 12.378,
+        "status_code": 200
+      },
+      "dom_structure": [
+        {
+          "element": "fixed",
+          "children": [
+            "flex",
+            "hover:opacity-80",
+            "transition-colors"
+          ]
+        },
+        {
+          "element": "w-full",
+          "children": [
+            "flex",
+            "hover:opacity-80",
+            "transition-colors"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "hover:opacity-80"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "flex",
+            "transition-colors"
+          ]
+        },
+        {
+          "element": "w-full",
+          "children": [
+            "group",
+            "w-full"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "group"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "group"
+          ]
+        },
+        {
+          "element": "relative",
+          "children": [
+            "w-full"
+          ]
+        },
+        {
+          "element": "flex",
+          "children": [
+            "w-full"
+          ]
+        }
+      ],
+      "interactive_elements": {
+        "buttons": [],
+        "inputs": [],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [
+        {
+          "text": "link",
+          "url": "/",
+          "selector": "a.hover:opacity-80.transition-opacity.flex.items-center"
+        },
+        {
+          "text": "Generator",
+          "url": "/create",
+          "selector": "a:has-text('Generator')"
+        },
+        {
+          "text": "Apply",
+          "url": "https://hhgoa.com/",
+          "selector": "a:has-text('Apply')"
+        },
+        {
+          "text": "CREATE YOUR FRAME",
+          "url": "/create",
+          "selector": "a:has-text('CREATE YOUR FRAME')"
+        },
+        {
+          "text": "APPLY ON DEVFOLIO",
+          "url": "https://hacker-house-goa-2026.devfolio.co/overview",
+          "selector": "a:has-text('APPLY ON DEVFOLIO')"
+        },
+        {
+          "text": "BACK TO THE FRAME",
+          "url": "/create",
+          "selector": "a:has-text('BACK TO THE FRAME')"
+        }
+      ],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1789536299/agent_screenshots/explorer_page_20260916_105450_lkfyqcka.png",
+      "accessibility": [
+        {
+          "role": "a",
+          "aria_label": null,
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "HH Goa Logo",
+          "alt": "HH Goa Logo"
+        },
+        {
+          "role": "img",
+          "aria_label": "2:47 PM Studio",
+          "alt": "2:47 PM Studio"
+        },
+        {
+          "role": "a",
+          "aria_label": "Generator",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "Apply",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "Hero Background",
+          "alt": "Hero Background"
+        },
+        {
+          "role": "a",
+          "aria_label": "CREATE YOUR FRAME",
+          "alt": null
+        },
+        {
+          "role": "img",
+          "aria_label": "CTA Background",
+          "alt": "CTA Background"
+        },
+        {
+          "role": "a",
+          "aria_label": "APPLY ON DEVFOLIO",
+          "alt": null
+        },
+        {
+          "role": "a",
+          "aria_label": "BACK TO THE FRAME",
+          "alt": null
+        }
+      ],
+      "network_info": {
+        "api_calls": []
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "actions_possible": [],
+      "page_state_snapshot": {
+        "url": "https://frame-in-goa-six.vercel.app/",
+        "dom": "<a role=\"\"></a>\n<a role=\"\">GENERATOR</a>\n<a role=\"\">APPLY</a>\n<a role=\"\">CREATE YOUR FRAME</a>\n<a role=\"\">APPLY ON DEVFOLIO</a>\n<a role=\"\">BACK TO THE FRAME</a>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1789536299/agent_screenshots/explorer_page_20260916_105450_lkfyqcka.png",
+        "elements": {
+          "buttons": [],
+          "inputs": [],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-09-16T10:54:59.232275"
+      },
+      "visited_routes": [
+        "https://frame-in-goa-six.vercel.app/",
+        "https://frame-in-goa-six.vercel.app/create"
+      ],
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "HH GOA 2026 | Frame in Goa",
+        "url": "https://frame-in-goa-six.vercel.app/",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 3,
+        "high_priority": 2,
+        "medium_priority": 1,
+        "low_priority": 0
+      },
+      "test_cases": [
+        {
+          "id": "TC-AUTO-01",
+          "title": "Verify Target Website Reachability & HTTP Load",
+          "category": "functional",
+          "priority": "high",
+          "severity": "blocker",
+          "description": "Verify that the target URL resolves and returns a valid page without fatal error codes.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "navigate",
+              "selector": null,
+              "locator_type": null,
+              "value": "https://frame-in-goa-six.vercel.app/"
+            }
+          ],
+          "assertions": [
+            {
+              "type": "http_status",
+              "expected": 200,
+              "selector": null
+            }
+          ],
+          "expected_result": "Page loads successfully with HTTP status 200.",
+          "estimated_execution_time": null
+        },
+        {
+          "id": "TC-AUTO-02",
+          "title": "Verify Page Title and Core Metadata",
+          "category": "ui",
+          "priority": "medium",
+          "severity": "major",
+          "description": "Check that the page title is present and non-empty.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "check_title",
+              "selector": null,
+              "locator_type": null,
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_present",
+              "expected": true,
+              "selector": null
+            }
+          ],
+          "expected_result": "Page has a valid title tag and metadata.",
+          "estimated_execution_time": null
+        },
+        {
+          "id": "TC-AUTO-03",
+          "title": "Verify Discovered Navigation Links Accessibility",
+          "category": "functional",
+          "priority": "high",
+          "severity": "major",
+          "description": "Verify that primary discovered navigation links are reachable and do not redirect to error pages.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "verify_links",
+              "selector": null,
+              "locator_type": null,
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "links_valid",
+              "expected": true,
+              "selector": null
+            }
+          ],
+          "expected_result": "Discovered links respond cleanly without broken references.",
+          "estimated_execution_time": null
+        }
+      ]
+    }
+  },
+  "logs": [
+    "[2026-09-16T05:23:15.562089+00:00] Initializing new execution pipeline...",
+    "[2026-09-16T05:23:31.359827+00:00] Agent 'Planner' execution started",
+    "[2026-09-16T05:23:31.360831+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-16T05:23:31.364766+00:00] Analyzing project requirements and target structure...",
+    "[2026-09-16T05:24:07.076330+00:00] Agent 'Planner' executed model 'gemini-3.6-flash' (gemini). Latency: 35.51s, Tokens (In/Out): 1049/108",
+    "[2026-09-16T05:24:23.455956+00:00] Agent 'Planner' executed model 'gemini-3.6-flash' (unknown). Latency: 0s, Tokens (In/Out): 0/0",
+    "[2026-09-16T05:24:23.458519+00:00] Planner Agent used fallback strategy.",
+    "[2026-09-16T05:24:23.458519+00:00] Pipeline progress updated: 10%",
+    "[2026-09-16T05:24:23.458519+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 52.1s)",
+    "[2026-09-16T05:24:23.458519+00:00] Agent 'Planner' completed successfully in 52.1s",
+    "[2026-09-16T05:24:23.482361+00:00] Agent 'Explorer' execution started",
+    "[2026-09-16T05:24:23.483360+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-16T05:24:23.484372+00:00] Launching browser and navigating to target URL...",
+    "[2026-09-16T05:24:36.633750+00:00] Extracting DOM, forms, and interactive element maps...",
+    "[2026-09-16T05:24:38.629404+00:00] Deep analyzing route: https://frame-in-goa-six.vercel.app/create",
+    "[2026-09-16T05:25:16.853286+00:00] Agent 'Explorer' executed model 'gemini-3.6-flash' (unknown). Latency: 0s, Tokens (In/Out): 0/0",
+    "[2026-09-16T05:25:16.879025+00:00] Pipeline progress updated: 25%",
+    "[2026-09-16T05:25:16.879025+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 53.4s)",
+    "[2026-09-16T05:25:16.879025+00:00] Agent 'Explorer' completed successfully in 53.4s",
+    "[2026-09-16T05:25:16.900116+00:00] Agent 'Generator' execution started",
+    "[2026-09-16T05:25:16.900116+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-16T05:25:16.906663+00:00] Synthesizing test cases (smoke, edge, boundary)...",
+    "[2026-09-16T05:25:32.929963+00:00] Agent 'Generator' executed model 'gemini-3.6-flash' (unknown). Latency: 0s, Tokens (In/Out): 0/0",
+    "[2026-09-16T05:25:49.200161+00:00] Agent 'Generator' executed model 'gemini-3.6-flash' (unknown). Latency: 0s, Tokens (In/Out): 0/0",
+    "[2026-09-16T05:25:49.203181+00:00] Pipeline progress updated: 45%",
+    "[2026-09-16T05:25:49.203181+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 32.3s)",
+    "[2026-09-16T05:25:49.203181+00:00] Agent 'Generator' completed successfully in 32.3s",
+    "[2026-09-16T05:25:49.214789+00:00] Agent 'Executor' execution started",
+    "[2026-09-16T05:25:49.214789+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-16T05:25:49.214789+00:00] ExecutorAgent starting. Running 3 test cases with 4 parallel workers.",
+    "[2026-09-16T05:25:49.304887+00:00] Agent 'Executor' failed with: . Retrying (1/1)...",
+    "[2026-09-16T05:25:49.304887+00:00] Agent 'Executor' status updated to Retrying (Retries: 1, Time: 0.09s)",
+    "[2026-09-16T05:25:50.323538+00:00] ExecutorAgent starting. Running 3 test cases with 4 parallel workers.",
+    "[2026-09-16T05:25:50.329087+00:00] Agent 'Executor' failed permanently after 2 retries. Error: ",
+    "[2026-09-16T05:25:50.329087+00:00] Agent 'Executor' status updated to Failed (Retries: 1, Time: 1.11s)",
+    "[2026-09-16T05:25:50.329087+00:00] Agent 'Executor' crashed: "
+  ],
+  "execution_time": 0.0,
+  "progress": 45
+}

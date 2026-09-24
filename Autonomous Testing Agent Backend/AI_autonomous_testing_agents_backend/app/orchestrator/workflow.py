@@ -97,18 +97,18 @@ class OrchestratorWorkflow:
             logger.error(f"Failed to load checkpoint: {e}")
         return None
 
-    async def run_full_pipeline(self, project_name: str, description: str, target_url: str, cancel_event: asyncio.Event = None, execution_id: Optional[str] = None, workspace_id: Optional[str] = None) -> dict:
+    async def run_full_pipeline(self, project_name: str, description: str, target_url: str, cancel_event: asyncio.Event = None, execution_id: Optional[str] = None, workspace_id: Optional[str] = None, test_type: str = "e2e", repo_url: Optional[str] = None) -> dict:
         if getattr(self, "_is_running", False):
             logger.warning("Pipeline is already running. Ignoring duplicate request.")
             return {"status": "error", "message": "A pipeline execution is already in progress.", "execution_id": execution_id}
             
         self._is_running = True
         try:
-            return await self._run_full_pipeline_internal(project_name, description, target_url, cancel_event, execution_id, workspace_id)
+            return await self._run_full_pipeline_internal(project_name, description, target_url, cancel_event, execution_id, workspace_id, test_type, repo_url)
         finally:
             self._is_running = False
 
-    async def _run_full_pipeline_internal(self, project_name: str, description: str, target_url: str, cancel_event: asyncio.Event = None, execution_id: Optional[str] = None, workspace_id: Optional[str] = None) -> dict:
+    async def _run_full_pipeline_internal(self, project_name: str, description: str, target_url: str, cancel_event: asyncio.Event = None, execution_id: Optional[str] = None, workspace_id: Optional[str] = None, test_type: str = "e2e", repo_url: Optional[str] = None) -> dict:
         """
         Runs the full pipeline:
         Sequentially executes Planner -> Explorer -> Generator -> Executor -> Memory -> Validator -> Bug Analyzer -> Reporter
@@ -148,14 +148,18 @@ class OrchestratorWorkflow:
             state = GlobalExecutionState(
                 execution_id=execution_id if execution_id else str(uuid.uuid4()),
                 project_name=project_name,
-                target_url=target_url
+                target_url=target_url,
+                test_type=test_type,
+                repo_url=repo_url
             )
             state.log("Initializing new execution pipeline...")
             # Prep inputs for first agent
             state.shared_memory["planner_input"] = {
                 "project_name": project_name,
                 "description": description,
-                "target_url": target_url
+                "target_url": target_url,
+                "test_type": test_type,
+                "repo_url": repo_url
             }
             state.shared_memory["integrations"] = integrations_config
             self._save_checkpoint(state)
@@ -221,26 +225,48 @@ class OrchestratorWorkflow:
                     await agent.run(state)
                     # Update live progress telemetry for UI status queries
                     state.current_stage = str(agent.name).lower()
-                    if agent.name == "Explorer":
+                    
+                    from app.modules.runs_router import sse_event_queues
+                    q = sse_event_queues.get(state.execution_id)
+
+                    if agent.name == "Planner":
+                        planner_out = state.shared_memory.get("planner_output", {})
+                        state.current_action = f"Strategy formulated: Executing {state.test_type} suite on discovered interactive targets"
+                        if q: q.put_nowait({"type": "log", "agent": "Planner", "message": state.current_action, "summary": str(planner_out.get("project_analysis", "Plan completed."))})
+                    elif agent.name == "Explorer":
                         explorer_out = state.shared_memory.get("explorer_output", {})
-                        state.pages_discovered = len(explorer_out.get("visited_routes", [])) or 1
-                        state.current_action = f"Explorer discovered {state.pages_discovered} route(s)."
+                        visited_routes = explorer_out.get("visited_routes", [])
+                        state.pages_discovered = len(visited_routes) or 1
+                        buttons_len = len(explorer_out.get("interactive_elements", {}).get("buttons", []))
+                        forms_len = len(explorer_out.get("forms", []))
+                        paths_str = ", ".join(visited_routes) if visited_routes else "/"
+                        state.current_action = f"Discovered {state.pages_discovered} routes, {buttons_len} interactive buttons, {forms_len} forms. Target paths: {paths_str}"
+                        if q: q.put_nowait({"type": "log", "agent": "Explorer", "message": state.current_action, "summary": str(explorer_out.get("site_map", "Exploration completed."))})
                     elif agent.name == "Generator":
                         gen_out = state.shared_memory.get("generator_output", {})
-                        state.tests_generated = len(gen_out.get("test_cases", []))
+                        tc_list = gen_out.get("test_cases", [])
+                        state.tests_generated = len(tc_list)
                         state.tests_total = state.tests_generated
-                        state.current_action = f"Generator created {state.tests_generated} test case(s)."
+                        tc_names = ", ".join([tc.get("id", "") for tc in tc_list]) if tc_list else "None"
+                        state.current_action = f"Generated {state.tests_generated} test scenarios: {tc_names}"
+                        if q: q.put_nowait({"type": "log", "agent": "Generator", "message": state.current_action, "summary": f"Generated {state.tests_generated} test cases."})
                     elif agent.name == "Executor":
                         exec_out = state.shared_memory.get("executor_output", {})
                         state.tests_executed = len(exec_out.get("execution_results", []))
                         state.current_action = f"Executor executed {state.tests_executed}/{state.tests_total} test case(s)."
+                        if q: q.put_nowait({"type": "log", "agent": "Executor", "message": state.current_action, "summary": f"Execution finished with {state.tests_executed} tests run."})
                     elif agent.name == "Validator":
                         state.current_action = "Validator completed test outcome verification."
+                        if q: q.put_nowait({"type": "log", "agent": "Validator", "message": state.current_action, "summary": "Validation completed."})
                     elif agent.name == "BugAnalyzer":
-                        state.current_action = "Bug Analyzer completed failure root-cause analysis."
+                        bug_out = state.shared_memory.get("buganalyzer_output", {})
+                        defects = len(bug_out.get("bugs", []))
+                        state.current_action = f"Identified {defects} defects and potential missing accessibility attributes"
+                        if q: q.put_nowait({"type": "log", "agent": "Bug Analyzer", "message": state.current_action, "summary": "Bug analysis completed."})
                     elif agent.name == "Reporter":
                         state.current_stage = "completed"
                         state.current_action = "Reporter generated final QA audit report."
+                        if q: q.put_nowait({"type": "log", "agent": "Reporter", "message": state.current_action, "summary": "Final report generated."})
                     self._save_checkpoint(state)
                 except PipelineAbortError as abort_err:
                     # Executor intentionally aborted due to high failure rate on target website.
