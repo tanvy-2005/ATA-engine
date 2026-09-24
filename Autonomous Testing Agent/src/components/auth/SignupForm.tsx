@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/contexts/AuthContext";
 import { Loader2, Eye, EyeOff } from "lucide-react";
 import { PasswordStrength } from "./PasswordStrength";
+import { supabase } from "@/lib/supabase";
 
 interface SignupFormProps {
   isDark: boolean;
@@ -56,11 +57,16 @@ export function SignupForm({ isDark }: SignupFormProps) {
 
     setLocalLoading(true);
     try {
-      await signup(name, email, password);
+      const { data, error: signUpError } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+      if (signUpError) throw signUpError;
+
       setSuccessMessage("Account created successfully. Redirecting to verification...");
       setTimeout(() => navigate("/verify-otp", { state: { email } }), 1500);
     } catch (err: any) {
-      const detail = err.response?.data?.detail;
+      const detail = err.response?.data?.detail || err.message;
       setError(typeof detail === 'string' ? detail : "Failed to create account.");
     } finally {
       setLocalLoading(false);

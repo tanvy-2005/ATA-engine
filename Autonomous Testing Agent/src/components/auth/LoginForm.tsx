@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/contexts/AuthContext";
 import { apiClient } from "@/lib/apiClient";
 import { Loader2, Eye, EyeOff } from "lucide-react";
+import { supabase } from "@/lib/supabase";
 
 interface LoginFormProps {
   isDark: boolean;
@@ -44,10 +45,16 @@ export function LoginForm({ isDark }: LoginFormProps) {
 
     setLocalLoading(true);
     try {
-      await login(email, password, false);
+      const { data, error: signInError } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (signInError) throw signInError;
+
       navigate("/workspaces");
     } catch (err: any) {
-      const detail = err.response?.data?.detail;
+      const detail = err.response?.data?.detail || err.message;
       setError(typeof detail === 'string' ? detail : "Incorrect email or password");
     } finally {
       setLocalLoading(false);
