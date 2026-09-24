@@ -73,8 +73,7 @@ export function SocialLoginButtons({ isDark }: SocialLoginButtonsProps) {
   };
 
   const handleGithubLogin = () => {
-    setGithubLoading(true);
-    window.location.href = 'http://localhost:8000/api/v1/auth/github';
+    startOAuthFlow('/api/v1/auth/github', setGithubLoading);
   };
 
 

@@ -64,10 +64,14 @@ class Token(BaseModel):
 class TokenResponse(BaseModel):
     token: str
     user: UserOut
+    verification_code: Optional[str] = None
 
 class VerifyEmailReq(BaseModel):
     email: EmailStr
     code: str
+
+class ResendCodeReq(BaseModel):
+    email: EmailStr
 
 class ForgotPasswordReq(BaseModel):
     email: EmailStr

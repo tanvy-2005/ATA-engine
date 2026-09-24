@@ -50,6 +50,26 @@ export function SignupForm({ isDark }: SignupFormProps) {
       return;
     }
 
+    if (!/[A-Z]/.test(password)) {
+      setError("Password must contain at least one uppercase letter.");
+      return;
+    }
+
+    if (!/[a-z]/.test(password)) {
+      setError("Password must contain at least one lowercase letter.");
+      return;
+    }
+
+    if (!/\d/.test(password)) {
+      setError("Password must contain at least one number.");
+      return;
+    }
+
+    if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+      setError("Password must contain at least one special character (!@#$%^&*...).");
+      return;
+    }
+
     if (password !== confirmPassword) {
       setError("Passwords do not match.");
       return;
@@ -64,10 +84,17 @@ export function SignupForm({ isDark }: SignupFormProps) {
       if (signUpError) throw signUpError;
 
       setSuccessMessage("Account created successfully. Redirecting to verification...");
+<<<<<<< HEAD
+      setTimeout(() => navigate("/verify-otp", { state: { email } }), 1000);
+    } catch (err: any) {
+      const detail = err?.response?.data?.detail;
+      setError(typeof detail === "string" ? detail : "Failed to create account. Please try again.");
+=======
       setTimeout(() => navigate("/verify-otp", { state: { email } }), 1500);
     } catch (err: any) {
       const detail = err.response?.data?.detail || err.message;
       setError(typeof detail === 'string' ? detail : "Failed to create account.");
+>>>>>>> a09dbf334325941ddaa5e24c09a03c28d5dd86c9
     } finally {
       setLocalLoading(false);
     }
@@ -95,11 +122,10 @@ export function SignupForm({ isDark }: SignupFormProps) {
           value={name}
           onChange={(e) => handleNameChange(e.target.value)}
           placeholder="John Doe"
-          className={`h-10 text-sm border transition-all duration-300 rounded-xl ${
-            isDark 
-              ? 'bg-white/5 border-white/10 text-white placeholder:text-slate-500 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.25)] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] focus-visible:border-cyan-400 focus-visible:ring-2 focus-visible:ring-cyan-500/30 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.4)]' 
+          className={`h-10 text-sm border transition-all duration-300 rounded-xl ${isDark
+              ? 'bg-white/5 border-white/10 text-white placeholder:text-slate-500 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.25)] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] focus-visible:border-cyan-400 focus-visible:ring-2 focus-visible:ring-cyan-500/30 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.4)]'
               : 'bg-white/50 border-slate-200 text-slate-900 placeholder:text-slate-400 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.2)] focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 focus:shadow-[0_0_20px_rgba(6,182,212,0.3)] focus-visible:border-cyan-500 focus-visible:ring-2 focus-visible:ring-cyan-500/20 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.3)]'
-          }`}
+            }`}
           disabled={isLoading}
           autoComplete="name"
         />
@@ -112,11 +138,10 @@ export function SignupForm({ isDark }: SignupFormProps) {
           value={email}
           onChange={(e) => handleEmailChange(e.target.value)}
           placeholder="name@company.com"
-          className={`h-10 text-sm border transition-all duration-300 rounded-xl ${
-            isDark 
-              ? 'bg-white/5 border-white/10 text-white placeholder:text-slate-500 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.25)] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] focus-visible:border-cyan-400 focus-visible:ring-2 focus-visible:ring-cyan-500/30 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.4)]' 
+          className={`h-10 text-sm border transition-all duration-300 rounded-xl ${isDark
+              ? 'bg-white/5 border-white/10 text-white placeholder:text-slate-500 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.25)] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] focus-visible:border-cyan-400 focus-visible:ring-2 focus-visible:ring-cyan-500/30 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.4)]'
               : 'bg-white/50 border-slate-200 text-slate-900 placeholder:text-slate-400 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.2)] focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 focus:shadow-[0_0_20px_rgba(6,182,212,0.3)] focus-visible:border-cyan-500 focus-visible:ring-2 focus-visible:ring-cyan-500/20 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.3)]'
-          }`}
+            }`}
           disabled={isLoading}
           autoComplete="email"
         />
@@ -130,11 +155,10 @@ export function SignupForm({ isDark }: SignupFormProps) {
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={(e) => handlePasswordChange(e.target.value)}
-              className={`h-10 pr-10 text-sm border transition-all duration-300 rounded-xl ${
-                isDark 
-                  ? 'bg-white/5 border-white/10 text-white placeholder:text-slate-500 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.25)] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] focus-visible:border-cyan-400 focus-visible:ring-2 focus-visible:ring-cyan-500/30 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.4)]' 
+              className={`h-10 pr-10 text-sm border transition-all duration-300 rounded-xl ${isDark
+                  ? 'bg-white/5 border-white/10 text-white placeholder:text-slate-500 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.25)] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] focus-visible:border-cyan-400 focus-visible:ring-2 focus-visible:ring-cyan-500/30 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.4)]'
                   : 'bg-white/50 border-slate-200 text-slate-900 placeholder:text-slate-400 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.2)] focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 focus:shadow-[0_0_20px_rgba(6,182,212,0.3)] focus-visible:border-cyan-500 focus-visible:ring-2 focus-visible:ring-cyan-500/20 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.3)]'
-              }`}
+                }`}
               disabled={isLoading}
               autoComplete="new-password"
             />
@@ -156,11 +180,10 @@ export function SignupForm({ isDark }: SignupFormProps) {
               type={showConfirmPassword ? "text" : "password"}
               value={confirmPassword}
               onChange={(e) => handleConfirmPasswordChange(e.target.value)}
-              className={`h-10 pr-10 text-sm border transition-all duration-300 rounded-xl ${
-                isDark 
-                  ? 'bg-white/5 border-white/10 text-white placeholder:text-slate-500 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.25)] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] focus-visible:border-cyan-400 focus-visible:ring-2 focus-visible:ring-cyan-500/30 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.4)]' 
+              className={`h-10 pr-10 text-sm border transition-all duration-300 rounded-xl ${isDark
+                  ? 'bg-white/5 border-white/10 text-white placeholder:text-slate-500 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.25)] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/30 focus:shadow-[0_0_20px_rgba(6,182,212,0.4)] focus-visible:border-cyan-400 focus-visible:ring-2 focus-visible:ring-cyan-500/30 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.4)]'
                   : 'bg-white/50 border-slate-200 text-slate-900 placeholder:text-slate-400 hover:border-cyan-500/60 hover:shadow-[0_0_15px_rgba(6,182,212,0.2)] focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 focus:shadow-[0_0_20px_rgba(6,182,212,0.3)] focus-visible:border-cyan-500 focus-visible:ring-2 focus-visible:ring-cyan-500/20 focus-visible:shadow-[0_0_20px_rgba(6,182,212,0.3)]'
-              }`}
+                }`}
               disabled={isLoading}
               autoComplete="new-password"
             />
@@ -176,8 +199,8 @@ export function SignupForm({ isDark }: SignupFormProps) {
         </div>
       </div>
       {password && <PasswordStrength password={password} isDark={isDark} />}
-      <Button 
-        type="submit" 
+      <Button
+        type="submit"
         disabled={isLoading}
         className="w-full h-11 rounded-xl text-sm font-bold flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 mt-4 cursor-pointer bg-cyan-500 hover:bg-cyan-400 text-slate-950 dark:bg-cyan-400 dark:hover:bg-cyan-300 dark:text-slate-950 shadow-[0_0_25px_rgba(6,182,212,0.5)] hover:shadow-[0_0_35px_rgba(6,182,212,0.7)] border-none"
       >

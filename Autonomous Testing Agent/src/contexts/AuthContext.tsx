@@ -28,6 +28,7 @@ interface AuthContextType {
   setRememberMe: (remember: boolean) => void;
   updateUser: (data: Partial<User>) => void;
   verifyEmail: (email: string, code: string) => Promise<void>;
+  resendVerificationCode: (email: string) => Promise<any>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -64,7 +65,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
       setUser(userData);
       setToken(jwtToken);
-      
+
       localStorage.setItem('user', JSON.stringify(userData));
       localStorage.setItem('token', jwtToken);
       if (remember) {
@@ -88,12 +89,16 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
       setUser(userData);
       setToken(jwtToken);
-      
+
       localStorage.setItem('user', JSON.stringify(userData));
       localStorage.setItem('token', jwtToken);
+      return response.data;
     } catch (error: any) {
       console.error('Signup error', error);
+<<<<<<< HEAD
+=======
 
+>>>>>>> a09dbf334325941ddaa5e24c09a03c28d5dd86c9
       throw error;
     }
   };
@@ -101,8 +106,24 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const verifyEmail = async (email: string, code: string) => {
     try {
       await apiClient.post('/auth/verify-email', { email, code });
+      setUser((prev) => {
+        if (!prev) return prev;
+        const updated = { ...prev, is_verified: true };
+        localStorage.setItem('user', JSON.stringify(updated));
+        return updated;
+      });
     } catch (error: any) {
       console.error('Verify email error', error);
+      throw error;
+    }
+  };
+
+  const resendVerificationCode = async (email: string) => {
+    try {
+      const response = await apiClient.post('/auth/resend-code', { email });
+      return response.data;
+    } catch (error: any) {
+      console.error('Resend verification code error', error);
       throw error;
     }
   };
@@ -172,8 +193,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const updateUser = (data: Partial<User>) => {
     setUser((prev) => {
-      const updated = prev 
-        ? { ...prev, ...data } 
+      const updated = prev
+        ? { ...prev, ...data }
         : ({ id: 'user-1', name: 'tanvy', email: 'tanvy@hindustaan.in', ...data } as User);
       localStorage.setItem('user', JSON.stringify(updated));
       return updated;
@@ -212,6 +233,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setRememberMe: handleSetRememberMe,
     updateUser,
     verifyEmail,
+    resendVerificationCode,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
