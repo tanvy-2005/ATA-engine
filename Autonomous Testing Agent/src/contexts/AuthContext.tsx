@@ -8,6 +8,9 @@ export interface User {
   name: string;
   email: string;
   avatar?: string;
+  app_metadata?: any;
+  user_metadata?: any;
+  identities?: any;
 }
 
 interface AuthContextType {
@@ -66,7 +69,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
           id: session.user.id,
           name: session.user.user_metadata?.full_name || session.user.email?.split('@')[0] || 'User',
           email: session.user.email || '',
-          avatar: session.user.user_metadata?.avatar_url || ''
+          avatar: session.user.user_metadata?.avatar_url || '',
+          app_metadata: session.user.app_metadata,
+          user_metadata: session.user.user_metadata,
+          identities: session.user.identities
         };
         setUser(userData);
         setToken(session.access_token);
@@ -87,7 +93,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
             id: session.user.id,
             name: session.user.user_metadata?.full_name || session.user.email?.split('@')[0] || 'User',
             email: session.user.email || '',
-            avatar: session.user.user_metadata?.avatar_url || ''
+            avatar: session.user.user_metadata?.avatar_url || '',
+            app_metadata: session.user.app_metadata,
+            user_metadata: session.user.user_metadata,
+            identities: session.user.identities
           };
           setUser(userData);
           setToken(session.access_token);
@@ -145,17 +154,13 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       return response.data;
     } catch (error: any) {
       console.error('Signup error', error);
-<<<<<<< HEAD
-=======
 
->>>>>>> a09dbf334325941ddaa5e24c09a03c28d5dd86c9
       throw error;
     }
   };
 
   const verifyEmail = async (email: string, code: string) => {
     try {
-<<<<<<< HEAD
       const { data, error } = await supabase.auth.verifyOtp({
         email,
         token: code,
@@ -166,15 +171,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         throw error;
       }
       console.log('Logged in:', data.user);
-=======
-      await apiClient.post('/auth/verify-email', { email, code });
-      setUser((prev) => {
-        if (!prev) return prev;
-        const updated = { ...prev, is_verified: true };
-        localStorage.setItem('user', JSON.stringify(updated));
-        return updated;
-      });
->>>>>>> e21c136badaf98b55b895312366a3bc218283931
     } catch (error: any) {
       console.error('Verify email error', error);
       throw error;

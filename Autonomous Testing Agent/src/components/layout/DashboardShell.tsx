@@ -40,6 +40,24 @@ function UserProfilePopover({ size = "h-9 w-9" }: { size?: string }) {
     return name.substring(0, 2).toUpperCase();
   };
 
+  const getDisplayIdentifier = (user: any) => {
+    if (!user) return '';
+
+    const provider = user.app_metadata?.provider;
+
+    if (provider === 'github') {
+      return (
+        user.user_metadata?.user_name ||
+        user.user_metadata?.preferred_username ||
+        user.identities?.find((id: any) => id.provider === 'github')?.identity_data?.user_name ||
+        user.user_metadata?.full_name ||
+        'GitHub User'
+      );
+    }
+
+    return user.email || '';
+  };
+
   return (
     <>
       <Select onValueChange={(val: string | null) => {
@@ -90,7 +108,7 @@ function UserProfilePopover({ size = "h-9 w-9" }: { size?: string }) {
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400 flex items-center justify-center gap-1.5 mt-1 font-medium">
                   <Briefcase className="h-3.5 w-3.5 text-slate-400 shrink-0" />
-                  {user?.email || "tanvy@hindustaan.in"}
+                  {getDisplayIdentifier(user) || "tanvy@hindustaan.in"}
                 </p>
               </div>
             </div>
