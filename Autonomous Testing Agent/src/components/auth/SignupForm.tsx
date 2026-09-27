@@ -21,7 +21,7 @@ export function SignupForm({ isDark }: SignupFormProps) {
   const [successMessage, setSuccessMessage] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  const { signup, loading: authLoading } = useAuth();
+  const { loading: authLoading } = useAuth();
   const [localLoading, setLocalLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -57,9 +57,14 @@ export function SignupForm({ isDark }: SignupFormProps) {
 
     setLocalLoading(true);
     try {
-      const { data, error: signUpError } = await supabase.auth.signUp({
+      const { error: signUpError } = await supabase.auth.signInWithOtp({
         email,
-        password,
+        options: {
+          shouldCreateUser: true,
+          data: {
+            full_name: name
+          }
+        }
       });
       if (signUpError) throw signUpError;
 

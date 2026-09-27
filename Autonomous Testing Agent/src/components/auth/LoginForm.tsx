@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/contexts/AuthContext";
-import { apiClient } from "@/lib/apiClient";
+
 import { Loader2, Eye, EyeOff } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
@@ -17,7 +17,7 @@ export function LoginForm({ isDark }: LoginFormProps) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const { login, loading: authLoading } = useAuth();
+  const { loading: authLoading } = useAuth();
   const [localLoading, setLocalLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -45,7 +45,7 @@ export function LoginForm({ isDark }: LoginFormProps) {
 
     setLocalLoading(true);
     try {
-      const { data, error: signInError } = await supabase.auth.signInWithPassword({
+      const { error: signInError } = await supabase.auth.signInWithPassword({
         email,
         password,
       });

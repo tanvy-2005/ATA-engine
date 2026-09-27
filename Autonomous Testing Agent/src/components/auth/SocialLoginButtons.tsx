@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
-import { useAuth } from "@/contexts/AuthContext";
-import { useNavigate } from "react-router-dom";
-import { toast } from "sonner";
+import { supabase } from "@/lib/supabase";
 
 interface SocialLoginButtonsProps {
   isDark: boolean;
@@ -12,70 +10,59 @@ interface SocialLoginButtonsProps {
 export function SocialLoginButtons({ isDark }: SocialLoginButtonsProps) {
   const [googleLoading, setGoogleLoading] = useState(false);
   const [githubLoading, setGithubLoading] = useState(false);
-  const { loginWithToken } = useAuth();
-  const navigate = useNavigate();
 
-  const startOAuthFlow = (path: string, setLoading: (loading: boolean) => void) => {
-    setLoading(true);
-    const targetUrl = `http://localhost:8000${path}`;
-    
-    const width = 500;
-    const height = 620;
-    const left = window.screenX + (window.outerWidth - width) / 2;
-    const top = window.screenY + (window.outerHeight - height) / 2;
 
-    const handleMessage = (event: MessageEvent) => {
-      if (event.data?.type === 'OAUTH_SUCCESS') {
-        const { token, user } = event.data;
-        if (token && user) {
-          loginWithToken(token, user, true);
-          toast.success("Login successful!");
-          navigate('/workspaces', { replace: true });
+  const handleOAuthPopup = async (provider: 'google' | 'github') => {
+    const setLoading = provider === 'google' ? setGoogleLoading : setGithubLoading;
+    try {
+      setLoading(true);
+      const width = 500;
+      const height = 650;
+      const left = window.screenX + (window.outerWidth - width) / 2;
+      const top = window.screenY + (window.outerHeight - height) / 2;
+
+      const { data, error } = await supabase.auth.signInWithOAuth({
+        provider,
+        options: {
+          redirectTo: `${window.location.origin}/auth/callback`,
+          skipBrowserRedirect: true,
+          queryParams: provider === 'google' ? {
+            prompt: 'select_account',
+            access_type: 'offline',
+          } : undefined,
+        },
+      });
+
+      if (error) throw error;
+      if (!data?.url) return;
+
+      const popup = window.open(
+        data.url,
+        `${provider}_auth_popup`,
+        `width=${width},height=${height},left=${left},top=${top},status=no,toolbar=no,menubar=no,resizable=yes`
+      );
+
+      const timer = setInterval(async () => {
+        if (!popup || popup.closed) {
+          clearInterval(timer);
+          const { data: { session } } = await supabase.auth.getSession();
+          if (session) {
+            window.location.href = '/workspaces';
+          } else {
+            setLoading(false);
+          }
         }
-        setLoading(false);
-        window.removeEventListener('message', handleMessage);
-      }
-    };
+      }, 500);
 
-    window.addEventListener('message', handleMessage);
-
-    const popup = window.open(
-      targetUrl,
-      'OAuthPopup',
-      `width=${width},height=${height},top=${top},left=${left},status=no,menubar=no,toolbar=no,resizable=yes`
-    );
-
-    if (!popup || popup.closed || typeof popup.closed === 'undefined') {
-      window.removeEventListener('message', handleMessage);
-      window.location.href = targetUrl;
-      return;
+    } catch (error: any) {
+      console.error(`Error during ${provider} OAuth:`, error);
+      setLoading(false);
     }
-
-    const timer = setInterval(() => {
-      const storedToken = localStorage.getItem('token');
-      if (storedToken) {
-        clearInterval(timer);
-        setLoading(false);
-        window.removeEventListener('message', handleMessage);
-        navigate('/workspaces', { replace: true });
-        return;
-      }
-      if (popup.closed) {
-        clearInterval(timer);
-        setLoading(false);
-        window.removeEventListener('message', handleMessage);
-      }
-    }, 500);
   };
 
-  const handleGoogleLogin = () => {
-    startOAuthFlow('/api/v1/auth/google', setGoogleLoading);
-  };
+  const handleGoogleLogin = () => handleOAuthPopup('google');
 
-  const handleGithubLogin = () => {
-    setGithubLoading(true);
-    window.location.href = 'http://localhost:8000/api/v1/auth/github';
-  };
+  const handleGithubLogin = () => handleOAuthPopup('github');
 
 
   return (

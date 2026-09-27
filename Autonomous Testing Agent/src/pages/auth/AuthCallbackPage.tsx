@@ -3,11 +3,11 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { toast } from "sonner";
 import { useAuth } from "@/contexts/AuthContext";
 import { AlertCircle, RefreshCw } from "lucide-react";
+import { supabase } from "@/lib/supabase";
 
 export default function AuthCallbackPage() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const { loginWithToken } = useAuth();
   
   const [errorState, setErrorState] = useState<string | null>(null);
   const processedRef = useRef(false);
@@ -16,60 +16,58 @@ export default function AuthCallbackPage() {
     if (processedRef.current) return;
     processedRef.current = true;
 
-    const token = searchParams.get("token");
-    const email = searchParams.get("email");
-    const name = searchParams.get("name");
-    const oauthError = searchParams.get("error") || searchParams.get("error_description");
+    const handleOAuth = async () => {
+      const code = searchParams.get("code");
+      const oauthError = searchParams.get("error") || searchParams.get("error_description");
 
-    // Strip token and query params from URL immediately so sensitive values aren't exposed in address bar or history
-    if (window.location.search) {
-      window.history.replaceState(null, "", window.location.pathname);
-    }
+      if (oauthError) {
+        setErrorState(oauthError);
+        toast.error(`Authentication error: ${oauthError}`);
+        return;
+      }
 
-    if (oauthError) {
-      setErrorState(oauthError);
-      toast.error(`Authentication error: ${oauthError}`);
-      return;
-    }
-
-    if (token) {
-      const user = {
-        id: email || "oauth_user",
-        name: name || "OAuth User",
-        email: email || "user@example.com",
-      };
-
-      // Always save token & user to storage
-      loginWithToken(token, user, true);
-
-      if (window.opener) {
-        try {
-          window.opener.postMessage(
-            { type: "OAUTH_SUCCESS", token, user },
-            "*"
-          );
-        } catch (e) {
-          console.error("postMessage error", e);
+      if (code) {
+        // Handle PKCE code flow
+        const { data, error } = await supabase.auth.exchangeCodeForSession(code);
+        if (error) {
+          setErrorState(error.message);
+          toast.error(`Authentication error: ${error.message}`);
+          return;
         }
-        toast.success("Login successful!");
-        setTimeout(() => {
-          window.close();
-        }, 300);
+        if (data.session) {
+          if (window.opener) {
+            window.opener.location.href = '/workspaces';
+            window.close();
+          } else {
+            toast.success("Login successful!");
+            navigate("/workspaces", { replace: true });
+          }
+        }
       } else {
-        toast.success("Login successful!");
-        setTimeout(() => {
-          navigate("/workspaces", { replace: true });
-        }, 500);
+        // Check if there's already a session (implicit flow handles hash fragments automatically)
+        const { data: { session }, error } = await supabase.auth.getSession();
+        if (error) {
+          setErrorState(error.message);
+          toast.error(`Authentication error: ${error.message}`);
+          return;
+        }
+        if (session) {
+          if (window.opener) {
+            window.opener.location.href = '/workspaces';
+            window.close();
+          } else {
+            toast.success("Login successful!");
+            navigate("/workspaces", { replace: true });
+          }
+        } else {
+          setErrorState("Invalid or missing authentication session.");
+          toast.error("Login failed or session missing");
+        }
       }
-    } else {
-      if (window.opener) {
-        window.close();
-      } else {
-        setErrorState("Invalid or missing authentication token.");
-        toast.error("Login failed or token missing");
-      }
-    }
-  }, [searchParams, navigate, loginWithToken]);
+    };
+
+    handleOAuth();
+  }, [searchParams, navigate]);
 
   if (errorState) {
     return (

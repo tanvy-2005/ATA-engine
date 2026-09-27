@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import type { ReactNode } from 'react';
 import { apiClient } from '@/lib/apiClient';
+import { supabase } from '@/lib/supabase';
 
 export interface User {
   id: string;
@@ -21,7 +22,7 @@ interface AuthContextType {
   signup: (name: string, email: string, password: string) => Promise<void>;
   googleLogin: () => Promise<void>;
   githubLogin: () => Promise<void>;
-  logout: () => void;
+  logout: () => Promise<void>;
   forgotPassword: (email: string) => Promise<void>;
   resetPassword: (token: string, newPassword: string) => Promise<void>;
   setTheme: (theme: 'light' | 'dark') => void;
@@ -41,6 +42,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   // Initialize from local storage or mock
   useEffect(() => {
+    let mounted = true;
+
     const storedUser = localStorage.getItem('user') || sessionStorage.getItem('user');
     const storedToken = localStorage.getItem('token') || sessionStorage.getItem('token');
     const storedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
@@ -54,7 +57,54 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       setTheme(storedTheme);
     }
     setRememberMe(storedRemember);
-    setLoading(false);
+
+    const fetchSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session && mounted) {
+        const userData = {
+          id: session.user.id,
+          name: session.user.user_metadata?.full_name || session.user.email?.split('@')[0] || 'User',
+          email: session.user.email || '',
+          avatar: session.user.user_metadata?.avatar_url || ''
+        };
+        setUser(userData);
+        setToken(session.access_token);
+        localStorage.setItem('user', JSON.stringify(userData));
+        localStorage.setItem('token', session.access_token);
+      }
+      if (mounted) setLoading(false);
+    };
+    fetchSession();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        console.log("Auth Event:", event);
+        if (!mounted) return;
+        
+        if (session) {
+          const userData = {
+            id: session.user.id,
+            name: session.user.user_metadata?.full_name || session.user.email?.split('@')[0] || 'User',
+            email: session.user.email || '',
+            avatar: session.user.user_metadata?.avatar_url || ''
+          };
+          setUser(userData);
+          setToken(session.access_token);
+          localStorage.setItem('user', JSON.stringify(userData));
+          localStorage.setItem('token', session.access_token);
+        } else if (event === 'SIGNED_OUT') {
+          setUser(null);
+          setToken(null);
+          localStorage.removeItem('user');
+          localStorage.removeItem('token');
+        }
+      }
+    );
+
+    return () => {
+      mounted = false;
+      subscription.unsubscribe();
+    };
   }, []);
 
   const login = async (email: string, password: string, remember: boolean) => {
@@ -100,7 +150,16 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const verifyEmail = async (email: string, code: string) => {
     try {
-      await apiClient.post('/auth/verify-email', { email, code });
+      const { data, error } = await supabase.auth.verifyOtp({
+        email,
+        token: code,
+        type: 'email',
+      });
+      if (error) {
+        console.error(error.message);
+        throw error;
+      }
+      console.log('Logged in:', data.user);
     } catch (error: any) {
       console.error('Verify email error', error);
       throw error;
@@ -130,7 +189,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     openOAuthPopup('http://localhost:8000/api/v1/auth/github');
   };
 
-  const logout = () => {
+  const logout = async () => {
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      console.error(error.message);
+    }
     setUser(null);
     setToken(null);
     localStorage.removeItem('user');
