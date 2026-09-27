@@ -1,0 +1,335 @@
+{
+  "execution_id": "6ab9351b47492ee89fd4f3e7",
+  "project_name": "Custom Project",
+  "target_url": "https://example.com",
+  "test_type": "e2e",
+  "repo_url": "",
+  "status": "Failed",
+  "current_agent": "Executor",
+  "current_stage": "generator",
+  "pages_discovered": 1,
+  "pages_total": null,
+  "tests_generated": 3,
+  "tests_executed": 0,
+  "tests_total": 3,
+  "current_action": "Running Playwright parallel workers...",
+  "started_at": "2026-09-27T15:24:11.673635+00:00",
+  "last_updated_at": "2026-09-27T15:26:09.527735+00:00",
+  "completed_agents": [
+    "Planner",
+    "Explorer",
+    "Generator"
+  ],
+  "failed_agents": [
+    "Executor"
+  ],
+  "agent_states": {
+    "Planner": {
+      "status": "Success",
+      "execution_time": 48.51,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Explorer": {
+      "status": "Success",
+      "execution_time": 23.07,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Generator": {
+      "status": "Success",
+      "execution_time": 36.8,
+      "retry_count": 0,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    },
+    "Executor": {
+      "status": "Failed",
+      "execution_time": 1.03,
+      "retry_count": 1,
+      "error_object": null,
+      "logs": [],
+      "metadata": {}
+    }
+  },
+  "shared_memory": {
+    "planner_input": {
+      "project_name": "Custom Project",
+      "description": "Autonomous testing run",
+      "target_url": "https://example.com",
+      "test_type": "e2e",
+      "repo_url": ""
+    },
+    "integrations": {},
+    "planner_output": {
+      "project_analysis": {
+        "summary": "Automated fallback analysis for target workspace.",
+        "key_components": [
+          "authentication",
+          "navigation_bar",
+          "form_inputs",
+          "api_routes"
+        ],
+        "project_type": "UNKNOWN",
+        "business_domain": "UNKNOWN",
+        "main_purpose": "UNKNOWN",
+        "primary_users": [],
+        "expected_user_journey": []
+      },
+      "testing_strategy": {
+        "smoke_tests": [
+          "Verify homepage navigation",
+          "Check main CTA buttons"
+        ],
+        "regression_tests": [
+          "Validate form submission workflows",
+          "Check route redirects"
+        ],
+        "boundary_tests": [
+          "Test empty input fields",
+          "Test maximum string length bounds"
+        ],
+        "negative_tests": [
+          "Test invalid form entries",
+          "Check 404 page handling"
+        ],
+        "accessibility_tests": [
+          "Verify ARIA roles",
+          "Check contrast & focus management"
+        ],
+        "integration_tests": [],
+        "system_tests": [],
+        "ui_tests": [],
+        "functional_tests": [],
+        "exploratory_tests": [],
+        "compatibility_tests": [],
+        "security_tests": [],
+        "performance_test_suggestions": [],
+        "api_test_suggestions": []
+      },
+      "priority_areas": [
+        "navigation",
+        "forms",
+        "routing"
+      ],
+      "business_workflow": [],
+      "user_workflow": [],
+      "module_dependency_graph": {},
+      "detected_modules": [],
+      "critical_user_journeys": [],
+      "high_risk_areas": [],
+      "security_sensitive_areas": [],
+      "functional_requirements": [],
+      "non_functional_requirements": [],
+      "test_data_requirements": null,
+      "assertions": [],
+      "explorer_instructions": [],
+      "generator_instructions": [],
+      "validator_instructions": [],
+      "bug_analyzer_instructions": [],
+      "reporter_instructions": []
+    },
+    "explorer_summary": {},
+    "explorer_output": {
+      "page_info": {
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "page_load_time": 0.265,
+        "status_code": 200
+      },
+      "dom_structure": [],
+      "interactive_elements": {
+        "buttons": [],
+        "inputs": [],
+        "dropdowns": [],
+        "checkboxes_radios": []
+      },
+      "links": [
+        {
+          "text": "Learn more",
+          "url": "https://iana.org/domains/example",
+          "selector": "a:has-text('Learn more')"
+        }
+      ],
+      "forms": [],
+      "validation_rules": [],
+      "screenshot_path": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1790522710/agent_screenshots/explorer_page_20260927_205509_tqy8qnu7.png",
+      "accessibility": [
+        {
+          "role": "a",
+          "aria_label": "Learn more",
+          "alt": null
+        }
+      ],
+      "network_info": {
+        "api_calls": []
+      },
+      "console_errors": [],
+      "cookies_storage": {
+        "cookies": [],
+        "local_storage": {},
+        "session_storage": {}
+      },
+      "actions_possible": [],
+      "page_state_snapshot": {
+        "url": "https://example.com",
+        "dom": "<a role=\"\">Learn more</a>",
+        "screenshot": "https://res.cloudinary.com/ac7vcnzh/image/upload/v1790522710/agent_screenshots/explorer_page_20260927_205509_tqy8qnu7.png",
+        "elements": {
+          "buttons": [],
+          "inputs": [],
+          "dropdowns": [],
+          "checkboxes_radios": []
+        },
+        "time": "2026-09-27T20:55:11.439124"
+      },
+      "visited_routes": [
+        "https://example.com"
+      ],
+      "status": "success"
+    },
+    "generator_output": {
+      "page": {
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "type": "standard"
+      },
+      "summary": {
+        "total_test_cases": 3,
+        "high_priority": 2,
+        "medium_priority": 1,
+        "low_priority": 0
+      },
+      "test_cases": [
+        {
+          "id": "TC-AUTO-01",
+          "title": "Verify Target Website Reachability & HTTP Load",
+          "category": "functional",
+          "priority": "high",
+          "severity": "blocker",
+          "description": "Verify that the target URL resolves and returns a valid page without fatal error codes.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "navigate",
+              "selector": null,
+              "locator_type": null,
+              "value": "https://example.com"
+            }
+          ],
+          "assertions": [
+            {
+              "type": "http_status",
+              "expected": 200,
+              "selector": null
+            }
+          ],
+          "expected_result": "Page loads successfully with HTTP status 200.",
+          "estimated_execution_time": null
+        },
+        {
+          "id": "TC-AUTO-02",
+          "title": "Verify Page Title and Core Metadata",
+          "category": "ui",
+          "priority": "medium",
+          "severity": "major",
+          "description": "Check that the page title is present and non-empty.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "check_title",
+              "selector": null,
+              "locator_type": null,
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "title_present",
+              "expected": true,
+              "selector": null
+            }
+          ],
+          "expected_result": "Page has a valid title tag and metadata.",
+          "estimated_execution_time": null
+        },
+        {
+          "id": "TC-AUTO-03",
+          "title": "Verify Discovered Navigation Links Accessibility",
+          "category": "functional",
+          "priority": "high",
+          "severity": "major",
+          "description": "Verify that primary discovered navigation links are reachable and do not redirect to error pages.",
+          "preconditions": [],
+          "test_data": {},
+          "steps": [
+            {
+              "step": 1,
+              "action": "verify_links",
+              "selector": null,
+              "locator_type": null,
+              "value": null
+            }
+          ],
+          "assertions": [
+            {
+              "type": "links_valid",
+              "expected": true,
+              "selector": null
+            }
+          ],
+          "expected_result": "Discovered links respond cleanly without broken references.",
+          "estimated_execution_time": null
+        }
+      ]
+    }
+  },
+  "logs": [
+    "[2026-09-27T15:24:11.673635+00:00] Initializing new execution pipeline...",
+    "[2026-09-27T15:24:20.061585+00:00] Agent 'Planner' execution started",
+    "[2026-09-27T15:24:20.061585+00:00] Agent 'Planner' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-27T15:24:20.061585+00:00] Analyzing project requirements and target structure...",
+    "[2026-09-27T15:24:47.703629+00:00] Agent 'Planner' executed model 'gemini-3.6-flash' (gemini). Latency: 27.41s, Tokens (In/Out): 1037/48",
+    "[2026-09-27T15:25:08.564026+00:00] Agent 'Planner' executed model 'gemini-3.6-flash' (unknown). Latency: 0s, Tokens (In/Out): 0/0",
+    "[2026-09-27T15:25:08.572024+00:00] Planner Agent used fallback strategy.",
+    "[2026-09-27T15:25:08.572024+00:00] Pipeline progress updated: 10%",
+    "[2026-09-27T15:25:08.572024+00:00] Agent 'Planner' status updated to Success (Retries: 0, Time: 48.51s)",
+    "[2026-09-27T15:25:08.572024+00:00] Agent 'Planner' completed successfully in 48.51s",
+    "[2026-09-27T15:25:08.578030+00:00] Agent 'Explorer' execution started",
+    "[2026-09-27T15:25:08.579027+00:00] Agent 'Explorer' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-27T15:25:08.579027+00:00] Launching browser and navigating to target URL...",
+    "[2026-09-27T15:25:08.954075+00:00] Extracting DOM, forms, and interactive element maps...",
+    "[2026-09-27T15:25:31.643965+00:00] Agent 'Explorer' executed model 'gemini-3.6-flash' (unknown). Latency: 0s, Tokens (In/Out): 0/0",
+    "[2026-09-27T15:25:31.651016+00:00] Pipeline progress updated: 25%",
+    "[2026-09-27T15:25:31.651016+00:00] Agent 'Explorer' status updated to Success (Retries: 0, Time: 23.07s)",
+    "[2026-09-27T15:25:31.651016+00:00] Agent 'Explorer' completed successfully in 23.07s",
+    "[2026-09-27T15:25:31.678234+00:00] Agent 'Generator' execution started",
+    "[2026-09-27T15:25:31.678234+00:00] Agent 'Generator' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-27T15:25:31.681231+00:00] Synthesizing test cases (smoke, edge, boundary)...",
+    "[2026-09-27T15:25:52.492537+00:00] Agent 'Generator' executed model 'gemini-3.6-flash' (unknown). Latency: 0s, Tokens (In/Out): 0/0",
+    "[2026-09-27T15:26:08.478082+00:00] Agent 'Generator' executed model 'gemini-3.6-flash' (unknown). Latency: 0s, Tokens (In/Out): 0/0",
+    "[2026-09-27T15:26:08.482393+00:00] Pipeline progress updated: 45%",
+    "[2026-09-27T15:26:08.482393+00:00] Agent 'Generator' status updated to Success (Retries: 0, Time: 36.8s)",
+    "[2026-09-27T15:26:08.482393+00:00] Agent 'Generator' completed successfully in 36.8s",
+    "[2026-09-27T15:26:08.499413+00:00] Agent 'Executor' execution started",
+    "[2026-09-27T15:26:08.499413+00:00] Agent 'Executor' status updated to Running (Retries: 0, Time: 0.0s)",
+    "[2026-09-27T15:26:08.499413+00:00] ExecutorAgent starting. Running 3 test cases with 4 parallel workers.",
+    "[2026-09-27T15:26:08.526473+00:00] Agent 'Executor' failed with: . Retrying (1/1)...",
+    "[2026-09-27T15:26:08.526473+00:00] Agent 'Executor' status updated to Retrying (Retries: 1, Time: 0.03s)",
+    "[2026-09-27T15:26:09.525340+00:00] ExecutorAgent starting. Running 3 test cases with 4 parallel workers.",
+    "[2026-09-27T15:26:09.527735+00:00] Agent 'Executor' failed permanently after 2 retries. Error: ",
+    "[2026-09-27T15:26:09.527735+00:00] Agent 'Executor' status updated to Failed (Retries: 1, Time: 1.03s)",
+    "[2026-09-27T15:26:09.527735+00:00] Agent 'Executor' crashed: "
+  ],
+  "execution_time": 0.0,
+  "progress": 45
+}

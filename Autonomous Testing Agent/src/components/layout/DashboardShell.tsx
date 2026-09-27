@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTheme } from "@/components/theme-provider";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Select,
   SelectContent,
@@ -43,13 +43,18 @@ function UserProfilePopover({ size = "h-9 w-9" }: { size?: string }) {
   const getDisplayIdentifier = (user: any) => {
     if (!user) return '';
 
-    const provider = user.app_metadata?.provider;
+    // Find the most recently updated identity to know how they logged in this time
+    const latestIdentity = user.identities?.length 
+      ? [...user.identities].sort((a: any, b: any) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime())[0]
+      : null;
+
+    const provider = latestIdentity?.provider || user.app_metadata?.provider;
 
     if (provider === 'github') {
       return (
+        latestIdentity?.identity_data?.user_name ||
         user.user_metadata?.user_name ||
         user.user_metadata?.preferred_username ||
-        user.identities?.find((id: any) => id.provider === 'github')?.identity_data?.user_name ||
         user.user_metadata?.full_name ||
         'GitHub User'
       );
@@ -74,12 +79,11 @@ function UserProfilePopover({ size = "h-9 w-9" }: { size?: string }) {
         >
           <Avatar className={`${size} border border-slate-200 dark:border-white/10 hover:opacity-90 transition-all duration-200 active:scale-95 relative overflow-hidden`}>
             {user?.avatar ? (
-              <img src={user.avatar} alt="Avatar" className="h-full w-full object-cover rounded-full" />
-            ) : (
-              <AvatarFallback className="bg-slate-900 dark:bg-white text-white dark:text-slate-950 font-bold text-xs">
-                {getInitials(user?.name)}
-              </AvatarFallback>
-            )}
+              <AvatarImage src={user.avatar} alt="Avatar" className="object-cover" />
+            ) : null}
+            <AvatarFallback className="bg-slate-900 dark:bg-white text-white dark:text-slate-950 font-bold text-xs">
+              {getInitials(user?.name)}
+            </AvatarFallback>
           </Avatar>
         </SelectTrigger>
 
@@ -93,12 +97,11 @@ function UserProfilePopover({ size = "h-9 w-9" }: { size?: string }) {
               <div>
                 <Avatar className="h-16 w-16 mb-3 border-2 border-slate-200 dark:border-white/20 shadow-md relative overflow-hidden">
                   {user?.avatar ? (
-                    <img src={user.avatar} alt="Avatar" className="h-full w-full object-cover rounded-full" />
-                  ) : (
-                    <AvatarFallback className="bg-slate-900 dark:bg-white text-white dark:text-slate-950 text-xl font-bold">
-                      {getInitials(user?.name || "Tanvy")}
-                    </AvatarFallback>
-                  )}
+                    <AvatarImage src={user.avatar} alt="Avatar" className="object-cover" />
+                  ) : null}
+                  <AvatarFallback className="bg-slate-900 dark:bg-white text-white dark:text-slate-950 text-xl font-bold">
+                    {getInitials(user?.name || "Tanvy")}
+                  </AvatarFallback>
                 </Avatar>
               </div>
 
