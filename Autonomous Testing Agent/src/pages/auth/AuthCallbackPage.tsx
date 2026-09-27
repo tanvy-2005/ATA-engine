@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { toast } from "sonner";
-import { useAuth } from "@/contexts/AuthContext";
 import { AlertCircle, RefreshCw } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 

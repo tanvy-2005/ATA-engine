@@ -65,13 +65,7 @@ export function SocialLoginButtons({ isDark }: SocialLoginButtonsProps) {
 
   const handleGoogleLogin = () => handleOAuthPopup('google');
 
-<<<<<<< HEAD
   const handleGithubLogin = () => handleOAuthPopup('github');
-=======
-  const handleGithubLogin = () => {
-    startOAuthFlow('/api/v1/auth/github', setGithubLoading);
-  };
->>>>>>> e21c136badaf98b55b895312366a3bc218283931
 
 
   return (

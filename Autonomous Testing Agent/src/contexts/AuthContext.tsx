@@ -145,17 +145,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       return response.data;
     } catch (error: any) {
       console.error('Signup error', error);
-<<<<<<< HEAD
-=======
-
->>>>>>> a09dbf334325941ddaa5e24c09a03c28d5dd86c9
       throw error;
     }
   };
 
   const verifyEmail = async (email: string, code: string) => {
     try {
-<<<<<<< HEAD
       const { data, error } = await supabase.auth.verifyOtp({
         email,
         token: code,
@@ -166,15 +161,18 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         throw error;
       }
       console.log('Logged in:', data.user);
-=======
-      await apiClient.post('/auth/verify-email', { email, code });
-      setUser((prev) => {
-        if (!prev) return prev;
-        const updated = { ...prev, is_verified: true };
-        localStorage.setItem('user', JSON.stringify(updated));
-        return updated;
-      });
->>>>>>> e21c136badaf98b55b895312366a3bc218283931
+      if (data.session && data.user) {
+        const userData: User = {
+          id: data.user.id,
+          name: data.user.user_metadata?.full_name || data.user.email?.split('@')[0] || 'User',
+          email: data.user.email || '',
+          avatar: data.user.user_metadata?.avatar_url || ''
+        };
+        setUser(userData);
+        setToken(data.session.access_token);
+        localStorage.setItem('user', JSON.stringify(userData));
+        localStorage.setItem('token', data.session.access_token);
+      }
     } catch (error: any) {
       console.error('Verify email error', error);
       throw error;
@@ -183,8 +181,18 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const resendVerificationCode = async (email: string) => {
     try {
-      const response = await apiClient.post('/auth/resend-code', { email });
-      return response.data;
+      const { data, error } = await supabase.auth.signInWithOtp({
+        email,
+        options: {
+          shouldCreateUser: true
+        }
+      });
+      if (error) {
+        console.warn('Supabase resend OTP error, falling back to backend:', error.message);
+        const response = await apiClient.post('/auth/resend-code', { email });
+        return response.data;
+      }
+      return data;
     } catch (error: any) {
       console.error('Resend verification code error', error);
       throw error;
