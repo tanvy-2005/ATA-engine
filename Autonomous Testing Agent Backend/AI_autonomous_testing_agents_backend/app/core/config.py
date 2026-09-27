@@ -20,7 +20,12 @@ class Settings(BaseSettings):
     PASSWORD_REQUIRE_SPECIAL: bool = True
     PASSWORD_EXPIRY_DAYS: int = 90
     SESSION_INACTIVITY_MINUTES: int = 10080
-     # Cloudinary configuration
+    
+    # Email Configuration (SMTP)
+    SMTP_EMAIL: str = ""
+    SMTP_PASSWORD: str = ""
+    SMTP_SERVER: str = "smtp.gmail.com"
+    SMTP_PORT: int = 587
     CLOUDINARY_CLOUD_NAME: str = ""
     CLOUDINARY_API_KEY: str = ""
     CLOUDINARY_API_SECRET: str = ""

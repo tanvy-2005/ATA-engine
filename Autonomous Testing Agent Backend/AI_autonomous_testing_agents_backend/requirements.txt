@@ -5,7 +5,11 @@ alembic
 pydantic
 pydantic-settings
 motor
+pymongo
+dnspython
 python-jose[cryptography]
+cryptography
+bcrypt
 passlib[bcrypt]
 python-multipart
 email-validator
@@ -22,3 +26,4 @@ beautifulsoup4
 websockets
 cloudinary==1.45.0
 fpdf2
+sse-starlette
