@@ -154,10 +154,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       return response.data;
     } catch (error: any) {
       console.error('Signup error', error);
-<<<<<<< HEAD
 
-=======
->>>>>>> 986cbc261a6a9cea74941c6335ba167680bb10bd
       throw error;
     }
   };
@@ -174,21 +171,21 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         throw error;
       }
       console.log('Logged in:', data.user);
-<<<<<<< HEAD
-=======
       if (data.session && data.user) {
         const userData: User = {
           id: data.user.id,
           name: data.user.user_metadata?.full_name || data.user.email?.split('@')[0] || 'User',
           email: data.user.email || '',
-          avatar: data.user.user_metadata?.avatar_url || ''
+          avatar: data.user.user_metadata?.avatar_url || '',
+          app_metadata: data.user.app_metadata,
+          user_metadata: data.user.user_metadata,
+          identities: data.user.identities
         };
         setUser(userData);
         setToken(data.session.access_token);
         localStorage.setItem('user', JSON.stringify(userData));
         localStorage.setItem('token', data.session.access_token);
       }
->>>>>>> 986cbc261a6a9cea74941c6335ba167680bb10bd
     } catch (error: any) {
       console.error('Verify email error', error);
       throw error;
