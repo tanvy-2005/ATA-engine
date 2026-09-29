@@ -16,7 +16,6 @@ import {
     Play,
     X,
     Sparkles,
-    ArrowLeft,
     Wand2,
     Brain,
     Bot
@@ -28,21 +27,16 @@ import { Badge } from "@/components/ui/badge";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 
 interface LogEntry {
     time: string;
-    type: 'info' | 'success' | 'warn' | 'error' | 'warning';
+    type: 'info' | 'success' | 'warn' | 'error' | 'warning' | 'agent_summary';
     text: string;
+    agent?: string;
+    summary?: string;
 }
 
 interface TestCase {
@@ -717,7 +711,7 @@ export default function RunListPage() {
                                 </div>
                                 <div className="space-y-1 py-3 border-b border-slate-100 dark:border-white/5">
                                     <span className="text-[10px] font-quicksand text-slate-400 dark:text-slate-500 uppercase tracking-widest block font-semibold">Testing Type</span>
-                                    <Select value={testType} onValueChange={setTestType}>
+                                    <Select value={testType} onValueChange={(v) => v && setTestType(v)}>
                                         <SelectTrigger className="h-6 w-full p-0 border-none bg-transparent shadow-none text-xs font-medium text-slate-700 dark:text-slate-200 focus:ring-0">
                                             <SelectValue placeholder="Select Testing Type" />
                                         </SelectTrigger>
@@ -978,7 +972,7 @@ export default function RunListPage() {
                                         </SelectContent>
                                     </Select>
 
-                                    <Select value={testType} onValueChange={setTestType}>
+                                    <Select value={testType} onValueChange={(v) => v && setTestType(v)}>
                                         <SelectTrigger className="h-8 flex-1 bg-white dark:bg-[#0d131f] border-slate-200 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-200 font-quicksand">
                                             <SelectValue placeholder="Test Type" />
                                         </SelectTrigger>

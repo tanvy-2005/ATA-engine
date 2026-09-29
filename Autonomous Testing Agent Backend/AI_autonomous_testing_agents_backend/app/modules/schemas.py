@@ -30,10 +30,20 @@ class UserLogin(BaseModel):
     email: EmailStr
     password: str
 
+class SocialLoginExchangeReq(BaseModel):
+    email: EmailStr
+    name: str
+    picture: Optional[str] = None
+    provider: str
+    provider_username: Optional[str] = None
+
 class UserInDB(UserBase):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
     hashed_password: str
     avatar: Optional[str] = None
+    avatar_url: Optional[str] = None
+    provider: Optional[str] = None
+    provider_username: Optional[str] = None
     is_active: bool = True
     is_verified: bool = False
     verification_code: Optional[str] = None
@@ -51,6 +61,9 @@ class UserInDB(UserBase):
 class UserOut(UserBase):
     id: str = Field(alias="_id")
     avatar: Optional[str] = None
+    avatar_url: Optional[str] = None
+    provider: Optional[str] = None
+    provider_username: Optional[str] = None
     is_verified: bool = False
     
     class Config:

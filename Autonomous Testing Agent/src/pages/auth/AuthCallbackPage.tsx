@@ -35,7 +35,7 @@ export default function AuthCallbackPage() {
         }
         if (data.session) {
           if (window.opener) {
-            window.opener.location.href = '/workspaces';
+            window.opener.postMessage({ type: 'OAUTH_AUTH_SUCCESS', session: data.session }, window.location.origin);
             window.close();
           } else {
             toast.success("Login successful!");
@@ -52,7 +52,7 @@ export default function AuthCallbackPage() {
         }
         if (session) {
           if (window.opener) {
-            window.opener.location.href = '/workspaces';
+            window.opener.postMessage({ type: 'OAUTH_AUTH_SUCCESS', session }, window.location.origin);
             window.close();
           } else {
             toast.success("Login successful!");

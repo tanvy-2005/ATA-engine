@@ -5,7 +5,6 @@ import { toast } from "sonner";
 import {
   MessageSquare as Slack, 
   GitBranch, 
-  Webhook, 
   Loader2,
   CheckCircle2 as CheckCircle,
   CircleHelp as HelpCircle,

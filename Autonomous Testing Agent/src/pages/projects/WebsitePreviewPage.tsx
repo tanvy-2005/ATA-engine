@@ -47,7 +47,7 @@ export default function WebsitePreviewPage() {
 
   useEffect(() => {
     if (project?.activeScopes) {
-      setActiveScopes(project.activeScopes);
+      setActiveScopes(project.activeScopes as typeof activeScopes);
     }
   }, [project]);
 
@@ -72,7 +72,7 @@ export default function WebsitePreviewPage() {
         setProject(projRes.data);
         setBlueprintData(bpRes.data);
         setLoading(false);
-      }).catch(err => {
+      }).catch(() => {
         // Fallback to fetch from /projects list if the single project route isn't strictly defined
         apiClient.get(`/projects`).then(async res => {
           const data = res.data;

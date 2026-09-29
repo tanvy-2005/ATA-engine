@@ -6,7 +6,6 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/contexts/AuthContext";
 import { Loader2, Eye, EyeOff } from "lucide-react";
 import { PasswordStrength } from "./PasswordStrength";
-import { supabase } from "@/lib/supabase";
 
 interface SignupFormProps {
   isDark: boolean;
@@ -21,7 +20,7 @@ export function SignupForm({ isDark }: SignupFormProps) {
   const [successMessage, setSuccessMessage] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  const { loading: authLoading } = useAuth();
+  const { loading: authLoading, signup } = useAuth();
   const [localLoading, setLocalLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -77,17 +76,8 @@ export function SignupForm({ isDark }: SignupFormProps) {
 
     setLocalLoading(true);
     try {
-      const { error: signUpError } = await supabase.auth.signInWithOtp({
-        email,
-        options: {
-          shouldCreateUser: true,
-          data: {
-            full_name: name
-          }
-        }
-      });
-      if (signUpError) throw signUpError;
-
+      await signup(name, email, password);
+      
       setSuccessMessage("Account created successfully. Redirecting to verification...");
       setTimeout(() => navigate("/verify-otp", { state: { email } }), 1500);
     } catch (err: any) {

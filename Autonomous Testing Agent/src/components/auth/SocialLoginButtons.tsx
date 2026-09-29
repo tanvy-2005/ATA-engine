@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
+import { apiClient } from "@/lib/apiClient";
 import { supabase } from "@/lib/supabase";
 
 interface SocialLoginButtonsProps {
@@ -10,16 +13,45 @@ interface SocialLoginButtonsProps {
 export function SocialLoginButtons({ isDark }: SocialLoginButtonsProps) {
   const [googleLoading, setGoogleLoading] = useState(false);
   const [githubLoading, setGithubLoading] = useState(false);
+  const { loginWithToken } = useAuth();
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    const handleMessage = async (event: MessageEvent) => {
+      if (event.origin !== window.location.origin) return;
+      if (event.data?.type === 'OAUTH_AUTH_SUCCESS') {
+        const { session } = event.data;
+        if (session?.user) {
+          try {
+            const { user } = session;
+            const latestIdentity = user.identities?.length 
+              ? [...user.identities].sort((a: any, b: any) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime())[0]
+              : null;
+            const currentProvider = latestIdentity?.provider || user.app_metadata?.provider || 'google';
 
-  const handleOAuthPopup = async (provider: 'google' | 'github') => {
-    const setLoading = provider === 'google' ? setGoogleLoading : setGithubLoading;
+            const res = await apiClient.post('/auth/social-exchange', {
+              email: user.email,
+              name: user.user_metadata?.full_name || user.user_metadata?.name || user.email?.split('@')[0],
+              picture: latestIdentity?.identity_data?.avatar_url || user.user_metadata?.avatar_url || user.user_metadata?.picture,
+              provider: currentProvider,
+              provider_username: latestIdentity?.identity_data?.user_name || latestIdentity?.identity_data?.preferred_username || user.user_metadata?.user_name || user.user_metadata?.preferred_username || user.email
+            });
+            loginWithToken(res.data.token, res.data.user);
+            navigate('/workspaces', { replace: true });
+          } catch (e) {
+            console.error('Social exchange failed', e);
+          }
+        }
+      }
+    };
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, [loginWithToken, navigate]);
+
+  const handleOAuth = async (provider: 'google' | 'github') => {
     try {
-      setLoading(true);
-      const width = 500;
-      const height = 650;
-      const left = window.screenX + (window.outerWidth - width) / 2;
-      const top = window.screenY + (window.outerHeight - height) / 2;
+      if (provider === 'google') setGoogleLoading(true);
+      else setGithubLoading(true);
 
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider,
@@ -31,41 +63,33 @@ export function SocialLoginButtons({ isDark }: SocialLoginButtonsProps) {
             access_type: 'offline',
           } : {
             prompt: 'consent',
-            allow_signup: 'true',
-          },
+          }
         },
       });
 
       if (error) throw error;
       if (!data?.url) return;
 
-      const popup = window.open(
+      const width = 500;
+      const height = 650;
+      const left = window.screenX + (window.outerWidth - width) / 2;
+      const top = window.screenY + (window.outerHeight - height) / 2;
+
+      window.open(
         data.url,
-        `${provider}_auth_popup`,
+        `${provider}_oauth`,
         `width=${width},height=${height},left=${left},top=${top},status=no,toolbar=no,menubar=no,resizable=yes`
       );
-
-      const timer = setInterval(async () => {
-        if (!popup || popup.closed) {
-          clearInterval(timer);
-          const { data: { session } } = await supabase.auth.getSession();
-          if (session) {
-            window.location.href = '/workspaces';
-          } else {
-            setLoading(false);
-          }
-        }
-      }, 500);
-
-    } catch (error: any) {
-      console.error(`Error during ${provider} OAuth:`, error);
-      setLoading(false);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      if (provider === 'google') setGoogleLoading(false);
+      else setGithubLoading(false);
     }
   };
 
-  const handleGoogleLogin = () => handleOAuthPopup('google');
-
-  const handleGithubLogin = () => handleOAuthPopup('github');
+  const handleGoogleLogin = () => handleOAuth('google');
+  const handleGithubLogin = () => handleOAuth('github');
 
 
   return (

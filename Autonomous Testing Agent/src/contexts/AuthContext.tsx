@@ -1,13 +1,15 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import type { ReactNode } from 'react';
 import { apiClient } from '@/lib/apiClient';
-import { supabase } from '@/lib/supabase';
 
 export interface User {
   id: string;
   name: string;
   email: string;
   avatar?: string;
+  avatar_url?: string;
+  provider?: 'google' | 'github' | 'email';
+  provider_username?: string;
   app_metadata?: any;
   user_metadata?: any;
   identities?: any;
@@ -46,8 +48,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   // Initialize from local storage or mock
   useEffect(() => {
-    let mounted = true;
-
     const storedUser = localStorage.getItem('user') || sessionStorage.getItem('user');
     const storedToken = localStorage.getItem('token') || sessionStorage.getItem('token');
     const storedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
@@ -61,59 +61,9 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       setTheme(storedTheme);
     }
     setRememberMe(storedRemember);
-
-    const fetchSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (session && mounted) {
-        const userData = {
-          id: session.user.id,
-          name: session.user.user_metadata?.full_name || session.user.email?.split('@')[0] || 'User',
-          email: session.user.email || '',
-          avatar: session.user.user_metadata?.avatar_url || '',
-          app_metadata: session.user.app_metadata,
-          user_metadata: session.user.user_metadata,
-          identities: session.user.identities
-        };
-        setUser(userData);
-        setToken(session.access_token);
-        localStorage.setItem('user', JSON.stringify(userData));
-        localStorage.setItem('token', session.access_token);
-      }
-      if (mounted) setLoading(false);
-    };
-    fetchSession();
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (event, session) => {
-        console.log("Auth Event:", event);
-        if (!mounted) return;
-        
-        if (session) {
-          const userData = {
-            id: session.user.id,
-            name: session.user.user_metadata?.full_name || session.user.email?.split('@')[0] || 'User',
-            email: session.user.email || '',
-            avatar: session.user.user_metadata?.avatar_url || '',
-            app_metadata: session.user.app_metadata,
-            user_metadata: session.user.user_metadata,
-            identities: session.user.identities
-          };
-          setUser(userData);
-          setToken(session.access_token);
-          localStorage.setItem('user', JSON.stringify(userData));
-          localStorage.setItem('token', session.access_token);
-        } else if (event === 'SIGNED_OUT') {
-          setUser(null);
-          setToken(null);
-          localStorage.removeItem('user');
-          localStorage.removeItem('token');
-        }
-      }
-    );
+    setLoading(false);
 
     return () => {
-      mounted = false;
-      subscription.unsubscribe();
     };
   }, []);
 
@@ -161,31 +111,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const verifyEmail = async (email: string, code: string) => {
     try {
-      const { data, error } = await supabase.auth.verifyOtp({
-        email,
-        token: code,
-        type: 'email',
-      });
-      if (error) {
-        console.error(error.message);
-        throw error;
-      }
-      console.log('Logged in:', data.user);
-      if (data.session && data.user) {
-        const userData: User = {
-          id: data.user.id,
-          name: data.user.user_metadata?.full_name || data.user.email?.split('@')[0] || 'User',
-          email: data.user.email || '',
-          avatar: data.user.user_metadata?.avatar_url || '',
-          app_metadata: data.user.app_metadata,
-          user_metadata: data.user.user_metadata,
-          identities: data.user.identities
-        };
-        setUser(userData);
-        setToken(data.session.access_token);
-        localStorage.setItem('user', JSON.stringify(userData));
-        localStorage.setItem('token', data.session.access_token);
-      }
+      await apiClient.post('/auth/verify-email', { email, code });
     } catch (error: any) {
       console.error('Verify email error', error);
       throw error;
@@ -194,18 +120,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const resendVerificationCode = async (email: string) => {
     try {
-      const { data, error } = await supabase.auth.signInWithOtp({
-        email,
-        options: {
-          shouldCreateUser: true
-        }
-      });
-      if (error) {
-        console.warn('Supabase resend OTP error, falling back to backend:', error.message);
-        const response = await apiClient.post('/auth/resend-code', { email });
-        return response.data;
-      }
-      return data;
+      const response = await apiClient.post('/auth/resend-code', { email });
+      return response.data;
     } catch (error: any) {
       console.error('Resend verification code error', error);
       throw error;
@@ -236,10 +152,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const logout = async () => {
-    const { error } = await supabase.auth.signOut();
-    if (error) {
-      console.error(error.message);
-    }
     setUser(null);
     setToken(null);
     localStorage.removeItem('user');

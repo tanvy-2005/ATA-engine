@@ -12,7 +12,7 @@ from app.core.dependencies import get_db, get_current_user
 from app.core import security
 from app.core.config import settings
 from app.core.email import send_verification_email, send_password_reset_email
-from app.modules.schemas import UserCreate, UserLogin, UserOut, UserInDB, TokenResponse, VerifyEmailReq, ForgotPasswordReq, ResetPasswordReq, ResendCodeReq
+from app.modules.schemas import UserCreate, UserLogin, UserOut, UserInDB, TokenResponse, VerifyEmailReq, ForgotPasswordReq, ResetPasswordReq, ResendCodeReq, SocialLoginExchangeReq
 
 router = APIRouter()
 
@@ -196,6 +196,56 @@ async def login(
     )
     
     user["_id"] = str(user["_id"])
+    return TokenResponse(
+        token=token,
+        user=UserOut(**user)
+    )
+
+@router.post("/social-exchange", response_model=TokenResponse)
+async def social_exchange(
+    req: SocialLoginExchangeReq,
+    db: AsyncIOMotorDatabase = Depends(get_db)
+):
+    email = req.email.lower()
+    user = await db.users.find_one({"email": email})
+    
+    if not user:
+        new_user = {
+            "name": req.name,
+            "email": email,
+            "hashed_password": "",
+            "avatar_url": req.picture,
+            "provider": req.provider,
+            "provider_username": req.provider_username,
+            "is_active": True,
+            "auth_provider": req.provider,
+            "created_at": datetime.utcnow(),
+            "last_activity": datetime.utcnow(),
+            "is_verified": True
+        }
+        result = await db.users.insert_one(new_user)
+        user = await db.users.find_one({"_id": result.inserted_id})
+    else:
+        await db.users.update_one(
+            {"_id": user["_id"]},
+            {"$set": {
+                "last_activity": datetime.utcnow(),
+                "avatar_url": req.picture,
+                "provider": req.provider,
+                "provider_username": req.provider_username
+            }}
+        )
+        user["avatar_url"] = req.picture
+        user["provider"] = req.provider
+        user["provider_username"] = req.provider_username
+        
+    user_id = str(user["_id"])
+    access_token_expires = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
+    token = security.create_access_token(
+        subject=user_id, expires_delta=access_token_expires
+    )
+    
+    user["_id"] = user_id
     return TokenResponse(
         token=token,
         user=UserOut(**user)
